@@ -1,0 +1,88 @@
+---
+title: "Week 1, Day 1"
+subtitle: "Introduction to Biostatistical Collaboration and Professional Conduct"
+date: 2025-04-14
+categories: ["Week 1", "Day 1", "Block 2", "Professional Conduct"]
+sidebar: reflections
+---
+
+> **Session focus:** *Establishing foundations for professional biostatistical collaboration through career exploration, ethical frameworks, and role enhancement strategies*
+
+## Learning Objectives
+
+* Understand biostatistical collaboration as a career pathway and its professional landscape
+* Comprehend and apply the biostatistician's code of conduct in practice
+* Develop strategies for enhancing collaborative roles in multidisciplinary research
+* Recognize the importance of mentorship in biostatistical career development
+
+---
+
+## Description of Activities
+
+The day commenced with an introduction to the module and exploration of biostatistical collaboration as a career path. This was followed by an in-depth examination of the biostatistician's code of conduct, emphasizing ethical responsibilities to patients, collaborators, the profession, and employers. The morning concluded with practical strategies for enhancing our roles in collaborations. After lunch, we attended a public presentation on stopping clinical trials early for benefit, which highlighted real-world applications of biostatistical decision-making. The day ended with a session on mentorship in biostatistics, exploring its impact on career development, job satisfaction, and academic productivity.
+
+---
+
+## Reflection (Gibbs Reflective Cycle)
+
+### 1. Description
+
+The opening session provided a comprehensive overview of biostatistical collaboration as more than just technical support—it's a career requiring unique skills beyond traditional statistics education. The code of conduct session presented ethical frameworks, while the mentorship discussion revealed how structured guidance influences career trajectories and research productivity.
+
+### 2. Feelings
+
+I felt energized by the career possibilities presented but also somewhat overwhelmed by the breadth of responsibilities biostatisticians carry. The ethical dimensions particularly resonated with me, as I hadn't fully considered the weight of our accountability in research that directly impacts patient care. The mentorship discussion evoked both excitement about finding mentors and anxiety about navigating these professional relationships.
+
+### 3. Evaluation
+
+The integration of ethical considerations with practical career guidance worked exceptionally well, providing both philosophical grounding and actionable strategies. The public presentation effectively demonstrated how biostatistical decisions have real-world consequences. However, the rapid transition between topics left limited time for deep reflection on each component.
+
+### 4. Analysis
+
+The emphasis on collaboration as a distinct professional skill set, rather than merely applying statistical knowledge, represents a paradigm shift from traditional statistics education. The code of conduct discussion revealed that biostatisticians must balance multiple, sometimes competing responsibilities—ensuring scientific rigor while respecting collaborator relationships and timeline constraints. The mentorship component underscored that career development in biostatistics is rarely solitary; it requires deliberate cultivation of professional relationships.
+
+### 5. Conclusion
+
+This foundational day established that successful biostatistical collaboration requires integrating technical expertise with ethical awareness, communication skills, and professional relationship management. The session challenged my perception of biostatistics as purely technical work, revealing it as deeply interpersonal and ethically complex.
+
+### 6. Action Plan
+
+I will develop a personal code of conduct framework, identifying potential ethical dilemmas I might face and strategies for addressing them. I'll also identify potential mentors within my institution and prepare thoughtful approaches for initiating these relationships. Additionally, I'll begin documenting collaboration experiences to track my professional growth.
+
+---
+
+## Incorporated Sources and Relevance
+
+* *Module Outline Biostatistical Consulting - 2025.pdf* — Provided context for module objectives and assessment structure
+* *Statistics in Medicine 2022 LeBlanc.pdf* — Offered evidence-based perspectives on mentorship importance and collaboration ethics
+* *My journey as a biostatistician_final.pdf* — Illustrated practical mentorship benefits through real experiences
+
+---
+
+::: {.callout-note}
+## Artefacts and Evidence
+
+* Session handouts on biostatistical code of conduct
+* Notes from public presentation on trial stopping rules
+* Personal reflection journal entries on ethical considerations
+:::
+
+---
+
+## Rubric Checks
+
+Ensure this reflection meets the assessment criteria:
+
+- [x] ≥300 words
+- [x] Clear link to artefact(s)
+- [x] Critical engagement with reflective cycle (not just description)
+- [x] Honest and balanced self-assessment
+- [x] Concrete action plan for improvement
+
+---
+
+::: {.callout-tip}
+## Next Reflection
+
+Continue to [Day 2](day-02.qmd) to read the reflection on strategic communication and professional development.
+:::

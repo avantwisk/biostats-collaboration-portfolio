@@ -1,0 +1,217 @@
+---
+title: "Artefacts"
+subtitle: "Evidence Repository for Portfolio"
+---
+
+## Overview
+
+This section serves as a repository for artefacts that provide evidence of my learning and professional development throughout the Biostatistical Consulting & Collaboration module and internship.
+
+Artefacts include presentations, assignments, code samples, reports, and other materials that demonstrate my achievement of module learning outcomes.
+
+---
+
+## Module Artefacts
+
+### Block 1 Sessions (May 2025)
+
+<!-- TODO: Add artefacts from Block 1 sessions -->
+
+**Session Materials:**
+- TODO: ASCCR Framework slides
+- TODO: LISA Collaborative Attitude readings
+- TODO: POWER Structure materials
+- TODO: Practice consultation videos/recordings
+
+**Assignments:**
+- TODO: Assignment 1 (description and link)
+- TODO: Assignment 2 (description and link)
+- TODO: Mock consultation materials
+
+---
+
+### Block 2 Sessions (April 2025)
+
+<!-- TODO: Add artefacts from Block 2 sessions -->
+
+**Session Materials:**
+- TODO: Code of Conduct for Biostatisticians
+- TODO: Grant writing strategies slides
+- TODO: Scientific writing materials
+- TODO: Ethics and integrity readings
+
+**Assignments:**
+- TODO: Assignment 3 (description and link)
+- TODO: Other assignments
+
+**Presentations:**
+- TODO: Seminar presentation (slides/video)
+
+---
+
+## Internship Artefacts
+
+### Consultation Project Reports
+
+<!-- TODO: Add links to or descriptions of consultation reports (if allowed by confidentiality agreements) -->
+
+**Job Satisfaction Survey Analysis:**
+- TODO: Analysis report
+- TODO: Code repository
+- TODO: Presentation slides
+
+**Heart Murmur Recognition Study:**
+- TODO: Analysis report
+- TODO: Code repository
+- TODO: Statistical tables
+
+**Fresh Gas Flow Analysis:**
+- TODO: Analysis report
+- TODO: Data management code
+- TODO: Visualizations
+
+---
+
+### Clinical Trial Documentation
+
+<!-- TODO: Add appropriate artefacts from clinical trial work (maintaining confidentiality) -->
+
+**Randomisation:**
+- TODO: Randomisation plan (anonymized)
+- TODO: R code for randomisation
+
+**Quality Control:**
+- TODO: QC checklist example
+- TODO: Documentation of QC process
+
+**Data Management:**
+- TODO: Code examples (anonymized)
+- TODO: Data cleaning workflows
+
+---
+
+### Software Development
+
+**Shiny Application:**
+- TODO: Link to application (if publicly accessible)
+- TODO: Screenshots of interface
+- TODO: Code repository (if allowed)
+- TODO: User documentation
+
+**R Packages:**
+- TODO: Package documentation
+- TODO: Code samples
+- TODO: Vignettes or examples
+
+---
+
+## Code Repository
+
+### GitHub/GitLab Links
+
+<!-- TODO: Add links to code repositories (if public or allowed) -->
+
+- TODO: Portfolio code repository
+- TODO: Practice project repositories
+- TODO: Coursework repositories
+
+---
+
+## Publications and Presentations
+
+<!-- TODO: Add any publications, conference presentations, or posters -->
+
+**Publications:**
+- TODO: Author list, title, journal (if published or submitted)
+
+**Conference Presentations:**
+- TODO: Title, conference, date
+- TODO: Slides or poster
+
+**Departmental Presentations:**
+- TODO: Title, audience, date
+- TODO: Materials
+
+---
+
+## Certificates and Training
+
+<!-- TODO: Add certificates from training courses -->
+
+**Good Clinical Practice (GCP) Training:**
+- TODO: Certificate
+- TODO: Date completed
+- TODO: Issuing organization
+
+**Other Training:**
+- TODO: Course name and certificate
+- TODO: Date completed
+
+---
+
+## Additional Evidence
+
+<!-- TODO: Add any other relevant artefacts -->
+
+**Letters of Recommendation:**
+- TODO: From internship supervisor
+- TODO: From module coordinators
+
+**Performance Evaluations:**
+- TODO: Internship evaluation
+
+**Other:**
+- TODO: Any other relevant materials
+
+---
+
+## Artefact Index by Learning Outcome
+
+This table provides a quick reference to which artefacts provide evidence for each module learning outcome:
+
+| Learning Outcome | Artefacts |
+|------------------|-----------|
+| **Communicate effectively** | TODO: List relevant artefacts |
+| **Contribute to study design** | TODO: List relevant artefacts |
+| **Develop analysis plans** | TODO: List relevant artefacts |
+| **Develop verbal/written skills** | TODO: List relevant artefacts |
+| **Approach methodological challenges** | TODO: List relevant artefacts |
+| **Integrate statistical knowledge** | TODO: List relevant artefacts |
+| **Connect questions to methods** | TODO: List relevant artefacts |
+
+---
+
+## Confidentiality Note
+
+::: {.callout-important}
+## Confidentiality and Data Protection
+
+All artefacts included in this portfolio comply with confidentiality agreements and data protection requirements. Sensitive information has been anonymized or excluded where necessary.
+
+- Client data is protected
+- Proprietary methods and code are excluded
+- Personal identifying information is removed
+- All materials are used with appropriate permissions
+:::
+
+---
+
+## How to Access Artefacts
+
+<!-- TODO: Provide instructions for accessing artefacts -->
+
+Artefacts are organized in the following locations:
+
+1. **Within this portfolio**: Some artefacts are directly embedded in relevant sections
+2. **External repositories**: GitHub/GitLab links provided above
+3. **Upon request**: Some materials are available upon request due to size or confidentiality
+4. **Appendix**: Physical/digital appendix to portfolio submission
+
+---
+
+::: {.callout-tip}
+## Related Sections
+
+- See [Module Reflections](../reflections/index.qmd) for daily reflections that reference specific artefacts
+- See [Internship Report: Work Outputs](../internship/work-outputs.qmd) for detailed descriptions of project artefacts
+:::

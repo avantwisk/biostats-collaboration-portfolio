@@ -1,0 +1,134 @@
+---
+title: "Learning Outcomes"
+subtitle: "Module Learning Outcomes and Evidence of Achievement"
+---
+
+## Overview
+
+This section documents the learning outcomes for the Biostatistical Consulting & Collaboration module and provides evidence of how I achieved each outcome through coursework, internship activities, and reflective practice.
+
+---
+
+## Module Learning Outcomes
+
+The Biostatistical Consulting & Collaboration module has the following learning outcomes:
+
+### 1. Communicate effectively about both statistical and medical/biological concepts
+
+**Evidence of achievement:**
+
+<!-- TODO: Provide specific examples from your internship, reflections, or assignments that demonstrate this outcome -->
+
+- TODO: Link to relevant internship work outputs
+- TODO: Link to consultation examples
+- TODO: Link to reflections discussing communication challenges
+
+---
+
+### 2. Contribute to the design of research studies
+
+**Evidence of achievement:**
+
+<!-- TODO: Provide specific examples -->
+
+- TODO: Randomisation work
+- TODO: Study design contributions
+- TODO: Protocol review activities
+
+---
+
+### 3. Develop data analysis plans
+
+**Evidence of achievement:**
+
+<!-- TODO: Provide specific examples -->
+
+- TODO: Statistical Analysis Plans developed during internship
+- TODO: Analysis planning for consultation projects
+- TODO: Examples from coursework
+
+---
+
+### 4. Develop verbal and written skills
+
+**Evidence of achievement:**
+
+<!-- TODO: Provide specific examples -->
+
+- TODO: Written reports and documents
+- TODO: Presentation materials
+- TODO: Consultation meeting examples
+
+---
+
+### 5. Approach methodological challenges in special types of study designs
+
+**Evidence of achievement:**
+
+<!-- TODO: Provide specific examples -->
+
+- TODO: Examples of complex study designs encountered
+- TODO: Methodological solutions developed
+- TODO: Learning from challenging situations
+
+---
+
+### 6. Integrate statistical knowledge gained in other modules
+
+**Evidence of achievement:**
+
+<!-- TODO: Provide specific examples -->
+
+- TODO: Examples of integrating Linear Models, Categorical Data Analysis, etc.
+- TODO: Cross-module applications
+- TODO: Synthesis of knowledge
+
+---
+
+### 7. Connect research question and statistical methods
+
+**Evidence of achievement:**
+
+<!-- TODO: Provide specific examples -->
+
+- TODO: Examples of translating clinical questions to statistical problems
+- TODO: Method selection rationale
+- TODO: Consultation examples
+
+---
+
+## Summary Matrix
+
+The table below provides a quick reference to where evidence for each learning outcome can be found in this portfolio:
+
+| Learning Outcome | Internship Report | Module Reflections | Artefacts |
+|------------------|:-----------------:|:------------------:|:---------:|
+| **1. Communicate effectively** | ✓ | TODO | TODO |
+| **2. Contribute to study design** | ✓ | TODO | TODO |
+| **3. Develop analysis plans** | ✓ | TODO | TODO |
+| **4. Develop verbal/written skills** | ✓ | TODO | TODO |
+| **5. Approach methodological challenges** | ✓ | TODO | TODO |
+| **6. Integrate statistical knowledge** | ✓ | TODO | TODO |
+| **7. Connect questions to methods** | ✓ | TODO | TODO |
+
+---
+
+## Reflection on Learning Outcomes
+
+<!-- TODO: Provide an overall reflection on your achievement of the module learning outcomes -->
+
+TODO: Write 2-3 paragraphs reflecting on:
+
+- Which outcomes were easiest to achieve and why?
+- Which outcomes were most challenging and what strategies helped?
+- How has achieving these outcomes prepared you for your career as a biostatistician?
+- What areas still need further development?
+
+---
+
+::: {.callout-tip}
+## Related Sections
+
+- See the [Internship Report](../internship/learning-objectives.qmd) for detailed examples of how internship activities addressed learning outcomes
+- See [Module Reflections](../reflections/index.qmd) for daily reflections on learning
+:::

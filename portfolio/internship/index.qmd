@@ -1,0 +1,67 @@
+---
+title: "Internship Report"
+subtitle: "Biostatistical Consulting Module"
+sidebar: internship
+---
+
+## Overview
+
+This report documents my three-month internship at Scigenix Pty (Ltd), a clinical research organization based in Pretoria, South Africa. The internship ran from **23 June 2025 to 30 September 2025** and provided invaluable practical experience in biostatistical consulting and collaboration.
+
+### Report Structure
+
+This internship report follows the structure outlined in the Portfolio of Evidence of Learning guidelines:
+
+#### [1. Introduction & Background](introduction.qmd)
+
+- General overview of Scigenix Pty (Ltd)
+- My role and responsibilities
+- Focus on collaboration and consultation activities
+
+#### [2. Learning Objectives](learning-objectives.qmd)
+
+- Matrix of learning outcomes and tasks
+- Description of how each learning outcome was met
+- Connection to module objectives
+
+#### [3. Relation to Coursework](relation-to-coursework.qmd)
+
+- How consulting work related to specific MSc Biostatistics modules
+- Practical applications of theoretical knowledge
+- Integration of statistical concepts across disciplines
+
+#### [4. Work Outputs](work-outputs.qmd)
+
+- **Consultation Projects**: Job Satisfaction Survey Analysis, Heart Murmur Recognition Study, Fresh Gas Flow Analysis
+- **Clinical Research Activities**: Randomisation, Data Safety Committee, Quality Control, Annotated Case Report Forms, Manual Edit Checks, Shiny App Development
+- Case reports of interesting consultations
+
+#### [5. Reflection](reflection.qmd)
+
+- What I learned and why it was significant
+- What I would have done differently
+- Challenges encountered and how I handled them
+- Professional growth and development
+
+---
+
+## Key Takeaways
+
+Through this internship, I gained hands-on experience in:
+
+- Statistical consulting with multidisciplinary research teams
+- Clinical trial design and implementation
+- Data management and quality control processes
+- Regulatory compliance in clinical research
+- Software development for clinical data analysis
+- Effective communication of statistical concepts to non-statistical audiences
+
+This experience has profoundly shaped my understanding of the role of a biostatistician in modern clinical research and has prepared me for a successful career in this field.
+
+---
+
+::: {.callout-tip}
+## Navigation
+
+Use the sidebar to navigate through the different sections of this internship report, or use the links above to jump directly to a specific section.
+:::

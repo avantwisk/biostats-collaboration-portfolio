@@ -1,0 +1,111 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Biostatistical Consulting & Collaboration Portfolio"
+  site-url: https://example.com
+  description: "MSc Biostatistics - Alexander van Twisk"
+
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Internship Report"
+        menu:
+          - text: "Overview"
+            file: internship/index.qmd
+          - text: "Introduction"
+            file: internship/introduction.qmd
+          - text: "Learning Objectives"
+            file: internship/learning-objectives.qmd
+          - text: "Relation to Coursework"
+            file: internship/relation-to-coursework.qmd
+          - text: "Work Outputs"
+            file: internship/work-outputs.qmd
+          - text: "Reflection"
+            file: internship/reflection.qmd
+      - text: "Module Reflections"
+        menu:
+          - text: "Overview"
+            file: reflections/index.qmd
+          - text: "---"
+          - text: "Week 1 (Block 2)"
+          - text: "Day 1"
+            file: reflections/week-01/day-01.qmd
+          - text: "Day 2"
+            file: reflections/week-01/day-02.qmd
+          - text: "Day 3"
+            file: reflections/week-01/day-03.qmd
+          - text: "Day 4"
+            file: reflections/week-01/day-04.qmd
+          - text: "---"
+          - text: "Week 2 (Block 1)"
+          - text: "Day 1"
+            file: reflections/week-02/day-01.qmd
+          - text: "Day 2"
+            file: reflections/week-02/day-02.qmd
+          - text: "Day 3"
+            file: reflections/week-02/day-03.qmd
+      - text: "Learning Outcomes"
+        file: learning-outcomes/index.qmd
+      - text: "Coursework"
+        file: coursework/index.qmd
+      - text: "Artefacts"
+        file: artefacts/index.qmd
+
+  sidebar:
+    - id: internship
+      title: "Internship Report"
+      style: "floating"
+      collapse-level: 2
+      contents:
+        - internship/index.qmd
+        - section: "Report Sections"
+          contents:
+            - internship/introduction.qmd
+            - internship/learning-objectives.qmd
+            - internship/relation-to-coursework.qmd
+            - internship/work-outputs.qmd
+            - internship/reflection.qmd
+
+    - id: reflections
+      title: "Module Reflections"
+      style: "floating"
+      collapse-level: 2
+      contents:
+        - reflections/index.qmd
+        - section: "Week 1 (Block 2)"
+          contents:
+            - reflections/week-01/day-01.qmd
+            - reflections/week-01/day-02.qmd
+            - reflections/week-01/day-03.qmd
+            - reflections/week-01/day-04.qmd
+        - section: "Week 2 (Block 1)"
+          contents:
+            - reflections/week-02/day-01.qmd
+            - reflections/week-02/day-02.qmd
+            - reflections/week-02/day-03.qmd
+
+  page-footer:
+    left: |
+      MSc Biostatistics - Biostatistical Consulting & Collaboration<br>
+      Alexander van Twisk, Stellenbosch University
+    right: |
+      Built with [Quarto](https://quarto.org/)
+
+format:
+  html:
+    theme: cosmo
+    css: styles/custom.css
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    number-sections: false
+    code-fold: false
+    code-tools: false
+    link-external-newwindow: true
+
+editor: source

@@ -1,0 +1,88 @@
+---
+title: "Week 1, Day 2"
+subtitle: "Strategic Communication and Professional Development"
+date: 2025-04-15
+categories: ["Week 1", "Day 2", "Block 2", "Scientific Writing"]
+sidebar: reflections
+---
+
+> **Session focus:** *Mastering the art of scientific writing and learning from experienced biostatisticians' career journeys*
+
+## Learning Objectives
+
+* Develop effective strategies for writing proposals, manuscripts, and grant applications
+* Learn from senior biostatisticians' career experiences and success factors
+* Understand the role of biostatisticians in addressing missing data challenges in clinical trials
+* Identify key ingredients for building a successful biostatistical career
+
+---
+
+## Description of Activities
+
+The morning began with a comprehensive session on strategies for successful scientific writing, covering proposals, manuscripts, and grant applications. This was followed by an inspiring presentation on a senior biostatistician's career journey, highlighting critical success factors and lessons learned. The afternoon featured a public presentation at the MRC on handling missing data in clinical trials, demonstrating advanced methodological applications in real research contexts.
+
+---
+
+## Reflection (Gibbs Reflective Cycle)
+
+### 1. Description
+
+The writing strategies session provided structured approaches to different types of scientific documents, emphasizing clarity, precision, and audience awareness. The career journey presentation offered candid insights into navigating academic biostatistics, including challenges faced and overcome. The missing data presentation showcased sophisticated statistical methods applied to critical clinical research questions.
+
+### 2. Feelings
+
+The writing session initially felt daunting—the gap between my current writing abilities and publication-ready manuscripts seemed vast. However, the structured approach provided reassurance that good scientific writing is learnable. The career journey talk was both inspiring and sobering, revealing the persistence required for success. The technical presentation on missing data reminded me why I chose biostatistics—the intellectual challenge combined with meaningful impact.
+
+### 3. Evaluation
+
+The combination of practical skills (writing) with inspirational content (career journey) and technical depth (missing data methods) created a well-balanced learning experience. The writing strategies were immediately applicable, though practicing them will require sustained effort. The career insights were valuable but somewhat specific to academic paths, leaving questions about industry trajectories.
+
+### 4. Analysis
+
+Effective scientific writing emerges as a critical competency that can limit or enable a biostatistician's impact, regardless of technical expertise. The career journey highlighted that success rarely follows a linear path—adaptability and resilience are as important as technical skills. The missing data presentation demonstrated that biostatisticians must continually update their methodological knowledge to address evolving research challenges.
+
+### 5. Conclusion
+
+This day reinforced that biostatistical excellence requires a portfolio of skills: technical proficiency, clear communication, career strategic thinking, and continuous learning. Success depends not just on statistical knowledge but on effectively translating that knowledge into accessible formats for diverse audiences.
+
+### 6. Action Plan
+
+I will establish a regular writing practice, drafting sections of potential manuscripts even before having complete analyses. I'll create a career development plan incorporating lessons from the senior biostatistician's journey. For technical development, I'll review recent literature on missing data methods and identify opportunities to apply these in current projects.
+
+---
+
+## Incorporated Sources and Relevance
+
+* *Strategies for writing proposals successfully_FINAL.pdf* — Provided structured frameworks for different document types
+* *Statistics in Medicine 2022 LeBlanc.pdf* — Contextualized writing within broader professional development
+* *Module Outline Biostatistical Consulting - 2025.pdf* — Connected writing skills to module assessments
+
+---
+
+::: {.callout-note}
+## Artefacts and Evidence
+
+* Template documents for proposals and manuscripts
+* Notes on career development strategies
+* Literature review on missing data methods initiated
+:::
+
+---
+
+## Rubric Checks
+
+Ensure this reflection meets the assessment criteria:
+
+- [x] ≥300 words
+- [x] Clear link to artefact(s)
+- [x] Critical engagement with reflective cycle (not just description)
+- [x] Honest and balanced self-assessment
+- [x] Concrete action plan for improvement
+
+---
+
+::: {.callout-tip}
+## Next Reflection
+
+Continue to [Day 3](day-03.qmd) to read the reflection on effective collaboration and research integrity.
+:::

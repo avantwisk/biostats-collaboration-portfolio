@@ -1,0 +1,123 @@
+---
+title: "Relation to Coursework"
+subtitle: "Connecting Internship Experience to MSc Biostatistics Modules"
+sidebar: internship
+---
+
+## Overview
+
+This section demonstrates how my consulting and clinical research work at Scigenix related to specific courses in the MSc Biostatistics programme. The table below maps each internship task to the most relevant modules, with brief explanations of how theoretical knowledge was applied in practice.
+
+---
+
+## Matrix of Tasks and Related Modules
+
+| Task in Cases | Relevant Modules | Relevance |
+|--------------|------------------|-----------|
+| **Sample size determination** | • Principles of Statistical Inference<br>• Design and Analysis of Clinical Trials | Applied mock power calculations and sample size determination for RCT randomisation, understanding Type I/II errors and their practical implications |
+| **Statistical Analysis Plan** | • Biostatistical Consulting<br>• Design and Analysis of Clinical Trials | Developed comprehensive analysis plans specifying primary/secondary outcomes, statistical methods, and handling of missing data for consultation projects |
+| **Formulating Research Questions** | • Fundamentals of Epidemiology<br>• Biostatistical Consulting | Translated clinical problems into testable hypotheses, ensuring questions were specific, measurable, and aligned with available data |
+| **Questionnaire design** | • Fundamentals of Epidemiology<br>• Data Management & Statistical Computing | Worked with MSQ satisfaction scales and MurmurQuiz design, understanding Likert scales, response bias, and validation measures |
+| **Formulating Study designs** | • Fundamentals of Epidemiology<br>• Design and Analysis of Clinical Trials | Contributed to RCT design through randomisation schedules, understood cross-sectional and observational study limitations |
+| **Communication – oral and written** | • Biostatistical Consulting | Presented findings to multidisciplinary teams, wrote analysis reports translating complex statistics for clinical audiences |
+| **Research Ethics** | • Fundamentals of Epidemiology<br>• Design and Analysis of Clinical Trials | Participated in Data Safety Committee, completed GCP training, understood Declaration of Helsinki principles in practice |
+| **Data management** | • Data Management & Statistical Computing | Extensive data cleaning in R, managed complex datasets with hour-level and case-level data, created reproducible workflows |
+| **Quality control** | • Data Management & Statistical Computing<br>• Biostatistical Consulting | Implemented peer review processes, used Excel checklists for QC, ensured regulatory compliance in all outputs |
+| **Advanced statistical programming** | • Data Management & Statistical Computing<br>• Linear Models<br>• Categorical Data Analysis & GLMs | Developed R packages for analyses, created automated reporting systems, implemented complex data transformations and modelling |
+| **Collaboration** | • Biostatistical Consulting | Worked effectively within multidisciplinary teams including clinicians, data managers, and regulatory specialists |
+| **Consulting Skills** | • Biostatistical Consulting | Led consultation meetings, translated clinical questions to statistical problems, provided actionable recommendations |
+| **Leadership skills** | • Biostatistical Consulting | Took ownership of analyses, managed project timelines, coordinated with multiple stakeholders |
+| **Mentorship Skills** | • Biostatistical Consulting | Constant mentoring received from other employees and internship supervisor. Shared my own knowledge with team members during collaborative work |
+| **Complex Statistical analysis** | • Linear Models<br>• Categorical Data Analysis & GLMs<br>• Longitudinal Data Analysis<br>• Analysis of Survival Data | Applied ordinal logistic regression, GLMs for fresh gas flow analysis, managed Likert scale data, performed factor analysis |
+
+---
+
+## Detailed Module Connections
+
+### Principles of Statistical Inference
+
+The foundational concepts of hypothesis testing, Type I and Type II errors, and statistical power learned in this module were directly applied when determining sample sizes for clinical trials. Understanding the balance between statistical rigor and practical constraints was crucial for making sound recommendations to study sponsors.
+
+### Design and Analysis of Clinical Trials
+
+This module provided the theoretical framework for understanding randomized controlled trials, blinding, allocation concealment, and intention-to-treat analysis. My work on randomisation schedules and participation in Data Safety Committee meetings brought these concepts to life, showing me the real-world complexities of implementing theoretically sound trial designs.
+
+### Biostatistical Consulting
+
+The most directly relevant module to my internship. The ASCCR framework (Ask, Structure, Communicate, Clarify, Report), LISA Collaborative Attitude, and POWER structure for collaboration meetings were tools I used regularly. The mock consultations we conducted during the module prepared me well for real client interactions, though I quickly learned that actual consultations require even more flexibility and patience than practice sessions suggested.
+
+### Fundamentals of Epidemiology
+
+Understanding study designs, bias, confounding, and effect modification from this module was essential for evaluating the research questions posed by collaborators. The cross-sectional studies I worked on (job satisfaction survey, heart murmur recognition) required careful consideration of the limitations inherent in these designs.
+
+### Data Management & Statistical Computing
+
+This module's emphasis on reproducible research, version control, and good programming practices directly influenced how I structured my analytical work at Scigenix. Every project was developed as a self-contained R package, ensuring transparency and reproducibility—principles heavily emphasized in this module.
+
+### Linear Models
+
+The regression techniques learned in this module were foundational for the analyses I conducted. Understanding how to interpret regression coefficients, assess model assumptions, and communicate results in plain language was essential for effective consulting.
+
+### Categorical Data Analysis & GLMs
+
+This module was particularly relevant for the job satisfaction survey (ordinal logistic regression for intention to leave) and the fresh gas flow analysis (GLMs accounting for repeated measures). Understanding when and how to apply these methods was crucial for producing valid results.
+
+### Longitudinal Data Analysis
+
+While I didn't conduct formal longitudinal analyses during my internship, understanding the concepts of within-subject correlation and appropriate modeling approaches helped me appreciate the complexity of the repeated measures data I encountered in clinical trials.
+
+### Analysis of Survival Data
+
+<!-- TODO: Add any specific applications of survival analysis methods if encountered during the internship -->
+
+---
+
+## From Theory to Practice: Key Insights
+
+### The Gap Between Clean Textbook Data and Real-World Messiness
+
+My coursework typically provided clean, well-structured datasets designed to teach specific statistical concepts. The internship exposed me to the reality of incomplete data, inconsistent coding, and variables that don't behave as expected. Data cleaning often took 50-70% of project time—a reality not always emphasized in coursework.
+
+### Statistical Significance vs. Clinical Relevance
+
+Theoretical modules teach us to focus on p-values and confidence intervals. Clinical collaborations taught me that statistical significance means little if the effect size isn't clinically meaningful. Learning to have these conversations with clinicians was one of the most valuable skills I developed.
+
+### The Importance of Communication
+
+Technical skills from my modules were necessary but not sufficient. The ability to explain complex statistical concepts in plain language, to listen carefully to collaborators' concerns, and to ask clarifying questions proved just as important as knowing which test to run.
+
+### Reproducibility in Practice
+
+While coursework emphasized reproducibility in principle, the internship showed me what it means in practice: version-controlled code, comprehensive documentation, validation scripts, and standardized workflows. The R package structure used at Scigenix ensured that analyses could be reproduced months or years later—a critical requirement for regulatory submissions.
+
+---
+
+## Gaps and Areas for Further Development
+
+### Regulatory Knowledge
+
+While my statistical training was solid, I realized that understanding regulatory requirements (ICH guidelines, FDA regulations, CDISC standards) is essential for clinical trial work. This is an area where additional formal training would be valuable.
+
+### Software Engineering Practices
+
+The Shiny app development project exposed gaps in my knowledge of software engineering principles like unit testing, continuous integration, and deployment. These skills are increasingly important for biostatisticians developing analytical tools.
+
+### Medical Terminology
+
+Better familiarity with medical terminology and clinical concepts would have made initial project discussions more efficient. While I picked up relevant terms quickly, a more systematic foundation would have been helpful.
+
+---
+
+::: {.callout-important}
+## Key Takeaway
+
+The internship demonstrated that the MSc Biostatistics curriculum provides an excellent theoretical foundation, but real-world consulting requires integrating knowledge across modules while developing soft skills like communication, project management, and collaboration. The greatest value came from applying multiple modules' concepts simultaneously to solve complex, messy real-world problems.
+:::
+
+---
+
+::: {.callout-tip}
+## Next Section
+
+Proceed to [Work Outputs](work-outputs.qmd) to read detailed descriptions of the consultation projects and clinical research activities I completed.
+:::

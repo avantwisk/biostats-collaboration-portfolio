@@ -1,0 +1,68 @@
+---
+title: "Introduction & Background"
+subtitle: "About the Internship and Organisation"
+sidebar: internship
+---
+
+## About My Journey
+
+I am a final year master's student at Stellenbosch University, in the final stages of my MSc in Biostatistics. My degree began with a year focused on both foundational and advanced coursework, which aimed to equip students with statistical methods relevant to biostatistics. These theoretical modules were assessed by lecturers using both formative and summative methods.
+
+After completing the foundational coursework in my first year, I progressed to my second year, where I enrolled in the Biostatistical Consulting (BC) module. The BC module was designed by experienced biostatisticians to merge theoretical concepts with practical implementation, placing particular importance on developing collaborative abilities through interactive lectures and experiential learning opportunities. Unlike the more conventional, lecture-based modules, the BC module placed a strong emphasis on discussion, questioning, and the development of practical collaboration skills essential for effective biostatistical consulting.
+
+Following the completion of this module, I began my internship at Scigenix Pty (Ltd) on 23 June 2025, which concluded on 30 September 2025. This three-month placement offered me the opportunity to apply not only the skills fostered in the BC module but also those learned throughout my MSc. Through this internship, I honed my ability to communicate complex statistical concepts to non-specialist audiences—a skill I now regard as essential for successful collaboration in clinical research.
+
+---
+
+## Background of Organisation
+
+Scigenix is a dynamic clinical research organization that specializes in data-driven solutions for the pharmaceutical and healthcare sectors. With a global team of experts, the company brings together a wide range of skills, including data science, biostatistics (the application of statistics to biological and health-related research), data management, and medical writing. Its strength lies in leveraging open-source technologies to deliver cost-effective, precise, and scalable solutions across the full spectrum of clinical research—from the initial study design to the final steps of regulatory submission, which is the formal process of submitting research findings to health authorities for review and approval.
+
+The organization positions itself as a change-maker in the clinical research world, particularly in addressing challenges related to data collection, cleaning, analysis, and reporting under strict regulatory constraints. These constraints are guidelines and requirements set up by authorities to regulate the conduct of research. If not addressed effectively, such challenges can lead to delayed drug approvals and substantial financial losses for sponsors. Scigenix fills this gap by offering streamlined, AI-supported data processing and analysis pipelines that support faster, higher-quality decision-making.
+
+Beyond technical capabilities, Scigenix is defined by its strong internal culture and values. These include scientific excellence, attention to detail, client-centricity, a collaborative spirit, and a supportive work environment.
+
+In the biostatistics unit where I was placed, R is the primary programming language used for analysis and reporting. Each project is structured as a self-contained software solution, often in the form of an R package. An R package is a collection of code and documentation that standardizes analysis workflows, ensuring consistency and reproducibility in research findings. This approach allows for transparency and good software development practices. The biostatistics unit supports all phases of clinical research, with a particular emphasis on robust statistical methodologies, clear documentation, and regulatory compliance.
+
+Scigenix's long-term vision is to become a transformative force in the clinical research industry, especially as an advocate for open-source solutions, while keeping its commitment to quality, accessibility, and innovation.
+
+---
+
+## Life at Scigenix
+
+The Scigenix office is based in a converted home in Hazelwood, Pretoria—a residential area that has, in recent years, transformed into a cosmopolitan neighbourhood filled with new offices, shops, and restaurants. The lively character of the surroundings, in my experience, adds to the dynamic atmosphere within the office, which reflects the company's personality and vision.
+
+Workdays at Scigenix officially begin at 7am; however, employees are allowed to start anytime up to 8am, provided they complete the required eight hours of work each day. Additionally, we had the choice to work from home whenever we wished. This flexibility in work hours complemented the relaxed and supportive atmosphere fostered by the company's leadership, further reinforcing the positive office culture.
+
+Office culture is highly valued at the company, and we often enjoyed social gatherings at the office, particularly on Fridays, when we would have a braai or order takeaway lunches. Practical jokes are also a common occurrence. While this might seem unorthodox in some companies, in my experience, it helped tremendously during afternoons that stretched longer than what a student might otherwise be used to.
+
+The leadership at the company played an integral role in helping me feel welcome from my first day. Shortly after starting my internship and having just moved to Pretoria from Cape Town, I admitted to feeling overwhelmed. I was assured that I should not feel any pressure or experience any stress during my internship and that they were committed to ensuring I had a valuable experience. Small actions such as these are invaluable in helping anyone, and certainly myself, feel welcome at a new organization. Beyond this, I felt an added level of motivation to do my best, as the support I received inspired me to reciprocate their efforts.
+
+---
+
+## My Role and Responsibilities
+
+Throughout my internship, my primary responsibilities centered on statistical consulting and collaboration with researchers, as well as supporting various aspects of clinical trial conduct.
+
+My role encompassed:
+
+- **Statistical Consulting**: Providing expert statistical support for clinical research projects
+- **Data Analysis**: Conducting comprehensive analyses using advanced statistical methods
+- **Quality Control**: Implementing rigorous QC processes to ensure data integrity
+- **Clinical Trial Support**: Contributing to randomisation, data safety monitoring, and regulatory compliance
+- **Software Development**: Creating tools to streamline data validation and analysis workflows
+- **Communication**: Translating complex statistical concepts for non-statistical stakeholders
+
+The internship provided a holistic view of the biostatistician's role in clinical research, from initial study design through to final reporting and regulatory submission. This experience has been instrumental in shaping my understanding of collaborative biostatistical practice and has prepared me for a successful career in this field.
+
+---
+
+::: {.callout-note}
+## Internship Timeline
+
+**Start Date**: 23 June 2025
+**End Date**: 30 September 2025
+**Duration**: 3 months
+**Location**: Hazelwood, Pretoria, South Africa
+**Supervisor**: Dr Xan Swart
+:::

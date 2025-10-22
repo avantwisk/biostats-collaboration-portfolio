@@ -1,0 +1,125 @@
+---
+title: "Module Reflections"
+subtitle: "Daily Reflections on the Biostatistical Consulting & Collaboration Module"
+sidebar: reflections
+---
+
+## Overview
+
+This section contains my daily reflections on the Biostatistical Consulting & Collaboration module, which was delivered over two intensive weeks. Each reflection follows the **Gibbs Reflective Cycle**, a structured framework that promotes deep, critical reflection on learning experiences.
+
+---
+
+## The Gibbs Reflective Cycle
+
+All reflections in this section are structured according to Graham Gibbs' (1988) six-stage reflective cycle:
+
+1. **Description**: What happened during the session(s)?
+2. **Feelings**: What was I thinking and feeling?
+3. **Evaluation**: What was good and bad about the experience?
+4. **Analysis**: What sense can I make of the situation?
+5. **Conclusion**: What did I learn from this experience?
+6. **Action Plan**: What will I do differently next time?
+
+This framework ensures that my reflections move beyond simple description to critical analysis and actionable insights for professional development.
+
+---
+
+## Module Structure
+
+The Biostatistical Consulting & Collaboration module was delivered in two blocks:
+
+### Block 2 (April 2025)
+
+Delivered over 4 days (14-17 April 2025), covering:
+
+- Professional roles and conduct in biostatistics
+- Strategies for successful grant and manuscript writing
+- Framing researchable questions
+- Statistical reporting standards
+- Ethics and scientific integrity in research
+
+**Week 1 reflections draw primarily from Block 2 sessions.**
+
+### Block 1 (May 2025)
+
+Delivered over 3 days (19-21 May 2025), covering:
+
+- ASCCR Framework for biostatistical consulting
+- LISA Collaborative Attitude
+- POWER Structure for collaboration meetings
+- Best practices for opening, working, and ending advising sessions
+- Practice consultations and role-playing
+
+**Week 2 reflections draw primarily from Block 1 sessions.**
+
+---
+
+## Reflection Guidelines
+
+Each daily reflection:
+
+- Is **at least 300 words** to ensure depth of analysis
+- Links to specific **artefacts** (slides, readings, assignments) where relevant
+- Demonstrates **critical engagement** with the reflective cycle, not just description
+- Provides **honest and balanced self-assessment** of my learning
+- Includes a **concrete action plan** for applying learning to future practice
+
+---
+
+## Daily Reflections
+
+### Week 1
+
+::: {.column-margin}
+**Block 2 Sessions**
+April 14-17, 2025
+:::
+
+- [Day 1](week-01/day-01.qmd) - Introduction to Biostatistical Collaboration and Professional Conduct
+- [Day 2](week-01/day-02.qmd) - Strategic Communication and Professional Development
+- [Day 3](week-01/day-03.qmd) - Effective Collaboration and Research Integrity
+- [Day 4](week-01/day-04.qmd) - Leadership, Conflict Resolution, and Professional Growth
+
+### Week 2
+
+::: {.column-margin}
+**Block 1 Sessions**
+May 19-21, 2025
+:::
+
+- [Day 1](week-02/day-01.qmd) - ASCCR Framework and Collaboration Foundations
+- [Day 2](week-02/day-02.qmd) - Advanced Communication and Relationship Building
+- [Day 3](week-02/day-03.qmd) - Practice Integration and Professional Context
+
+---
+
+## Purpose of Reflective Practice
+
+As emphasized in the module materials, reflection is essential for professional development:
+
+> *"Reflection is what allows us to learn from our experiences: it is a self-assessment of where we have been and where we want to go next."*
+
+Through these reflections, I aim to:
+
+- Develop deeper understanding of biostatistical consulting principles
+- Connect theoretical concepts to practical application
+- Identify areas for continued growth and development
+- Build self-awareness about my professional values and assumptions
+- Create an action plan for future consulting scenarios
+
+---
+
+::: {.callout-tip}
+## Navigation
+
+Use the sidebar to navigate to specific daily reflections, or click the links above to jump directly to a particular day.
+:::
+
+---
+
+::: {.callout-note}
+## Assessment Note
+
+These reflections form part of the Portfolio of Evidence of Learning for the Biostatistical Consulting & Collaboration module. They demonstrate my engagement with module content and my development as a reflective practitioner.
+:::

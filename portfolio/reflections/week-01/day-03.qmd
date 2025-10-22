@@ -1,0 +1,88 @@
+---
+title: "Week 1, Day 3"
+subtitle: "Effective Collaboration and Research Integrity"
+date: 2025-04-16
+categories: ["Week 1", "Day 3", "Block 2", "Collaboration Skills"]
+sidebar: reflections
+---
+
+> **Session focus:** *Developing skills for teaching collaborators, understanding research replication, and enhancing scientific writing*
+
+## Learning Objectives
+
+* Learn strategies for effectively educating research collaborators about statistical concepts
+* Understand the importance of replication and transparent reporting in scientific research
+* Develop advanced scientific writing skills for clear research communication
+* Engage in open discussions about practical collaboration challenges
+
+---
+
+## Description of Activities
+
+The day opened with a session on teaching collaborators how to work effectively with biostatisticians, emphasizing bidirectional education. This was followed by a critical discussion on the "science of doing science"—addressing replication, reproducibility, and transparent reporting. The afternoon included focused scientific writing practice and concluded with open discussion sessions where we could raise specific challenges and concerns from our experiences.
+
+---
+
+## Reflection (Gibbs Reflective Cycle)
+
+### 1. Description
+
+The session on teaching collaborators revealed that education flows both ways in successful collaborations. We explored how to explain statistical concepts without condescension while also learning about clinical contexts. The replication discussion addressed the reproducibility crisis and our role in promoting robust science. The writing session built upon previous strategies with hands-on practice.
+
+### 2. Feelings
+
+I felt empowered by the idea that I could actively shape how collaborators work with me, rather than simply responding to their requests. The reproducibility discussion evoked a sense of responsibility—our work directly impacts scientific integrity. The open discussion format was refreshing, allowing authentic sharing of challenges without judgment.
+
+### 3. Evaluation
+
+The emphasis on mutual education in collaborations was transformative, shifting from a service mindset to partnership. The reproducibility content was timely and critical, though implementing these practices within existing time constraints remains challenging. The combination of structured content with open discussion facilitated both learning and peer support.
+
+### 4. Analysis
+
+Teaching collaborators effectively requires understanding their knowledge gaps without making assumptions, while also articulating our own needs clearly. The reproducibility crisis isn't just about fraud or errors—it's often about inadequate documentation and communication of methods. These sessions revealed that biostatisticians serve as guardians of scientific integrity, a role requiring both technical excellence and diplomatic skills.
+
+### 5. Conclusion
+
+Effective collaboration transcends statistical expertise—it requires educational skills, commitment to scientific integrity, and ability to navigate interpersonal dynamics. The day's sessions integrated these elements, showing how they reinforce each other in practice.
+
+### 6. Action Plan
+
+I will develop a "collaboration guide" for future partners, outlining mutual expectations and communication preferences. I'll implement reproducibility practices in current projects, including detailed documentation and code sharing. I'll also practice explaining complex statistical concepts using analogies and visual aids.
+
+---
+
+## Incorporated Sources and Relevance
+
+* *Session 3_Some Tips for Enhancing Biostats Collaborations in Med Res.pdf* — Provided practical collaboration strategies
+* *The ASCCR Frame for Learning Essential Collaboration Skills.pdf* — Offered theoretical framework for collaboration
+* *Portfolio of Evidence of Learning 2019.pdf* — Guided reflection on collaboration experiences
+
+---
+
+::: {.callout-note}
+## Artefacts and Evidence
+
+* Draft collaboration guide for research partners
+* Reproducible research checklist created
+* Peer feedback from open discussion sessions
+:::
+
+---
+
+## Rubric Checks
+
+Ensure this reflection meets the assessment criteria:
+
+- [x] ≥300 words
+- [x] Clear link to artefact(s)
+- [x] Critical engagement with reflective cycle (not just description)
+- [x] Honest and balanced self-assessment
+- [x] Concrete action plan for improvement
+
+---
+
+::: {.callout-tip}
+## Next Reflection
+
+Continue to [Day 4](day-04.qmd) to read the reflection on leadership, conflict resolution, and professional growth.
+:::

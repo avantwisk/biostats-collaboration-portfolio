@@ -1,0 +1,167 @@
+---
+title: "Reflection"
+subtitle: "Lessons Learned and Professional Growth"
+sidebar: internship
+---
+
+## Introduction
+
+Looking back on my three-month internship at Scigenix, I can see how transformative this experience has been for my professional development as a biostatistician. This reflection addresses what I learned, why this learning was significant, what I would have done differently, and the challenges I encountered along the way.
+
+---
+
+## What Did I Learn?
+
+### Technical Skills
+
+The internship solidified and extended my technical statistical knowledge in several ways:
+
+**Advanced Data Management**
+My coursework prepared me for analyzing clean datasets, but the internship taught me that data cleaning is often 50-70% of the work. I learned to handle complex data structures (hour-level vs. case-level data), parse messy text fields, and create reproducible data processing pipelines. The fresh gas flow project, in particular, taught me the value of thinking carefully about data structure before diving into analysis.
+
+**Production-Grade Programming**
+While I was comfortable with R programming from my coursework, the internship introduced me to software engineering principles for biostatistics. The `{golem}` framework for Shiny app development, the R package structure for analyses, and the rigorous version control practices at Scigenix showed me what it means to write code that others can trust and maintain years later.
+
+**Regulatory Standards**
+Perhaps the most unexpected learning area was the regulatory framework governing clinical research. CDISC standards, MedDRA coding, ICH guidelines—these were barely mentioned in my coursework but proved essential for clinical trial work. Annotating CRFs and developing the coding compliance module gave me practical insight into why these standards exist and how they protect patient safety.
+
+### Soft Skills
+
+If I'm honest, the soft skills I developed may prove more valuable than the technical ones:
+
+**Communication**
+I learned that explaining statistical concepts clearly is just as important as choosing the right analysis method. The job satisfaction project taught me that "the job is not complete until you can make it understandable." I practiced translating p-values and confidence intervals into language that clinicians could use to make decisions.
+
+**Project Management**
+Managing multiple projects simultaneously, setting weekly goals, tracking deliverables, and coordinating with diverse stakeholders taught me organizational skills that no coursework could provide. I learned to balance perfectionism with pragmatism—knowing when to refine an analysis further and when the current version is good enough to share.
+
+**Collaboration**
+The multidisciplinary nature of clinical research means constant collaboration with clinicians, data managers, medical writers, and regulatory specialists. I learned to listen more than I speak, to ask clarifying questions before assuming I understand the problem, and to appreciate that my statistical expertise is just one piece of the puzzle.
+
+**Resilience**
+Not every analysis goes smoothly. Data doesn't always behave as expected. Collaborators sometimes request changes that feel unnecessary. I learned to view setbacks as learning opportunities rather than failures, and to maintain professional composure even when frustrated.
+
+---
+
+## Why Was This Learning Significant?
+
+### Bridging the Theory-Practice Gap
+
+My MSc coursework provided an excellent theoretical foundation, but the internship showed me how to apply that knowledge in messy, real-world situations. Understanding the difference between statistical significance and clinical relevance, between a perfect analysis and a timely one, between what the textbook says and what actually works—these insights are what transform a student into a practitioner.
+
+### Understanding the Bigger Picture
+
+Before the internship, I thought about statistics in isolation—choose a test, run it, interpret the results. Now I understand that statistical analysis sits within a complex ecosystem: research ethics, regulatory requirements, patient safety, budget constraints, timeline pressures, and organizational politics. Seeing this broader context has made me a more thoughtful and effective biostatistician.
+
+### Career Direction
+
+The internship confirmed that I want to pursue a career in clinical research biostatistics. Seeing the tangible impact of statistical work on patient care—whether through the heart murmur study potentially improving pre-operative assessments or the fresh gas flow analysis contributing to environmental responsibility—gave me a sense of purpose that theoretical coursework couldn't provide.
+
+### Professional Identity
+
+I entered the internship as a student learning biostatistics. I'm leaving as a biostatistician who happens to still be completing formal studies. This shift in identity—from student to professional—may sound subtle, but it has profoundly affected how I approach problems, communicate with colleagues, and think about my career.
+
+---
+
+## What Would I Have Done Differently?
+
+### Earlier Engagement with Medical Terminology
+
+Looking back, I wish I had spent time before the internship familiarizing myself with basic medical terminology and clinical concepts. While I picked up necessary terms quickly during projects, having this foundation from the start would have made initial discussions more efficient and reduced the cognitive load when learning new statistical methods simultaneously.
+
+### More Proactive Questions
+
+In the early weeks, I sometimes hesitated to ask questions for fear of appearing incompetent. I now realize that asking clarifying questions early saves time later and demonstrates professional maturity rather than weakness. If I could do it again, I would be more proactive in seeking clarification when project requirements were ambiguous.
+
+### Systematic Documentation from Day One
+
+While I maintained good documentation throughout the internship, I wish I had been even more systematic from the beginning. Keeping a daily log of what I learned, challenges I faced, and solutions I discovered would have made this reflection easier to write and would provide valuable reference material for future projects.
+
+### Time Management for Reflective Practice
+
+The intensity of project work sometimes meant that reflection happened only when required (like for this portfolio). Building in regular time for reflection—perhaps 30 minutes every Friday afternoon—would have deepened my learning in real-time rather than retrospectively.
+
+---
+
+## Challenges Encountered and How I Handled Them
+
+### Challenge 1: Imposter Syndrome
+
+**The Challenge**: Especially in the first month, I felt overwhelmed by how much I didn't know. Experienced colleagues seemed to navigate complex regulatory requirements and statistical challenges effortlessly, while I struggled with basic concepts like CDISC domains.
+
+**How I Handled It**: I reminded myself that comparing my beginning to their middle wasn't fair. I focused on daily progress rather than absolute expertise. I also found that being honest about what I didn't know—rather than pretending—actually built trust with colleagues who appreciated my willingness to learn.
+
+**What I Learned**: Everyone was once a beginner. Expertise comes from experience, not from innate talent. Being comfortable with not knowing everything is actually a sign of professional maturity.
+
+### Challenge 2: Balancing Multiple Projects
+
+**The Challenge**: At one point, I was simultaneously working on the job satisfaction analysis, developing the Shiny app, and learning about manual edit checks. The context-switching was exhausting and I worried about doing justice to any single project.
+
+**How I Handled It**: I implemented time-blocking—dedicating specific days or half-days to specific projects rather than trying to make progress on everything simultaneously. I also communicated more proactively with my supervisor about realistic timelines.
+
+**What I Learned**: Saying no (or "not yet") is sometimes the most professional response. Clear communication about capacity prevents over-commitment and under-delivery.
+
+### Challenge 3: Technical Obstacles with Real Consequences
+
+**The Challenge**: When working on the manual edit checks, I encountered validation rules that seemed to produce false positives. Unlike coursework where errors are academic, these errors could delay a clinical trial or, worse, allow invalid data to proceed.
+
+**How I Handled It**: Rather than assuming my code was correct, I systematically tested edge cases, consulted documentation, and when still uncertain, brought specific examples to senior colleagues for review. I learned to value thoroughness over speed.
+
+**What I Learned**: In clinical research, being approximately right is not good enough. The stakes—patient safety, regulatory compliance, company reputation—demand precision. This isn't perfectionism; it's professionalism.
+
+### Challenge 4: Navigating Stakeholder Disagreements
+
+**The Challenge**: During the job satisfaction project meeting, the researcher and their supervisors had different views on how results should be presented. As the statistician, I was caught in the middle of competing preferences.
+
+**How I Handled It**: I focused on statistical principles and evidence-based practice rather than personal preferences. I provided options when multiple approaches were defensible, clearly explaining the trade-offs. I remained neutral and professional, positioning myself as an expert advisor rather than an advocate for any particular stakeholder.
+
+**What I Learned**: The statistician's role is often to facilitate evidence-based decision-making, not to make decisions unilaterally. Understanding group dynamics and maintaining professional neutrality are important skills.
+
+### Challenge 5: The Pace of Industry vs. Academia
+
+**The Challenge**: I was accustomed to academic timelines where thorough exploration of methods is valued. At Scigenix, project timelines were often tight, and "good enough" sometimes had to suffice when "perfect" wasn't feasible.
+
+**How I Handled It**: I learned to prioritize—which aspects of an analysis were critical to get exactly right (e.g., primary outcomes, regulatory requirements) vs. which were less critical (e.g., exploratory subgroup analyses). I also got better at scoping projects realistically upfront.
+
+**What I Learned**: Perfect is the enemy of good. In industry, delivering a solid analysis on time is more valuable than delivering a perfect analysis too late. This doesn't mean compromising on quality for core analyses, but it does mean being strategic about where to invest effort.
+
+---
+
+## Overall Reflections
+
+### The Most Important Lesson
+
+If I had to distill the internship into one lesson, it would be this: **Biostatistics is fundamentally a people discipline, not just a technical discipline.** The statistical methods matter, of course, but success depends on understanding what collaborators need, communicating clearly, managing expectations, and building trust. The best analysis in the world is worthless if you can't explain it in a way that enables decision-making.
+
+### Gratitude
+
+I am deeply grateful to Scigenix for taking a chance on a student with limited practical experience. The supportive culture, excellent mentorship from Dr. Swart and other colleagues, and the diversity of projects I was exposed to exceeded my expectations. The company's commitment to scientific excellence while maintaining a genuinely enjoyable work environment set a standard I will carry forward in my career.
+
+### Looking Forward
+
+As I complete my MSc and look toward my career, the internship has given me clarity about what I want from professional life:
+
+- Work that has tangible impact on patient care and public health
+- Collaborative environments where statistical expertise is valued and integrated into decision-making
+- Opportunities for continuous learning and technical growth
+- Organizations that balance scientific rigor with supportive culture
+
+I'm excited to take the skills, knowledge, and professional identity I've developed at Scigenix into the next chapter of my career.
+
+---
+
+::: {.callout-note}
+## Final Thought
+
+This internship has fundamentally shaped how I understand the role of a biostatistician in modern clinical research. It has prepared me not just with technical skills, but with the professional maturity, collaborative mindset, and practical wisdom needed to contribute meaningfully to improving human health through rigorous, ethical, and innovative research.
+:::
+
+<!-- TODO: Add any final personal reflections or acknowledgments -->
+
+---
+
+::: {.callout-tip}
+## Complete Internship Report
+
+You have now read the complete internship report. To explore my daily reflections on the module lectures, visit the [Module Reflections](../reflections/index.qmd) section.
+:::

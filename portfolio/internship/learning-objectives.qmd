@@ -1,0 +1,122 @@
+---
+title: "Learning Objectives"
+subtitle: "How I Met Module Outcomes Through Internship Activities"
+sidebar: internship
+---
+
+## Overview
+
+This section demonstrates how I achieved the learning outcomes of the Biostatistical Consulting & Collaboration module through specific internship activities and tasks at Scigenix.
+
+---
+
+## Matrix of Learning Outcomes and Tasks
+
+The table below maps specific learning outcomes to the various projects and activities I undertook during my internship. Each checkmark (✓) indicates that a particular learning outcome was addressed through that activity.
+
+| Learning Outcomes | Job Satisfaction Survey | Heart Murmurs Study | Fresh Gas Flow Analysis | Randomisation | Data Safety Committee | Quality Control | Annotated CRFs | Shiny App |
+|-------------------|:----------------------:|:-------------------:|:-----------------------:|:-------------:|:--------------------:|:---------------:|:--------------:|:---------:|
+| **Sample size determination**^d,g^ | | | | ✓ | | | | |
+| **Statistical Analysis Plan**^a,b,c,g^ | ✓ | ✓ | ✓ | ✓ | | ✓ | | |
+| **Formulating Research Questions**^b,d,g^ | ✓ | ✓ | ✓ | | | | | |
+| **Questionnaire design**^a,b,d^ | ✓ | ✓ | | | | | | |
+| **Formulating Study designs**^a,b,g^ | | | | ✓ | ✓ | | | |
+| **Communication – oral and written**^d^ | ✓ | ✓ | ✓ | | ✓ | ✓ | | ✓ |
+| **Research Ethics**^b^ | | | | ✓ | ✓ | | | |
+| **Data management**^e^ | ✓ | ✓ | ✓ | ✓ | | ✓ | ✓ | ✓ |
+| **Quality control**^e^ | ✓ | ✓ | ✓ | ✓ | | ✓ | ✓ | ✓ |
+| **Advanced statistical programming**^e,f^ | ✓ | ✓ | ✓ | ✓ | | | | ✓ |
+| **Collaboration**^a,b,c^ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **Consulting Skills**^a,b,c,d^ | ✓ | ✓ | ✓ | | | | | |
+| **Leadership skills**^b,c^ | ✓ | | | | | | | |
+| **Statistical analysis**^d,e^ | ✓ | ✓ | ✓ | | | | | |
+
+::: {.callout-note}
+### Learning Outcome Categories
+
+^a^ Communicate effectively about both statistical and medical/biological concepts
+^b^ Contribute to the design of research studies
+^c^ Develop data analysis plans
+^d^ Develop verbal and written skills
+^e^ Approach methodological challenges in special types of study designs
+^f^ Integrate statistical knowledge gained in other modules
+^g^ Connect research question and statistical methods
+:::
+
+---
+
+## How I Met Each Learning Outcome
+
+### Sample Size Determination
+
+Through my work on randomisation for clinical trials, I applied mock power calculations and sample size determination for RCTs. This helped me understand Type I and Type II errors and their practical implications in trial design. I learned to balance statistical power with practical constraints such as budget, timeline, and recruitment feasibility.
+
+### Statistical Analysis Plan Development
+
+I developed comprehensive analysis plans for multiple consultation projects, specifying primary and secondary outcomes, statistical methods, and approaches for handling missing data. This skill was particularly important for ensuring reproducibility and transparency in research findings.
+
+### Formulating Research Questions
+
+I worked closely with clinical researchers to translate their clinical problems into testable statistical hypotheses. This required ensuring that research questions were specific, measurable, and aligned with available data. The job satisfaction survey and heart murmur studies provided excellent opportunities to practice this skill.
+
+### Questionnaire Design
+
+I gained experience working with validated instruments like the Minnesota Satisfaction Questionnaire (MSQ) and contributed to the design of the MurmurQuiz. This taught me about Likert scales, response bias, and validation measures—critical considerations for reliable data collection.
+
+### Formulating Study Designs
+
+My contributions to RCT design through randomisation schedules helped me understand the importance of proper study design. I also gained insight into cross-sectional and observational study limitations through the consultation projects.
+
+### Communication – Oral and Written
+
+Throughout my internship, I regularly presented findings to multidisciplinary teams and wrote analysis reports that translated complex statistics for clinical audiences. This was perhaps the most frequently exercised skill, as every project required clear communication with non-statistical stakeholders.
+
+### Research Ethics
+
+My participation in the Data Safety Committee and completion of Good Clinical Practice (GCP) training deepened my understanding of the Declaration of Helsinki principles in practice. I learned that ethical research practices form the foundation upon which all clinical research must be built.
+
+### Data Management
+
+I performed extensive data cleaning in R and managed complex datasets with both hour-level and case-level data structures. Creating reproducible workflows was essential for maintaining data integrity and enabling quality control.
+
+### Quality Control
+
+I implemented peer review processes using Excel checklists for QC and ensured regulatory compliance in all outputs. This taught me that producing statistically valid results is only part of the job—communicating them clearly and accurately is equally critical.
+
+### Advanced Statistical Programming
+
+I developed R packages for analyses, created automated reporting systems, and implemented complex data transformations and modeling. The Shiny app development project, in particular, challenged me to integrate multiple programming skills to create a production-ready tool.
+
+### Collaboration
+
+Working effectively within multidisciplinary teams including clinicians, data managers, and regulatory specialists was a daily requirement. I learned the importance of listening, asking clarifying questions, and finding common ground when technical and clinical perspectives diverged.
+
+### Consulting Skills
+
+I led consultation meetings, translated clinical questions into statistical problems, and provided actionable recommendations. The mock consultation from the BC module prepared me well, but real-world consultations taught me that flexibility and patience are just as important as technical expertise.
+
+### Leadership Skills
+
+On the job satisfaction survey project, I took ownership of the analysis, managed project timelines, and coordinated with multiple stakeholders. This experience showed me that leadership in biostatistics often means guiding the analytical process while empowering collaborators to make informed decisions.
+
+### Statistical Analysis
+
+I applied a wide range of statistical methods including ordinal logistic regression, generalized linear models (GLMs) for the fresh gas flow analysis, and factor analysis. Managing Likert scale data taught me the importance of choosing appropriate methods for the data structure and research question.
+
+---
+
+## Reflection on Learning Integration
+
+The internship demonstrated how interconnected these learning outcomes are in practice. A single project often required simultaneously applying multiple skills—from study design and data management to analysis, communication, and collaboration.
+
+The most important lesson I learned is that technical statistical expertise must be paired with strong soft skills. The ability to communicate clearly, collaborate effectively, and manage projects efficiently is what transforms a statistician into an effective biostatistical consultant.
+
+<!-- TODO: Add any additional reflections on specific learning outcomes that were particularly challenging or rewarding -->
+
+---
+
+::: {.callout-tip}
+## Next Section
+
+Proceed to [Relation to Coursework](relation-to-coursework.qmd) to see how these internship activities connected to my MSc Biostatistics modules.
+:::

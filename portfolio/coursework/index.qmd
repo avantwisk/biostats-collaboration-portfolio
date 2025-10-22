@@ -1,0 +1,206 @@
+---
+title: "Coursework"
+subtitle: "Overview of MSc Biostatistics Curriculum and Module Integration"
+---
+
+## Overview
+
+This section provides an overview of the MSc Biostatistics programme structure and explains how the Biostatistical Consulting & Collaboration module integrates with and builds upon other modules in the curriculum.
+
+---
+
+## MSc Biostatistics Programme Structure
+
+The MSc Biostatistics programme at Stellenbosch University is designed to provide both theoretical foundations and practical skills for a career in biostatistics.
+
+### Year 1: Foundational and Advanced Coursework
+
+<!-- TODO: List your Year 1 modules -->
+
+**First Semester:**
+- TODO: Module name and brief description
+- TODO: Module name and brief description
+- TODO: Module name and brief description
+
+**Second Semester:**
+- TODO: Module name and brief description
+- TODO: Module name and brief description
+- TODO: Module name and brief description
+
+### Year 2: Specialization and Applied Work
+
+**Modules:**
+- Biostatistical Consulting & Collaboration
+- TODO: Other Year 2 modules
+- Thesis/Research Project
+
+---
+
+## Key Modules and Their Relevance to Consulting
+
+### Principles of Statistical Inference
+
+<!-- TODO: Describe how this module relates to consulting work -->
+
+**Key concepts:**
+- TODO: List key concepts learned
+- TODO: Hypothesis testing, Type I/II errors, power
+
+**Application in consulting:**
+- TODO: How these concepts were applied in internship
+- TODO: Examples from consultation projects
+
+---
+
+### Design and Analysis of Clinical Trials
+
+<!-- TODO: Describe module and relevance -->
+
+**Key concepts:**
+- TODO: RCT design, blinding, randomisation
+- TODO: Intention-to-treat analysis
+- TODO: etc.
+
+**Application in consulting:**
+- TODO: Examples from internship (randomisation, DSMC)
+
+---
+
+### Fundamentals of Epidemiology
+
+<!-- TODO: Describe module and relevance -->
+
+**Key concepts:**
+- TODO: Study designs, bias, confounding
+- TODO: Effect modification
+- TODO: etc.
+
+**Application in consulting:**
+- TODO: Examples from consultation projects
+
+---
+
+### Data Management & Statistical Computing
+
+<!-- TODO: Describe module and relevance -->
+
+**Key concepts:**
+- TODO: Reproducible research
+- TODO: Version control, R programming
+- TODO: etc.
+
+**Application in consulting:**
+- TODO: Examples of reproducible workflows at Scigenix
+
+---
+
+### Linear Models
+
+<!-- TODO: Describe module and relevance -->
+
+**Key concepts:**
+- TODO: Regression, ANOVA
+- TODO: Model assumptions, diagnostics
+- TODO: etc.
+
+**Application in consulting:**
+- TODO: Examples from consultation projects
+
+---
+
+### Categorical Data Analysis & GLMs
+
+<!-- TODO: Describe module and relevance -->
+
+**Key concepts:**
+- TODO: Logistic regression, ordinal regression
+- TODO: Poisson regression, GLMs
+- TODO: etc.
+
+**Application in consulting:**
+- TODO: Examples (job satisfaction survey, etc.)
+
+---
+
+### Longitudinal Data Analysis
+
+<!-- TODO: Describe module and relevance -->
+
+**Key concepts:**
+- TODO: Repeated measures
+- TODO: Mixed models
+- TODO: etc.
+
+**Application in consulting:**
+- TODO: Examples from internship or future applications
+
+---
+
+### Analysis of Survival Data
+
+<!-- TODO: Describe module and relevance -->
+
+**Key concepts:**
+- TODO: Kaplan-Meier curves
+- TODO: Cox regression
+- TODO: etc.
+
+**Application in consulting:**
+- TODO: Examples or potential applications
+
+---
+
+## Integration: Theory Meets Practice
+
+<!-- TODO: Write 2-3 paragraphs discussing how the BC module integrated knowledge from other modules -->
+
+TODO: Discuss:
+
+- How the BC module required simultaneous application of knowledge from multiple modules
+- Examples of integrating theoretical knowledge (e.g., regression from Linear Models) with practical skills (e.g., communication from BC module)
+- How the internship experience showed the importance of broad statistical knowledge
+- The gap between textbook examples and real-world applications
+
+---
+
+## Coursework Portfolio
+
+<!-- TODO: If desired, link to or describe major assignments/projects from other modules -->
+
+**Major Projects:**
+
+1. TODO: Title of project (Module name)
+   - Brief description
+   - Skills developed
+   - Relevance to consulting
+
+2. TODO: Title of project (Module name)
+   - Brief description
+   - Skills developed
+   - Relevance to consulting
+
+3. TODO: Title of project (Module name)
+   - Brief description
+   - Skills developed
+   - Relevance to consulting
+
+---
+
+::: {.callout-note}
+## Continuous Learning
+
+The MSc Biostatistics programme provided an excellent foundation, but professional development is ongoing. The internship and BC module highlighted areas for continued learning, including:
+
+- TODO: Regulatory knowledge (ICH guidelines, CDISC standards)
+- TODO: Advanced software engineering for biostatistics
+- TODO: Deeper medical/clinical knowledge
+- TODO: Other areas identified
+:::
+
+---
+
+::: {.callout-tip}
+## Related Sections
+
+- See [Relation to Coursework](../internship/relation-to-coursework.qmd) in the Internship Report for detailed mapping of internship tasks to modules
+:::

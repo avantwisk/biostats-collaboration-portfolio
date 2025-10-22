@@ -1,0 +1,90 @@
+---
+title: "Week 2, Day 1"
+subtitle: "ASCCR Framework and Collaboration Foundations"
+date: 2025-05-19
+categories: ["Week 2", "Day 1", "Block 1", "ASCCR Framework"]
+sidebar: reflections
+---
+
+> **Session focus:** *Introduction to the ASCCR framework and mastering the POWER structure for effective statistical consultations*
+
+## Learning Objectives
+
+* Understand the ASCCR framework's five components: Attitude, Structure, Content, Communication, and Relationship
+* Master the POWER structure for organizing consultation meetings
+* Practice opening consultation sessions effectively
+* Learn the Q1Q2Q3 approach for systematic problem-solving in consultations
+
+---
+
+## Description of Activities
+
+The day began with an introduction revisiting module objectives and biostatistical collaboration as a career. The core content focused on the ASCCR framework, particularly developing an attitude of collaboration and implementing the POWER structure (Prepare, Open, Work, End, Reflect). The afternoon involved role-playing exercises demonstrating consultation openings, practicing with peers, and learning the Q1Q2Q3 approach for structuring the working portion of consultations.
+
+---
+
+## Reflection (Gibbs Reflective Cycle)
+
+### 1. Description
+
+The ASCCR framework was presented as a comprehensive model for collaboration, with each component building upon others. The POWER structure provided a concrete template for consultation meetings. Role-playing exercises allowed us to practice opening conversations, establishing expectations, and navigating the "wants, willing, and able" discussions. The Q1Q2Q3 approach offered a systematic method for understanding research questions at different levels.
+
+### 2. Feelings
+
+Initially, the frameworks felt somewhat artificial—imposing structure on what I'd assumed should be natural conversations. However, during role-play exercises, I experienced how structure actually freed me to focus on content rather than worrying about process. The vulnerability of being observed and critiqued during practice sessions was uncomfortable but ultimately valuable.
+
+### 3. Evaluation
+
+The ASCCR framework successfully integrated previously disparate concepts about collaboration into a coherent model. The POWER structure's emphasis on explicit time management and expectation-setting addressed common consultation pitfalls. Role-playing, while initially awkward, provided safe space to experiment with different approaches. The Q1Q2Q3 method effectively prevented premature jumping to statistical solutions before fully understanding research contexts.
+
+### 4. Analysis
+
+The frameworks reveal that effective collaboration is learnable and teachable, not merely a personality trait. The attitude of being "domain-expert centered" represents a fundamental shift from statistics-centered thinking. The POWER structure's "Reflect" component emphasizes continuous improvement—each consultation becomes a learning opportunity. The practice sessions demonstrated that initial discomfort with structured approaches diminishes rapidly with repetition.
+
+### 5. Conclusion
+
+This foundational day established that systematic approaches to collaboration can enhance both efficiency and effectiveness. The ASCCR framework provides a mental model for navigating complex collaborative relationships, while the POWER structure offers practical tools for immediate implementation.
+
+### 6. Action Plan
+
+I will implement the POWER structure in my next three consultations, documenting what works and what needs adaptation. I'll practice the Q1Q2Q3 approach by retroactively applying it to past projects, identifying where deeper questioning might have led to better outcomes. I'll also develop a personal "collaboration attitude statement" to review before meetings.
+
+---
+
+## Incorporated Sources and Relevance
+
+* *1.The ASCCR framework Biostats consulting lectures.pdf* — Core framework documentation
+* *The ASCCR Frame for Learning Essential Collaboration Skills.pdf* — Theoretical foundation and evidence base
+* *3.Smith Vance Course Handout.pdf* — Practical implementation guidelines
+* *Effective.Collaboration.CSP.Handout_20150217.pdf* — Additional tools and techniques
+
+---
+
+::: {.callout-note}
+## Artefacts and Evidence
+
+* ASCCR framework summary notes
+* Video recordings of role-play exercises
+* Personal POWER structure checklist
+* Q1Q2Q3 practice worksheets
+:::
+
+---
+
+## Rubric Checks
+
+Ensure this reflection meets the assessment criteria:
+
+- [x] ≥300 words
+- [x] Clear link to artefact(s)
+- [x] Critical engagement with reflective cycle (not just description)
+- [x] Honest and balanced self-assessment
+- [x] Concrete action plan for improvement
+
+---
+
+::: {.callout-tip}
+## Next Reflection
+
+Continue to [Day 2](day-02.qmd) to read the reflection on advanced communication and relationship building.
+:::

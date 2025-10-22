@@ -1,0 +1,307 @@
+---
+title: "Work Outputs"
+subtitle: "Consultation Projects and Clinical Research Activities"
+sidebar: internship
+---
+
+## Overview
+
+During my internship at Scigenix, I contributed to a diverse range of projects spanning statistical consultation, clinical trial support, and software development. This section provides detailed descriptions of each project, highlighting my specific contributions and the skills I developed.
+
+---
+
+# Consultation Projects
+
+## 1. Job Satisfaction Survey Analysis
+
+### Project Overview
+
+One of the main statistical consulting projects I worked on during my internship involved analysing a job satisfaction survey among anaesthesia consultants and registrars in South Africa. The purpose of the study was to assess key domains of job satisfaction using the Minnesota Satisfaction Questionnaire (MSQ). We also wanted to explore how satisfaction, demographic variables, and respondents' intention to leave their current post were associated.
+
+### My Responsibilities
+
+My responsibilities covered the full spectrum of statistical support:
+
+- **Data Management**: Imported raw Excel data into R, cleaned and recoded over sixty variables, with particular attention to managing Likert-scale responses, multi-select questions, and missing values
+- **Psychometric Assessment**: Implemented scoring framework for MSQ capturing intrinsic, extrinsic, and general satisfaction domains; assessed internal consistency using Cronbach's alpha; conducted exploratory factor analysis to examine dimensional structure
+- **Statistical Analysis**: Used both parametric and non-parametric methods to compare satisfaction scores between consultants and registrars; employed ordinal logistic regression to model intention to leave as a function of demographic predictors
+- **Reporting**: Produced comprehensive demographic tables, publication-quality summary tables, and clear visualizations (histograms, boxplots, and Likert plots)
+
+### Key Challenges and Learning
+
+A key outcome of the study was to determine whether factors like age and gender were associated with anaesthesiologists' intention to leave. I used ordinal logistic regression for this. While the computational aspects in R were familiar, interpreting the results in understandable language proved challenging, particularly since this method was new to me. My supervisor encouraged me to make the findings understandable to clinicians. After several attempts, I learned a valuable lesson: **"the job is not complete until you can make it understandable."**
+
+### Consultation Meeting Experience
+
+This project involved a meeting with the researcher, their two supervisors, and my internship supervisor. Having completed a mock consultation for my degree's Biostatistical Consulting module, I felt prepared, but the reality was different. I spent the day expecting questions about the regression or ANOVA results. However, much of the 80-minute meeting focused on stylistic aspects of the report, such as adjusting axis font sizes on graphs or selecting density plots instead of histograms.
+
+This experience exposed me to the realities of working within a multidisciplinary team. I realised that much of my time would be spent refining report details to ensure clarity and acceptability for journal submission, rather than focusing solely on statistical analysis. While this initially felt frustrating, I grew to appreciate the collaborative process of generating new knowledge.
+
+### Skills Developed
+
+- Project management (weekly goal-setting for data cleaning and analysis)
+- Independent research on best practices for interpreting ordinal logistic regression
+- Personal quality control and document tracking
+- Regular communication with team members to keep project on track
+
+---
+
+## 2. Can Anaesthesiology Trainees Distinguish Between Different Heart Murmurs?
+
+### Project Overview
+
+This cross-sectional study investigated whether anaesthesiology trainees could distinguish between benign and pathologic paediatric heart murmurs using pre-recorded audio clips. The project addressed the ability of anaesthetists to identify pathologic murmurs during pre-operative assessments, which directly affects patient safety and theatre efficiency. Participants completed a 20-question online test (MurmurQuiz) and provided background information relating to their clinical experience.
+
+### My Responsibilities
+
+- **Data Management**: Developed a modular, reproducible codebase in R that processed raw quiz results and survey data, performed data cleaning, derived performance classifications, and merged relevant covariates
+- **Descriptive Analysis**: Produced visual summaries (boxplots) and descriptive tables to explore patterns in test accuracy across experience-related factors
+- **Regression Modeling**: Conducted both univariate and multivariable logistic regression analyses to assess associations between clinical experience and murmur recognition performance
+- **Reporting**: Summarized models in well-formatted tables using the `gtsummary` package, enabling easy interpretation by non-statistical stakeholders
+
+### Personal Significance
+
+I found this project particularly rewarding since it had undertones of educational research—the overarching theme was to determine how capable trainees are at doing routine yet incredibly important tasks. Beyond this, the fact that the work was focused on paediatric patients specifically gave me a sense of personal satisfaction knowing that the work I was doing could have real-world impact on quality of care provided to some of our most vulnerable patients.
+
+### Skills Developed
+
+- Development of modular, reproducible analytical code
+- Integration of data from multiple sources (quiz performance and demographic surveys)
+- Application of logistic regression for educational research questions
+- Creation of stakeholder-friendly reports using modern R packages
+
+---
+
+## 3. Analysis of Fresh Gas Flow Rates
+
+### Project Overview
+
+The "Analysis of Fresh Gas Flow Rates and its Effect on Consumption and Cost of Inhalational Anaesthetic Agents in a Tertiary Academic Hospital in Pretoria" was both one of the most challenging and impactful projects of my internship. Motivated by the growing recognition of climate change and healthcare's responsibility to address its environmental footprint, this study aimed to examine current anaesthetic practices—specifically, the use of volatile inhalational agents and nitrous oxide, both notable greenhouse gases.
+
+### Data Structure Challenges
+
+Initial data cleaning was challenging due to the large volume of data that needed analysis. The raw dataset had information at various levels: one set at the case level and another at the hour level. To streamline the workflow and align with the study's objectives, I created two separate datasets—one representing each level—before "mapping" variables between them.
+
+A particular obstacle related to how clinicians were represented in the original files. Instead of having each clinician in a separate column, the data stored all names for a given case in a single cell, separated by commas. To address this, I wrote a script in R that parsed the clinician column, split the names by commas, and assigned each name to a new column.
+
+### Statistical Approach
+
+After cleaning and restructuring the data, I matched variables across the two datasets to facilitate analysis—a process familiar from the statistical programming workflows used in clinical trials. The analysis included:
+
+- Calculating summary statistics
+- Generating visualizations
+- Applying a generalized linear model to account for clinicians who worked on multiple cases
+
+### Impact and Insights
+
+This project highlighted the importance of meticulous data cleaning and documentation, as well as the value of robust, reproducible code for complex analyses. Importantly, by identifying patterns in anaesthetic agent usage and their associated costs, the findings offer actionable insights that could help reduce the hospital's carbon footprint and promote environmentally responsible healthcare practices.
+
+### Skills Developed
+
+- Advanced data restructuring and manipulation in R
+- String parsing and data extraction from complex formats
+- Generalized linear modeling for clustered data
+- Environmental impact assessment in healthcare settings
+
+---
+
+# Clinical Research and Related Work
+
+## 4. Randomisation
+
+### Overview
+
+As the name suggests, randomisation is a principal component of any Randomised Controlled Trial (RCT). Randomly assigning treatment ensures that a participant's potential health outcomes do not influence the allocation process. This approach makes the treatment groups comparable on average, even with respect to unmeasured confounders. Consequently, comparing outcomes by assigned group yields an unbiased estimate of the treatment's causal effect.
+
+### My Contribution
+
+Being asked to prepare a randomisation schedule was an exciting opportunity, particularly as the topic had not been covered in depth during my MSc. Completing this task gave me a keen sense of accomplishment, as it marked my first concrete contribution to a clinical trial.
+
+### Technical Implementation
+
+An especially interesting aspect was the division of the process into two stages:
+
+1. **Mock Randomisation**: Employed a fixed random seed to ensure reproducibility for validation purposes
+2. **Final Randomisation**: Used a randomly selected seed between 1 and 2 million (excluding the mock seed) to generate the actual allocation sequence
+
+While these were mathematically and programmatically identical, this two-stage process ensured both reproducibility (for quality control) and true randomness (for the actual trial).
+
+### Skills Developed
+
+- Understanding of different randomisation methods (simple, blocked, stratified)
+- Programming techniques in R to ensure true randomness
+- Regulatory procedures for generating and documenting randomisation sequences
+- Appreciation for the rigour needed in clinical trials
+
+---
+
+## 5. Data Safety Committee
+
+### Background and Motivation
+
+I am particularly interested in the crucial role that ethics plays in clinical research. Since beginning my journey in public health, I have come to regard ethical research practices as a fundamental part upon which the entire research process is built. I dedicated many hours to understanding the Declaration of Helsinki, the lasting infamy of the Tuskegee Syphilis Study, and the role of safety review committees in clinical trials.
+
+### Scigenix's Commitment to Ethics
+
+This emphasis on ethics became especially clear during my internship at Scigenix. From the start, Scigenix demonstrated a deep commitment to patient wellbeing. I was encouraged to approach the clinical research process holistically, always remembering that our goal is to improve people's lives. In biostatistics, our work is often far removed from patients—both physically and metaphorically—which can make it easy to forget the individuals behind the numbers and graphs. To address this, the company enrolled all staff in an intensive Good Clinical Practice (GCP) training course.
+
+### Data Safety Committee Meeting
+
+One of my goals going into this internship was to attend a Data Safety Review Committee meeting. These committees are tasked with scrutinising clinical trial conduct, evaluating results, and safeguarding patient safety. Although they play an integral role in research, many young biostatisticians perceive them as mysterious, since participating requires substantial clinical trial experience.
+
+While the meeting itself was strictly confidential, I was able to see firsthand that there was zero tolerance for anything that might put study participants at risk. Notably, I found it interesting that decisions on whether to continue a study were made formally through voting.
+
+### Learning Outcomes
+
+- Understanding of the role and function of Data Safety Monitoring Boards
+- Appreciation for the ethical responsibilities of biostatisticians
+- Insight into formal decision-making processes in clinical trials
+- Reinforcement of patient-centered approach to research
+
+---
+
+## 6. Quality Control
+
+### The Standard of Excellence
+
+In clinical research, the expectation is that all work produced, whether statistical outputs, tables, figures, or reports, is of the highest standard and as close to flawless as possible. This standard is not simply aspirational but essential, given the regulatory and ethical stakes involved in trial reporting.
+
+### QC Process Implementation
+
+To achieve this level of rigour, we employed a structured quality control process grounded in peer review and accountability. Specifically, we used a comprehensive checklist system developed in Excel, where team members took responsibility for reviewing a colleague's work line by line.
+
+Each item on the checklist targeted a specific aspect of quality:
+
+- Correct application of statistical methods
+- Alignment between R outputs and their presentation in Word
+- Compliance with pre-specified templates and reporting conventions
+
+No detail was considered too minor to call for attention. Stylistic consistency such as the use of decimal points, abbreviations, and font sizing was meticulously checked. Figures were assessed for readability, clarity, and adherence to visual standards. Even elements like axis labels, colour schemes, and legend placement were scrutinised to ensure they communicated information effectively and professionally.
+
+### Insights Gained
+
+This process highlighted the importance of collaborative vigilance and instilled in me a deep respect for the behind-the-scenes discipline that underpins transparent and reproducible research. It also reinforced the notion that producing statistically valid results is only one part of the job—communicating them clearly and accurately is equally critical.
+
+---
+
+## 7. Annotated Case Report Forms
+
+### Introduction to CDISC Standards
+
+One of the most eye-opening tasks during my internship was working on annotated Case Report Forms (CRFs). Before starting this work, I had only a theoretical understanding of how clinical trial data gets organized and standardized. What I discovered was a world of detail that makes my earlier coursework seem refreshingly straightforward by comparison.
+
+### The Task
+
+The basic premise seemed simple enough: take the forms used to collect patient data during clinical trials and figure out where each piece of information should go according to CDISC SDTM (Study Data Tabulation Model) standards. In practice, this meant looking at everything from basic demographic questions to complex adverse event reporting and deciding which standardized "domain" each variable belonged to.
+
+### The Complexity
+
+Working through these domain mappings quickly taught me that what appears obvious often is not. A simple question about a patient's medical history might seem like it clearly belongs in the Medical History (MH) domain, but depending on when it was collected and how it relates to the study, it could potentially fit elsewhere. I found myself constantly referring to CDISC implementation guides, trying to decode the logic behind these classification systems.
+
+### Broader Impact
+
+What struck me most about this experience was how it illuminated the incredible infrastructure supporting modern clinical research. Before this internship, I understood clinical trials primarily through the lens of statistical analysis. Working on CRF annotations revealed the enormous effort required just to ensure that data can be collected, organized, and submitted in ways that regulatory agencies can review and approve.
+
+This work also gave me a new appreciation for the tedious regulatory requirements that govern clinical research. What initially appeared to be bureaucratic complications revealed themselves as essential safeguards ensuring that clinical trial data can be trusted, compared across studies, and used to make important decisions about drug safety and efficacy.
+
+---
+
+## 8. Manual Edit Checks
+
+### Overview
+
+One of the most involved experiences during my internship involved working on the Manual Edit Check (MEC) process for a clinical trial. What initially appeared to be a straightforward data validation exercise quickly revealed itself as a sophisticated quality assurance framework that underpins the integrity of clinical research.
+
+### Scope of the MEC Process
+
+The MEC process for the study encompassed **134 unique validation rules** spanning the entire clinical data lifecycle. These checks were systematically categorized into:
+
+- **Clinical (CLIN) checks**: Focused on clinical logic and medical plausibility
+- **Listing (LIS) checks**: Focused on data completeness and consistency
+
+The checks covered fifty-seven different Case Report Forms across thirty-four visit contexts from initial screening through study completion. The sheer scope of this validation framework was initially overwhelming, particularly given that my earlier exposure to data quality control had been limited to basic data cleaning exercises in coursework.
+
+### Technical Implementation
+
+My primary responsibility involved implementing and refining the R-based validation framework that executed these checks automatically. Each validation rule required translation into a dedicated R function that would examine specific data elements and return standardized results:
+
+- **PASS**: Data meeting all criteria
+- **FAIL**: Definitive errors requiring correction
+- **REVIEW**: Cases demanding manual evaluation and clinical judgment
+
+### Complex Validation Logic
+
+The most intellectually stimulating aspect was working with the Inclusion/Exclusion criteria checks, which included thirty of the total validation rules. These checks required sophisticated logic to manage scenarios such as specific medical events during the study period—cases where participants initially meeting eligibility criteria might experience status changes that affected their continued participation.
+
+The cross-form validation components proved particularly challenging, as they demanded integration of data from multiple CRF domains to ensure consistency. For instance, confirming that adverse event onset dates aligned with visit dates required matching temporal data across different forms while accounting for potential data entry variations and protocol-defined visit windows.
+
+### Impact on Understanding
+
+Working on this project fundamentally changed my appreciation for the infrastructure supporting clinical research. Before this experience, I understood clinical trials primarily through the lens of statistical analysis and study design. The MEC process revealed the enormous effort needed to ensure that data can be trusted for regulatory submissions—an aspect of biostatistical work that receives little attention in academic coursework but proves essential in practice.
+
+---
+
+## 9. Shiny App Development
+
+### Project Overview
+
+During the latter phase of my internship, I undertook what would become one of the most technically challenging and professionally rewarding projects: developing a production-grade Shiny application for comparing clinical trial datasets and validating medical coding compliance.
+
+### Business Need
+
+This project emerged from a dual need within Scigenix's quality assurance workflow:
+
+1. **Data Validation**: The ability to efficiently validate data consistency across various stages of clinical trial data processing, particularly during database lock procedures that precede regulatory submissions
+2. **Coding Compliance**: Ensuring accurate medical coding using current MedDRA (Medical Dictionary for Regulatory Activities) and WHO Drug Dictionary terms
+
+### Technical Architecture
+
+The application's core functionality centred on two complementary validation processes:
+
+#### Dataset Comparison Module
+
+- Implemented using the `Arsenal` package's `comparedf()` function in R
+- Designed to identify discrepancies that could affect trial integrity
+- Capable of handling large clinical datasets with multiple data domains
+
+#### Coding Checks Module
+
+- Validates medical terminology across three critical domains:
+  - **Adverse Events (AE)**
+  - **Medical History (MH)**
+  - **Concomitant Medications (CM)**
+- Ensures all medical terms coded using current dictionary versions
+- Validates LLT_CURRENCY (Lowest Level Term Currency) to guarantee regulatory compliance with MedDRA standards
+
+### Development Approach
+
+My approach to development followed the `{golem}` framework, an R package that simplifies the creation and deployment of production-ready Shiny apps. I came to appreciate this framework for its emphasis on:
+
+- Production readiness
+- Software development best practices
+- Modular architecture
+
+I structured the full application using smaller Shiny "modules"—one for data comparison and another for coding checks—a process akin to "eating an elephant bit-by-bit." The coding module required particular attention to dictionary management, as it needed to interface with multiple MedDRA versions and WHO Drug dictionaries stored on the company's SharePoint system.
+
+### Lessons Learned
+
+Reflecting on this experience, I realize how it synthesized everything I had learned during my MSc while simultaneously exposing me to entirely new domains of knowledge. The project required not just statistical and programming expertise, but also an understanding of:
+
+- Clinical research processes
+- Medical coding standards
+- Regulatory requirements
+- Enterprise software development practices
+
+The gap between academic programming and production-grade software became starkly apparent. Where my coursework emphasized getting the right answer, this project demanded getting the right answer **reliably, reproducibly, and verifiably**, with comprehensive documentation of every decision.
+
+### Impact
+
+The most valuable lesson from this project was understanding how biostatisticians can contribute beyond traditional analysis roles. By developing tools that enhance both data quality and coding compliance while streamlining validation processes, we can multiply our impact across entire research programs. This application will save Scigenix several hours per study in data validation and coding verification time while reducing error rates—a tangible contribution to improving clinical research efficiency and regulatory compliance.
+
+---
+
+::: {.callout-tip}
+## Next Section
+
+Proceed to [Reflection](reflection.qmd) to read my overall reflections on the internship experience and what I learned about being a biostatistician.
+:::
