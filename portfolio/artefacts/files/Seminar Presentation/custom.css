@@ -1,0 +1,575 @@
+/* custom.css
+ * Custom styling for ADEMP presentation
+ * Author: Alexander van Twisk
+ */
+
+/* Color definitions */
+:root {
+  --primary: #2C3E50;
+  --secondary: #3498DB;
+  --success: #27AE60;
+  --warning: #F39C12;
+  --danger: #E74C3C;
+  --info: #16A085;
+  --light: #ECF0F1;
+  --dark: #34495E;
+}
+
+/* Global styles */
+.reveal {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5em;
+  color: var(--dark);
+}
+
+/* Headings */
+.reveal h1, 
+.reveal h2, 
+.reveal h3, 
+.reveal h4, 
+.reveal h5, 
+.reveal h6 {
+  color: var(--primary);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.reveal h1 {
+  font-size: 2.5em;
+  text-transform: none;
+}
+
+.reveal h2 {
+  font-size: 1.8em;
+}
+
+.reveal h3 {
+  font-size: 1.4em;
+}
+
+/* Links */
+.reveal a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.reveal a:hover {
+  color: #5DADE2;
+  text-decoration: underline;
+}
+
+/* Code */
+.reveal code {
+  font-family: "Fira Code", "Courier New", monospace;
+  background: rgba(236, 240, 241, 0.5);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: var(--danger);
+}
+
+.reveal pre {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.reveal pre code {
+  background: transparent;
+  padding: 0;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+/* Tables */
+.reveal table {
+  margin: 1em auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.reveal table thead {
+  background: var(--primary);
+  color: white;
+}
+
+.reveal table thead th {
+  padding: 0.75em 1em;
+  text-align: left;
+  font-weight: 600;
+  color: white !important;
+}
+
+.reveal table tbody tr:nth-child(odd) {
+  background: rgba(236, 240, 241, 0.3);
+}
+
+.reveal table tbody tr:hover {
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.reveal table tbody td {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid rgba(52, 73, 94, 0.1);
+}
+
+/* Lists */
+.reveal ul, 
+.reveal ol {
+  display: block;
+  margin-left: 1em;
+}
+
+.reveal li {
+  margin-bottom: 0.5em;
+  line-height: 1.4;
+}
+
+/* Blockquotes */
+.reveal blockquote {
+  border-left: 4px solid var(--secondary);
+  padding-left: 1em;
+  margin: 1em 0;
+  font-style: italic;
+  color: #5D6D7E;
+}
+
+/* Fragments */
+.reveal .fragment.highlight-current-blue.current-fragment {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.reveal .fragment.fade-in-then-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.reveal .fragment.fade-in-then-out.current-fragment {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Progress bar */
+.reveal .progress {
+  color: var(--secondary);
+  height: 4px;
+}
+
+.reveal .progress span {
+  background: var(--secondary);
+}
+
+/* Slide numbers */
+.reveal .slide-number {
+  background: rgba(44, 62, 80, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.7em;
+}
+
+/* Controls */
+.reveal .controls {
+  color: var(--secondary);
+}
+
+.reveal .controls button:hover {
+  color: #5DADE2;
+}
+
+/* Custom callout classes */
+.callout {
+  margin: 1em 0;
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  border-left: 5px solid;
+}
+
+.callout-note {
+  background: rgba(22, 160, 133, 0.1);
+  border-color: var(--info);
+}
+
+.callout-note h3,
+.callout-note .callout-title {
+  color: var(--info);
+}
+
+.callout-tip {
+  background: rgba(39, 174, 96, 0.1);
+  border-color: var(--success);
+}
+
+.callout-tip h3,
+.callout-tip .callout-title {
+  color: var(--success);
+}
+
+.callout-warning {
+  background: rgba(243, 156, 18, 0.1);
+  border-color: var(--warning);
+}
+
+.callout-warning h3,
+.callout-warning .callout-title {
+  color: var(--warning);
+}
+
+.callout-important {
+  background: rgba(231, 76, 60, 0.1);
+  border-color: var(--danger);
+}
+
+.callout-important h3,
+.callout-important .callout-title {
+  color: var(--danger);
+}
+
+.callout-success {
+  background: rgba(39, 174, 96, 0.1);
+  border-color: var(--success);
+}
+
+.callout-success h3,
+.callout-success .callout-title {
+  color: var(--success);
+}
+
+/* Text utilities */
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.text-info {
+  color: var(--info) !important;
+}
+
+/* Spacing utilities */
+.mt-1 { margin-top: 0.25rem !important; }
+.mt-2 { margin-top: 0.5rem !important; }
+.mt-3 { margin-top: 1rem !important; }
+.mt-4 { margin-top: 1.5rem !important; }
+.mt-5 { margin-top: 3rem !important; }
+
+.mb-1 { margin-bottom: 0.25rem !important; }
+.mb-2 { margin-bottom: 0.5rem !important; }
+.mb-3 { margin-bottom: 1rem !important; }
+.mb-4 { margin-bottom: 1.5rem !important; }
+.mb-5 { margin-bottom: 3rem !important; }
+
+/* Size modifiers */
+.smaller {
+  font-size: 0.8em;
+}
+
+.larger {
+  font-size: 1.2em;
+}
+
+/* Column layout improvements */
+.reveal .columns {
+  display: flex;
+  gap: 2em;
+}
+
+.reveal .columns .column {
+  flex: 1;
+}
+
+/* R stack improvements */
+.r-stack {
+  display: grid;
+  place-items: center;
+}
+
+.r-stack > * {
+  grid-area: 1/1;
+}
+
+/* Custom backgrounds for specific slides */
+[data-background-color="#2C3E50"] h1,
+[data-background-color="#2C3E50"] h2,
+[data-background-color="#2C3E50"] h3,
+[data-background-color="#2C3E50"] p,
+[data-background-color="#2C3E50"] li {
+  color: white !important;
+}
+
+[data-background-color="#2C3E50"] .callout {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+[data-background-color="#27AE60"] h1,
+[data-background-color="#27AE60"] h2,
+[data-background-color="#27AE60"] h3,
+[data-background-color="#27AE60"] p,
+[data-background-color="#27AE60"] li {
+  color: white !important;
+}
+
+[data-background-color="#E74C3C"] h1,
+[data-background-color="#E74C3C"] h2,
+[data-background-color="#E74C3C"] h3,
+[data-background-color="#E74C3C"] p,
+[data-background-color="#E74C3C"] li {
+  color: white !important;
+}
+
+/* Special slide styles */
+/* Title slide - make all text white for background image */
+.reveal .slide-background.title-slide {
+  background-size: cover !important;
+}
+
+/* Catch-all: Make ALL text on title slide white */
+#title-slide,
+#title-slide * {
+  color: white !important;
+}
+
+/* Reset text color for all other slides (not title slide) */
+.reveal .slides section:not(#title-slide) h1,
+.reveal .slides section:not(#title-slide) h2,
+.reveal .slides section:not(#title-slide) h3,
+.reveal .slides section:not(#title-slide) h4,
+.reveal .slides section:not(#title-slide) h5,
+.reveal .slides section:not(#title-slide) h6,
+.reveal .slides section:not(#title-slide) p,
+.reveal .slides section:not(#title-slide) li,
+.reveal .slides section:not(#title-slide) td,
+.reveal .slides section:not(#title-slide) div {
+  color: var(--dark) !important;
+  text-shadow: none !important;
+}
+
+/* Target all possible title slide text elements */
+#title-slide .title,
+#title-slide h1,
+#title-slide h2,
+#title-slide h3,
+#title-slide h4,
+#title-slide .author,
+#title-slide .quarto-title-author-name,
+#title-slide .institute,
+#title-slide .quarto-title-affiliation,
+#title-slide .date,
+#title-slide p,
+#title-slide .quarto-title-meta-contents {
+  color: white !important;
+}
+
+/* Also target the parent containers */
+.reveal .slide.title-slide h1,
+.reveal .slide.title-slide h2,
+.reveal .slide.title-slide h3,
+.reveal .slide.title-slide h4,
+.reveal .slide.title-slide .author,
+.reveal .slide.title-slide .institute,
+.reveal .slide.title-slide .date,
+.reveal .slide.title-slide p {
+  color: white !important;
+}
+
+#title-slide h1.title {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+#title-slide .author,
+#title-slide h2 {
+  font-size: 1.3em;
+  margin-top: 1em;
+}
+
+#title-slide .institute,
+#title-slide h3 {
+  font-size: 1.1em;
+  margin-top: 0.5em;
+}
+
+#title-slide .date,
+#title-slide h4 {
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+#questions h3 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+#thank-you h3 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+/* Icon styling */
+.emoji {
+  font-size: 1.2em;
+  vertical-align: middle;
+  margin: 0 0.2em;
+}
+
+/* Code highlighting improvements (light theme) */
+.hljs-comment,
+.hljs-quote {
+  color: #008000;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition {
+  color: #0000ff;
+}
+
+.hljs-string,
+.hljs-meta-string {
+  color: #a31515;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attr,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #001080;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-type,
+.hljs-params {
+  color: #098658;
+}
+
+.hljs-function {
+  color: #795e26;
+}
+
+.hljs-title {
+  color: #267f99;
+}
+
+/* Print styles */
+@media print {
+  .reveal {
+    font-size: 20pt;
+  }
+  
+  .reveal .slide-number,
+  .reveal .controls,
+  .reveal .progress {
+    display: none;
+  }
+  
+  .reveal h1, 
+  .reveal h2, 
+  .reveal h3 {
+    color: var(--primary);
+  }
+  
+  .reveal pre code {
+    font-size: 14pt;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .reveal {
+    font-size: 0.9em;
+  }
+  
+  .reveal h1 { font-size: 2em; }
+  .reveal h2 { font-size: 1.5em; }
+  .reveal h3 { font-size: 1.2em; }
+  
+  .reveal .columns {
+    flex-direction: column;
+  }
+  
+  .reveal table {
+    font-size: 0.8em;
+    width: 100%;
+  }
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Loading spinner for interactive elements */
+.loading-spinner {
+  border: 3px solid rgba(52, 152, 219, 0.1);
+  border-top: 3px solid var(--secondary);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 2em auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

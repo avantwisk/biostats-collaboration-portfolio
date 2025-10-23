@@ -1,88 +1,54 @@
 ---
 title: "Week 2, Day 3"
-subtitle: "Practice Integration and Professional Context"
+subtitle: "Asking Great Questions and Practice Integration"
 date: 2025-05-21
-categories: ["Week 2", "Day 3", "Block 1", "Practice"]
+categories: ["Week 2", "Day 3", "Block 1", "Practice", "Questioning"]
 sidebar: reflections
 ---
 
-> **Session focus:** *Applying learned frameworks through practice consultations and understanding consulting practice management*
+> **Session focus:** *Questioning frameworks and integrated practice across ASCCR and POWER*
 
 ## Learning Objectives
 
-* Integrate all ASCCR framework components in complete practice consultations
-* Understand how to manage a biostatistical consulting practice using the SU Biostatistics Unit as a case study
-* Apply consultation skills to assignment preparation
-* Synthesize learning from both blocks into coherent professional practice approach
-
----
+* Use questioning frameworks to elicit goals, constraints, and assumptions
+* Integrate ASCCR and POWER in complete practice consultations
+* Translate verbal consultations into clear written documentation
+* Consolidate skills across both blocks into a repeatable practice routine
 
 ## Description of Activities
 
-The morning consisted entirely of practice consultations where we applied the complete ASCCR framework with peer observers providing structured feedback. The late morning session presented a detailed case study of the SU Biostatistics Unit, covering operational aspects, client management, resource allocation, and quality assurance. The afternoon was dedicated to working on Assignment 1, applying consultation principles to a written consultation report.
-
----
+On 21 May (Block 1), the day emphasized asking great questions (scope, outcomes, estimand, constraints) and practicing full consultations with peer feedback. We translated consultations into written documentation to capture decisions, assumptions, and next steps.
 
 ## Reflection (Gibbs Reflective Cycle)
 
 ### 1. Description
 
-Practice consultations required integrating all previously learned elements—ASCCR components, POWER structure, communication triangle, and relationship building—in real-time interactions. The SU Biostatistics Unit case study revealed the organizational infrastructure supporting individual consultations. Assignment work translated verbal consultation skills into written documentation, requiring different but related competencies.
+We practiced questioning as the engine of collaboration—clarifying purpose, success criteria, data realities, and constraints—then ran complete consultations with peer feedback. We converted conversations into written summaries that make decisions auditable.
 
 ### 2. Feelings
 
-The practice consultations initially felt overwhelming—juggling multiple frameworks while maintaining authentic interaction seemed impossible. However, each successive practice felt more natural. The case study was reassuring, showing that institutional support structures can facilitate individual excellence. The assignment work felt like a useful bridge between course learning and real-world application.
+Initially I felt stretched—balancing deep listening with structured probing. As the day progressed, the flow improved: questions scaffolded empathy and rigor at the same time. Writing the summaries sharpened thinking.
 
 ### 3. Evaluation
 
-Practice consultations with immediate peer feedback accelerated learning beyond what solo practice could achieve. The case study effectively contextualized individual consultation skills within organizational realities. The assignment provided opportunity to demonstrate integrated understanding rather than isolated skill components. However, time constraints limited the number of practice scenarios we could explore.
+The question sets reduced rework by exposing hidden assumptions early. Integrated practice surfaced small but costly habits (vague action items, missing timelines). Documentation locked in shared understanding and facilitated next steps.
 
 ### 4. Analysis
 
-The practice sessions revealed that frameworks become internalized through repetition—what initially requires conscious attention gradually becomes intuitive. The case study demonstrated that successful consulting practices require both individual excellence and organizational support systems. The assignment highlighted that written consultation documentation requires different skills than verbal consultation—clarity, completeness, and anticipation of questions that won't be asked in real-time.
+ASCCR highlights that strong Content emerges from shared framing; questioning is how we co-create that frame. Kolb’s cycle explains the benefit of immediate reflection and revision. Double-loop learning challenged my bias to “answer quickly”; better questions improved both efficiency and trust.
 
 ### 5. Conclusion
 
-This final day synthesized two weeks of intensive learning into practical application. The progression from framework introduction through guided practice to independent application (via assignment) created a complete learning cycle. The case study reminded us that we'll typically work within organizational contexts that both enable and constrain our practice.
+Great consulting is great questioning tied to disciplined follow-through. When questions align purpose, estimand, and design, downstream analyses and writing become smoother and more defensible.
 
 ### 6. Action Plan
 
-I will seek opportunities for regular practice consultations with peer feedback, perhaps establishing a consultation club. I'll analyze my institution's consulting structure, identifying strengths to leverage and gaps to address. I'll develop templates for different types of consultation documentation, ensuring consistency and completeness. I'll also create a personal development plan integrating all ASCCR components, identifying specific areas for continued improvement.
-
----
+I will maintain a questioning script (objectives, estimand, outcomes, design, constraints), an action-item template with owners/dates, and a one-page consultation summary format. I’ll schedule a monthly peer review of my consultation notes for calibration.
 
 ## Incorporated Sources and Relevance
 
-* *Block 1 session 7.pdf* — SU Biostatistics Unit structure and operations
-* *Portfolio of Evidence of Learning 2019.pdf* — Assignment guidelines and expectations
-* *Internship Report - AvT.pdf* — Example of translating consultation experience into written reflection
-* *Reflection and Reflective Writing — PowerPoint Slides.pdf* — Gibbs cycle application to consultation experiences
-
----
-
-::: {.callout-note}
-## Artefacts and Evidence
-
-* Video recordings of practice consultations
-* Peer feedback forms completed
-* SU Biostatistics Unit operational analysis
-* Draft Assignment 1 incorporating consultation principles
-* Personal consultation competency self-assessment
-:::
-
----
-
-## Rubric Checks
-
-Ensure this reflection meets the assessment criteria:
-
-- [x] ≥300 words
-- [x] Clear link to artefact(s)
-- [x] Critical engagement with reflective cycle (not just description)
-- [x] Honest and balanced self-assessment
-- [x] Concrete action plan for improvement
-
----
+* Block 1/Day 3: Asking.Great.Questions.CASWebinar.Vance.Smith.pdf
+* Block 1/Day 3: Effective.Collaboration.CSP.Handout_2015-02-17.pdf
 
 ::: {.callout-tip}
 ## Module Complete

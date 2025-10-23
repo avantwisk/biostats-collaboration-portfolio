@@ -1,85 +1,54 @@
 ---
 title: "Week 1, Day 4"
-subtitle: "Leadership, Conflict Resolution, and Professional Growth"
+subtitle: "Career Determinants, Reporting, and Research Integrity"
 date: 2025-04-17
-categories: ["Week 1", "Day 4", "Block 2", "Leadership"]
+categories: ["Week 1", "Day 4", "Block 2", "Ethics", "Reporting", "Career Development"]
 sidebar: reflections
 ---
 
-> **Session focus:** *Engaging with senior leadership on career development, addressing conflicts in collaborative settings*
+> **Session focus:** *Determinants of a successful career, writing statistical sections, reporting of studies in health, and ethics & scientific integrity*
 
 ## Learning Objectives
 
-* Gain insights from senior leadership on career development, mentorship, and global health equity
-* Develop strategies for managing conflicts and difficult situations in collaborations
-* Understand leadership principles applicable to biostatistical practice
-* Synthesize learning through open discussion and peer exchange
-
----
+* Identify career determinants for sustainable biostatistical practice
+* Write clear statistical sections for protocols, papers, and SAPs
+* Apply reporting guidance to enhance transparency and credibility
+* Integrate ethics and scientific integrity into daily collaboration decisions
 
 ## Description of Activities
 
-The day featured an extended morning session with Dr. Jimmy Volmink, covering career advice, collaboration strategies, mentorship, leadership, and equity in global health. This was followed by a focused session on dealing with conflicts and difficult situations in collaborative work. The afternoon provided additional open discussion time for integration and reflection on the week's learning.
-
----
+On 17 April (Block 2), the day focused on determinants of a successful career, writing statistical sections in protocols/papers/SAPs, reporting studies in health, and a session on ethics and scientific integrity. Discussions connected daily choices (documentation, authorship, timelines) to professional reputation and public trust.
 
 ## Reflection (Gibbs Reflective Cycle)
 
 ### 1. Description
 
-Dr. Volmink's session wove together personal narrative with broader principles of leadership and equity in health research. He emphasized how biostatisticians can influence not just study quality but also research priorities and health equity. The conflict resolution session provided frameworks for navigating disagreements about study design, analysis approaches, and authorship.
+We connected career sustainability with everyday technical choices: writing statistical sections that are clear and defensible, applying reporting guidance consistently, and foregrounding ethics and integrity. The sessions positioned integrity as a daily practice, not a periodic audit.
 
 ### 2. Feelings
 
-The leadership discussion was profoundly inspiring, expanding my view of what biostatisticians can achieve beyond technical contributions. However, the conflict resolution session surfaced anxiety about potential future confrontations. The gap between knowing conflict resolution strategies and implementing them under pressure feels significant.
+I felt inspired by the clarity of what “professional” looks like in our field and sobered by how easily shortcuts can erode trust. The emphasis on writing statistical sections gave me confidence—structure can be learned and reused.
 
 ### 3. Evaluation
 
-The combination of aspirational leadership content with practical conflict management created a realistic picture of senior biostatistical practice. Dr. Volmink's emphasis on equity added an important dimension often missing from technical training. The conflict resolution strategies were comprehensive, though practicing them in safe environments before real conflicts arise would be beneficial.
+The integration of career determinants with writing and reporting was effective: reputation emerges from repeated, transparent practices. The ethics session made abstract principles concrete through realistic dilemmas (authorship, analytic flexibility, timeline pressure). More time on authorship negotiation would have helped.
 
 ### 4. Analysis
 
-Leadership in biostatistics isn't about formal authority but about influence through expertise, relationship-building, and commitment to scientific integrity. Conflicts often arise from misaligned expectations or communication failures rather than fundamental disagreements. The discussion on equity revealed how statistical choices—from study design to analysis methods—can either perpetuate or address health disparities.
+Using ASCCR: Attitude (integrity and humility), Structure (clear scope, roles, authorship), Content (pre-specified estimands and justified methods), Communication (transparent assumptions and limitations), Relationship (trust via reliability). Mezirow’s lens reframed “success” from output volume to trustworthy influence. Double-loop learning challenged my assumptions about deadlines—quality and clarity are non-negotiable.
 
 ### 5. Conclusion
 
-This final day synthesized technical, interpersonal, and ethical dimensions of biostatistical practice, emphasizing that senior practitioners must navigate all three simultaneously. Success requires not just managing conflicts but preventing them through clear communication and aligned expectations.
+Career durability rests on ethical consistency, reproducible documentation, and reader-centered statistical sections. Reporting guidance is not bureaucracy—it is the language of credibility.
 
 ### 6. Action Plan
 
-I will identify leadership opportunities within current projects, even without formal authority. I'll practice conflict resolution techniques through role-play with peers before facing real situations. I'll also critically evaluate my work through an equity lens, considering how statistical choices might impact different populations.
-
----
+I will adopt authorship/roles memos at project start, maintain SAP templates with rationale sections, and apply reporting checklists systematically. I’ll keep an “integrity log” for analytic decisions and schedule periodic assumption checks with collaborators.
 
 ## Incorporated Sources and Relevance
 
-* *Module Outline Biostatistical Consulting - 2025.pdf* — Contextualized leadership within module objectives
-* *Internship Report - AvT.pdf* — Provided examples of navigating collaborative challenges
-* *Reflection and Reflective Writing — PowerPoint Slides.pdf* — Guided structured reflection on leadership experiences
-
----
-
-::: {.callout-note}
-## Artefacts and Evidence
-
-* Notes from Dr. Volmink's presentation
-* Personal conflict resolution strategy document
-* Reflection on equity considerations in current projects
-:::
-
----
-
-## Rubric Checks
-
-Ensure this reflection meets the assessment criteria:
-
-- [x] ≥300 words
-- [x] Clear link to artefact(s)
-- [x] Critical engagement with reflective cycle (not just description)
-- [x] Honest and balanced self-assessment
-- [x] Concrete action plan for improvement
-
----
+* Block 2/Day 4: Session 4_Determinants of a successful career.pdf; Session 5_Writings stats sections in protocols-papers-SAPs-book reviews.pdf
+* Block 2/Day 4: Session 6_Reporting of Studies in Health.pdf; Session 8_Ethics and Scientific Integrity--video session_REVISED.pdf
 
 ::: {.callout-tip}
 ## Next Reflection

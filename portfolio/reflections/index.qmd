@@ -8,8 +8,6 @@ sidebar: reflections
 
 This section contains my daily reflections on the Biostatistical Consulting & Collaboration module, which was delivered over two intensive weeks. Each reflection follows the **Gibbs Reflective Cycle**, a structured framework that promotes deep, critical reflection on learning experiences.
 
----
-
 ## The Gibbs Reflective Cycle
 
 All reflections in this section are structured according to Graham Gibbs' (1988) six-stage reflective cycle:
@@ -22,8 +20,6 @@ All reflections in this section are structured according to Graham Gibbs' (1988)
 6. **Action Plan**: What will I do differently next time?
 
 This framework ensures that my reflections move beyond simple description to critical analysis and actionable insights for professional development.
-
----
 
 ## Module Structure
 
@@ -53,20 +49,6 @@ Delivered over 3 days (19-21 May 2025), covering:
 
 **Week 2 reflections draw primarily from Block 1 sessions.**
 
----
-
-## Reflection Guidelines
-
-Each daily reflection:
-
-- Is **at least 300 words** to ensure depth of analysis
-- Links to specific **artefacts** (slides, readings, assignments) where relevant
-- Demonstrates **critical engagement** with the reflective cycle, not just description
-- Provides **honest and balanced self-assessment** of my learning
-- Includes a **concrete action plan** for applying learning to future practice
-
----
-
 ## Daily Reflections
 
 ### Week 1
@@ -76,10 +58,10 @@ Each daily reflection:
 April 14-17, 2025
 :::
 
-- [Day 1](week-01/day-01.qmd) - Introduction to Biostatistical Collaboration and Professional Conduct
-- [Day 2](week-01/day-02.qmd) - Strategic Communication and Professional Development
-- [Day 3](week-01/day-03.qmd) - Effective Collaboration and Research Integrity
-- [Day 4](week-01/day-04.qmd) - Leadership, Conflict Resolution, and Professional Growth
+- [Day 1](week-01/day-01.qmd) - Professional Identity, Ethics, and Communication
+- [Day 2](week-01/day-02.qmd) - Scientific Writing, Career Pathways, and RCT Pitfalls
+- [Day 3](week-01/day-03.qmd) - Teaching Collaborators, Reporting, and Framing Questions
+- [Day 4](week-01/day-04.qmd) - Career Determinants, Reporting, and Research Integrity
 
 ### Week 2
 
@@ -88,11 +70,9 @@ April 14-17, 2025
 May 19-21, 2025
 :::
 
-- [Day 1](week-02/day-01.qmd) - ASCCR Framework and Collaboration Foundations
-- [Day 2](week-02/day-02.qmd) - Advanced Communication and Relationship Building
-- [Day 3](week-02/day-03.qmd) - Practice Integration and Professional Context
-
----
+- [Day 1](week-02/day-01.qmd) - ASCCR Foundations, POWER Structure, and Reflective Practice
+- [Day 2](week-02/day-02.qmd) - LISA Attitude, Relationships, and Co-authorship
+- [Day 3](week-02/day-03.qmd) - Asking Great Questions and Practice Integration
 
 ## Purpose of Reflective Practice
 
@@ -114,12 +94,4 @@ Through these reflections, I aim to:
 ## Navigation
 
 Use the sidebar to navigate to specific daily reflections, or click the links above to jump directly to a particular day.
-:::
-
----
-
-::: {.callout-note}
-## Assessment Note
-
-These reflections form part of the Portfolio of Evidence of Learning for the Biostatistical Consulting & Collaboration module. They demonstrate my engagement with module content and my development as a reflective practitioner.
 :::

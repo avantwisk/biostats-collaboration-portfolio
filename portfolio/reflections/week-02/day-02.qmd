@@ -1,89 +1,57 @@
 ---
 title: "Week 2, Day 2"
-subtitle: "Advanced Communication and Relationship Building"
+subtitle: "LISA Attitude, Relationships, and Co-authorship"
 date: 2025-05-20
-categories: ["Week 2", "Day 2", "Block 1", "Communication"]
+categories: ["Week 2", "Day 2", "Block 1", "Communication", "Relationship"]
 sidebar: reflections
 ---
 
-> **Session focus:** *Mastering the Triangle of Statistical Communication and perfecting consultation endings*
+> **Session focus:** *LISA collaborative attitude, co-authorship norms, role-play practice, and meeting structure*
 
 ## Learning Objectives
 
-* Understand and apply the Triangle of Statistical Communication (Listening/Paraphrasing/Summarizing, Asking Great Questions, Explaining Statistical Ideas)
-* Recognize the central importance of relationship in successful collaborations
-* Master techniques for ending consultations effectively
-* Practice complete consultations using the ASCCR framework
-
----
+* Practice the LISA Collaborative Attitude in real scenarios
+* Strengthen relationship-building behaviors and meeting structure
+* Understand co-authorship principles and ethical collaboration norms
+* Apply analogies and plain-language explanations in role-plays
 
 ## Description of Activities
 
-The morning explored the Triangle of Statistical Communication, emphasizing how listening, questioning, and explaining form interdependent communication skills. We examined how relationship quality underpins all successful collaborations. The extended afternoon session focused on ending consultations effectively, including summarization, action planning, and feedback solicitation. We observed recorded consultations using the ASCCR framework, analyzing strengths and areas for improvement through structured class discussions.
-
----
+On 20 May (Block 1), we focused on the LISA collaborative attitude, structured meetings (POWER), co-authorship practices, and applied communication via role-plays. Materials included checklists, analogies, and prompts to turn technical ideas into shared understanding.
 
 ## Reflection (Gibbs Reflective Cycle)
 
 ### 1. Description
 
-The Triangle of Statistical Communication revealed communication as multifaceted—requiring active listening and strategic questioning, not just clear explanations. The relationship discussion emphasized trust-building over time rather than single interactions. The ending practices showed how proper closure ensures mutual understanding and commitment to next steps. Observing real consultations allowed us to see the ASCCR framework applied holistically.
+We operationalized the LISA attitude—service-oriented, respectful, and empowering—through structured meetings and role-plays. We reviewed co-authorship norms and used analogies to translate complex ideas into shared language.
 
 ### 2. Feelings
 
-The communication triangle validated my suspicion that I'd been over-emphasizing explanation at the expense of listening and questioning. The relationship focus felt both obvious and revolutionary—obvious because all human interactions depend on relationships, revolutionary because statistical training rarely addresses this. Watching recorded consultations was simultaneously encouraging (seeing experienced statisticians also struggle) and intimidating (realizing the skill level required).
+I felt grounded by the clarity of behavioral cues (how to show respect, curiosity, and care). Discussing co-authorship reduced ambiguity I’ve felt around credit and accountability. Role-play was uncomfortable at first, then freeing as muscle memory formed.
 
 ### 3. Evaluation
 
-The triangle model effectively balanced different communication modes, preventing over-reliance on any single approach. The relationship emphasis correctly identified it as foundational rather than supplementary. The ending techniques addressed a common weakness—consultations that drift off rather than concluding decisively. Video observation provided insights impossible to gain from description alone.
+The combination of attitude, structure, and practice worked. The LISA lens made small behaviors matter (greetings, agenda co-creation, follow-through). Co-authorship guidance was actionable—memos at project start prevent later conflict. Analogies improved clarity without losing rigor.
 
 ### 4. Analysis
 
-Effective statistical communication requires code-switching between technical and lay vocabularies while maintaining precision. Relationship-building in professional contexts differs from social relationships—it requires demonstrating competence, reliability, and genuine interest in collaborators' success. Proper endings prevent the common problem of misaligned expectations that surface weeks later. The video observations revealed that even experienced practitioners must consciously apply these principles—they don't become automatic.
+ASCCR connects here: Attitude and Relationship are not soft extras; they are the context that makes Content persuasive and Communication effective. Mezirow’s lens surfaced my assumption that “writing authorship later is harmless”—a risky belief. Double-loop learning prompts me to address roles early as part of Structure.
 
 ### 5. Conclusion
 
-This day demonstrated that communication and relationship skills are not "soft" additions to technical expertise but fundamental competencies that enable statistical knowledge to create impact. Without these skills, even brilliant statistical insights may fail to influence research or practice.
+Relationship-first doesn’t mean method-second; it means method-with-purpose. Clear roles and collaborative behaviors reduce friction and raise trust, enabling better science.
 
 ### 6. Action Plan
 
-I will practice the "listening-first" approach in my next consultation, consciously waiting before offering solutions. I'll develop a repertoire of relationship-building practices appropriate for different collaboration contexts. I'll create an "ending checklist" to ensure consistent consultation closure. I'll also begin recording my consultations (with permission) for self-review.
-
----
+I will implement a standard opening (greeting, purpose, agenda, time), use a brief authorship/roles memo for new projects, and maintain an analogies bank for recurring explanations. I’ll request explicit feedback on how my behaviors support a collaborative atmosphere.
 
 ## Incorporated Sources and Relevance
 
-* *1.The ASCCR framework Biostats consulting lectures.pdf* — Triangle of Communication framework
-* *Effective.Collaboration.CSP.Handout_20150217.pdf* — Ten tips for effective communication
-* *Module Outline Biostatistical Consulting - 2025.pdf* — Connected communication skills to learning objectives
-
----
-
-::: {.callout-note}
-## Artefacts and Evidence
-
-* Triangle of Statistical Communication practice exercises
-* Relationship mapping for current collaborations
-* Consultation ending scripts developed
-* Observation notes from video review sessions
-:::
-
----
-
-## Rubric Checks
-
-Ensure this reflection meets the assessment criteria:
-
-- [x] ≥300 words
-- [x] Clear link to artefact(s)
-- [x] Critical engagement with reflective cycle (not just description)
-- [x] Honest and balanced self-assessment
-- [x] Concrete action plan for improvement
-
----
+* Block 1/Day 2: 2. LISA Collaborative Attitude.pdf; 4. POWER_Structure_for_LISA_Statistical_Collaboration_Meetings.pdf
+* Block 1/Day 2: LISA Co-Authorship Handout.pdf; twenty five analogies.pdf; 3.Smith Vance Course Handout.pdf
 
 ::: {.callout-tip}
 ## Next Reflection
 
-Continue to [Day 3](day-03.qmd) to read the reflection on practice integration and professional context.
+Continue to [Day 3](day-03.qmd) to practice questioning and consolidate skills.
 :::

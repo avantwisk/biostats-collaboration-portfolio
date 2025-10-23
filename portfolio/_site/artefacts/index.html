@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Artefacts – Biostatistical Consulting &amp; Collaboration Portfolio</title>
+<title>Artefacts – Biostatistical Collaboration Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -39,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9344fb9851b4da3cab95007ef9d770dc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d8ae34ab22187d2c3ad2b3baac417e37.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Biostatistical Consulting &amp; Collaboration Portfolio</span>
+    <span class="navbar-title">Biostatistical Collaboration Portfolio</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -168,14 +203,6 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../learning-outcomes/index.html"> 
-<span class="menu-text">Learning Outcomes</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../coursework/index.html"> 
-<span class="menu-text">Coursework</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="../artefacts/index.html" aria-current="page"> 
 <span class="menu-text">Artefacts</span></a>
   </li>  
@@ -187,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -196,32 +223,27 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#module-artefacts" id="toc-module-artefacts" class="nav-link" data-scroll-target="#module-artefacts">Module Artefacts</a>
+  <li><a href="#module-assignments" id="toc-module-assignments" class="nav-link" data-scroll-target="#module-assignments">Module Assignments</a>
   <ul class="collapse">
-  <li><a href="#block-1-sessions-may-2025" id="toc-block-1-sessions-may-2025" class="nav-link" data-scroll-target="#block-1-sessions-may-2025">Block 1 Sessions (May 2025)</a></li>
-  <li><a href="#block-2-sessions-april-2025" id="toc-block-2-sessions-april-2025" class="nav-link" data-scroll-target="#block-2-sessions-april-2025">Block 2 Sessions (April 2025)</a></li>
+  <li><a href="#assignment-1-submission" id="toc-assignment-1-submission" class="nav-link" data-scroll-target="#assignment-1-submission">Assignment 1 Submission</a></li>
+  <li><a href="#assignment-2-submission" id="toc-assignment-2-submission" class="nav-link" data-scroll-target="#assignment-2-submission">Assignment 2 Submission</a></li>
   </ul></li>
-  <li><a href="#internship-artefacts" id="toc-internship-artefacts" class="nav-link" data-scroll-target="#internship-artefacts">Internship Artefacts</a>
+  <li><a href="#consultation-artefacts" id="toc-consultation-artefacts" class="nav-link" data-scroll-target="#consultation-artefacts">Consultation Artefacts</a>
   <ul class="collapse">
-  <li><a href="#consultation-project-reports" id="toc-consultation-project-reports" class="nav-link" data-scroll-target="#consultation-project-reports">Consultation Project Reports</a></li>
-  <li><a href="#clinical-trial-documentation" id="toc-clinical-trial-documentation" class="nav-link" data-scroll-target="#clinical-trial-documentation">Clinical Trial Documentation</a></li>
-  <li><a href="#software-development" id="toc-software-development" class="nav-link" data-scroll-target="#software-development">Software Development</a></li>
+  <li><a href="#job-satisfaction-survey-project" id="toc-job-satisfaction-survey-project" class="nav-link" data-scroll-target="#job-satisfaction-survey-project">Job Satisfaction Survey Project</a></li>
+  <li><a href="#heart-murmur-recognition-study" id="toc-heart-murmur-recognition-study" class="nav-link" data-scroll-target="#heart-murmur-recognition-study">Heart Murmur Recognition Study</a></li>
   </ul></li>
-  <li><a href="#code-repository" id="toc-code-repository" class="nav-link" data-scroll-target="#code-repository">Code Repository</a>
+  <li><a href="#communication-dissemination" id="toc-communication-dissemination" class="nav-link" data-scroll-target="#communication-dissemination">Communication &amp; Dissemination</a>
   <ul class="collapse">
-  <li><a href="#githubgitlab-links" id="toc-githubgitlab-links" class="nav-link" data-scroll-target="#githubgitlab-links">GitHub/GitLab Links</a></li>
+  <li><a href="#seminar-presentation" id="toc-seminar-presentation" class="nav-link" data-scroll-target="#seminar-presentation">Seminar Presentation</a></li>
+  <li><a href="#shiny-application-snapshot" id="toc-shiny-application-snapshot" class="nav-link" data-scroll-target="#shiny-application-snapshot">Shiny Application Snapshot</a></li>
   </ul></li>
-  <li><a href="#publications-and-presentations" id="toc-publications-and-presentations" class="nav-link" data-scroll-target="#publications-and-presentations">Publications and Presentations</a></li>
-  <li><a href="#certificates-and-training" id="toc-certificates-and-training" class="nav-link" data-scroll-target="#certificates-and-training">Certificates and Training</a></li>
-  <li><a href="#additional-evidence" id="toc-additional-evidence" class="nav-link" data-scroll-target="#additional-evidence">Additional Evidence</a></li>
-  <li><a href="#artefact-index-by-learning-outcome" id="toc-artefact-index-by-learning-outcome" class="nav-link" data-scroll-target="#artefact-index-by-learning-outcome">Artefact Index by Learning Outcome</a></li>
-  <li><a href="#confidentiality-note" id="toc-confidentiality-note" class="nav-link" data-scroll-target="#confidentiality-note">Confidentiality Note</a></li>
-  <li><a href="#how-to-access-artefacts" id="toc-how-to-access-artefacts" class="nav-link" data-scroll-target="#how-to-access-artefacts">How to Access Artefacts</a></li>
+  <li><a href="#confidentiality-and-data-protection" id="toc-confidentiality-and-data-protection" class="nav-link" data-scroll-target="#confidentiality-and-data-protection">Confidentiality and Data Protection</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -231,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -243,186 +265,172 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<style>
+  .artefact-block {
+    margin: 2rem 0 2.5rem 0;
+  }
+  .artefact-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+  }
+  .artefact-frame {
+    width: min(100%, 960px);
+    height: 620px;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 8px 22px rgba(33, 37, 41, 0.08);
+  }
+  .artefact-frame--medium {
+    height: 540px;
+  }
+  .artefact-frame--compact {
+    height: 440px;
+  }
+  .artefact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .artefact-caption {
+    max-width: 960px;
+    font-size: 0.95rem;
+    color: #495057;
+    text-align: center;
+  }
+  .artefact-image {
+    width: min(100%, 960px);
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(33, 37, 41, 0.08);
+  }
+</style>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This section serves as a repository for artefacts that provide evidence of my learning and professional development throughout the Biostatistical Consulting &amp; Collaboration module and internship.</p>
-<p>Artefacts include presentations, assignments, code samples, reports, and other materials that demonstrate my achievement of module learning outcomes.</p>
-<hr>
+<p>This collection curates the artefacts evidencing my learning, consulting practice, and communication skills during the Biostatistical Consulting &amp; Collaboration module and internship. Every artefact is displayed inline so the portfolio can be reviewed without downloading supporting files.</p>
 </section>
-<section id="module-artefacts" class="level2">
-<h2 class="anchored" data-anchor-id="module-artefacts">Module Artefacts</h2>
-<section id="block-1-sessions-may-2025" class="level3">
-<h3 class="anchored" data-anchor-id="block-1-sessions-may-2025">Block 1 Sessions (May 2025)</h3>
-<!-- TODO: Add artefacts from Block 1 sessions -->
-<p><strong>Session Materials:</strong> - TODO: ASCCR Framework slides - TODO: LISA Collaborative Attitude readings - TODO: POWER Structure materials - TODO: Practice consultation videos/recordings</p>
-<p><strong>Assignments:</strong> - TODO: Assignment 1 (description and link) - TODO: Assignment 2 (description and link) - TODO: Mock consultation materials</p>
-<hr>
+<section id="module-assignments" class="level2">
+<h2 class="anchored" data-anchor-id="module-assignments">Module Assignments</h2>
+<section id="assignment-1-submission" class="level3">
+<h3 class="anchored" data-anchor-id="assignment-1-submission">Assignment 1 Submission</h3>
+<div class="artefact-block artefact-wrapper">
+<iframe class="artefact-frame" src="files/BC_Assighment_1_Submission.pdf#toolbar=0" title="Assignment 1 Submission"></iframe>
+<p class="artefact-caption">
+Comprehensive response for the first block assignment, outlining consultation planning, ethical considerations, and reflective learning points.
+</p>
+<p class="artefact-caption">
+<a href="files/BC_Assighment_1_Submission.pdf">Download the PDF</a> if you prefer an external viewer.
+</p>
+</div>
 </section>
-<section id="block-2-sessions-april-2025" class="level3">
-<h3 class="anchored" data-anchor-id="block-2-sessions-april-2025">Block 2 Sessions (April 2025)</h3>
-<!-- TODO: Add artefacts from Block 2 sessions -->
-<p><strong>Session Materials:</strong> - TODO: Code of Conduct for Biostatisticians - TODO: Grant writing strategies slides - TODO: Scientific writing materials - TODO: Ethics and integrity readings</p>
-<p><strong>Assignments:</strong> - TODO: Assignment 3 (description and link) - TODO: Other assignments</p>
-<p><strong>Presentations:</strong> - TODO: Seminar presentation (slides/video)</p>
-<hr>
-</section>
-</section>
-<section id="internship-artefacts" class="level2">
-<h2 class="anchored" data-anchor-id="internship-artefacts">Internship Artefacts</h2>
-<section id="consultation-project-reports" class="level3">
-<h3 class="anchored" data-anchor-id="consultation-project-reports">Consultation Project Reports</h3>
-<!-- TODO: Add links to or descriptions of consultation reports (if allowed by confidentiality agreements) -->
-<p><strong>Job Satisfaction Survey Analysis:</strong> - TODO: Analysis report - TODO: Code repository - TODO: Presentation slides</p>
-<p><strong>Heart Murmur Recognition Study:</strong> - TODO: Analysis report - TODO: Code repository - TODO: Statistical tables</p>
-<p><strong>Fresh Gas Flow Analysis:</strong> - TODO: Analysis report - TODO: Data management code - TODO: Visualizations</p>
-<hr>
-</section>
-<section id="clinical-trial-documentation" class="level3">
-<h3 class="anchored" data-anchor-id="clinical-trial-documentation">Clinical Trial Documentation</h3>
-<!-- TODO: Add appropriate artefacts from clinical trial work (maintaining confidentiality) -->
-<p><strong>Randomisation:</strong> - TODO: Randomisation plan (anonymized) - TODO: R code for randomisation</p>
-<p><strong>Quality Control:</strong> - TODO: QC checklist example - TODO: Documentation of QC process</p>
-<p><strong>Data Management:</strong> - TODO: Code examples (anonymized) - TODO: Data cleaning workflows</p>
-<hr>
-</section>
-<section id="software-development" class="level3">
-<h3 class="anchored" data-anchor-id="software-development">Software Development</h3>
-<p><strong>Shiny Application:</strong> - TODO: Link to application (if publicly accessible) - TODO: Screenshots of interface - TODO: Code repository (if allowed) - TODO: User documentation</p>
-<p><strong>R Packages:</strong> - TODO: Package documentation - TODO: Code samples - TODO: Vignettes or examples</p>
-<hr>
+<section id="assignment-2-submission" class="level3">
+<h3 class="anchored" data-anchor-id="assignment-2-submission">Assignment 2 Submission</h3>
+<div class="artefact-block artefact-wrapper">
+<iframe class="artefact-frame" src="files/BC_Assignment_2_Submission.pdf#toolbar=0" title="Assignment 2 Submission"></iframe>
+<p class="artefact-caption">
+Second block submission detailing research question framing, stakeholder communication strategies, and recommended analytical pathways.
+</p>
+<p class="artefact-caption">
+<a href="files/BC_Assignment_2_Submission.pdf">Download the PDF</a> for offline viewing.
+</p>
+</div>
 </section>
 </section>
-<section id="code-repository" class="level2">
-<h2 class="anchored" data-anchor-id="code-repository">Code Repository</h2>
-<section id="githubgitlab-links" class="level3">
-<h3 class="anchored" data-anchor-id="githubgitlab-links">GitHub/GitLab Links</h3>
-<!-- TODO: Add links to code repositories (if public or allowed) -->
-<ul>
-<li>TODO: Portfolio code repository</li>
-<li>TODO: Practice project repositories</li>
-<li>TODO: Coursework repositories</li>
-</ul>
-<hr>
+<section id="consultation-artefacts" class="level2">
+<h2 class="anchored" data-anchor-id="consultation-artefacts">Consultation Artefacts</h2>
+<section id="job-satisfaction-survey-project" class="level3">
+<h3 class="anchored" data-anchor-id="job-satisfaction-survey-project">Job Satisfaction Survey Project</h3>
+<section id="explainer-document" class="level4">
+<h4 class="anchored" data-anchor-id="explainer-document">Explainer Document</h4>
+<div class="artefact-block artefact-wrapper">
+<iframe class="artefact-frame" src="files/Explainer Document_Job satisfaction.pdf#toolbar=0" title="Job Satisfaction Explainer"></iframe>
+<p class="artefact-caption">
+Plain-language summary translating statistical findings into actionable insights for non-technical collaborators.
+</p>
+</div>
+</section>
+<section id="analysis-code" class="level4">
+<h4 class="anchored" data-anchor-id="analysis-code">Analysis Code</h4>
+<div class="artefact-block">
+<div class="artefact-title">
+R Analysis Script
+</div>
+<div class="sourceCode" id="cb1" data-code-block="files/Job Satisfaction/job_satisfaction_code.R"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p class="artefact-caption">
+Reproducible R script implementing data cleaning, exploratory analysis, and modelling steps for the survey study.
+</p>
+</div>
+</section>
+<section id="survey-validation-visual" class="level4">
+<h4 class="anchored" data-anchor-id="survey-validation-visual">Survey Validation Visual</h4>
+<div class="artefact-block artefact-wrapper">
+<img class="artefact-image" src="files/Job Satisfaction/survey_validation.png" alt="Job satisfaction survey validation diagnostics">
+<p class="artefact-caption">
+Diagnostic visual highlighting reliability and construct validation checks performed on the instrument.
+</p>
+</div>
 </section>
 </section>
-<section id="publications-and-presentations" class="level2">
-<h2 class="anchored" data-anchor-id="publications-and-presentations">Publications and Presentations</h2>
-<!-- TODO: Add any publications, conference presentations, or posters -->
-<p><strong>Publications:</strong> - TODO: Author list, title, journal (if published or submitted)</p>
-<p><strong>Conference Presentations:</strong> - TODO: Title, conference, date - TODO: Slides or poster</p>
-<p><strong>Departmental Presentations:</strong> - TODO: Title, audience, date - TODO: Materials</p>
-<hr>
+<section id="heart-murmur-recognition-study" class="level3">
+<h3 class="anchored" data-anchor-id="heart-murmur-recognition-study">Heart Murmur Recognition Study</h3>
+<section id="explainer-document-1" class="level4">
+<h4 class="anchored" data-anchor-id="explainer-document-1">Explainer Document</h4>
+<div class="artefact-block artefact-wrapper">
+<iframe class="artefact-frame artefact-frame--medium" src="files/Heart Murmur/Explainer_Document_Heart_Murmur.pdf#toolbar=0" title="Heart Murmur Explainer"></iframe>
+<p class="artefact-caption">
+Narrative report communicating study design, methodology, and key outcomes to clinical partners.
+</p>
+</div>
 </section>
-<section id="certificates-and-training" class="level2">
-<h2 class="anchored" data-anchor-id="certificates-and-training">Certificates and Training</h2>
-<!-- TODO: Add certificates from training courses -->
-<p><strong>Good Clinical Practice (GCP) Training:</strong> - TODO: Certificate - TODO: Date completed - TODO: Issuing organization</p>
-<p><strong>Other Training:</strong> - TODO: Course name and certificate - TODO: Date completed</p>
-<hr>
+<section id="participant-demographics" class="level4">
+<h4 class="anchored" data-anchor-id="participant-demographics">Participant Demographics</h4>
+<div class="artefact-block artefact-wrapper">
+<img class="artefact-image" src="files/Heart Murmur/demographics_table.png" alt="Heart murmur study participant demographics table">
+<p class="artefact-caption">
+Visual summary of cohort characteristics used to contextualise subsequent modelling decisions.
+</p>
+</div>
 </section>
-<section id="additional-evidence" class="level2">
-<h2 class="anchored" data-anchor-id="additional-evidence">Additional Evidence</h2>
-<!-- TODO: Add any other relevant artefacts -->
-<p><strong>Letters of Recommendation:</strong> - TODO: From internship supervisor - TODO: From module coordinators</p>
-<p><strong>Performance Evaluations:</strong> - TODO: Internship evaluation</p>
-<p><strong>Other:</strong> - TODO: Any other relevant materials</p>
-<hr>
 </section>
-<section id="artefact-index-by-learning-outcome" class="level2">
-<h2 class="anchored" data-anchor-id="artefact-index-by-learning-outcome">Artefact Index by Learning Outcome</h2>
-<p>This table provides a quick reference to which artefacts provide evidence for each module learning outcome:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 62%">
-<col style="width: 37%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Learning Outcome</th>
-<th>Artefacts</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Communicate effectively</strong></td>
-<td>TODO: List relevant artefacts</td>
-</tr>
-<tr class="even">
-<td><strong>Contribute to study design</strong></td>
-<td>TODO: List relevant artefacts</td>
-</tr>
-<tr class="odd">
-<td><strong>Develop analysis plans</strong></td>
-<td>TODO: List relevant artefacts</td>
-</tr>
-<tr class="even">
-<td><strong>Develop verbal/written skills</strong></td>
-<td>TODO: List relevant artefacts</td>
-</tr>
-<tr class="odd">
-<td><strong>Approach methodological challenges</strong></td>
-<td>TODO: List relevant artefacts</td>
-</tr>
-<tr class="even">
-<td><strong>Integrate statistical knowledge</strong></td>
-<td>TODO: List relevant artefacts</td>
-</tr>
-<tr class="odd">
-<td><strong>Connect questions to methods</strong></td>
-<td>TODO: List relevant artefacts</td>
-</tr>
-</tbody>
-</table>
-<hr>
 </section>
-<section id="confidentiality-note" class="level2">
-<h2 class="anchored" data-anchor-id="confidentiality-note">Confidentiality Note</h2>
+<section id="communication-dissemination" class="level2">
+<h2 class="anchored" data-anchor-id="communication-dissemination">Communication &amp; Dissemination</h2>
+<section id="seminar-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="seminar-presentation">Seminar Presentation</h3>
+<div class="artefact-block artefact-wrapper">
+<iframe class="artefact-frame artefact-frame--medium" src="files/Seminar Presentation/presentation.html" title="Seminar presentation"></iframe>
+<p class="artefact-caption">
+Interactive HTML deck delivered to peers summarising module takeaways, consulting frameworks, and project highlights.
+</p>
+<p class="artefact-caption">
+If the deck fails to load (missing <code>presentation_files</code> resources), re-render the slides with <code>self-contained: true</code> or copy the generated <code>presentation_files</code> directory alongside <code>presentation.html</code>.
+</p>
+</div>
+</section>
+<section id="shiny-application-snapshot" class="level3">
+<h3 class="anchored" data-anchor-id="shiny-application-snapshot">Shiny Application Snapshot</h3>
+<div class="artefact-block artefact-wrapper">
+<img class="artefact-image" src="files/Shiny App/image.png" alt="Shiny app interface screenshot">
+<p class="artefact-caption">
+Screenshot of the data exploration Shiny tool highlighting user-facing design elements and core outputs.
+</p>
+</div>
+</section>
+</section>
+<section id="confidentiality-and-data-protection" class="level2">
+<h2 class="anchored" data-anchor-id="confidentiality-and-data-protection">Confidentiality and Data Protection</h2>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Confidentiality and Data Protection
+Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>All artefacts included in this portfolio comply with confidentiality agreements and data protection requirements. Sensitive information has been anonymized or excluded where necessary.</p>
-<ul>
-<li>Client data is protected</li>
-<li>Proprietary methods and code are excluded</li>
-<li>Personal identifying information is removed</li>
-<li>All materials are used with appropriate permissions</li>
-</ul>
-</div>
-</div>
-<hr>
-</section>
-<section id="how-to-access-artefacts" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-access-artefacts">How to Access Artefacts</h2>
-<!-- TODO: Provide instructions for accessing artefacts -->
-<p>Artefacts are organized in the following locations:</p>
-<ol type="1">
-<li><strong>Within this portfolio</strong>: Some artefacts are directly embedded in relevant sections</li>
-<li><strong>External repositories</strong>: GitHub/GitLab links provided above</li>
-<li><strong>Upon request</strong>: Some materials are available upon request due to size or confidentiality</li>
-<li><strong>Appendix</strong>: Physical/digital appendix to portfolio submission</li>
-</ol>
-<hr>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Related Sections
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>See <a href="../reflections/index.html">Module Reflections</a> for daily reflections that reference specific artefacts</li>
-<li>See <a href="../internship/work-outputs.html">Internship Report: Work Outputs</a> for detailed descriptions of project artefacts</li>
-</ul>
+<p>All artefacts have been reviewed to remove identifying information and comply with institutional confidentiality requirements. Shared materials focus on methods, communication pieces, and anonymised outputs suitable for inclusion in this portfolio.</p>
 </div>
 </div>
 

@@ -1,85 +1,54 @@
 ---
 title: "Week 1, Day 2"
-subtitle: "Strategic Communication and Professional Development"
+subtitle: "Scientific Writing, Career Pathways, and RCT Pitfalls"
 date: 2025-04-15
-categories: ["Week 1", "Day 2", "Block 2", "Scientific Writing"]
+categories: ["Week 1", "Day 2", "Block 2", "Scientific Writing", "Career Development"]
 sidebar: reflections
 ---
 
-> **Session focus:** *Mastering the art of scientific writing and learning from experienced biostatisticians' career journeys*
+> **Session focus:** *Strategies for proposals/manuscripts, career journey insights, and common RCT errors*
 
 ## Learning Objectives
 
-* Develop effective strategies for writing proposals, manuscripts, and grant applications
-* Learn from senior biostatisticians' career experiences and success factors
-* Understand the role of biostatisticians in addressing missing data challenges in clinical trials
-* Identify key ingredients for building a successful biostatistical career
-
----
+* Craft reader-centered proposals and manuscripts with clear argumentation
+* Translate career journey insights into practical development strategies
+* Recognize and avoid common errors in randomized trials
+* Integrate writing, methodology, and professional growth into a coherent plan
 
 ## Description of Activities
 
-The morning began with a comprehensive session on strategies for successful scientific writing, covering proposals, manuscripts, and grant applications. This was followed by an inspiring presentation on a senior biostatistician's career journey, highlighting critical success factors and lessons learned. The afternoon featured a public presentation at the MRC on handling missing data in clinical trials, demonstrating advanced methodological applications in real research contexts.
-
----
+On 15 April (Block 2), we examined strategies for successful proposals and manuscripts, learned from a senior biostatistician’s career journey, and reviewed frequent errors in RCTs (design, analysis, and interpretation). The day emphasized writing as a professional lever, linking technical rigor with persuasive, ethical communication.
 
 ## Reflection (Gibbs Reflective Cycle)
 
 ### 1. Description
 
-The writing strategies session provided structured approaches to different types of scientific documents, emphasizing clarity, precision, and audience awareness. The career journey presentation offered candid insights into navigating academic biostatistics, including challenges faced and overcome. The missing data presentation showcased sophisticated statistical methods applied to critical clinical research questions.
+We connected scientific writing craft with career strategy and trial methodology. The writing session offered practical templates for proposals and manuscripts. The career talk illuminated pathways, trade-offs, and serendipity. The RCT errors review highlighted design and analysis pitfalls that undermine validity and credibility.
 
 ### 2. Feelings
 
-The writing session initially felt daunting—the gap between my current writing abilities and publication-ready manuscripts seemed vast. However, the structured approach provided reassurance that good scientific writing is learnable. The career journey talk was both inspiring and sobering, revealing the persistence required for success. The technical presentation on missing data reminded me why I chose biostatistics—the intellectual challenge combined with meaningful impact.
+Initially, I felt daunted by the gap between my current writing and fundable, publishable prose. Hearing an honest career narrative was both motivating and grounding. The RCT examples produced a healthy unease—how easily well-intentioned choices can bias results.
 
 ### 3. Evaluation
 
-The combination of practical skills (writing) with inspirational content (career journey) and technical depth (missing data methods) created a well-balanced learning experience. The writing strategies were immediately applicable, though practicing them will require sustained effort. The career insights were valuable but somewhat specific to academic paths, leaving questions about industry trajectories.
+What worked was the tight coupling of writing (how we argue), career development (why we invest), and methodology (what we defend). The balance of exemplars and checklists made the guidance actionable. I would have benefited from more time to practice rewriting weak paragraphs with peer feedback.
 
 ### 4. Analysis
 
-Effective scientific writing emerges as a critical competency that can limit or enable a biostatistician's impact, regardless of technical expertise. The career journey highlighted that success rarely follows a linear path—adaptability and resilience are as important as technical skills. The missing data presentation demonstrated that biostatisticians must continually update their methodological knowledge to address evolving research challenges.
+ASCCR sharpened my lens: Content is not only correct but convincing; Communication is audience-centered; Relationship includes co-authorship norms and accountability. Kolb’s cycle applies—draft, reflect, revise, redeploy. Double-loop learning reframed “good writing” from correctness to reader impact and ethical clarity. RCT pitfalls reinforced the need for preregistered structure and transparent reporting.
 
 ### 5. Conclusion
 
-This day reinforced that biostatistical excellence requires a portfolio of skills: technical proficiency, clear communication, career strategic thinking, and continuous learning. Success depends not just on statistical knowledge but on effectively translating that knowledge into accessible formats for diverse audiences.
+Strong writing is a force multiplier for biostatistical impact; it carries methods into decisions. Career growth is cumulative—skills, networks, and artifacts (protocols, grants) co-evolve. Vigilance against RCT errors protects scientific integrity and public trust.
 
 ### 6. Action Plan
 
-I will establish a regular writing practice, drafting sections of potential manuscripts even before having complete analyses. I'll create a career development plan incorporating lessons from the senior biostatistician's journey. For technical development, I'll review recent literature on missing data methods and identify opportunities to apply these in current projects.
-
----
+I will implement weekly writing sprints, adopt a lab style guide, and maintain proposal/manuscript templates. I’ll pilot a pre-submission checklist covering design clarity, estimand alignment, and reporting standards. I’ll schedule quarterly career reflections and seek targeted mentorship on grant strategy.
 
 ## Incorporated Sources and Relevance
 
-* *Strategies for writing proposals successfully_FINAL.pdf* — Provided structured frameworks for different document types
-* *Statistics in Medicine 2022 LeBlanc.pdf* — Contextualized writing within broader professional development
-* *Module Outline Biostatistical Consulting - 2025.pdf* — Connected writing skills to module assessments
-
----
-
-::: {.callout-note}
-## Artefacts and Evidence
-
-* Template documents for proposals and manuscripts
-* Notes on career development strategies
-* Literature review on missing data methods initiated
-:::
-
----
-
-## Rubric Checks
-
-Ensure this reflection meets the assessment criteria:
-
-- [x] ≥300 words
-- [x] Clear link to artefact(s)
-- [x] Critical engagement with reflective cycle (not just description)
-- [x] Honest and balanced self-assessment
-- [x] Concrete action plan for improvement
-
----
+* Block 2/Day 2: Strategies for writing proposals successfully_FINAL.pdf; My journey as a biostatistician_final.pdf
+* Block 2/Day 2: Session 9B_Common Errors with CIHR RCT_FINAL.pdf
 
 ::: {.callout-tip}
 ## Next Reflection

@@ -55,6 +55,48 @@ li {
 }
 
 /* ============================================
+   Layout Overrides
+   ============================================ */
+
+#quarto-content.page-layout-full {
+  max-width: 100%;
+}
+
+#quarto-content.page-layout-full main.content {
+  max-width: 100%;
+  padding-left: min(4vw, 3rem);
+  padding-right: min(4vw, 3rem);
+}
+
+/* ============================================
+   Homepage Hero Layout
+   ============================================ */
+
+.home-intro {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.home-intro .profile-column {
+  flex: 0 0 240px;
+}
+
+.home-intro .profile-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.home-intro .intro-column {
+  flex: 1 1 360px;
+  min-width: 300px;
+}
+
+/* ============================================
    Tables
    ============================================ */
 
@@ -265,6 +307,21 @@ figcaption {
     font-size: 1.5em;
   }
 
+  #quarto-content.page-layout-full main.content {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .home-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .home-intro .profile-column {
+    flex: 0 0 180px;
+  }
+
   table {
     font-size: 0.9em;
   }
@@ -327,12 +384,8 @@ figcaption {
    Portfolio-Specific Styles
    ============================================ */
 
-.rubric-checks {
-  background-color: #f8f9fa;
-  padding: 1em;
-  border-radius: 5px;
-  border-left: 4px solid #6c757d;
-  margin: 1.5em 0;
+body:has(#quarto-sidebar .sidebar-link.active[href*="/reflections/"]) .quarto-title-meta {
+  display: none;
 }
 
 .reflection-section h3 {

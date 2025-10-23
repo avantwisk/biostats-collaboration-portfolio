@@ -1,217 +1,139 @@
 ---
 title: "Artefacts"
 subtitle: "Evidence Repository for Portfolio"
+sidebar: artefacts
 ---
+
+```{=html}
+<style>
+  .artefact-block {
+    margin: 2rem 0 2.5rem 0;
+  }
+  .artefact-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+  }
+  .artefact-frame {
+    width: min(100%, 960px);
+    height: 620px;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 8px 22px rgba(33, 37, 41, 0.08);
+  }
+  .artefact-frame--medium {
+    height: 540px;
+  }
+  .artefact-frame--compact {
+    height: 440px;
+  }
+  .artefact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .artefact-caption {
+    max-width: 960px;
+    font-size: 0.95rem;
+    color: #495057;
+    text-align: center;
+  }
+  .artefact-image {
+    width: min(100%, 960px);
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(33, 37, 41, 0.08);
+  }
+</style>
+```
 
 ## Overview
 
-This section serves as a repository for artefacts that provide evidence of my learning and professional development throughout the Biostatistical Consulting & Collaboration module and internship.
+This collection curates the artefacts evidencing my learning, consulting practice, and communication skills during the Biostatistical Consulting & Collaboration module and internship. Every artefact is displayed inline so the portfolio can be reviewed without downloading supporting files.
 
-Artefacts include presentations, assignments, code samples, reports, and other materials that demonstrate my achievement of module learning outcomes.
+## Module Assignments
 
----
+### Assignment 1 Submission
 
-## Module Artefacts
+<div class="artefact-block artefact-wrapper">
+  <iframe class="artefact-frame" src="files/BC_Assighment_1_Submission.pdf#toolbar=0" title="Assignment 1 Submission"></iframe>
+  <p class="artefact-caption">Comprehensive response for the first block assignment, outlining consultation planning, ethical considerations, and reflective learning points.</p>
+  <p class="artefact-caption"><a href="files/BC_Assighment_1_Submission.pdf">Download the PDF</a> if you prefer an external viewer.</p>
+</div>
 
-### Block 1 Sessions (May 2025)
+### Assignment 2 Submission
 
-<!-- TODO: Add artefacts from Block 1 sessions -->
+<div class="artefact-block artefact-wrapper">
+  <iframe class="artefact-frame" src="files/BC_Assignment_2_Submission.pdf#toolbar=0" title="Assignment 2 Submission"></iframe>
+  <p class="artefact-caption">Second block submission detailing research question framing, stakeholder communication strategies, and recommended analytical pathways.</p>
+  <p class="artefact-caption"><a href="files/BC_Assignment_2_Submission.pdf">Download the PDF</a> for offline viewing.</p>
+</div>
 
-**Session Materials:**
-- TODO: ASCCR Framework slides
-- TODO: LISA Collaborative Attitude readings
-- TODO: POWER Structure materials
-- TODO: Practice consultation videos/recordings
+## Consultation Artefacts
 
-**Assignments:**
-- TODO: Assignment 1 (description and link)
-- TODO: Assignment 2 (description and link)
-- TODO: Mock consultation materials
+### Job Satisfaction Survey Project
 
----
+#### Explainer Document
 
-### Block 2 Sessions (April 2025)
+<div class="artefact-block artefact-wrapper">
+  <iframe class="artefact-frame" src="files/Explainer%20Document_Job%20satisfaction.pdf#toolbar=0" title="Job Satisfaction Explainer"></iframe>
+  <p class="artefact-caption">Plain-language summary translating statistical findings into actionable insights for non-technical collaborators.</p>
+</div>
 
-<!-- TODO: Add artefacts from Block 2 sessions -->
+#### Analysis Code
 
-**Session Materials:**
-- TODO: Code of Conduct for Biostatisticians
-- TODO: Grant writing strategies slides
-- TODO: Scientific writing materials
-- TODO: Ethics and integrity readings
+<div class="artefact-block">
+  <div class="artefact-title">R Analysis Script</div>
 
-**Assignments:**
-- TODO: Assignment 3 (description and link)
-- TODO: Other assignments
+```{.r code-block="files/Job Satisfaction/job_satisfaction_code.R"}
+```
 
-**Presentations:**
-- TODO: Seminar presentation (slides/video)
+  <p class="artefact-caption">Reproducible R script implementing data cleaning, exploratory analysis, and modelling steps for the survey study.</p>
+</div>
 
----
+#### Survey Validation Visual
 
-## Internship Artefacts
+<div class="artefact-block artefact-wrapper">
+  <img class="artefact-image" src="files/Job%20Satisfaction/survey_validation.png" alt="Job satisfaction survey validation diagnostics">
+  <p class="artefact-caption">Diagnostic visual highlighting reliability and construct validation checks performed on the instrument.</p>
+</div>
 
-### Consultation Project Reports
+### Heart Murmur Recognition Study
 
-<!-- TODO: Add links to or descriptions of consultation reports (if allowed by confidentiality agreements) -->
+#### Explainer Document
 
-**Job Satisfaction Survey Analysis:**
-- TODO: Analysis report
-- TODO: Code repository
-- TODO: Presentation slides
+<div class="artefact-block artefact-wrapper">
+  <iframe class="artefact-frame artefact-frame--medium" src="files/Heart%20Murmur/Explainer_Document_Heart_Murmur.pdf#toolbar=0" title="Heart Murmur Explainer"></iframe>
+  <p class="artefact-caption">Narrative report communicating study design, methodology, and key outcomes to clinical partners.</p>
+</div>
 
-**Heart Murmur Recognition Study:**
-- TODO: Analysis report
-- TODO: Code repository
-- TODO: Statistical tables
+#### Participant Demographics
 
-**Fresh Gas Flow Analysis:**
-- TODO: Analysis report
-- TODO: Data management code
-- TODO: Visualizations
+<div class="artefact-block artefact-wrapper">
+  <img class="artefact-image" src="files/Heart%20Murmur/demographics_table.png" alt="Heart murmur study participant demographics table">
+  <p class="artefact-caption">Visual summary of cohort characteristics used to contextualise subsequent modelling decisions.</p>
+</div>
 
----
+## Communication & Dissemination
 
-### Clinical Trial Documentation
+### Seminar Presentation
 
-<!-- TODO: Add appropriate artefacts from clinical trial work (maintaining confidentiality) -->
+<div class="artefact-block artefact-wrapper">
+  <iframe class="artefact-frame artefact-frame--medium" src="files/Seminar%20Presentation/presentation.html" title="Seminar presentation"></iframe>
+  <p class="artefact-caption">Interactive HTML deck delivered to peers summarising module takeaways, consulting frameworks, and project highlights.</p>
+  <p class="artefact-caption">If the deck fails to load (missing <code>presentation_files</code> resources), re-render the slides with <code>self-contained: true</code> or copy the generated <code>presentation_files</code> directory alongside <code>presentation.html</code>.</p>
+</div>
 
-**Randomisation:**
-- TODO: Randomisation plan (anonymized)
-- TODO: R code for randomisation
+### Shiny Application Snapshot
 
-**Quality Control:**
-- TODO: QC checklist example
-- TODO: Documentation of QC process
+<div class="artefact-block artefact-wrapper">
+  <img class="artefact-image" src="files/Shiny%20App/image.png" alt="Shiny app interface screenshot">
+  <p class="artefact-caption">Screenshot of the data exploration Shiny tool highlighting user-facing design elements and core outputs.</p>
+</div>
 
-**Data Management:**
-- TODO: Code examples (anonymized)
-- TODO: Data cleaning workflows
-
----
-
-### Software Development
-
-**Shiny Application:**
-- TODO: Link to application (if publicly accessible)
-- TODO: Screenshots of interface
-- TODO: Code repository (if allowed)
-- TODO: User documentation
-
-**R Packages:**
-- TODO: Package documentation
-- TODO: Code samples
-- TODO: Vignettes or examples
-
----
-
-## Code Repository
-
-### GitHub/GitLab Links
-
-<!-- TODO: Add links to code repositories (if public or allowed) -->
-
-- TODO: Portfolio code repository
-- TODO: Practice project repositories
-- TODO: Coursework repositories
-
----
-
-## Publications and Presentations
-
-<!-- TODO: Add any publications, conference presentations, or posters -->
-
-**Publications:**
-- TODO: Author list, title, journal (if published or submitted)
-
-**Conference Presentations:**
-- TODO: Title, conference, date
-- TODO: Slides or poster
-
-**Departmental Presentations:**
-- TODO: Title, audience, date
-- TODO: Materials
-
----
-
-## Certificates and Training
-
-<!-- TODO: Add certificates from training courses -->
-
-**Good Clinical Practice (GCP) Training:**
-- TODO: Certificate
-- TODO: Date completed
-- TODO: Issuing organization
-
-**Other Training:**
-- TODO: Course name and certificate
-- TODO: Date completed
-
----
-
-## Additional Evidence
-
-<!-- TODO: Add any other relevant artefacts -->
-
-**Letters of Recommendation:**
-- TODO: From internship supervisor
-- TODO: From module coordinators
-
-**Performance Evaluations:**
-- TODO: Internship evaluation
-
-**Other:**
-- TODO: Any other relevant materials
-
----
-
-## Artefact Index by Learning Outcome
-
-This table provides a quick reference to which artefacts provide evidence for each module learning outcome:
-
-| Learning Outcome | Artefacts |
-|------------------|-----------|
-| **Communicate effectively** | TODO: List relevant artefacts |
-| **Contribute to study design** | TODO: List relevant artefacts |
-| **Develop analysis plans** | TODO: List relevant artefacts |
-| **Develop verbal/written skills** | TODO: List relevant artefacts |
-| **Approach methodological challenges** | TODO: List relevant artefacts |
-| **Integrate statistical knowledge** | TODO: List relevant artefacts |
-| **Connect questions to methods** | TODO: List relevant artefacts |
-
----
-
-## Confidentiality Note
-
-::: {.callout-important}
 ## Confidentiality and Data Protection
 
-All artefacts included in this portfolio comply with confidentiality agreements and data protection requirements. Sensitive information has been anonymized or excluded where necessary.
-
-- Client data is protected
-- Proprietary methods and code are excluded
-- Personal identifying information is removed
-- All materials are used with appropriate permissions
-:::
-
----
-
-## How to Access Artefacts
-
-<!-- TODO: Provide instructions for accessing artefacts -->
-
-Artefacts are organized in the following locations:
-
-1. **Within this portfolio**: Some artefacts are directly embedded in relevant sections
-2. **External repositories**: GitHub/GitLab links provided above
-3. **Upon request**: Some materials are available upon request due to size or confidentiality
-4. **Appendix**: Physical/digital appendix to portfolio submission
-
----
-
-::: {.callout-tip}
-## Related Sections
-
-- See [Module Reflections](../reflections/index.qmd) for daily reflections that reference specific artefacts
-- See [Internship Report: Work Outputs](../internship/work-outputs.qmd) for detailed descriptions of project artefacts
+::: {.callout-important}
+All artefacts have been reviewed to remove identifying information and comply with institutional confidentiality requirements. Shared materials focus on methods, communication pieces, and anonymised outputs suitable for inclusion in this portfolio.
 :::

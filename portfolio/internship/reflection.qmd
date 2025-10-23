@@ -8,8 +8,6 @@ sidebar: internship
 
 Looking back on my three-month internship at Scigenix, I can see how transformative this experience has been for my professional development as a biostatistician. This reflection addresses what I learned, why this learning was significant, what I would have done differently, and the challenges I encountered along the way.
 
----
-
 ## What Did I Learn?
 
 ### Technical Skills
@@ -41,8 +39,6 @@ The multidisciplinary nature of clinical research means constant collaboration w
 **Resilience**
 Not every analysis goes smoothly. Data doesn't always behave as expected. Collaborators sometimes request changes that feel unnecessary. I learned to view setbacks as learning opportunities rather than failures, and to maintain professional composure even when frustrated.
 
----
-
 ## Why Was This Learning Significant?
 
 ### Bridging the Theory-Practice Gap
@@ -61,8 +57,6 @@ The internship confirmed that I want to pursue a career in clinical research bio
 
 I entered the internship as a student learning biostatistics. I'm leaving as a biostatistician who happens to still be completing formal studies. This shift in identity—from student to professional—may sound subtle, but it has profoundly affected how I approach problems, communicate with colleagues, and think about my career.
 
----
-
 ## What Would I Have Done Differently?
 
 ### Earlier Engagement with Medical Terminology
@@ -79,9 +73,7 @@ While I maintained good documentation throughout the internship, I wish I had be
 
 ### Time Management for Reflective Practice
 
-The intensity of project work sometimes meant that reflection happened only when required (like for this portfolio). Building in regular time for reflection—perhaps 30 minutes every Friday afternoon—would have deepened my learning in real-time rather than retrospectively.
-
----
+The intensity of project work sometimes meant that reflection happened only when required (like for this portfolio). Building in regular time for reflection; perhaps 30 minutes every Friday afternoon—would have deepened my learning in real-time rather than retrospectively.
 
 ## Challenges Encountered and How I Handled Them
 
@@ -125,8 +117,6 @@ The intensity of project work sometimes meant that reflection happened only when
 
 **What I Learned**: Perfect is the enemy of good. In industry, delivering a solid analysis on time is more valuable than delivering a perfect analysis too late. This doesn't mean compromising on quality for core analyses, but it does mean being strategic about where to invest effort.
 
----
-
 ## Overall Reflections
 
 ### The Most Important Lesson
@@ -147,16 +137,6 @@ As I complete my MSc and look toward my career, the internship has given me clar
 - Organizations that balance scientific rigor with supportive culture
 
 I'm excited to take the skills, knowledge, and professional identity I've developed at Scigenix into the next chapter of my career.
-
----
-
-::: {.callout-note}
-## Final Thought
-
-This internship has fundamentally shaped how I understand the role of a biostatistician in modern clinical research. It has prepared me not just with technical skills, but with the professional maturity, collaborative mindset, and practical wisdom needed to contribute meaningfully to improving human health through rigorous, ethical, and innovative research.
-:::
-
-<!-- TODO: Add any final personal reflections or acknowledgments -->
 
 ---
 

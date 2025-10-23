@@ -1,85 +1,54 @@
 ---
 title: "Week 1, Day 3"
-subtitle: "Effective Collaboration and Research Integrity"
+subtitle: "Teaching Collaborators, Reporting, and Framing Questions"
 date: 2025-04-16
-categories: ["Week 1", "Day 3", "Block 2", "Collaboration Skills"]
+categories: ["Week 1", "Day 3", "Block 2", "Collaboration Skills", "Reporting"]
 sidebar: reflections
 ---
 
-> **Session focus:** *Developing skills for teaching collaborators, understanding research replication, and enhancing scientific writing*
+> **Session focus:** *Educating collaborators, reporting of science, and framing researchable questions*
 
 ## Learning Objectives
 
-* Learn strategies for effectively educating research collaborators about statistical concepts
-* Understand the importance of replication and transparent reporting in scientific research
-* Develop advanced scientific writing skills for clear research communication
-* Engage in open discussions about practical collaboration challenges
-
----
+* Teach statistical ideas to collaborators without losing nuance or trust
+* Strengthen transparent reporting practices and replication mindset
+* Frame researchable questions that align design, estimand, and analysis
+* Integrate communication strategies with practical collaboration challenges
 
 ## Description of Activities
 
-The day opened with a session on teaching collaborators how to work effectively with biostatisticians, emphasizing bidirectional education. This was followed by a critical discussion on the "science of doing science"—addressing replication, reproducibility, and transparent reporting. The afternoon included focused scientific writing practice and concluded with open discussion sessions where we could raise specific challenges and concerns from our experiences.
-
----
+On 16 April (Block 2), we explored how to teach collaborators to communicate with statisticians, principles for reporting science, approaches for framing researchable questions, and perspectives on the “statistical pleasures” of medical collaborations. Activities emphasized bidirectional education and transparent, purpose-driven study design.
 
 ## Reflection (Gibbs Reflective Cycle)
 
 ### 1. Description
 
-The session on teaching collaborators revealed that education flows both ways in successful collaborations. We explored how to explain statistical concepts without condescension while also learning about clinical contexts. The replication discussion addressed the reproducibility crisis and our role in promoting robust science. The writing session built upon previous strategies with hands-on practice.
+We practiced teaching collaborators how to work with statisticians, reviewed principles for reporting science, and learned to frame researchable questions that connect purpose, design, and estimand. The sessions stressed reciprocity in education and transparency in methods and documentation.
 
 ### 2. Feelings
 
-I felt empowered by the idea that I could actively shape how collaborators work with me, rather than simply responding to their requests. The reproducibility discussion evoked a sense of responsibility—our work directly impacts scientific integrity. The open discussion format was refreshing, allowing authentic sharing of challenges without judgment.
+I felt encouraged that teaching is a learnable craft and relieved to have concrete approaches for difficult explanations. The reporting discussion heightened my sense of responsibility; small documentation choices can materially affect replicability and trust.
 
 ### 3. Evaluation
 
-The emphasis on mutual education in collaborations was transformative, shifting from a service mindset to partnership. The reproducibility content was timely and critical, though implementing these practices within existing time constraints remains challenging. The combination of structured content with open discussion facilitated both learning and peer support.
+The bidirectional model (learn their clinical world; teach statistical thinking) felt practical and respectful. Reporting guidance was actionable—checklists and exemplars clarified expectations. I wished for more time to practice reframing vague questions into answerable ones with stakeholders in the room.
 
 ### 4. Analysis
 
-Teaching collaborators effectively requires understanding their knowledge gaps without making assumptions, while also articulating our own needs clearly. The reproducibility crisis isn't just about fraud or errors—it's often about inadequate documentation and communication of methods. These sessions revealed that biostatisticians serve as guardians of scientific integrity, a role requiring both technical excellence and diplomatic skills.
+ASCCR guided me to center Communication and Relationship: listening precedes explaining; partnership outruns service. Kolb’s cycle suggests repeated, low-stakes practice to internalize teaching skills. Double-loop learning shifted me from solution-first to question-first: if the question is mis-specified, excellent analysis still disappoints. Clear reporting operationalizes integrity.
 
 ### 5. Conclusion
 
-Effective collaboration transcends statistical expertise—it requires educational skills, commitment to scientific integrity, and ability to navigate interpersonal dynamics. The day's sessions integrated these elements, showing how they reinforce each other in practice.
+Teaching, framing questions, and reporting are mutually reinforcing. They move collaborations from transactions to co-creation, anchoring rigor in shared understanding and transparent documentation.
 
 ### 6. Action Plan
 
-I will develop a "collaboration guide" for future partners, outlining mutual expectations and communication preferences. I'll implement reproducibility practices in current projects, including detailed documentation and code sharing. I'll also practice explaining complex statistical concepts using analogies and visual aids.
-
----
+I will prepare analogies and visuals for common concepts, adopt a reproducibility/reporting checklist, and develop a short “question-framing” guide (purpose, estimand, outcomes, design, constraints). I’ll schedule pre-meet reads of clinical background to align language and goals.
 
 ## Incorporated Sources and Relevance
 
-* *Session 3_Some Tips for Enhancing Biostats Collaborations in Med Res.pdf* — Provided practical collaboration strategies
-* *The ASCCR Frame for Learning Essential Collaboration Skills.pdf* — Offered theoretical framework for collaboration
-* *Portfolio of Evidence of Learning 2019.pdf* — Guided reflection on collaboration experiences
-
----
-
-::: {.callout-note}
-## Artefacts and Evidence
-
-* Draft collaboration guide for research partners
-* Reproducible research checklist created
-* Peer feedback from open discussion sessions
-:::
-
----
-
-## Rubric Checks
-
-Ensure this reflection meets the assessment criteria:
-
-- [x] ≥300 words
-- [x] Clear link to artefact(s)
-- [x] Critical engagement with reflective cycle (not just description)
-- [x] Honest and balanced self-assessment
-- [x] Concrete action plan for improvement
-
----
+* Block 2/Day 3: Session 1_Teaching Collaborators how to communicate with a statistician.pdf; Session 2_Reporting of Science.pdf
+* Block 2/Day 3: Session 3_Intro to framing researchable questions.pdf; Session 7_Statistical pleasures of med collaborations.pdf
 
 ::: {.callout-tip}
 ## Next Reflection

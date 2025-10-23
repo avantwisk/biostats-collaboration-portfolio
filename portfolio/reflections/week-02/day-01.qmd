@@ -1,90 +1,57 @@
 ---
 title: "Week 2, Day 1"
-subtitle: "ASCCR Framework and Collaboration Foundations"
+subtitle: "ASCCR Foundations, POWER Structure, and Reflective Practice"
 date: 2025-05-19
-categories: ["Week 2", "Day 1", "Block 1", "ASCCR Framework"]
+categories: ["Week 2", "Day 1", "Block 1", "ASCCR Framework", "Consultation Structure"]
 sidebar: reflections
 ---
 
-> **Session focus:** *Introduction to the ASCCR framework and mastering the POWER structure for effective statistical consultations*
+> **Session focus:** *ASCCR overview, POWER meeting structure, and reflective writing for professional growth*
 
 ## Learning Objectives
 
-* Understand the ASCCR framework's five components: Attitude, Structure, Content, Communication, and Relationship
-* Master the POWER structure for organizing consultation meetings
-* Practice opening consultation sessions effectively
-* Learn the Q1Q2Q3 approach for systematic problem-solving in consultations
-
----
+* Understand and apply ASCCR (Attitude, Structure, Content, Communication, Relationship)
+* Use POWER to open, guide, and close consultations purposefully
+* Develop reflective writing habits that drive skill improvement
+* Practice openings that align expectations, scope, and next steps
 
 ## Description of Activities
 
-The day began with an introduction revisiting module objectives and biostatistical collaboration as a career. The core content focused on the ASCCR framework, particularly developing an attitude of collaboration and implementing the POWER structure (Prepare, Open, Work, End, Reflect). The afternoon involved role-playing exercises demonstrating consultation openings, practicing with peers, and learning the Q1Q2Q3 approach for structuring the working portion of consultations.
-
----
+On 19 May (Block 1), we introduced ASCCR, practiced the POWER structure for consultations, and grounded the day in reflective practice using structured frameworks (Gibbs, Kolb, Mezirow). Short role-plays emphasized intentional openings and shared outcomes.
 
 ## Reflection (Gibbs Reflective Cycle)
 
 ### 1. Description
 
-The ASCCR framework was presented as a comprehensive model for collaboration, with each component building upon others. The POWER structure provided a concrete template for consultation meetings. Role-playing exercises allowed us to practice opening conversations, establishing expectations, and navigating the "wants, willing, and able" discussions. The Q1Q2Q3 approach offered a systematic method for understanding research questions at different levels.
+We mapped ASCCR onto real consultations and practiced POWER—Purpose, Orientation, Work plan, Expectations, and Review—to create momentum and accountability. Reflection frameworks were presented as tools to convert experience into growth rather than post-hoc journaling.
 
 ### 2. Feelings
 
-Initially, the frameworks felt somewhat artificial—imposing structure on what I'd assumed should be natural conversations. However, during role-play exercises, I experienced how structure actually freed me to focus on content rather than worrying about process. The vulnerability of being observed and critiqued during practice sessions was uncomfortable but ultimately valuable.
+I felt relief at having a unifying scaffold; previous consultations felt improvisational. POWER made openings less awkward and endings more decisive. The reflective writing piece felt both familiar and newly practical when framed as an iterative learning engine.
 
 ### 3. Evaluation
 
-The ASCCR framework successfully integrated previously disparate concepts about collaboration into a coherent model. The POWER structure's emphasis on explicit time management and expectation-setting addressed common consultation pitfalls. Role-playing, while initially awkward, provided safe space to experiment with different approaches. The Q1Q2Q3 method effectively prevented premature jumping to statistical solutions before fully understanding research contexts.
+ASCCR’s clarity helped me diagnose past friction points (unclear roles; mismatched expectations). POWER translated those insights into behaviors. The role-plays surfaced micro-skills (paraphrasing, timeboxing, agenda setting) I often underuse. I wanted more feedback on my tone and pacing.
 
 ### 4. Analysis
 
-The frameworks reveal that effective collaboration is learnable and teachable, not merely a personality trait. The attitude of being "domain-expert centered" represents a fundamental shift from statistics-centered thinking. The POWER structure's "Reflect" component emphasizes continuous improvement—each consultation becomes a learning opportunity. The practice sessions demonstrated that initial discomfort with structured approaches diminishes rapidly with repetition.
+Kolb’s cycle justifies short learning loops: plan, act, reflect, refine. Mezirow’s critical reflection surfaced assumptions (e.g., “jump to methods quickly shows competence”); double-loop learning encouraged replacing them with “align on purpose and constraints first.” ASCCR works as a diagnostic: if a conversation derails, I can ask which letter is weak.
 
 ### 5. Conclusion
 
-This foundational day established that systematic approaches to collaboration can enhance both efficiency and effectiveness. The ASCCR framework provides a mental model for navigating complex collaborative relationships, while the POWER structure offers practical tools for immediate implementation.
+Consultations improve when I choreograph them: purposeful openings, explicit scope, co-authored next steps, and deliberate closings. Reflection is not separate from practice—it is the practice that improves practice.
 
 ### 6. Action Plan
 
-I will implement the POWER structure in my next three consultations, documenting what works and what needs adaptation. I'll practice the Q1Q2Q3 approach by retroactively applying it to past projects, identifying where deeper questioning might have led to better outcomes. I'll also develop a personal "collaboration attitude statement" to review before meetings.
-
----
+I will use a one-page POWER opener, an ASCCR checklist for debriefs, and 10-minute post-meeting notes (Gibbs prompts). I will solicit feedback from collaborators on clarity of purpose and action items to calibrate my delivery.
 
 ## Incorporated Sources and Relevance
 
-* *1.The ASCCR framework Biostats consulting lectures.pdf* — Core framework documentation
-* *The ASCCR Frame for Learning Essential Collaboration Skills.pdf* — Theoretical foundation and evidence base
-* *3.Smith Vance Course Handout.pdf* — Practical implementation guidelines
-* *Effective.Collaboration.CSP.Handout_20150217.pdf* — Additional tools and techniques
-
----
-
-::: {.callout-note}
-## Artefacts and Evidence
-
-* ASCCR framework summary notes
-* Video recordings of role-play exercises
-* Personal POWER structure checklist
-* Q1Q2Q3 practice worksheets
-:::
-
----
-
-## Rubric Checks
-
-Ensure this reflection meets the assessment criteria:
-
-- [x] ≥300 words
-- [x] Clear link to artefact(s)
-- [x] Critical engagement with reflective cycle (not just description)
-- [x] Honest and balanced self-assessment
-- [x] Concrete action plan for improvement
-
----
+* Block 1/Day 1: The ASCCR Frame for Learning Essential Collaboration Skills.pdf
+* Block 1/Day 1: Reflection and reflective writing_Powerpoint slides.pdf; Statistics in Medicine - 2022 - LeBlanc - Statistical advising.pdf
 
 ::: {.callout-tip}
 ## Next Reflection
 
-Continue to [Day 2](day-02.qmd) to read the reflection on advanced communication and relationship building.
+Continue to [Day 2](day-02.qmd) to deepen communication and relationship building.
 :::

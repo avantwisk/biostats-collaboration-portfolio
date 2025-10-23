@@ -8,8 +8,6 @@ sidebar: internship
 
 During my internship at Scigenix, I contributed to a diverse range of projects spanning statistical consultation, clinical trial support, and software development. This section provides detailed descriptions of each project, highlighting my specific contributions and the skills I developed.
 
----
-
 # Consultation Projects
 
 ## 1. Job Satisfaction Survey Analysis
@@ -33,7 +31,7 @@ A key outcome of the study was to determine whether factors like age and gender 
 
 ### Consultation Meeting Experience
 
-This project involved a meeting with the researcher, their two supervisors, and my internship supervisor. Having completed a mock consultation for my degree's Biostatistical Consulting module, I felt prepared, but the reality was different. I spent the day expecting questions about the regression or ANOVA results. However, much of the 80-minute meeting focused on stylistic aspects of the report, such as adjusting axis font sizes on graphs or selecting density plots instead of histograms.
+This project involved a meeting with the researcher, their two supervisors, and my internship supervisor. Having completed a mock consultation for my degree's Biostatistical Consulting module, I felt prepared, but the reality was different. I spent the day expecting questions about the regression or ANOVA results. However, much of the meeting focused on stylistic aspects of the report, such as adjusting axis font sizes on graphs or selecting density plots instead of histograms.
 
 This experience exposed me to the realities of working within a multidisciplinary team. I realised that much of my time would be spent refining report details to ensure clarity and acceptability for journal submission, rather than focusing solely on statistical analysis. While this initially felt frustrating, I grew to appreciate the collaborative process of generating new knowledge.
 
@@ -43,8 +41,6 @@ This experience exposed me to the realities of working within a multidisciplinar
 - Independent research on best practices for interpreting ordinal logistic regression
 - Personal quality control and document tracking
 - Regular communication with team members to keep project on track
-
----
 
 ## 2. Can Anaesthesiology Trainees Distinguish Between Different Heart Murmurs?
 
@@ -61,7 +57,7 @@ This cross-sectional study investigated whether anaesthesiology trainees could d
 
 ### Personal Significance
 
-I found this project particularly rewarding since it had undertones of educational research—the overarching theme was to determine how capable trainees are at doing routine yet incredibly important tasks. Beyond this, the fact that the work was focused on paediatric patients specifically gave me a sense of personal satisfaction knowing that the work I was doing could have real-world impact on quality of care provided to some of our most vulnerable patients.
+I found this project particularly rewarding since it had hints of educational research. The overarching theme was to determine how capable trainees are at doing routine yet incredibly important tasks. Beyond this, the fact that the work was focused on paediatric patients specifically gave me a sense of personal satisfaction knowing that the work I was doing could have real-world impact on quality of care provided to some of our most vulnerable patients.
 
 ### Skills Developed
 
@@ -69,8 +65,6 @@ I found this project particularly rewarding since it had undertones of education
 - Integration of data from multiple sources (quiz performance and demographic surveys)
 - Application of logistic regression for educational research questions
 - Creation of stakeholder-friendly reports using modern R packages
-
----
 
 ## 3. Analysis of Fresh Gas Flow Rates
 
@@ -80,13 +74,13 @@ The "Analysis of Fresh Gas Flow Rates and its Effect on Consumption and Cost of 
 
 ### Data Structure Challenges
 
-Initial data cleaning was challenging due to the large volume of data that needed analysis. The raw dataset had information at various levels: one set at the case level and another at the hour level. To streamline the workflow and align with the study's objectives, I created two separate datasets—one representing each level—before "mapping" variables between them.
+Initial data cleaning was challenging due to the large volume of data that needed analysis. The raw dataset had information at various levels: one set at the case level and another at the hour level. To streamline the workflow and align with the study's objectives, I created two separate datasets, one representing each level, before "mapping" variables between them.
 
 A particular obstacle related to how clinicians were represented in the original files. Instead of having each clinician in a separate column, the data stored all names for a given case in a single cell, separated by commas. To address this, I wrote a script in R that parsed the clinician column, split the names by commas, and assigned each name to a new column.
 
 ### Statistical Approach
 
-After cleaning and restructuring the data, I matched variables across the two datasets to facilitate analysis—a process familiar from the statistical programming workflows used in clinical trials. The analysis included:
+After cleaning and restructuring the data, I matched variables across the two datasets to facilitate analysis. The analysis included:
 
 - Calculating summary statistics
 - Generating visualizations
@@ -94,7 +88,7 @@ After cleaning and restructuring the data, I matched variables across the two da
 
 ### Impact and Insights
 
-This project highlighted the importance of meticulous data cleaning and documentation, as well as the value of robust, reproducible code for complex analyses. Importantly, by identifying patterns in anaesthetic agent usage and their associated costs, the findings offer actionable insights that could help reduce the hospital's carbon footprint and promote environmentally responsible healthcare practices.
+This project highlighted the importance of well-thought-out data cleaning and documentation, as well as the value of robust, reproducible code for complex analyses. Importantly, by identifying patterns in anaesthetic agent usage and their associated costs, the findings offer actionable insights that could help reduce the hospital's carbon footprint and promote environmentally responsible healthcare practices.
 
 ### Skills Developed
 
@@ -102,8 +96,6 @@ This project highlighted the importance of meticulous data cleaning and document
 - String parsing and data extraction from complex formats
 - Generalized linear modeling for clustered data
 - Environmental impact assessment in healthcare settings
-
----
 
 # Clinical Research and Related Work
 
@@ -143,7 +135,7 @@ I am particularly interested in the crucial role that ethics plays in clinical r
 
 ### Scigenix's Commitment to Ethics
 
-This emphasis on ethics became especially clear during my internship at Scigenix. From the start, Scigenix demonstrated a deep commitment to patient wellbeing. I was encouraged to approach the clinical research process holistically, always remembering that our goal is to improve people's lives. In biostatistics, our work is often far removed from patients—both physically and metaphorically—which can make it easy to forget the individuals behind the numbers and graphs. To address this, the company enrolled all staff in an intensive Good Clinical Practice (GCP) training course.
+This emphasis on ethics became especially clear during my internship at Scigenix. From the start, Scigenix demonstrated a deep commitment to patient wellbeing. I was encouraged to approach the clinical research process holistically, always remembering that our goal is to improve people's lives. In biostatistics, our work is often far removed from patients (both physically and metaphorically) which can make it easy to forget the individuals behind the numbers and graphs. To address this, the company enrolled all staff in an intensive Good Clinical Practice (GCP) training course.
 
 ### Data Safety Committee Meeting
 
@@ -204,8 +196,6 @@ What struck me most about this experience was how it illuminated the incredible 
 
 This work also gave me a new appreciation for the tedious regulatory requirements that govern clinical research. What initially appeared to be bureaucratic complications revealed themselves as essential safeguards ensuring that clinical trial data can be trusted, compared across studies, and used to make important decisions about drug safety and efficacy.
 
----
-
 ## 8. Manual Edit Checks
 
 ### Overview
@@ -219,7 +209,7 @@ The MEC process for the study encompassed **134 unique validation rules** spanni
 - **Clinical (CLIN) checks**: Focused on clinical logic and medical plausibility
 - **Listing (LIS) checks**: Focused on data completeness and consistency
 
-The checks covered fifty-seven different Case Report Forms across thirty-four visit contexts from initial screening through study completion. The sheer scope of this validation framework was initially overwhelming, particularly given that my earlier exposure to data quality control had been limited to basic data cleaning exercises in coursework.
+The sheer scope of this validation framework was initially overwhelming, particularly given that my earlier exposure to data quality control had been limited to basic data cleaning exercises in coursework.
 
 ### Technical Implementation
 
@@ -227,19 +217,17 @@ My primary responsibility involved implementing and refining the R-based validat
 
 - **PASS**: Data meeting all criteria
 - **FAIL**: Definitive errors requiring correction
-- **REVIEW**: Cases demanding manual evaluation and clinical judgment
+- **REVIEW**: Cases demanding manual evaluation
 
 ### Complex Validation Logic
 
-The most intellectually stimulating aspect was working with the Inclusion/Exclusion criteria checks, which included thirty of the total validation rules. These checks required sophisticated logic to manage scenarios such as specific medical events during the study period—cases where participants initially meeting eligibility criteria might experience status changes that affected their continued participation.
+The most intellectually stimulating aspect was working with the Inclusion/Exclusion criteria checks, which made up a large chunk of the total validation rules. These checks required sophisticated logic to manage scenarios such as specific medical events during the study period—cases where participants initially meeting eligibility criteria might experience status changes that affected their continued participation.
 
 The cross-form validation components proved particularly challenging, as they demanded integration of data from multiple CRF domains to ensure consistency. For instance, confirming that adverse event onset dates aligned with visit dates required matching temporal data across different forms while accounting for potential data entry variations and protocol-defined visit windows.
 
 ### Impact on Understanding
 
 Working on this project fundamentally changed my appreciation for the infrastructure supporting clinical research. Before this experience, I understood clinical trials primarily through the lens of statistical analysis and study design. The MEC process revealed the enormous effort needed to ensure that data can be trusted for regulatory submissions—an aspect of biostatistical work that receives little attention in academic coursework but proves essential in practice.
-
----
 
 ## 9. Shiny App Development
 
@@ -252,7 +240,7 @@ During the latter phase of my internship, I undertook what would become one of t
 This project emerged from a dual need within Scigenix's quality assurance workflow:
 
 1. **Data Validation**: The ability to efficiently validate data consistency across various stages of clinical trial data processing, particularly during database lock procedures that precede regulatory submissions
-2. **Coding Compliance**: Ensuring accurate medical coding using current MedDRA (Medical Dictionary for Regulatory Activities) and WHO Drug Dictionary terms
+2. **Coding Compliance**: Ensuring accurate medical coding using current MedDRA (Medical Dictionary for Regulatory Activities)
 
 ### Technical Architecture
 

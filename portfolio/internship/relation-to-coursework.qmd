@@ -8,8 +8,6 @@ sidebar: internship
 
 This section demonstrates how my consulting and clinical research work at Scigenix related to specific courses in the MSc Biostatistics programme. The table below maps each internship task to the most relevant modules, with brief explanations of how theoretical knowledge was applied in practice.
 
----
-
 ## Matrix of Tasks and Related Modules
 
 | Task in Cases | Relevant Modules | Relevance |
@@ -28,9 +26,7 @@ This section demonstrates how my consulting and clinical research work at Scigen
 | **Consulting Skills** | • Biostatistical Consulting | Led consultation meetings, translated clinical questions to statistical problems, provided actionable recommendations |
 | **Leadership skills** | • Biostatistical Consulting | Took ownership of analyses, managed project timelines, coordinated with multiple stakeholders |
 | **Mentorship Skills** | • Biostatistical Consulting | Constant mentoring received from other employees and internship supervisor. Shared my own knowledge with team members during collaborative work |
-| **Complex Statistical analysis** | • Linear Models<br>• Categorical Data Analysis & GLMs<br>• Longitudinal Data Analysis<br>• Analysis of Survival Data | Applied ordinal logistic regression, GLMs for fresh gas flow analysis, managed Likert scale data, performed factor analysis |
-
----
+| **Complex Statistical analysis** | • Linear Models<br>• Categorical Data Analysis & GLMs<br>• Longitudinal Data Analysis<br>• Analysis of Survival Data | Applied ordinal logistic regression, managed Likert scale data, performed factor analysis |
 
 ## Detailed Module Connections
 
@@ -60,17 +56,15 @@ The regression techniques learned in this module were foundational for the analy
 
 ### Categorical Data Analysis & GLMs
 
-This module was particularly relevant for the job satisfaction survey (ordinal logistic regression for intention to leave) and the fresh gas flow analysis (GLMs accounting for repeated measures). Understanding when and how to apply these methods was crucial for producing valid results.
+This module was particularly relevant for the job satisfaction survey (ordinal logistic regression for intention to leave) and the fresh gas flow analysis. Understanding when and how to apply these methods was crucial for producing valid results.
 
 ### Longitudinal Data Analysis
 
-While I didn't conduct formal longitudinal analyses during my internship, understanding the concepts of within-subject correlation and appropriate modeling approaches helped me appreciate the complexity of the repeated measures data I encountered in clinical trials.
+Longitudinal data analysis concepts were applied in projects involving repeated measures such as pharmacokinetic data, where several dozen measurements would be taken on individual participants over time. Techniques for handling correlated observations and missing data were particularly useful.
 
 ### Analysis of Survival Data
 
-<!-- TODO: Add any specific applications of survival analysis methods if encountered during the internship -->
-
----
+Whilst I did not directly conduct survival analyses during my internship, the principles learned in this module informed my understanding of time-to-event data discussed in clinical trial contexts. This foundational knowledge will be valuable for future projects involving survival outcomes. These concepts were thoroughly applied in my research project as part of my degree.
 
 ## From Theory to Practice: Key Insights
 
@@ -90,8 +84,6 @@ Technical skills from my modules were necessary but not sufficient. The ability 
 
 While coursework emphasized reproducibility in principle, the internship showed me what it means in practice: version-controlled code, comprehensive documentation, validation scripts, and standardized workflows. The R package structure used at Scigenix ensured that analyses could be reproduced months or years later—a critical requirement for regulatory submissions.
 
----
-
 ## Gaps and Areas for Further Development
 
 ### Regulatory Knowledge
@@ -106,13 +98,9 @@ The Shiny app development project exposed gaps in my knowledge of software engin
 
 Better familiarity with medical terminology and clinical concepts would have made initial project discussions more efficient. While I picked up relevant terms quickly, a more systematic foundation would have been helpful.
 
----
-
-::: {.callout-important}
 ## Key Takeaway
 
 The internship demonstrated that the MSc Biostatistics curriculum provides an excellent theoretical foundation, but real-world consulting requires integrating knowledge across modules while developing soft skills like communication, project management, and collaboration. The greatest value came from applying multiple modules' concepts simultaneously to solve complex, messy real-world problems.
-:::
 
 ---
 

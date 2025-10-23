@@ -8,8 +8,6 @@ sidebar: internship
 
 This section demonstrates how I achieved the learning outcomes of the Biostatistical Consulting & Collaboration module through specific internship activities and tasks at Scigenix.
 
----
-
 ## Matrix of Learning Outcomes and Tasks
 
 The table below maps specific learning outcomes to the various projects and activities I undertook during my internship. Each checkmark (✓) indicates that a particular learning outcome was addressed through that activity.
@@ -61,7 +59,7 @@ I worked closely with clinical researchers to translate their clinical problems 
 
 ### Questionnaire Design
 
-I gained experience working with validated instruments like the Minnesota Satisfaction Questionnaire (MSQ) and contributed to the design of the MurmurQuiz. This taught me about Likert scales, response bias, and validation measures—critical considerations for reliable data collection.
+I gained experience working with validated instruments like the Minnesota Satisfaction Questionnaire (MSQ) and contributed to the design of the MurmurQuiz. This taught me about Likert scales, response bias, and validation measures. This also introduced me to the concept of ordinal logistic regression, which is an often misunderstood statistical method due to its complexity in terms of interpreting results.
 
 ### Formulating Study Designs
 
@@ -69,7 +67,7 @@ My contributions to RCT design through randomisation schedules helped me underst
 
 ### Communication – Oral and Written
 
-Throughout my internship, I regularly presented findings to multidisciplinary teams and wrote analysis reports that translated complex statistics for clinical audiences. This was perhaps the most frequently exercised skill, as every project required clear communication with non-statistical stakeholders.
+Throughout my internship, I regularly presented findings to colleagues and collaborators from consulting project. This was perhaps the most frequently exercised skill, as every project required clear communication with non-statistical stakeholders.
 
 ### Research Ethics
 
@@ -97,21 +95,17 @@ I led consultation meetings, translated clinical questions into statistical prob
 
 ### Leadership Skills
 
-On the job satisfaction survey project, I took ownership of the analysis, managed project timelines, and coordinated with multiple stakeholders. This experience showed me that leadership in biostatistics often means guiding the analytical process while empowering collaborators to make informed decisions.
+On the job satisfaction survey project, I took ownership of the analysis, managed project timelines, and coordinated with multiple researchers. This experience showed me that leadership in biostatistics often means guiding the analytical process while empowering collaborators to make informed decisions.
 
 ### Statistical Analysis
 
-I applied a wide range of statistical methods including ordinal logistic regression, generalized linear models (GLMs) for the fresh gas flow analysis, and factor analysis. Managing Likert scale data taught me the importance of choosing appropriate methods for the data structure and research question.
-
----
+I applied a wide range of statistical methods including logistic regression, ordinal logistic regression, various hypothesis tests, and factor analysis. Managing Likert scale data taught me the importance of choosing appropriate methods for the data structure and research question.
 
 ## Reflection on Learning Integration
 
 The internship demonstrated how interconnected these learning outcomes are in practice. A single project often required simultaneously applying multiple skills—from study design and data management to analysis, communication, and collaboration.
 
 The most important lesson I learned is that technical statistical expertise must be paired with strong soft skills. The ability to communicate clearly, collaborate effectively, and manage projects efficiently is what transforms a statistician into an effective biostatistical consultant.
-
-<!-- TODO: Add any additional reflections on specific learning outcomes that were particularly challenging or rewarding -->
 
 ---
 

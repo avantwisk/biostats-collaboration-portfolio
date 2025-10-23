@@ -1,87 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/learning-outcomes/index.html</loc>
-    <lastmod>2025-10-19T17:44:46.862Z</lastmod>
+    <loc>https://example.com/AGENTS.html</loc>
+    <lastmod>2025-10-22T13:34:35.768Z</lastmod>
   </url>
   <url>
-    <loc>https://example.com/internship/learning-objectives.html</loc>
-    <lastmod>2025-10-19T17:18:40.166Z</lastmod>
+    <loc>https://example.com/internship/introduction.html</loc>
+    <lastmod>2025-10-23T12:34:32.149Z</lastmod>
   </url>
   <url>
-    <loc>https://example.com/internship/work-outputs.html</loc>
-    <lastmod>2025-10-19T17:22:15.330Z</lastmod>
+    <loc>https://example.com/internship/relation-to-coursework.html</loc>
+    <lastmod>2025-10-23T12:50:58.510Z</lastmod>
   </url>
   <url>
-    <loc>https://example.com/internship/index.html</loc>
-    <lastmod>2025-10-19T17:16:34.853Z</lastmod>
+    <loc>https://example.com/internship/reflection.html</loc>
+    <lastmod>2025-10-23T13:03:56.976Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/index.html</loc>
+    <lastmod>2025-10-23T16:23:31.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/reflections/week-02/day-01.html</loc>
+    <lastmod>2025-10-23T14:40:54.756Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/reflections/week-02/day-02.html</loc>
+    <lastmod>2025-10-23T14:41:13.795Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/reflections/week-01/day-04.html</loc>
+    <lastmod>2025-10-23T14:40:45.330Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/reflections/week-01/day-03.html</loc>
+    <lastmod>2025-10-23T14:40:24.550Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/artefacts/index.html</loc>
+    <lastmod>2025-10-23T16:21:24.897Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/reflections/week-01/day-02.html</loc>
+    <lastmod>2025-10-23T14:44:33.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/reflections/week-01/day-01.html</loc>
+    <lastmod>2025-10-23T14:47:46.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/reflections/index.html</loc>
+    <lastmod>2025-10-23T14:24:42.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/reflections/week-02/day-03.html</loc>
+    <lastmod>2025-10-23T14:41:25.979Z</lastmod>
   </url>
   <url>
     <loc>https://example.com/coursework/index.html</loc>
     <lastmod>2025-10-20T14:30:45.018Z</lastmod>
   </url>
   <url>
-    <loc>https://example.com/reflections/week-02/day-04.html</loc>
-    <lastmod>2025-10-19T17:29:52.283Z</lastmod>
+    <loc>https://example.com/learning-outcomes/index.html</loc>
+    <lastmod>2025-10-19T17:44:46.862Z</lastmod>
   </url>
   <url>
-    <loc>https://example.com/reflections/week-02/day-03.html</loc>
-    <lastmod>2025-10-19T18:44:50.275Z</lastmod>
+    <loc>https://example.com/internship/index.html</loc>
+    <lastmod>2025-10-23T14:34:54.299Z</lastmod>
   </url>
   <url>
-    <loc>https://example.com/reflections/index.html</loc>
-    <lastmod>2025-10-19T18:45:20.620Z</lastmod>
+    <loc>https://example.com/internship/work-outputs.html</loc>
+    <lastmod>2025-10-23T14:45:47.371Z</lastmod>
   </url>
   <url>
-    <loc>https://example.com/reflections/week-01/day-04.html</loc>
-    <lastmod>2025-10-19T18:42:41.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/reflections/week-01/day-03.html</loc>
-    <lastmod>2025-10-19T18:41:58.498Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/artefacts/index.html</loc>
-    <lastmod>2025-10-19T17:33:51.798Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/reflections/week-01/day-02.html</loc>
-    <lastmod>2025-10-19T18:41:16.588Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/reflections/week-01/day-01.html</loc>
-    <lastmod>2025-10-19T18:40:04.464Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/reflections/week-01/day-05.html</loc>
-    <lastmod>2025-10-19T17:27:26.781Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/reflections/week-02/day-02.html</loc>
-    <lastmod>2025-10-19T18:44:06.036Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/reflections/week-02/day-01.html</loc>
-    <lastmod>2025-10-19T18:43:21.122Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/reflections/week-02/day-05.html</loc>
-    <lastmod>2025-10-19T17:30:22.363Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/internship/reflection.html</loc>
-    <lastmod>2025-10-19T17:23:40.404Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/internship/relation-to-coursework.html</loc>
-    <lastmod>2025-10-19T17:19:43.610Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/internship/introduction.html</loc>
-    <lastmod>2025-10-19T17:17:34.740Z</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/index.html</loc>
-    <lastmod>2025-10-20T14:30:10.011Z</lastmod>
+    <loc>https://example.com/internship/learning-objectives.html</loc>
+    <lastmod>2025-10-23T12:42:45.624Z</lastmod>
   </url>
 </urlset>

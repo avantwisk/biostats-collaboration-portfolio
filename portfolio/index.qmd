@@ -1,17 +1,20 @@
 ---
 title: "Welcome to My Portfolio"
-subtitle: "Biostatistical Consulting & Collaboration Module"
+subtitle: "Biostatistical Collaboration Module"
 ---
 
 ## About Me
 
-![](images/headshot.jpg){width=200px fig-align="left"}
+::: {.home-intro}
+::: {.profile-column}
+![Portrait of Alexander van Twisk](images/headshot.jpg)
+:::
+::: {.intro-column}
+I am Alexander van Twisk, a final-year MSc Biostatistics student at Stellenbosch University. This portfolio documents my learning journey through the Biostatistical Consulting & Collaboration module, the penultimate module of my 2-year degree.
 
-<!-- TODO: Replace with your personal bio -->
-
-I am Alexander van Twisk, a final-year MSc Biostatistics student at Stellenbosch University. This portfolio documents my learning journey through the Biostatistical Consulting & Collaboration module, which forms a critical component of my graduate training.
-
-My degree combines rigorous theoretical foundations with practical, hands-on experience. The BC module specifically emphasizes the development of collaborative abilities, communication skills, and professional consulting practices—competencies essential for effective biostatistical work in clinical research environments.
+The purpose of this module, and the degree as a whole, is to build theoretical foundations with practical, hands-on experience. The BC module specifically focussed the development of collaborative abilities in research environments, communication skills, and professional consulting practices—competencies essential for effective biostatistical work in clinical settings.
+:::
+:::
 
 **Internship Details:**
 
@@ -24,7 +27,7 @@ My degree combines rigorous theoretical foundations with practical, hands-on exp
 
 ## Module Purpose
 
-The Biostatistical Consulting module is designed to merge theoretical concepts with practical implementation, placing particular importance on developing collaborative abilities through interactive lectures and experiential learning opportunities. Unlike conventional lecture-based modules, the BC module emphasizes:
+The Biostatistical Consulting module is designed to merge theoretical concepts with practical implementation, placing particular importance on developing collaborative abilities through interactive lectures with world renowned guest speakers,and experiential learning opportunities either through roll playing or a 3-month internship period. Unlike conventional lecture-based modules, the BC module emphasizes:
 
 - **Discussion and questioning** to develop critical thinking
 - **Practical collaboration skills** essential for effective biostatistical consulting
@@ -56,32 +59,16 @@ Daily reflections following the Gibbs Reflective Cycle across two weeks of inten
 
 Each reflection critically examines my learning experiences, connecting them to professional development as a biostatistician.
 
+<!--
 ### [Learning Outcomes](learning-outcomes/index.qmd)
 
-Documentation of how I achieved the module's learning outcomes through specific activities and experiences.
+Information on how I achieved the module's learning outcomes through specific activities and experiences.
 
 ### [Coursework](coursework/index.qmd)
 
 Overview of how the module integrates with my broader MSc Biostatistics curriculum.
+-->
 
 ### [Artefacts](artefacts/index.qmd)
 
 Repository of evidence supporting my reflections and demonstrating my learning.
-
----
-
-## Contact
-
-<!-- TODO: Add your contact information if desired -->
-
-**Email**: TODO
-**LinkedIn**: TODO
-**GitHub**: TODO
-
----
-
-::: {.callout-note}
-## Portfolio Note
-
-This portfolio is submitted in partial fulfilment of the requirements for the degree of Master of Science in Biostatistics at Stellenbosch University.
-:::
