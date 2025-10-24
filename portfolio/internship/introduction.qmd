@@ -37,7 +37,7 @@ Office culture is highly valued at the company, and we often enjoyed social gath
 
 The leadership at the company played an integral role in helping me feel welcome from my first day. Shortly after starting my internship and having just moved to Pretoria from Cape Town, I admitted to feeling overwhelmed. I was assured that I should not feel any pressure or experience any stress during my internship and that they were committed to ensuring I had a valuable experience. Small actions such as these are invaluable in helping anyone, and certainly myself, feel welcome at a new organisation. Beyond this, I felt an added level of motivation to do my best, as the support I received inspired me to reciprocate their efforts.
 
-![Team braai at Scigenix](index_files/company_braai.JPG){fig-alt="Interns and staff at a Scigenix company braai" width=420 style="display:block;margin:1.5rem auto;"}
+![Team braai at Scigenix](index_files/company_braai.JPG){fig-alt="Interns and staff at a Scigenix company braai" width=600 style="display:block;margin:1.5rem auto;"}
 
 ## My Role and Responsibilities
 

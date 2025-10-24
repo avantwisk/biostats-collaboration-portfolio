@@ -23,27 +23,27 @@ On 14 April (Block 2), the day covered our role in collaborations, the Biostatis
 
 ### 1. Description
 
-Today established my professional identity beyond “data analyst”: collaborator, educator, and ethical steward. We explored the Code of Conduct, strategies for enhancing collaborations, mentorship as a lever for growth, how to communicate statistics to clinicians, and how statistical significance differs from clinical importance. The sessions collectively framed collaboration as an ethically bounded, communication-intensive practice.
+Today I stopped seeing myself only as a data analyst. I left with a clearer picture of my role: collaborate, teach, and act with integrity. We covered the Code of Conduct, practical habits that make collaborations work, how to speak with clinicians about statistics, and why clinical relevance matters beyond p‑values. Together, the sessions framed collaboration as ethical work that depends on clear communication.
 
 ### 2. Feelings
 
-I felt energized by the expanded view of my role, yet humbled by the ethical weight of biostatistical advice. The communication sessions were reassuring, and they highlighted that clarity is a skill I can deliberately practice. Mentorship sparked motivation, with a trace of anxiety about initiating relationships respectfully and productively.
+I felt energized by the expanded view of my role and aware of the responsibility my advice carries. The communication session made “clarity” feel learnable and practical. Mentorship was motivating, with some nerves about starting those relationships well.
 
 ### 3. Evaluation
 
-The day’s coherence stood out: ethics set guardrails; collaboration tips translated principles into practice; communication and language guidance improved precision; mentorship offered a sustainable development pathway. A minor limitation was limited time to interrogate nuanced dilemmas (e.g., balancing collaborator timelines with analytic rigor).
+The pieces fit together: ethics set the guardrails; tips turned principles into behaviors; communication improved precision; mentorship made growth feel doable. We had less time for the grey areas, like balancing time pressure with rigor.
 
 ### 4. Analysis
 
-Using ASCCR, I reframed practice: Attitude (service, humility), Structure (clear expectations and authorship), Content (co-created questions), Communication (bidirectional and jargon-aware), Relationship (trust over time). Mezirow’s critical reflection surfaced a prior assumption that my value is mainly technical; today challenged that. Kolb’s cycle was evident—experience, reflection, principles, and planned experimentation. Double-loop learning applies: not just doing analyses better, but redefining “good” as ethically sound and clinically meaningful.
+A simple checklist helps me show up well: bring the right attitude, set structure early (scope, expectations, authorship), co‑create questions, communicate plainly, and invest in trust over time. I noticed a bias to define my value as “technical.” Today expanded that to “partner” who helps turn numbers into decisions.
 
 ### 5. Conclusion
 
-I learned that effective collaboration integrates ethical judgment, relational competence, and translational communication. Technical accuracy is necessary but insufficient; meaning-making with clinicians is the bridge from numbers to impact.
+Effective collaboration blends ethics, relationships, and translation. Accuracy matters, but impact depends on making results usable to clinicians.
 
 ### 6. Action Plan
 
-I will create a personal conduct checklist (conflicts, authorship, reproducibility), adopt POWER-style openings for meetings, and maintain a terminology watchlist to avoid common misuse. I’ll identify two mentors and prepare specific, value-respecting questions. I’ll schedule monthly double-loop reflections to examine assumptions about my role and the clinical relevance of my recommendations.
+I will keep a conduct checklist (conflicts, authorship, reproducibility), open meetings with a short agenda, and maintain a terminology watchlist to avoid common misuse. I’ll identify mentors whom I can call on with with clear questions to discuss my assumptions and the clinical relevance of my advice.
 
 ::: {.callout-tip}
 ## Next Reflection

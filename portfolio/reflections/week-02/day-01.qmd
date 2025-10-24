@@ -23,27 +23,27 @@ On 19 May (Block 1), we introduced ASCCR, practiced the POWER structure for cons
 
 ### 1. Description
 
-We mapped ASCCR onto real consultations and practiced POWER—Purpose, Orientation, Work plan, Expectations, and Review—to create momentum and accountability. Reflection frameworks were presented as tools to convert experience into growth rather than post-hoc journaling.
+We mapped ASCCR onto real consultations and practiced POWER (Purpose, Orientation, Work plan, Expectations, Review) to give meetings momentum and accountability. Reflection frameworks were positioned as tools to turn experience into growth, not just after‑the‑fact notes.
 
 ### 2. Feelings
 
-I felt relief at having a unifying scaffold; previous consultations felt improvisational. POWER made openings less awkward and endings more decisive. The reflective writing piece felt both familiar and newly practical when framed as an iterative learning engine.
+I felt relief having a unifying scaffold—previous consultations felt improvised. POWER made openings easier and closings more decisive. Reflection felt familiar but more practical when treated as an iterative learning engine.
 
 ### 3. Evaluation
 
-ASCCR’s clarity helped me diagnose past friction points (unclear roles; mismatched expectations). POWER translated those insights into behaviors. The role-plays surfaced micro-skills (paraphrasing, timeboxing, agenda setting) I often underuse. I wanted more feedback on my tone and pacing.
+ASCCR helped me diagnose friction points (unclear roles, mismatched expectations). POWER translated those insights into concrete behaviors. Role‑plays surfaced micro‑skills (paraphrasing, timeboxing, agenda setting) I underuse. More feedback on tone and pacing would help.
 
 ### 4. Analysis
 
-Kolb’s cycle justifies short learning loops: plan, act, reflect, refine. Mezirow’s critical reflection surfaced assumptions (e.g., “jump to methods quickly shows competence”); double-loop learning encouraged replacing them with “align on purpose and constraints first.” ASCCR works as a diagnostic: if a conversation derails, I can ask which letter is weak.
+Short learning loops work: plan, act, reflect, refine. I’m replacing “jump to methods quickly shows competence” with “align on purpose and constraints first.” ASCCR also works as a diagnostic—if a conversation derails, I can ask which letter is weak.
 
 ### 5. Conclusion
 
-Consultations improve when I choreograph them: purposeful openings, explicit scope, co-authored next steps, and deliberate closings. Reflection is not separate from practice—it is the practice that improves practice.
+Consultations improve when they are choreographed: purposeful openings, explicit scope, co‑authored next steps, deliberate closings. Reflection is part of practice, not separate from it.
 
 ### 6. Action Plan
 
-I will use a one-page POWER opener, an ASCCR checklist for debriefs, and 10-minute post-meeting notes (Gibbs prompts). I will solicit feedback from collaborators on clarity of purpose and action items to calibrate my delivery.
+I will use a one‑page POWER opener, an ASCCR checklist for debriefs, and 10‑minute post‑meeting notes (Gibbs prompts). I’ll ask collaborators for feedback on clarity of purpose and next steps to calibrate my delivery.
 
 ::: {.callout-tip}
 ## Next Reflection
