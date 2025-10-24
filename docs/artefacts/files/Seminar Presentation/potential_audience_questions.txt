@@ -1,0 +1,838 @@
+================================================================================
+POTENTIAL AUDIENCE QUESTIONS FOR ADEMP SIMULATION STUDIES SEMINAR
+================================================================================
+
+Presenter: Alexander van Twisk
+Topic: Design and report simulation studies the smart way with ADEMP
+Date: 2025-10-17
+
+This document anticipates questions from audience members following the
+presentation on simulation studies using the ADEMP framework.
+
+================================================================================
+SECTION 1: CONCEPTUAL QUESTIONS ABOUT ADEMP
+================================================================================
+
+Q1: Why do we need a framework like ADEMP? Can't we just write simulation code?
+-------------------------------------------------------------------------------
+ANSWER: Absolutely you can write code without ADEMP, but research shows that
+unstructured simulations often suffer from methodological flaws—selective
+scenario reporting, unclear estimands, unfair method comparisons, and missing
+uncertainty quantification. ADEMP provides a principled workflow that prevents
+these pitfalls by forcing you to think through each component systematically.
+It's like having a pre-specified protocol for your simulation study, similar
+to how we register clinical trials. The framework ensures transparency,
+reproducibility, and defensibility when reviewers scrutinize your work.
+
+REFERENCE: Slide 4 (ADEMP Overview), Slide 18 (Pitfalls)
+
+
+Q2: Do the ADEMP components have to be completed in order?
+-------------------------------------------------------------------------------
+ANSWER: Conceptually, yes—ADEMP is designed as a logical sequence. Your Aims
+drive what Data you need to generate and what Estimands matter. The Estimand
+determines which Methods are appropriate for comparison. Performance measures
+must align with your original Aims. However, in practice there's iteration:
+pilot simulations might reveal that your DGM needs refinement, or that certain
+methods fail too often. The key is that your *final* design should reflect
+coherent flow from A→D→E→M→P, even if you circled back during development.
+
+REFERENCE: Slide 4 (ADEMP Overview)
+
+
+Q3: How is the Estimand different from what we're estimating (the estimate)?
+-------------------------------------------------------------------------------
+ANSWER: The *estimand* is the TRUE target parameter you want to learn about—
+it's defined by your data-generating mechanism. Examples include a population
+risk difference, a hazard ratio, a median survival time. The *estimator* is
+the METHOD you use to estimate it (e.g., a regression coefficient, a Kaplan-
+Meier median, a propensity-score-adjusted difference). The *estimate* is the
+numerical result you get from applying that estimator to one dataset. In
+simulations, we know the true estimand by design, which lets us directly
+measure how well each estimator performs (bias, MSE, coverage). Confusing
+these leads to unfair method comparisons—like comparing a marginal effect
+to a conditional effect when they're answering different questions.
+
+REFERENCE: Slide 7 (Estimands), Slide 10-13 (Worked Example)
+
+
+Q4: What if my research question doesn't fit neatly into ADEMP?
+-------------------------------------------------------------------------------
+ANSWER: ADEMP is flexible enough to accommodate most simulation purposes. If
+you're doing exploratory work—say, investigating a new phenomenon without
+pre-specified hypotheses—you can frame your Aim as "explore the behavior of
+Method X under conditions Y." If you're comparing algorithms rather than
+statistical estimators, your Estimand might be "classification accuracy" or
+"convergence rate." The framework adapts; the key is being explicit about
+what you're testing, how you generate data, what you're targeting, and how
+you measure success. If you find ADEMP truly doesn't fit, ask whether your
+study is actually a *simulation study* or something else (like a software
+benchmark or pure algorithm development).
+
+REFERENCE: Slide 5-9 (ADEMP Components)
+
+
+================================================================================
+SECTION 2: DATA-GENERATING MECHANISMS (DGM)
+================================================================================
+
+Q5: How do I choose realistic parameters for my data-generating mechanism?
+-------------------------------------------------------------------------------
+ANSWER: Start with pilot data, published literature, or domain experts. For
+example, if simulating a clinical trial, look at historical trials in similar
+populations to inform baseline event rates, dropout patterns, and effect sizes.
+If you're testing a new method, calibrate your DGM to published data summaries.
+The goal isn't to match one specific dataset perfectly, but to span a plausible
+range. It's also wise to include some extreme scenarios as stress tests—low
+sample sizes, high missingness, strong departures from assumptions—to see
+where methods break down. Document your parameter choices and their sources
+transparently.
+
+REFERENCE: Slide 6 (Data-generating Mechanisms), Slide 14 (Sensitivity &
+Robustness)
+
+
+Q6: Should I use parametric data generation or resample from real data?
+-------------------------------------------------------------------------------
+ANSWER: It depends on your aims. Parametric DGMs give you control and
+flexibility—you can systematically vary sample sizes, effect sizes, and
+distributions to stress-test methods across many scenarios. Resampling from
+real data keeps you grounded in reality but limits generalizability to that
+one observed dataset. In practice, many simulation studies use parametric
+DGMs informed by pilot data or literature estimates to balance realism and
+breadth. For sensitivity analyses, you might do both: parametric as your
+primary approach, then resample from real data as a robustness check.
+
+REFERENCE: Slide 6 (DGM), Slide 10 (Worked Example - realistic parameters)
+
+
+Q7: How many scenarios should I include in my factorial design?
+-------------------------------------------------------------------------------
+ANSWER: Enough to capture the key factors affecting method performance, but
+not so many that results become uninterpretable. Start with 2-4 factors at
+2-3 levels each. For example: sample size (n=50, 100, 200), dropout (0%, 10%,
+20%), effect size (small, medium, large). That's 3×3×3 = 27 scenarios. Pre-
+specify which scenarios are primary (testing main hypotheses) vs exploratory
+(sensitivity analyses). If the full factorial is too large, use fractional
+factorial or Latin hypercube designs. The key is avoiding selective reporting—
+don't cherry-pick scenarios where your method looks good. Report all
+pre-specified scenarios or justify exclusions transparently.
+
+REFERENCE: Slide 6 (DGM), Slide 14 (Sensitivity), Slide 18 (Pitfalls)
+
+
+Q8: Can I add complexity to my DGM during the study, or is that "cheating"?
+-------------------------------------------------------------------------------
+ANSWER: Adding scenarios mid-study isn't inherently wrong, but it must be done
+transparently. If pilot results reveal an important case you hadn't considered,
+you can add it—but label it clearly as post-hoc or exploratory in your report.
+The danger is "scenario shopping": running many configurations and reporting
+only those where your method wins. The antidote is pre-registration (if
+feasible) or transparent reporting of what was planned vs added. Think of it
+like pre-specified vs exploratory analyses in clinical trials—both are valid,
+but readers need to know which is which.
+
+REFERENCE: Slide 18 (Pitfalls - selective scenarios)
+
+
+================================================================================
+SECTION 3: METHODS & FAIRNESS
+================================================================================
+
+Q9: How do I ensure a fair comparison between methods?
+-------------------------------------------------------------------------------
+ANSWER: Fairness requires symmetry across five dimensions:
+1. Same estimand (don't compare conditional vs marginal effects)
+2. Same data generation (all methods see identical simulated datasets)
+3. Equal tuning effort (if you optimize hyperparameters for Method A, do the
+   same for Method B)
+4. Same convergence/failure rules (if Method A gets 3 retries, so does B)
+5. Same evaluation metrics (use the same performance measures for all)
+
+Document these choices explicitly. Report convergence failures for all methods,
+not just successes. If one method requires more computational resources, report
+that as part of the trade-off analysis. The goal isn't to make methods look
+identical, but to give each a fair shot under neutral conditions.
+
+REFERENCE: Slide 8 (Methods), Slide 16 (Neutral Method Comparison)
+
+
+Q10: What do I do when a method fails to converge in some simulations?
+-------------------------------------------------------------------------------
+ANSWER: First, define failure rules upfront: e.g., "allow one retry with
+different starting values; if still fails, record as non-convergence." Apply
+these rules symmetrically to all methods. Then report failure rates as a
+performance metric—high failure rates are informative! They tell you a method
+is fragile in certain scenarios. For primary metrics like bias and coverage,
+you can either (a) exclude failures and report results conditional on
+convergence, or (b) use multiple imputation or worst-case/best-case bounds.
+The key is transparency: show readers how many iterations failed and whether
+results are sensitive to those exclusions.
+
+REFERENCE: Slide 8 (Methods - Fair Comparison), Slide 18 (Pitfalls - hidden
+failures)
+
+
+Q11: Can I use different software implementations for different methods?
+-------------------------------------------------------------------------------
+ANSWER: Yes, but acknowledge potential implementation differences. For example,
+if comparing R's glm() to Python's statsmodels, small numerical differences
+might arise from optimization algorithms or convergence criteria. Document
+which packages and versions you used. If possible, verify that both
+implementations give equivalent results on a test case where the answer is
+known. If methods are only available in different languages, that's fine—just
+be transparent about it. Implementation differences are real-world constraints;
+hiding them would be worse than acknowledging them.
+
+REFERENCE: Slide 8 (Methods), Slide 19 (Reporting - session info)
+
+
+================================================================================
+SECTION 4: PERFORMANCE MEASURES & MONTE CARLO SE
+================================================================================
+
+Q12: What is Monte Carlo Standard Error (MCSE) and why does it matter?
+-------------------------------------------------------------------------------
+ANSWER: MCSE quantifies the sampling variability in your simulation results.
+Even though you control the data-generating process, your performance estimates
+(bias, power, coverage) are themselves random because they're based on a finite
+number of simulation repetitions (nsim). MCSE tells you how much those
+estimates would bounce around if you re-ran the simulation with a different
+random seed. For example, if you estimate power = 0.82 with MCSE = 0.01, the
+true power (for infinite repetitions) is roughly 0.82 ± 0.02. Always report
+MCSEs—they let readers judge whether differences between methods are real or
+just simulation noise. Omitting MCSEs is like reporting a point estimate
+without a confidence interval in a real study.
+
+REFERENCE: Slide 17 (Performance - MCSE), Slide 13 (Worked Example - power
+curve with MCSE)
+
+
+Q13: How do I calculate Monte Carlo SE for different performance measures?
+-------------------------------------------------------------------------------
+ANSWER: It depends on the metric:
+
+- Power (proportion): MCSE ≈ sqrt(p*(1-p) / nsim), where p is estimated power
+- Coverage (proportion): same formula as power
+- Bias (mean difference): MCSE = SD(estimates) / sqrt(nsim), where SD is the
+  sample standard deviation of your point estimates across repetitions
+- MSE: Use bootstrap or delta method; see Morris et al. 2019 for formulas
+
+For most proportions, if you want MCSE ≤ 0.01, you need nsim ≥ 2,000 (because
+at worst, when p=0.5, MCSE = sqrt(0.25/nsim) ≈ 0.01 requires nsim ≥ 2,500).
+
+REFERENCE: Slide 17 (MCSE Visual), Slide 12 (Worked Example - choosing nsim)
+
+
+Q14: How many simulation repetitions (nsim) should I run?
+-------------------------------------------------------------------------------
+ANSWER: Choose nsim to make your MCSE small enough for decision-making. Rules
+of thumb:
+- For power/coverage: nsim ≥ 2,000 gives MCSE ≈ 0.01 (acceptable for most uses)
+- For rare events (Type I error at α=0.05): nsim ≥ 10,000 gives MCSE ≈ 0.002
+- For precise bias estimation: depends on variability, but nsim ≥ 5,000 is common
+
+Don't just pick nsim=1,000 because it's a round number. Justify your choice
+based on target MCSE and the performance metric that matters most for your aims.
+Remember: doubling nsim only reduces MCSE by 1/sqrt(2) ≈ 0.71, so there are
+diminishing returns. Balance precision against computational cost.
+
+REFERENCE: Slide 12 (Worked Example - loop logic), Slide 17 (MCSE shrinks
+with more repetitions)
+
+
+Q15: What performance measures should I report?
+-------------------------------------------------------------------------------
+ANSWER: It depends on your aims, but core metrics include:
+- Bias: accuracy (systematic error)
+- MSE or RMSE: total deviation combining bias and variance
+- Coverage: do confidence intervals contain the true value at the nominal rate?
+- Power: probability of correctly rejecting a false null hypothesis
+- Type I error: false positive rate under the null (should match nominal α)
+
+Secondary metrics might include: computational time, convergence rate,
+robustness to violations. Always include MCSEs for the primary metrics. Use
+visualizations (power curves, bias heatmaps, coverage plots) rather than
+massive tables—patterns are easier to see in graphs.
+
+REFERENCE: Slide 9 (Performance Overview), Slide 13-17 (Performance Measures
+Detailed)
+
+
+================================================================================
+SECTION 5: PRACTICAL IMPLEMENTATION
+================================================================================
+
+Q16: How long does a simulation study take to run?
+-------------------------------------------------------------------------------
+ANSWER: It varies enormously. A simple two-sample t-test comparison with
+nsim=2,000 across 10 scenarios might run in minutes. A bootstrap-heavy method
+or complex mixed model across 50 scenarios with nsim=5,000 could take hours or
+days. Strategies to manage runtime:
+
+1. Parallelize across scenarios or repetitions (use R packages like furrr,
+   future, or parallel)
+2. Profile your code to find bottlenecks (use profvis in R)
+3. Start with a small pilot (nsim=100) to debug, then scale up
+4. Use high-performance computing (HPC cluster) for large studies
+5. Cache intermediate results so you don't lose progress if jobs crash
+
+Report runtime as part of your results—it's a legitimate performance metric
+when comparing methods in practice.
+
+REFERENCE: Slide 12 (Worked Example - loop logic), Slide 9 (Performance -
+runtime as metric)
+
+
+Q17: What software should I use for simulation studies?
+-------------------------------------------------------------------------------
+ANSWER: The language matters less than reproducibility and clarity. Popular
+choices:
+- R: excellent ecosystem (tidyverse, furrr, broom, ggplot2), great for stats
+- Python: good for ML methods, integration with other tools
+- Julia: fast for computationally intensive simulations
+- Stata: if your audience uses Stata, simulating in Stata aids adoption
+
+For reporting, Quarto (or R Markdown) is ideal—it integrates code, results,
+and narrative, making your study fully reproducible. Key practices:
+- Set seeds explicitly and document them
+- Use version control (Git)
+- Share code and data (or synthetic data if privacy is a concern)
+- Record session info (package versions, R version, OS)
+
+REFERENCE: Slide 19 (Reporting & visuals), Slide 20 (Checklist - code/seeds)
+
+
+Q18: Should I use parallel computing for my simulations?
+-------------------------------------------------------------------------------
+ANSWER: Yes, if runtime is an issue. Simulation studies are "embarrassingly
+parallel"—each repetition is independent, so you can split them across CPU
+cores or cluster nodes with near-linear speedup. In R, use:
+- furrr + future for easy parallelization
+- parallel package for lower-level control
+- Batch jobs on HPC clusters for very large studies
+
+Set separate seeds for each parallel worker to ensure reproducibility. Be
+aware of memory constraints—each worker needs its own copy of data and
+functions. Always test your parallel code on a small scale before launching
+massive jobs.
+
+REFERENCE: Slide 12 (Worked Example - loop logic)
+
+
+Q19: How do I organize my simulation code for reproducibility?
+-------------------------------------------------------------------------------
+ANSWER: Use a project structure like:
+/
+├── R/
+│   ├── simulation_helpers.R    # DGM functions
+│   ├── visualization_helpers.R # Plotting functions
+├── config/
+│   └── scenarios.csv            # Parameter grid
+├── output/
+│   ├── results_raw.rds          # Simulation output
+│   └── results_summary.csv      # Aggregated metrics
+├── figures/
+├── presentation.qmd             # Quarto doc with analysis
+├── run_simulation.R             # Main script
+└── README.md                    # Instructions
+
+Key principles:
+- Separate data generation, analysis, and visualization into functions
+- Use config files for scenarios (easier to modify than hardcoded values)
+- Save intermediate results (don't re-run everything to tweak a plot)
+- Document seeds, package versions, runtime
+- Version control with Git, share on GitHub/OSF
+
+REFERENCE: Slide 19 (Reporting), Slide 20 (Checklist)
+
+
+================================================================================
+SECTION 6: COMPARISON WITH OTHER APPROACHES
+================================================================================
+
+Q20: When should I use simulation vs. closed-form (formula-based) calculations?
+-------------------------------------------------------------------------------
+ANSWER: Use formulas when:
+- Closed-form solutions exist and assumptions are clearly met
+- You need a quick, back-of-the-envelope answer
+- The setting is simple (e.g., standard two-sample t-test, balanced design)
+
+Use simulation when:
+- Assumptions are questionable (small samples, non-normality, complex missing
+  data)
+- No formula exists (complex designs, novel methods)
+- You want to test robustness across many scenarios
+- You need to incorporate realistic nuisance factors (dropout, clustering,
+  measurement error)
+
+In practice, do BOTH: use formulas as a starting point, then simulate to
+verify and extend. The worked example in the presentation shows this: the
+formula gave N=182 per arm, but simulation accounting for dropout and using
+the actual test statistic suggested N=196—a meaningful difference.
+
+REFERENCE: Slide 10 (Worked Example - formula method), Slide 13 (Power curve
+comparison)
+
+
+Q21: How does ADEMP compare to other simulation frameworks?
+-------------------------------------------------------------------------------
+ANSWER: ADEMP (Morris et al. 2019) is one of several frameworks, but it's
+particularly well-suited for biostatistics because it emphasizes estimands
+explicitly—a concept central to modern causal inference and trial design. Other
+frameworks include:
+- Burton et al. (2006): Earlier guidance on simulation study design in medical
+  statistics
+- STRESS guidelines: Focused on reporting standards for simulation studies
+- Boulesteix et al. (2020): Introduction to simulation in health research
+
+ADEMP's strength is its clear workflow and connection to the ICH E9(R1)
+estimand framework. It's not radically different from these alternatives—think
+of it as a synthesis and refinement of best practices with a memorable acronym.
+
+REFERENCE: Slide 21 (References), Slide 4 (ADEMP Overview)
+
+
+Q22: Can I use ADEMP for machine learning method comparisons?
+-------------------------------------------------------------------------------
+ANSWER: Absolutely. The framework adapts naturally:
+- Aims: "Compare predictive accuracy of random forests vs gradient boosting"
+- Data: Generate from a known regression/classification function with realistic
+  noise and covariate distributions
+- Estimands: "Prediction error" or "AUC" on test data
+- Methods: RF and GBM with equal tuning effort (e.g., same CV procedure)
+- Performance: MSE, AUC, calibration, plus MCSE from repeated train/test splits
+
+The key is fairness: give both methods the same amount of hyperparameter tuning,
+the same preprocessing, and the same training/test split protocol. Report
+computational time as well, since ML methods often trade accuracy for speed.
+
+REFERENCE: Slide 8 (Methods - Fair Comparison), Slide 16 (Method Comparison)
+
+
+================================================================================
+SECTION 7: REPORTING & PUBLICATION
+================================================================================
+
+Q23: What should I include in the Methods section of my paper?
+-------------------------------------------------------------------------------
+ANSWER: At minimum:
+1. ADEMP table (one row per component, summarizing your design)
+2. Description of data-generating mechanisms with parameter values and sources
+3. Estimands and their interpretation
+4. Methods compared, including software/packages/versions
+5. Failure handling rules
+6. Performance metrics and how MCSEs were calculated
+7. Number of simulation repetitions (nsim) and justification
+8. Random seeds or seed-setting procedure
+9. Statement about code/data availability
+
+The ADEMP table is a concise, scannable summary—reviewers love it. Put detailed
+formulas and code in appendices or supplementary materials. Link to a public
+repository (GitHub, OSF) for full reproducibility.
+
+REFERENCE: Slide 19 (Reporting & visuals), Slide 20 (Checklist)
+
+
+Q24: How should I visualize simulation results?
+-------------------------------------------------------------------------------
+ANSWER: Prefer plots over tables for pattern recognition:
+- Power curves with MCSE ribbons (see slide 13)
+- Bias heatmaps showing scenarios × methods (see slide 6 factorial design)
+- Coverage bar charts with target reference lines (see slide 16)
+- Small multiples for sensitivity analyses (different parameter values side-
+  by-side)
+
+For tables, keep them compact:
+- Use rounding appropriate to MCSE (don't report bias to 6 decimals if MCSE
+  is 0.01)
+- Highlight cells that violate performance thresholds (e.g., coverage < 93%)
+- Include MCSEs in parentheses next to estimates
+
+Always include figure captions explaining what "good" looks like (e.g., "bars
+should reach dashed line for nominal 95% coverage").
+
+REFERENCE: Slide 19 (Reporting & visuals), Slide 13-17 (Performance visuals)
+
+
+Q25: Do I need to pre-register my simulation study?
+-------------------------------------------------------------------------------
+ANSWER: Pre-registration isn't required for simulation studies the way it is
+for clinical trials, but it's increasingly encouraged—especially for
+methodological comparisons where there's risk of bias favoring your own method.
+Platforms like OSF allow you to time-stamp your protocol before running
+simulations. Benefits:
+- Prevents selective scenario reporting and p-hacking
+- Increases trust in your findings
+- Distinguishes confirmatory from exploratory results
+
+If full pre-registration feels too rigid, at least document your original plan
+and transparently report any deviations (e.g., "we added a sensitivity analysis
+after reviewer request"). The goal is transparency, not perfection.
+
+REFERENCE: Slide 18 (Pitfalls - pre-specify, register)
+
+
+Q26: What if reviewers ask for additional scenarios after submission?
+-------------------------------------------------------------------------------
+ANSWER: This is common and usually reasonable. Reviewers may spot scenarios
+you didn't consider. If the request is fair (e.g., testing robustness to a
+plausible assumption), add it and label it as post-hoc. If it's unreasonable
+(e.g., "test 100 new scenarios"), push back politely: explain that your
+original design was pre-specified to balance comprehensiveness and feasibility,
+and offer a compromise (e.g., add 2-3 targeted scenarios in revision).
+
+Because you used ADEMP and documented everything clearly, adding scenarios is
+straightforward—your code structure makes it easy to plug in new parameters
+and re-run. This is a huge advantage of the framework's modularity.
+
+REFERENCE: Slide 20 (Checklist - flexible code structure)
+
+
+================================================================================
+SECTION 8: PITFALLS & QUESTIONABLE RESEARCH PRACTICES
+================================================================================
+
+Q27: What is "seed shopping" and why is it bad?
+-------------------------------------------------------------------------------
+ANSWER: Seed shopping is trying multiple random seeds and reporting only the
+one that makes your method look best. It's analogous to p-hacking in empirical
+research—running many analyses and reporting the most favorable. This is
+scientific misconduct. The antidote:
+- Set your seed(s) upfront and document them
+- If you accidentally discover a "bad seed" (e.g., one that causes unusual
+  failures), investigate why (it might reveal a real problem!), but don't
+  silently switch to another seed
+- Use multiple independent runs with different seeds as a robustness check,
+  and report all of them—variability across seeds is informative
+
+Random number generators are deterministic given a seed, so fixing seeds makes
+your results exactly reproducible. Transparency about seeds is a hallmark of
+credible simulation research.
+
+REFERENCE: Slide 18 (Pitfalls - seed shopping)
+
+
+Q28: How do I avoid unfair tuning when comparing methods?
+-------------------------------------------------------------------------------
+ANSWER: Give every method the same tuning budget:
+- If you do 5-fold CV for Method A, do it for Method B too
+- If you try 10 hyperparameter combinations for Method A, do the same for B
+- Use the same training/validation split
+- Document the tuning procedure in your methods section
+
+If one method truly requires more tuning to work well (e.g., neural networks
+often need extensive architecture search), acknowledge this as a practical
+limitation and report it transparently. The goal isn't to handicap complex
+methods, but to prevent giving your favorite method an unfair advantage through
+excessive hand-tuning while leaving competitors at default settings.
+
+REFERENCE: Slide 8 (Methods - Fair Comparison), Slide 18 (Pitfalls)
+
+
+Q29: What if my new method performs worse than existing methods in simulation?
+-------------------------------------------------------------------------------
+ANSWER: Report it honestly! Negative results are valuable for the field—they
+prevent others from wasting time on the same approach. Frame it constructively:
+- Explain why you expected the method to work
+- Identify which scenarios it struggles with and why
+- Discuss potential modifications that might improve performance
+- Emphasize what was learned (even "failed" methods teach us something)
+
+Simulation studies should be about finding truth, not salesmanship for your
+method. Reviewers and readers respect honesty. If your method only works in
+a narrow set of scenarios, say so—that's useful guidance for practitioners.
+
+REFERENCE: Slide 18 (Pitfalls - selective reporting)
+
+
+Q30: How can I make my simulation study reproducible?
+-------------------------------------------------------------------------------
+ANSWER: Follow this checklist:
+1. Share code (GitHub, OSF, journal supplements)
+2. Document all random seeds
+3. Record software versions (sessionInfo() in R, pip freeze in Python)
+4. Use relative paths and package management (renv in R, virtual environments
+   in Python)
+5. Include a README explaining how to reproduce results
+6. Archive dependencies (in case packages change)
+7. Provide either raw data (if simulated) or code to regenerate it
+
+Quarto/R Markdown documents are ideal because they interleave code, results,
+and narrative. Someone should be able to clone your repository, run one script,
+and obtain identical results (up to numerical precision). Reproducibility
+builds trust and enables others to extend your work.
+
+REFERENCE: Slide 19 (Reporting), Slide 20 (Checklist - code, seeds, session
+info)
+
+
+================================================================================
+SECTION 9: ADVANCED TOPICS & EXTENSIONS
+================================================================================
+
+Q31: Can ADEMP handle complex study designs like cluster-randomized trials?
+-------------------------------------------------------------------------------
+ANSWER: Yes. The framework scales to complex designs:
+- Aims: "Estimate required number of clusters for 80% power"
+- Data: Generate clusters with intra-cluster correlation (ICC), then randomize
+  at cluster level; simulate individual outcomes within clusters
+- Estimands: Cluster-level treatment effect or population-average effect
+- Methods: GEE, mixed models, cluster-robust inference
+- Performance: Power, bias, coverage (accounting for clustering in SEs)
+
+The key is being explicit about your DGM parameters (ICC, cluster size
+variability, between-cluster variance) and ensuring methods target the same
+estimand (marginal vs cluster-specific effects). Simulation is especially
+valuable here because closed-form power calculations often make simplifying
+assumptions (equal cluster sizes, no missing data) that rarely hold in practice.
+
+REFERENCE: Slide 6 (DGM - realistic complexity), Slide 7 (Estimands -
+marginal vs conditional)
+
+
+Q32: How do I simulate missing data realistically?
+-------------------------------------------------------------------------------
+ANSWER: Start by defining the missing data mechanism:
+- MCAR (Missing Completely At Random): missingness independent of observed or
+  unobserved data
+- MAR (Missing At Random): missingness depends on observed data only
+- MNAR (Missing Not At Random): missingness depends on unobserved values
+
+For MAR, build a model for missingness probability as a function of observed
+covariates (e.g., logistic regression: P(missing) ~ age + treatment). For MNAR,
+make missingness depend on the outcome itself (e.g., sicker patients more
+likely to drop out). Then:
+1. Generate complete data
+2. Apply missingness mechanism
+3. Analyze with complete-case, multiple imputation, or likelihood-based methods
+4. Compare performance
+
+This lets you test whether methods are robust to realistic missingness patterns
+and whether missing data assumptions (MAR vs MNAR) affect conclusions.
+
+REFERENCE: Slide 6 (DGM - realistic nuisance factors), Slide 10 (Worked
+Example - dropout)
+
+
+Q33: Can I use simulation to validate a new statistical test?
+-------------------------------------------------------------------------------
+ANSWER: Absolutely—that's a classic use case. Your ADEMP plan might be:
+- Aims: "Verify that the new test achieves nominal Type I error (α=0.05) and
+  has adequate power"
+- Data: Generate under the null (to check α) and under alternatives (to check
+  power)
+- Estimands: True null hypothesis or specific effect size
+- Methods: New test vs established alternatives (e.g., t-test, permutation test)
+- Performance: Empirical Type I error (should ≈ 0.05), power, runtime
+
+Run this across a grid of sample sizes and effect sizes. If your new test
+shows inflated Type I error (e.g., 0.08 instead of 0.05), that's a red flag—
+it's not controlling the error rate. Report these findings transparently.
+
+REFERENCE: Slide 5 (Aims - define primary question), Slide 9 (Performance -
+Type I error)
+
+
+Q34: How do I handle convergence issues in complex models like mixed effects?
+-------------------------------------------------------------------------------
+ANSWER: Pre-specify your protocol:
+1. Start with reasonable initial values
+2. Allow one retry with different starting values or optimizer
+3. Record as "non-convergence" if still fails
+4. Report convergence rates for all methods
+
+For mixed models, use:
+- Multiple optimizers (e.g., bobyqa, Nelder-Mead in R's lme4)
+- Simplify random effects structure if full model won't converge
+- Check for singular fits (estimated variance = 0)
+
+High non-convergence rates are informative—they tell you the method struggles
+with small samples or certain data structures. Don't hide these failures; they're
+part of the performance profile. You might report metrics both including and
+excluding non-converged iterations to show sensitivity.
+
+REFERENCE: Slide 8 (Methods - convergence rules), Slide 18 (Pitfalls - hidden
+failures)
+
+
+Q35: Can I use bootstrap or permutation methods inside my simulation?
+-------------------------------------------------------------------------------
+ANSWER: Yes, but be aware of computational cost. If your method involves
+bootstrapping (e.g., bootstrap confidence intervals), each simulation repetition
+requires hundreds of bootstrap resamples—this nested resampling can be slow.
+Strategies:
+- Parallelize both outer (simulation) and inner (bootstrap) loops
+- Use fewer bootstrap resamples (B=200-500 may suffice for CIs)
+- Consider using profiling to optimize bottlenecks
+- Use HPC resources if available
+
+For permutation tests, similar logic applies: each sim rep requires many
+permutations. Budget your computational time accordingly. It's valid to compare
+a bootstrap method to a parametric method as long as both see the same
+simulated datasets and you apply them consistently.
+
+REFERENCE: Slide 12 (Loop Logic), Slide 16 (Computational considerations)
+
+
+================================================================================
+SECTION 10: CONTEXTUAL & PHILOSOPHICAL QUESTIONS
+================================================================================
+
+Q36: Isn't simulation just "making up data"? How is that scientific?
+-------------------------------------------------------------------------------
+ANSWER: Simulation is "making up data" in a very specific, controlled way where
+we know the truth by design. This is precisely what makes it scientific: we can
+test methods under known conditions, measure how far estimates deviate from
+truth, and build understanding of when methods work or fail. It's analogous to
+laboratory experiments in chemistry—you control conditions to isolate effects.
+The key is transparency: document your DGM, justify parameter choices with
+literature or pilot data, and don't cherry-pick scenarios. Done right,
+simulation provides rigorous evidence about method performance that complements
+(but doesn't replace) theoretical analysis and real-data validation.
+
+REFERENCE: Slide 3 (Why Simulate?)
+
+
+Q37: Should I always trust simulation results over mathematical theory?
+-------------------------------------------------------------------------------
+ANSWER: No—they're complementary. Mathematical theory provides guarantees
+(e.g., "this estimator is unbiased asymptotically"), but often under idealized
+conditions. Simulation tests whether those conditions hold in practice with
+finite samples, missing data, and violated assumptions. Ideally:
+- Theory tells you what SHOULD happen
+- Simulation tells you what DOES happen in realistic settings
+- Real data analysis tells you what ACTUALLY happens
+
+If simulation contradicts theory, investigate: maybe your DGM is misspecified,
+your code has a bug, or the theory's assumptions don't hold in your scenarios.
+If you find genuine discrepancies (e.g., theory predicts bias=0 but simulation
+shows bias=0.05 in small samples), that's a valuable finding—report it!
+
+REFERENCE: Slide 10 (Worked Example - formula vs simulation)
+
+
+Q38: How do I know if my simulation results will generalize to real data?
+-------------------------------------------------------------------------------
+ANSWER: You don't, unless you validate on real data. Simulation results are
+conditional on your DGM being realistic. Strategies to increase generalizability:
+- Calibrate DGM parameters to literature, pilot data, or expert opinion
+- Test sensitivity across a wide range of scenarios (don't just test best-case)
+- Include realistic nuisance features (missingness, measurement error,
+  heterogeneity)
+- Validate on real datasets when possible (after simulation study is complete)
+
+Think of simulation as a "stress test" for methods. If a method performs well
+in simulation and on real data, you have converging evidence. If it performs
+well in simulation but poorly on real data, your DGM may have missed key
+features of reality—that's useful feedback for refining the DGM.
+
+REFERENCE: Slide 6 (DGM - choose realism), Slide 14 (Sensitivity & Robustness)
+
+
+Q39: Isn't running thousands of simulations a waste of computational resources?
+-------------------------------------------------------------------------------
+ANSWER: It's an investment in rigor. The computational cost of simulation is
+usually trivial compared to the cost of fielding a poorly-designed real study
+or deploying a flawed method in practice. Modern computing makes even complex
+simulations feasible—what took days 20 years ago now runs in hours on a laptop,
+or minutes on a cluster. Plus, simulation studies are highly reusable: once
+you've built the infrastructure, you can easily extend it to test new methods
+or scenarios. Consider the alternative: publishing a method without adequate
+validation, only to have it fail in practice. The cost of that failure (wasted
+research dollars, wrong conclusions, harm to patients) far exceeds the cost of
+simulation.
+
+REFERENCE: Slide 16 (Practical Concerns - runtime)
+
+
+Q40: What if I find that all methods perform poorly in some scenarios?
+-------------------------------------------------------------------------------
+ANSWER: That's a valuable finding! It tells the field, "In this setting,
+current methods are inadequate—we need new approaches." Frame it constructively:
+- Explain what makes this scenario challenging (small sample + high
+  dimensionality? Extreme missingness?)
+- Quantify how poorly methods perform (bias, coverage, power)
+- Discuss potential solutions (larger samples, different estimands, Bayesian
+  priors, alternative study designs)
+
+This kind of honesty advances the field. For example, early simulation studies
+showed that standard methods for survival analysis with interval censoring had
+poor coverage in small samples—this spurred development of better methods. Your
+simulation revealing gaps is the first step toward filling them.
+
+REFERENCE: Slide 15-17 (Use Cases - method comparison, model misspecification)
+
+
+================================================================================
+SECTION 11: QUICK REFERENCE Q&A
+================================================================================
+
+Q41: What's the minimum number of scenarios I should test?
+ANSWER: At least 3-5 scenarios covering low/medium/high values of key factors
+(sample size, effect size, nuisance complexity). Avoid testing just one
+"representative" scenario—methods often behave differently at extremes.
+
+Q42: Should I report non-significant results from my simulation?
+ANSWER: YES. Report all pre-specified comparisons. If two methods don't differ
+significantly (accounting for MCSE), say so—that's important information.
+
+Q43: Can I use simulation to justify sample size for my real study?
+ANSWER: Yes—that's exactly what the worked example demonstrates. Simulation-
+based sample size is especially useful when formulas are unavailable or rely
+on unrealistic assumptions.
+
+Q44: How do I handle outliers in simulation results?
+ANSWER: Investigate them. Outliers might reveal edge cases where methods fail.
+Report outlier rates as a robustness metric. Don't silently remove them unless
+they're due to coding errors.
+
+Q45: Can I simulate longitudinal or survival data?
+ANSWER: Absolutely. For survival, use parametric distributions (Weibull,
+log-logistic) or Cox models. For longitudinal, use random effects or GEEs.
+ADEMP applies to all study types.
+
+Q46: What if I don't have time for a full factorial design?
+ANSWER: Use a fractional factorial or prioritize scenarios. Pre-specify which
+are primary (to answer your main aim) vs exploratory. But don't cut corners on
+nsim—too few reps makes MCSEs large and results unreliable.
+
+Q47: Should I blind myself to results while adding scenarios?
+ANSWER: Ideally yes, to avoid bias. Or pre-register all scenarios. If you must
+add scenarios mid-study, label them post-hoc and justify why they're important.
+
+Q48: How do I cite a simulation study properly?
+ANSWER: Cite the original ADEMP paper (Morris et al. 2019) and any guidelines
+you followed (e.g., STRESS). Describe your design briefly and point to
+supplementary materials or code repository for details.
+
+Q49: Can I use AI/ChatGPT to help write simulation code?
+ANSWER: Use with caution. AI can generate boilerplate, but often makes subtle
+statistical errors (wrong variance formulas, incorrect test assumptions). Always
+validate AI-generated code against known test cases. ADEMP helps here—clear
+specification of DGM and estimands makes it easier to spot AI mistakes.
+
+Q50: What's the single most important takeaway from ADEMP?
+ANSWER: **Transparency.** Document your aims, data generation, estimands,
+methods, and performance measures upfront. Pre-specify when possible. Report
+everything, including failures and negative results. Reproducibility and
+honesty build trust—simulation studies should be exemplars of rigor, not
+vehicles for method salesmanship.
+
+================================================================================
+END OF DOCUMENT
+================================================================================
+
+This document is intended as preparation material for the presenter. Actual
+audience questions may vary. Be prepared to adapt answers to the audience's
+background and interests.
+
+For further reading:
+- Morris et al. (2019). Using simulation studies to evaluate statistical methods.
+  Statistics in Medicine, 38(11), 2074-2102.
+- Pawel et al. (2024). Pitfalls and potentials in simulation studies.
+  Biometrical Journal, 66(1), e2200091.
+- Burton et al. (2006). The design of simulation studies in medical statistics.
+  Statistics in Medicine, 25(24), 4279-4292.
+
+Good luck with your presentation!

@@ -1,0 +1,624 @@
+# Job Satisfaction Survey Analysis
+
+# Load required libraries ----
+library(readxl)
+library(tidyverse)
+library(gtsummary)
+library(psych)
+library(lavaan)
+library(foreign)
+library(MASS)
+library(Hmisc)
+library(reshape2)
+library(brant)
+library(car)
+library(emmeans)
+library(lme4)
+library(dlookr)
+library(ggstats)
+
+# Data Import and Initial Processing ----
+df <- read_excel(
+  "ASurveyOfJobSatisfac_DATA_LABELS_2025-05-21_1351_csv.xlsx", 
+  col_types = c("numeric", "numeric", "date", rep("text", 58))
+)
+
+glimpse(df)
+
+# Data Cleaning and Variable Preparation ----
+
+# Rename key demographic columns for clarity
+df_clean <- df %>%
+  rename(
+    position           = `1. What is your current position?`,
+    time_in_post       = `2. How long have you been in your current position?`,
+    qualification      = `3. Highest exam qualification attained`,
+    gender             = `5. Please identify your gender`,
+    age_range          = `7. What is your age?`,
+    marital_status     = `8. What is your marital status?`,
+    parent             = `9. Are you a parent?`,
+    family_proximity   = `10. How far does your immediate family (spouse, children, partners, siblings, parents) stay?`,
+    intention_to_leave = `3. Are you actively seeking another employment opportunity?`
+  )
+
+# Convert single-choice questions into ordered factors
+df_clean <- df_clean %>%
+  mutate(
+    position = factor(
+      position,
+      levels = c("Consultant", "Registrar", "Supernumerary Registrar")
+    ),
+    time_in_post = factor(
+      time_in_post,
+      levels = c("Less than 6 months", "6 months to 1 year", "1 to 2 years", 
+                 "2 to 3 years", "More than 3 years")
+    ),
+    qualification = factor(
+      qualification,
+      levels = c("MBBCh/MBChB/MBBS", "DA", "FCA Part 1", "FCA Part 2", "Other")
+    ),
+    gender = factor(
+      gender,
+      levels = c("Male", "Female", "Prefer not to disclose")
+    ),
+    age_range = factor(
+      age_range,
+      levels = c("25 - 30", "31 - 35", "36 - 40", "41 - 45", ">45")
+    ),
+    marital_status = factor(
+      marital_status,
+      levels = c("Married", "Single", "Widowed", "Divorced", "Living with a partner")
+    ),
+    parent = factor(parent, levels = c("Yes", "No")),
+    family_proximity = factor(
+      family_proximity,
+      levels = c("Within same household", "Different households, same town",
+                 "Different towns, same province", "Different province", 
+                 "Different country")
+    ),
+    intention_to_leave = factor(
+      intention_to_leave,
+      levels = c("No", "Thinking about it", "Yes"),
+      ordered = TRUE
+    )
+  )
+
+# Collapse position categories and age groups
+df_clean <- df_clean %>%
+  mutate(
+    # Combine Supernumerary Registrar with Registrar
+    position = case_when(
+      position == "Supernumerary Registrar" ~ "Registrar",
+      TRUE ~ as.character(position)
+    ),
+    position = factor(position, levels = c("Consultant", "Registrar")),
+    
+    # Collapse age ranges into three groups
+    age_range = fct_collapse(
+      age_range,
+      `25–35` = c("25 - 30", "31 - 35"),
+      `36–40` = "36 - 40",
+      `41+`   = c("41 - 45", ">45")
+    ),
+    age_range = factor(age_range, levels = c("25–35", "36–40", "41+"))
+  )
+
+# Process multi-select satisfaction/dissatisfaction variables
+satisfy_cols <- grep("^1\\. What are the 3 most satisfying aspects", 
+                     names(df_clean), value = TRUE)
+dissat_cols <- grep("^2\\. What are the 3 most dissatisfying aspects", 
+                    names(df_clean), value = TRUE)
+
+df_clean <- df_clean %>%
+  mutate(
+    across(all_of(satisfy_cols),
+           ~ factor(.x, levels = c("Unchecked", "Checked")),
+           .names = "{.col}_sat"),
+    across(all_of(dissat_cols),
+           ~ factor(.x, levels = c("Unchecked", "Checked")),
+           .names = "{.col}_dissat")
+  )
+
+# Add ID column for analysis
+df_clean <- df_clean %>% 
+  mutate(id = `Record ID`)
+
+# Inspect final structure
+str(df_clean)
+
+# =============================================================================
+# DEMOGRAPHICS TABLE
+# =============================================================================
+
+tab_demographics <- df_clean %>% 
+  tbl_summary(
+    include = c(position:family_proximity),
+    missing = "no",
+    label = list(
+      position = "Position",
+      time_in_post = "Time in post",
+      qualification = "Qualification",
+      gender = "Gender",
+      age_range = "Age range",
+      marital_status = "Marital status",
+      parent = "Parent",
+      family_proximity = "Family proximity"
+    )
+  ) %>%
+  modify_header(label ~ "**Variable**") %>% 
+  bold_labels()
+
+tab_demographics
+
+# =============================================================================
+# OBJECTIVE 1: MSQ SCALE ANALYSIS
+# =============================================================================
+
+# MSQ Scale Scoring ----
+
+# Define scoring map for MSQ items
+msq_scoring_map <- c(
+  "Very Dissatisfied"                  = 1,
+  "Dissatisfied"                       = 2,
+  "Neither satisfied nor dissatisfied" = 3,
+  "Satisfied"                          = 4,
+  "Very Satisfied"                     = 5
+)
+
+# Define scale items
+intrinsic_items <- c(
+  "1. Being able to keep busy all the time",
+  "2. The chance to work alone on the job",
+  "3. The chance to do different things from time to time",
+  "4. The chance to be 'somebody' in the community",
+  "7. Being able to do things that don't go against my conscience",
+  "9. The chance to do things for other people",
+  "10. The chance to tell people what to do",
+  "11. The chance to make use of my abilities and skills",
+  "15. The freedom to use my own judgement",
+  "16. The chance to try my own methods of doing the job",
+  "19. The praise and feedback I get for doing a good job",
+  "20. The feeling of accomplishment I get from the job"
+)
+
+extrinsic_items <- c(
+  "5. The way my boss handles his/her workers",
+  "6. The competence of my supervisor in making decisions",
+  "8. The way my job provides for steady employment",
+  "12. The way the hospital's policies are put into practice",
+  "13. My pay in relation to the amount of work I do",
+  "14. The chances for career advancement on this job",
+  "17. The working conditions",
+  "18. The way my co-workers get along with each other"
+)
+
+general_items <- c(intrinsic_items, extrinsic_items)
+
+general_items <- general_items[ 
+  order( as.numeric( str_extract(general_items, "^[0-9]+") ) ) 
+]
+
+# Convert MSQ responses to numeric scores
+df_clean <- df_clean %>%
+  mutate(
+    across(all_of(general_items),
+           ~ as.numeric(msq_scoring_map[as.character(.)]),
+           .names = "{.col}_num")
+  )
+
+# Calculate scale scores
+df_clean <- df_clean %>%
+  mutate(
+    intrinsic_score = rowMeans(dplyr::select(., paste0(intrinsic_items, "_num")), na.rm = TRUE),
+    extrinsic_score = rowMeans(dplyr::select(., paste0(extrinsic_items, "_num")), na.rm = TRUE),
+    general_score   = rowMeans(dplyr::select(., paste0(general_items, "_num")), na.rm = TRUE)
+  )
+
+# Internal Consistency Assessment ----
+
+# Define numeric column names for reliability analysis
+intrinsic_num_cols <- paste0(intrinsic_items, "_num")
+extrinsic_num_cols <- paste0(extrinsic_items, "_num")
+general_num_cols <- paste0(general_items, "_num")
+
+# Calculate Cronbach's alpha for each scale
+alpha_intrinsic <- psych::alpha(df_clean[intrinsic_num_cols], check.keys = TRUE)
+alpha_extrinsic <- psych::alpha(df_clean[extrinsic_num_cols], check.keys = TRUE)
+alpha_general <- psych::alpha(df_clean[general_num_cols], check.keys = TRUE)
+
+# Print reliability results
+cat("Intrinsic Scale Reliability:\n")
+print(alpha_intrinsic)
+cat("\nExtrinsic Scale Reliability:\n")
+print(alpha_extrinsic)
+cat("\nGeneral Scale Reliability:\n")
+print(alpha_general)
+
+# Exploratory Factor Analysis ----
+
+# Parallel analysis to determine number of factors
+fa.parallel(df_clean[general_num_cols], fa = "fa", n.iter = 100, show.legend = TRUE)
+
+# Three-factor EFA with oblique rotation
+efa_model <- fa(
+  df_clean[general_num_cols],
+  nfactors = 3,
+  rotate = "oblimin",
+  fm = "ml",
+  missing = TRUE
+)
+
+print(efa_model$loadings, cutoff = 0.30)
+
+# Distribution Plots ----
+
+# Intrinsic satisfaction histogram
+plot_intrinsic <- ggplot(df_clean, aes(x = intrinsic_score)) +
+  geom_histogram(binwidth = 0.2, fill = "steelblue", alpha = 0.7) +
+  labs(title = "Distribution of Intrinsic Satisfaction Scores",
+       x = "Intrinsic Satisfaction Score",
+       y = "Count") +
+  theme_minimal()
+
+# Extrinsic satisfaction histogram
+plot_extrinsic <- ggplot(df_clean, aes(x = extrinsic_score)) +
+  geom_histogram(binwidth = 0.2, fill = "forestgreen", alpha = 0.7) +
+  labs(title = "Distribution of Extrinsic Satisfaction Scores",
+       x = "Extrinsic Satisfaction Score",
+       y = "Count") +
+  theme_minimal()
+
+# General satisfaction histogram
+plot_general <- ggplot(df_clean, aes(x = general_score)) +
+  geom_histogram(binwidth = 0.2, fill = "coral", alpha = 0.7) +
+  labs(title = "Distribution of General Satisfaction Scores",
+       x = "General Satisfaction Score",
+       y = "Count") +
+  theme_minimal()
+
+# Display plots
+plot_intrinsic
+plot_extrinsic
+plot_general
+
+# Satisfaction by Position - Boxplots ----
+
+# Intrinsic satisfaction by position
+boxplot_intrinsic <- df_clean %>%
+  filter(!is.na(position)) %>%
+  ggplot(aes(x = position, y = intrinsic_score, fill = position)) +
+  geom_boxplot(alpha = 0.7) +
+  labs(title = "Intrinsic Satisfaction by Position",
+       x = "Position",
+       y = "Intrinsic Satisfaction Score") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+# Extrinsic satisfaction by position
+boxplot_extrinsic <- df_clean %>%
+  filter(!is.na(position)) %>%
+  ggplot(aes(x = position, y = extrinsic_score, fill = position)) +
+  geom_boxplot(alpha = 0.7) +
+  labs(title = "Extrinsic Satisfaction by Position",
+       x = "Position",
+       y = "Extrinsic Satisfaction Score") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+# General satisfaction by position
+boxplot_general <- df_clean %>%
+  filter(!is.na(position)) %>%
+  ggplot(aes(x = position, y = general_score, fill = position)) +
+  geom_boxplot(alpha = 0.7) +
+  labs(title = "General Satisfaction by Position",
+       x = "Position",
+       y = "General Satisfaction Score") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+# Display boxplots
+boxplot_intrinsic
+boxplot_extrinsic
+boxplot_general
+
+# Summary Tables by Position ----
+
+# Parametric summary (means and standard deviations)
+tab_parametric <- df_clean %>% 
+  tbl_summary(
+    by = position, 
+    include = c(intrinsic_score, extrinsic_score, general_score),
+    label = list(
+      intrinsic_score ~ "Intrinsic satisfaction score",
+      extrinsic_score ~ "Extrinsic satisfaction score",
+      general_score ~ "General satisfaction score"
+    ),
+    statistic = c(intrinsic_score, extrinsic_score, general_score) ~ "{mean} ({sd})",
+    missing = "no"
+  ) %>%
+  add_overall() %>% 
+  add_difference()
+
+# Non-parametric summary (medians and IQRs)
+tab_nonparametric <- df_clean %>% 
+  tbl_summary(
+    by = position, 
+    include = c(intrinsic_score, extrinsic_score, general_score),
+    label = list(
+      intrinsic_score ~ "Intrinsic satisfaction score",
+      extrinsic_score ~ "Extrinsic satisfaction score",
+      general_score ~ "General satisfaction score"
+    ),
+    missing = "no"
+  ) %>% 
+  add_p() %>% 
+  add_overall() %>% 
+  add_difference()
+
+# Display tables
+tab_parametric
+tab_nonparametric
+
+# =============================================================================
+# OBJECTIVE 2: INTENTION TO LEAVE ANALYSIS
+# =============================================================================
+
+# Chi-square Test ----
+contingency_table <- table(df_clean$position, df_clean$intention_to_leave)
+print(contingency_table)
+
+chi_square_result <- chisq.test(contingency_table)
+print(chi_square_result)
+
+# Ordinal Logistic Regression - Multiple Variables ----
+
+# Define variable labels
+variable_labels <- list(
+  position = "Position",
+  gender = "Gender",
+  age_range = "Age Range",
+  marital_status = "Marital Status"
+)
+
+# Variables to analyze
+predictor_vars <- c("position", "gender", "age_range", "marital_status")
+
+# Create individual OLR models
+olr_models <- predictor_vars %>%
+  map(~ {
+    formula_str <- paste("intention_to_leave ~", .x)
+    olr_model <- polr(
+      formula = as.formula(formula_str),
+      data = df_clean,
+      Hess = TRUE
+    )
+    
+    tbl_regression(
+      olr_model,
+      exponentiate = TRUE,
+      label = variable_labels,
+      conf.level = 0.95
+    ) %>%
+      bold_labels()
+  }) %>%
+  set_names(predictor_vars)
+
+# Display individual models
+olr_models
+
+# Combined table with section headers
+tbl_olr_combined <- tbl_stack(
+  tbls = list(
+    "Position" = olr_models$position,
+    "Gender" = olr_models$gender,
+    "Age Range" = olr_models$age_range,
+    "Marital Status" = olr_models$marital_status
+  )
+) %>% 
+  bold_levels()%>% 
+  modify_column_hide(columns = "p.value")
+
+tbl_olr_combined
+
+# =============================================================================
+# OBJECTIVE 3: SATISFACTION/DISSATISFACTION ITEMS ANALYSIS
+# =============================================================================
+
+# Data Preparation for Multi-select Analysis ----
+
+# Identify satisfaction and dissatisfaction variables
+satisfaction_vars <- grep("_sat$", names(df_clean), value = TRUE)
+dissatisfaction_vars <- grep("_dissat$", names(df_clean), value = TRUE)
+
+# Helper function to extract item labels
+extract_item_label <- function(varname) {
+  str_extract(varname, "(?<=choice=).+?(?=\\))")
+}
+
+# Reshape data to long format for analysis
+df_long <- df_clean %>%
+  pivot_longer(
+    cols = c(all_of(satisfaction_vars), all_of(dissatisfaction_vars)),
+    names_to = "item_raw",
+    values_to = "response"
+  ) %>%
+  mutate(
+    domain = if_else(str_detect(item_raw, "_sat$"), 
+                     "satisfaction", "dissatisfaction"),
+    chosen = as.integer(response == "Checked"),
+    item = str_extract(item_raw, "(?<=choice=).+?(?=\\))"),
+    position = factor(position, levels = c("Consultant", "Registrar"))
+  ) %>%
+  dplyr::select(id, position, domain, item, chosen)
+
+# Descriptive Analysis ----
+
+# Calculate prevalence by position and domain
+prevalence_table <- df_long %>%
+  group_by(domain, item, position) %>%
+  summarise(
+    selected = sum(chosen, na.rm = TRUE), 
+    total = n(),
+    proportion = selected / total,
+    .groups = "drop"
+  )
+
+print(prevalence_table)
+
+# Statistical Testing ----
+
+# Chi-square tests for each item
+chi_square_results <- df_long %>%
+  group_by(domain, item) %>%
+  summarise(
+    p_value = chisq.test(table(position, chosen))$p.value,
+    .groups = "drop"
+  ) %>%
+  mutate(q_value = p.adjust(p_value, method = "BH"))
+
+print(chi_square_results)
+
+# Summary Tables by Position ----
+
+# Create label lists for tables
+sat_labels <- as.list(setNames(extract_item_label(satisfaction_vars), 
+                               satisfaction_vars))
+dissat_labels <- as.list(setNames(extract_item_label(dissatisfaction_vars), 
+                                  dissatisfaction_vars))
+
+# Satisfaction items table
+tbl_satisfaction <- df_clean %>%
+  dplyr::select(position, all_of(satisfaction_vars)) %>%
+  tbl_summary(
+    by = position,
+    include = all_of(satisfaction_vars),
+    label = sat_labels,
+    statistic = all_categorical() ~ "{n} / {N} ({p}%)",
+    missing = "no"
+  ) %>%
+  add_p(
+    test = everything() ~ "chisq.test",
+    pvalue_fun = ~ style_pvalue(.x, digits = 3)
+  ) %>%
+  modify_header(
+    label = "**Satisfaction Item**",
+    stat_1 = "**Consultants**",
+    stat_2 = "**Registrars**",
+    p.value = "**p-value**"
+  ) %>% 
+  add_difference()
+
+# Dissatisfaction items table
+tbl_dissatisfaction <- df_clean %>%
+  dplyr::select(position, all_of(dissatisfaction_vars)) %>%
+  tbl_summary(
+    by = position,
+    include = all_of(dissatisfaction_vars),
+    label = dissat_labels,
+    statistic = all_categorical() ~ "{n} / {N} ({p}%)",
+    missing = "no"
+  ) %>%
+  add_p(
+    test = everything() ~ "chisq.test",
+    pvalue_fun = ~ style_pvalue(.x, digits = 3)
+  ) %>%
+  modify_header(
+    label = "**Dissatisfaction Item**",
+    stat_1 = "**Consultants**",
+    stat_2 = "**Registrars**",
+    p.value = "**p-value**"
+  ) %>% 
+  add_difference()
+
+# Combined table with section headers
+tbl_satisfaction_combined <- tbl_stack(
+  tbls = list(
+    "Most Satisfying Aspects" = tbl_satisfaction,
+    "Most Dissatisfying Aspects" = tbl_dissatisfaction
+  ),
+  group_header = c(
+    "Most Satisfying Aspects",
+    "Most Dissatisfying Aspects"
+  )
+) %>% 
+  bold_levels()
+
+# Display combined table
+tbl_satisfaction_combined
+
+# =============================================================================
+# OBJECTIVE 4: LIKERT SCALE VISUALIZATION
+# =============================================================================
+library(stringr)
+
+# Re-order the items by extracting the leading number and sorting
+
+
+# Prepare data for Likert visualization
+msq_item_columns <- paste0(general_items, "_num")
+
+df_likert_items <- df_clean %>%
+  dplyr::select(all_of(msq_item_columns)) %>% 
+  mutate(
+    across(everything(),
+           ~ factor(.x, 
+                    levels = as.character(1:5), 
+                    labels = names(msq_scoring_map),
+                    ordered = TRUE))
+  )
+
+# Rename columns to remove "_num" suffix for cleaner labels
+names(df_likert_items) <- general_items
+
+# Create custom labels without "_num" suffix
+likert_labels <- setNames(
+  as.list(general_items), 
+  paste0(general_items, "_num")
+)
+
+# Transform data to long format for cross-tabulation
+df_likert_long <- df_likert_items %>%
+  mutate(item_id = row_number()) %>%
+  pivot_longer(
+    cols = -item_id,
+    names_to = "item",
+    values_to = "response"
+  )
+
+# Determine the correct order of items by their numeric prefix
+item_levels <- df_likert_long %>% 
+  pull(item) %>% 
+  unique() %>% 
+  # extract leading number and order by it
+  { .[order(as.numeric(str_extract(., "^[0-9]+")))] }
+
+# Convert item to an ordered factor
+df_likert_long <- df_likert_long %>%
+  mutate(
+    Item = factor(item, levels = item_levels)
+  )
+
+# Create wide-format Likert summary table (satisfaction levels as columns)
+tbl_likert_summary <- df_likert_long %>%
+  tbl_cross(
+    row    = item,
+    col    = response,
+    percent = "row",
+    missing = "no"
+  ) %>%
+  modify_spanning_header(all_stat_cols() ~ "**Response**") %>%       # add spanning header
+  modify_header(all_stat_cols() ~ "**{level}**") %>%                 # label each stat-column by response
+  bold_labels()                                                      # bold the “Item” text
+
+# Display Likert summary
+tbl_likert_summary
+
+# Create Likert plot (if gglikert function works properly)
+gglikert(df_likert_items)
+
+# =============================================================================
+# END OF ANALYSIS
+# =============================================================================
+
+#, then information about the likert scale questions (this should have the tbl_likert_summary and gglikert graph. Next move to the analysis of the intrinsic and extrinsic factors. We then explain the regression.
+

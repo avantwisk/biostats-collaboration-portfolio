@@ -8,6 +8,9 @@ project:
     - reflections/**/*.qmd
     - coursework/index.qmd
     - learning-outcomes/index.qmd
+  resources:
+    - artefacts/files/**
+    - site_libs/**
 
 website:
   title: "Biostatistical Collaboration Portfolio"
