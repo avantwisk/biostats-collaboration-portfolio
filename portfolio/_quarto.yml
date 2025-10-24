@@ -1,9 +1,16 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: ../docs
+  render:
+    - index.qmd
+    - artefacts/index.qmd
+    - internship/**/*.qmd
+    - reflections/**/*.qmd
+    - coursework/index.qmd
+    - learning-outcomes/index.qmd
 
 website:
-  title: "Biostatistical Consulting & Collaboration Portfolio"
+  title: "Biostatistical Collaboration Portfolio"
   site-url: https://example.com
   description: "MSc Biostatistics - Alexander van Twisk"
 
@@ -49,10 +56,10 @@ website:
             file: reflections/week-02/day-02.qmd
           - text: "Day 3"
             file: reflections/week-02/day-03.qmd
-      - text: "Learning Outcomes"
-        file: learning-outcomes/index.qmd
-      - text: "Coursework"
-        file: coursework/index.qmd
+      # - text: "Learning Outcomes"
+      #   file: learning-outcomes/index.qmd
+      # - text: "Coursework"
+      #   file: coursework/index.qmd
       - text: "Artefacts"
         file: artefacts/index.qmd
 
@@ -98,7 +105,13 @@ website:
 
 format:
   html:
+    page-layout: full
     theme: cosmo
+    grid:
+      body-width: 1400px
+      margin-width: 260px
+      sidebar-width: 240px
+      gutter-width: 1.75rem
     css: styles/custom.css
     toc: true
     toc-depth: 3

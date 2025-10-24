@@ -1,0 +1,1178 @@
+[
+  {
+    "objectID": "internship/introduction.html",
+    "href": "internship/introduction.html",
+    "title": "Introduction & Background",
+    "section": "",
+    "text": "I am a final year master’s student at Stellenbosch University, in the final stages of my MSc in Biostatistics. My degree began with a year focused on both foundational and advanced coursework, which aimed to equip students with statistical methods relevant to biostatistics. These theoretical modules were assessed by lecturers using both formative and summative methods.\nAfter completing the foundational coursework in my first year, I progressed to my second year, where I enrolled in the Biostatistical Consulting (BC) module. The BC module was designed by experienced biostatisticians to merge theoretical concepts with practical implementation, placing particular importance on developing collaborative abilities through interactive lectures and experiential learning opportunities. Unlike the more conventional, lecture-based modules, the BC module placed a strong emphasis on discussion, questioning, and the development of practical collaboration skills essential for effective biostatistical consulting.\nFollowing the completion of this module, I began my internship at Scigenix Pty (Ltd) on 23 June 2025, which concluded on 30 September 2025. This three-month placement offered me the opportunity to apply not only the skills fostered in the BC module but also those learned throughout my MSc. Through this internship, I honed my ability to communicate complex statistical concepts to non-specialist audiences—a skill I now regard as essential for successful collaboration in clinical research.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Introduction & Background"
+    ]
+  },
+  {
+    "objectID": "internship/introduction.html#about-my-journey",
+    "href": "internship/introduction.html#about-my-journey",
+    "title": "Introduction & Background",
+    "section": "",
+    "text": "I am a final year master’s student at Stellenbosch University, in the final stages of my MSc in Biostatistics. My degree began with a year focused on both foundational and advanced coursework, which aimed to equip students with statistical methods relevant to biostatistics. These theoretical modules were assessed by lecturers using both formative and summative methods.\nAfter completing the foundational coursework in my first year, I progressed to my second year, where I enrolled in the Biostatistical Consulting (BC) module. The BC module was designed by experienced biostatisticians to merge theoretical concepts with practical implementation, placing particular importance on developing collaborative abilities through interactive lectures and experiential learning opportunities. Unlike the more conventional, lecture-based modules, the BC module placed a strong emphasis on discussion, questioning, and the development of practical collaboration skills essential for effective biostatistical consulting.\nFollowing the completion of this module, I began my internship at Scigenix Pty (Ltd) on 23 June 2025, which concluded on 30 September 2025. This three-month placement offered me the opportunity to apply not only the skills fostered in the BC module but also those learned throughout my MSc. Through this internship, I honed my ability to communicate complex statistical concepts to non-specialist audiences—a skill I now regard as essential for successful collaboration in clinical research.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Introduction & Background"
+    ]
+  },
+  {
+    "objectID": "internship/introduction.html#background-of-organisation",
+    "href": "internship/introduction.html#background-of-organisation",
+    "title": "Introduction & Background",
+    "section": "Background of Organisation",
+    "text": "Background of Organisation\nScigenix is a dynamic clinical research organization that specializes in data-driven solutions for the pharmaceutical and healthcare sectors. With a global team of experts, the company brings together a wide range of skills, including data science, biostatistics (the application of statistics to biological and health-related research), data management, and medical writing. Its strength lies in leveraging open-source technologies to deliver cost-effective, precise, and scalable solutions across the full spectrum of clinical research—from the initial study design to the final steps of regulatory submission, which is the formal process of submitting research findings to health authorities for review and approval.\nThe organization positions itself as a change-maker in the clinical research world, particularly in addressing challenges related to data collection, cleaning, analysis, and reporting under strict regulatory constraints. These constraints are guidelines and requirements set up by authorities to regulate the conduct of research. If not addressed effectively, such challenges can lead to delayed drug approvals and substantial financial losses for sponsors. Scigenix fills this gap by offering streamlined, AI-supported data processing and analysis pipelines that support faster, higher-quality decision-making.\nBeyond technical capabilities, Scigenix is defined by its strong internal culture and values. These include scientific excellence, attention to detail, client-centricity, a collaborative spirit, and a supportive work environment.\nIn the biostatistics unit where I was placed, R is the primary programming language used for analysis and reporting. Each project is structured as a self-contained software solution, often in the form of an R package. An R package is a collection of code and documentation that standardizes analysis workflows, ensuring consistency and reproducibility in research findings. This approach allows for transparency and good software development practices. The biostatistics unit supports all phases of clinical research, with a particular emphasis on robust statistical methodologies, clear documentation, and regulatory compliance.\nScigenix’s long-term vision is to become a transformative force in the clinical research industry, especially as an advocate for open-source solutions, while keeping its commitment to quality, accessibility, and innovation.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Introduction & Background"
+    ]
+  },
+  {
+    "objectID": "internship/introduction.html#life-at-scigenix",
+    "href": "internship/introduction.html#life-at-scigenix",
+    "title": "Introduction & Background",
+    "section": "Life at Scigenix",
+    "text": "Life at Scigenix\nThe Scigenix office is based in a converted home in Hazelwood, Pretoria—a residential area that has, in recent years, transformed into a cosmopolitan neighbourhood filled with new offices, shops, and restaurants. The lively character of the surroundings, in my experience, adds to the dynamic atmosphere within the office, which reflects the company’s personality and vision.\nWorkdays at Scigenix officially begin at 7am; however, employees are allowed to start anytime up to 8am, provided they complete the required eight hours of work each day. Additionally, we had the choice to work from home whenever we wished. This flexibility in work hours complemented the relaxed and supportive atmosphere fostered by the company’s leadership, further reinforcing the positive office culture.\nOffice culture is highly valued at the company, and we often enjoyed social gatherings at the office, particularly on Fridays, when we would have a braai or order takeaway lunches. Practical jokes are also a common occurrence. While this might seem unorthodox in some companies, in my experience, it helped tremendously during afternoons that stretched longer than what a student might otherwise be used to.\nThe leadership at the company played an integral role in helping me feel welcome from my first day. Shortly after starting my internship and having just moved to Pretoria from Cape Town, I admitted to feeling overwhelmed. I was assured that I should not feel any pressure or experience any stress during my internship and that they were committed to ensuring I had a valuable experience. Small actions such as these are invaluable in helping anyone, and certainly myself, feel welcome at a new organization. Beyond this, I felt an added level of motivation to do my best, as the support I received inspired me to reciprocate their efforts.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Introduction & Background"
+    ]
+  },
+  {
+    "objectID": "internship/introduction.html#my-role-and-responsibilities",
+    "href": "internship/introduction.html#my-role-and-responsibilities",
+    "title": "Introduction & Background",
+    "section": "My Role and Responsibilities",
+    "text": "My Role and Responsibilities\nThroughout my internship, my primary responsibilities centered on statistical consulting and collaboration with researchers, as well as supporting various aspects of clinical trial conduct.\nMy role encompassed:\n\nStatistical Consulting: Providing expert statistical support for clinical research projects\nData Analysis: Conducting comprehensive analyses using advanced statistical methods\nQuality Control: Implementing rigorous QC processes to ensure data integrity\nClinical Trial Support: Contributing to randomisation, data safety monitoring, and regulatory compliance\nSoftware Development: Creating tools to streamline data validation and analysis workflows\nCommunication: Translating complex statistical concepts for non-statistical stakeholders\n\nThe internship provided a holistic view of the biostatistician’s role in clinical research, from initial study design through to final reporting and regulatory submission. This experience has been instrumental in shaping my understanding of collaborative biostatistical practice and has prepared me for a successful career in this field.\n\n\n\n\n\n\n\nInternship Timeline\n\n\n\nStart Date: 23 June 2025 End Date: 30 September 2025 Duration: 3 months Location: Hazelwood, Pretoria, South Africa Supervisor: Dr Xan Swart",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Introduction & Background"
+    ]
+  },
+  {
+    "objectID": "learning-outcomes/index.html",
+    "href": "learning-outcomes/index.html",
+    "title": "Learning Outcomes",
+    "section": "",
+    "text": "This section documents the learning outcomes for the Biostatistical Consulting & Collaboration module and provides evidence of how I achieved each outcome through coursework, internship activities, and reflective practice."
+  },
+  {
+    "objectID": "learning-outcomes/index.html#overview",
+    "href": "learning-outcomes/index.html#overview",
+    "title": "Learning Outcomes",
+    "section": "",
+    "text": "This section documents the learning outcomes for the Biostatistical Consulting & Collaboration module and provides evidence of how I achieved each outcome through coursework, internship activities, and reflective practice."
+  },
+  {
+    "objectID": "learning-outcomes/index.html#module-learning-outcomes",
+    "href": "learning-outcomes/index.html#module-learning-outcomes",
+    "title": "Learning Outcomes",
+    "section": "Module Learning Outcomes",
+    "text": "Module Learning Outcomes\nThe Biostatistical Consulting & Collaboration module has the following learning outcomes:\n\n1. Communicate effectively about both statistical and medical/biological concepts\nEvidence of achievement:\n\n\nTODO: Link to relevant internship work outputs\nTODO: Link to consultation examples\nTODO: Link to reflections discussing communication challenges\n\n\n\n\n2. Contribute to the design of research studies\nEvidence of achievement:\n\n\nTODO: Randomisation work\nTODO: Study design contributions\nTODO: Protocol review activities\n\n\n\n\n3. Develop data analysis plans\nEvidence of achievement:\n\n\nTODO: Statistical Analysis Plans developed during internship\nTODO: Analysis planning for consultation projects\nTODO: Examples from coursework\n\n\n\n\n4. Develop verbal and written skills\nEvidence of achievement:\n\n\nTODO: Written reports and documents\nTODO: Presentation materials\nTODO: Consultation meeting examples\n\n\n\n\n5. Approach methodological challenges in special types of study designs\nEvidence of achievement:\n\n\nTODO: Examples of complex study designs encountered\nTODO: Methodological solutions developed\nTODO: Learning from challenging situations\n\n\n\n\n6. Integrate statistical knowledge gained in other modules\nEvidence of achievement:\n\n\nTODO: Examples of integrating Linear Models, Categorical Data Analysis, etc.\nTODO: Cross-module applications\nTODO: Synthesis of knowledge\n\n\n\n\n7. Connect research question and statistical methods\nEvidence of achievement:\n\n\nTODO: Examples of translating clinical questions to statistical problems\nTODO: Method selection rationale\nTODO: Consultation examples"
+  },
+  {
+    "objectID": "learning-outcomes/index.html#summary-matrix",
+    "href": "learning-outcomes/index.html#summary-matrix",
+    "title": "Learning Outcomes",
+    "section": "Summary Matrix",
+    "text": "Summary Matrix\nThe table below provides a quick reference to where evidence for each learning outcome can be found in this portfolio:\n\n\n\n\n\n\n\n\n\nLearning Outcome\nInternship Report\nModule Reflections\nArtefacts\n\n\n\n\n1. Communicate effectively\n✓\nTODO\nTODO\n\n\n2. Contribute to study design\n✓\nTODO\nTODO\n\n\n3. Develop analysis plans\n✓\nTODO\nTODO\n\n\n4. Develop verbal/written skills\n✓\nTODO\nTODO\n\n\n5. Approach methodological challenges\n✓\nTODO\nTODO\n\n\n6. Integrate statistical knowledge\n✓\nTODO\nTODO\n\n\n7. Connect questions to methods\n✓\nTODO\nTODO"
+  },
+  {
+    "objectID": "learning-outcomes/index.html#reflection-on-learning-outcomes",
+    "href": "learning-outcomes/index.html#reflection-on-learning-outcomes",
+    "title": "Learning Outcomes",
+    "section": "Reflection on Learning Outcomes",
+    "text": "Reflection on Learning Outcomes\n\nTODO: Write 2-3 paragraphs reflecting on:\n\nWhich outcomes were easiest to achieve and why?\nWhich outcomes were most challenging and what strategies helped?\nHow has achieving these outcomes prepared you for your career as a biostatistician?\nWhat areas still need further development?\n\n\n\n\n\n\n\n\nRelated Sections\n\n\n\n\nSee the Internship Report for detailed examples of how internship activities addressed learning outcomes\nSee Module Reflections for daily reflections on learning"
+  },
+  {
+    "objectID": "reflections/week-02/day-03.html",
+    "href": "reflections/week-02/day-03.html",
+    "title": "Week 2, Day 3",
+    "section": "",
+    "text": "Session focus: Applying learned frameworks through practice consultations and understanding consulting practice management",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-03.html#learning-objectives",
+    "href": "reflections/week-02/day-03.html#learning-objectives",
+    "title": "Week 2, Day 3",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nIntegrate all ASCCR framework components in complete practice consultations\nUnderstand how to manage a biostatistical consulting practice using the SU Biostatistics Unit as a case study\nApply consultation skills to assignment preparation\nSynthesize learning from both blocks into coherent professional practice approach",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-03.html#description-of-activities",
+    "href": "reflections/week-02/day-03.html#description-of-activities",
+    "title": "Week 2, Day 3",
+    "section": "Description of Activities",
+    "text": "Description of Activities\nThe morning consisted entirely of practice consultations where we applied the complete ASCCR framework with peer observers providing structured feedback. The late morning session presented a detailed case study of the SU Biostatistics Unit, covering operational aspects, client management, resource allocation, and quality assurance. The afternoon was dedicated to working on Assignment 1, applying consultation principles to a written consultation report.",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-03.html#reflection-gibbs-reflective-cycle",
+    "href": "reflections/week-02/day-03.html#reflection-gibbs-reflective-cycle",
+    "title": "Week 2, Day 3",
+    "section": "Reflection (Gibbs Reflective Cycle)",
+    "text": "Reflection (Gibbs Reflective Cycle)\n\n1. Description\nPractice consultations required integrating all previously learned elements—ASCCR components, POWER structure, communication triangle, and relationship building—in real-time interactions. The SU Biostatistics Unit case study revealed the organizational infrastructure supporting individual consultations. Assignment work translated verbal consultation skills into written documentation, requiring different but related competencies.\n\n\n2. Feelings\nThe practice consultations initially felt overwhelming—juggling multiple frameworks while maintaining authentic interaction seemed impossible. However, each successive practice felt more natural. The case study was reassuring, showing that institutional support structures can facilitate individual excellence. The assignment work felt like a useful bridge between course learning and real-world application.\n\n\n3. Evaluation\nPractice consultations with immediate peer feedback accelerated learning beyond what solo practice could achieve. The case study effectively contextualized individual consultation skills within organizational realities. The assignment provided opportunity to demonstrate integrated understanding rather than isolated skill components. However, time constraints limited the number of practice scenarios we could explore.\n\n\n4. Analysis\nThe practice sessions revealed that frameworks become internalized through repetition—what initially requires conscious attention gradually becomes intuitive. The case study demonstrated that successful consulting practices require both individual excellence and organizational support systems. The assignment highlighted that written consultation documentation requires different skills than verbal consultation—clarity, completeness, and anticipation of questions that won’t be asked in real-time.\n\n\n5. Conclusion\nThis final day synthesized two weeks of intensive learning into practical application. The progression from framework introduction through guided practice to independent application (via assignment) created a complete learning cycle. The case study reminded us that we’ll typically work within organizational contexts that both enable and constrain our practice.\n\n\n6. Action Plan\nI will seek opportunities for regular practice consultations with peer feedback, perhaps establishing a consultation club. I’ll analyze my institution’s consulting structure, identifying strengths to leverage and gaps to address. I’ll develop templates for different types of consultation documentation, ensuring consistency and completeness. I’ll also create a personal development plan integrating all ASCCR components, identifying specific areas for continued improvement.",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-03.html#incorporated-sources-and-relevance",
+    "href": "reflections/week-02/day-03.html#incorporated-sources-and-relevance",
+    "title": "Week 2, Day 3",
+    "section": "Incorporated Sources and Relevance",
+    "text": "Incorporated Sources and Relevance\n\nBlock 1 session 7.pdf — SU Biostatistics Unit structure and operations\nPortfolio of Evidence of Learning 2019.pdf — Assignment guidelines and expectations\nInternship Report - AvT.pdf — Example of translating consultation experience into written reflection\nReflection and Reflective Writing — PowerPoint Slides.pdf — Gibbs cycle application to consultation experiences\n\n\n\n\n\n\n\n\nArtefacts and Evidence\n\n\n\n\nVideo recordings of practice consultations\nPeer feedback forms completed\nSU Biostatistics Unit operational analysis\nDraft Assignment 1 incorporating consultation principles\nPersonal consultation competency self-assessment",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-03.html#rubric-checks",
+    "href": "reflections/week-02/day-03.html#rubric-checks",
+    "title": "Week 2, Day 3",
+    "section": "Rubric Checks",
+    "text": "Rubric Checks\nEnsure this reflection meets the assessment criteria:\n\n≥300 words\nClear link to artefact(s)\nCritical engagement with reflective cycle (not just description)\nHonest and balanced self-assessment\nConcrete action plan for improvement\n\n\n\n\n\n\n\n\nModule Complete\n\n\n\nYou have completed all module reflections. Return to the Reflections Overview to review the full learning journey.",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-01.html",
+    "href": "reflections/week-02/day-01.html",
+    "title": "Week 2, Day 1",
+    "section": "",
+    "text": "Session focus: Introduction to the ASCCR framework and mastering the POWER structure for effective statistical consultations",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-01.html#learning-objectives",
+    "href": "reflections/week-02/day-01.html#learning-objectives",
+    "title": "Week 2, Day 1",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nUnderstand the ASCCR framework’s five components: Attitude, Structure, Content, Communication, and Relationship\nMaster the POWER structure for organizing consultation meetings\nPractice opening consultation sessions effectively\nLearn the Q1Q2Q3 approach for systematic problem-solving in consultations",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-01.html#description-of-activities",
+    "href": "reflections/week-02/day-01.html#description-of-activities",
+    "title": "Week 2, Day 1",
+    "section": "Description of Activities",
+    "text": "Description of Activities\nThe day began with an introduction revisiting module objectives and biostatistical collaboration as a career. The core content focused on the ASCCR framework, particularly developing an attitude of collaboration and implementing the POWER structure (Prepare, Open, Work, End, Reflect). The afternoon involved role-playing exercises demonstrating consultation openings, practicing with peers, and learning the Q1Q2Q3 approach for structuring the working portion of consultations.",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-01.html#reflection-gibbs-reflective-cycle",
+    "href": "reflections/week-02/day-01.html#reflection-gibbs-reflective-cycle",
+    "title": "Week 2, Day 1",
+    "section": "Reflection (Gibbs Reflective Cycle)",
+    "text": "Reflection (Gibbs Reflective Cycle)\n\n1. Description\nThe ASCCR framework was presented as a comprehensive model for collaboration, with each component building upon others. The POWER structure provided a concrete template for consultation meetings. Role-playing exercises allowed us to practice opening conversations, establishing expectations, and navigating the “wants, willing, and able” discussions. The Q1Q2Q3 approach offered a systematic method for understanding research questions at different levels.\n\n\n2. Feelings\nInitially, the frameworks felt somewhat artificial—imposing structure on what I’d assumed should be natural conversations. However, during role-play exercises, I experienced how structure actually freed me to focus on content rather than worrying about process. The vulnerability of being observed and critiqued during practice sessions was uncomfortable but ultimately valuable.\n\n\n3. Evaluation\nThe ASCCR framework successfully integrated previously disparate concepts about collaboration into a coherent model. The POWER structure’s emphasis on explicit time management and expectation-setting addressed common consultation pitfalls. Role-playing, while initially awkward, provided safe space to experiment with different approaches. The Q1Q2Q3 method effectively prevented premature jumping to statistical solutions before fully understanding research contexts.\n\n\n4. Analysis\nThe frameworks reveal that effective collaboration is learnable and teachable, not merely a personality trait. The attitude of being “domain-expert centered” represents a fundamental shift from statistics-centered thinking. The POWER structure’s “Reflect” component emphasizes continuous improvement—each consultation becomes a learning opportunity. The practice sessions demonstrated that initial discomfort with structured approaches diminishes rapidly with repetition.\n\n\n5. Conclusion\nThis foundational day established that systematic approaches to collaboration can enhance both efficiency and effectiveness. The ASCCR framework provides a mental model for navigating complex collaborative relationships, while the POWER structure offers practical tools for immediate implementation.\n\n\n6. Action Plan\nI will implement the POWER structure in my next three consultations, documenting what works and what needs adaptation. I’ll practice the Q1Q2Q3 approach by retroactively applying it to past projects, identifying where deeper questioning might have led to better outcomes. I’ll also develop a personal “collaboration attitude statement” to review before meetings.",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-01.html#incorporated-sources-and-relevance",
+    "href": "reflections/week-02/day-01.html#incorporated-sources-and-relevance",
+    "title": "Week 2, Day 1",
+    "section": "Incorporated Sources and Relevance",
+    "text": "Incorporated Sources and Relevance\n\n1.The ASCCR framework Biostats consulting lectures.pdf — Core framework documentation\nThe ASCCR Frame for Learning Essential Collaboration Skills.pdf — Theoretical foundation and evidence base\n3.Smith Vance Course Handout.pdf — Practical implementation guidelines\nEffective.Collaboration.CSP.Handout_20150217.pdf — Additional tools and techniques\n\n\n\n\n\n\n\n\nArtefacts and Evidence\n\n\n\n\nASCCR framework summary notes\nVideo recordings of role-play exercises\nPersonal POWER structure checklist\nQ1Q2Q3 practice worksheets",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-01.html#rubric-checks",
+    "href": "reflections/week-02/day-01.html#rubric-checks",
+    "title": "Week 2, Day 1",
+    "section": "Rubric Checks",
+    "text": "Rubric Checks\nEnsure this reflection meets the assessment criteria:\n\n≥300 words\nClear link to artefact(s)\nCritical engagement with reflective cycle (not just description)\nHonest and balanced self-assessment\nConcrete action plan for improvement\n\n\n\n\n\n\n\n\nNext Reflection\n\n\n\nContinue to Day 2 to read the reflection on advanced communication and relationship building.",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-03.html",
+    "href": "reflections/week-01/day-03.html",
+    "title": "Week 1, Day 3",
+    "section": "",
+    "text": "Session focus: Developing skills for teaching collaborators, understanding research replication, and enhancing scientific writing",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-03.html#learning-objectives",
+    "href": "reflections/week-01/day-03.html#learning-objectives",
+    "title": "Week 1, Day 3",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nLearn strategies for effectively educating research collaborators about statistical concepts\nUnderstand the importance of replication and transparent reporting in scientific research\nDevelop advanced scientific writing skills for clear research communication\nEngage in open discussions about practical collaboration challenges",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-03.html#description-of-activities",
+    "href": "reflections/week-01/day-03.html#description-of-activities",
+    "title": "Week 1, Day 3",
+    "section": "Description of Activities",
+    "text": "Description of Activities\nThe day opened with a session on teaching collaborators how to work effectively with biostatisticians, emphasizing bidirectional education. This was followed by a critical discussion on the “science of doing science”—addressing replication, reproducibility, and transparent reporting. The afternoon included focused scientific writing practice and concluded with open discussion sessions where we could raise specific challenges and concerns from our experiences.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-03.html#reflection-gibbs-reflective-cycle",
+    "href": "reflections/week-01/day-03.html#reflection-gibbs-reflective-cycle",
+    "title": "Week 1, Day 3",
+    "section": "Reflection (Gibbs Reflective Cycle)",
+    "text": "Reflection (Gibbs Reflective Cycle)\n\n1. Description\nThe session on teaching collaborators revealed that education flows both ways in successful collaborations. We explored how to explain statistical concepts without condescension while also learning about clinical contexts. The replication discussion addressed the reproducibility crisis and our role in promoting robust science. The writing session built upon previous strategies with hands-on practice.\n\n\n2. Feelings\nI felt empowered by the idea that I could actively shape how collaborators work with me, rather than simply responding to their requests. The reproducibility discussion evoked a sense of responsibility—our work directly impacts scientific integrity. The open discussion format was refreshing, allowing authentic sharing of challenges without judgment.\n\n\n3. Evaluation\nThe emphasis on mutual education in collaborations was transformative, shifting from a service mindset to partnership. The reproducibility content was timely and critical, though implementing these practices within existing time constraints remains challenging. The combination of structured content with open discussion facilitated both learning and peer support.\n\n\n4. Analysis\nTeaching collaborators effectively requires understanding their knowledge gaps without making assumptions, while also articulating our own needs clearly. The reproducibility crisis isn’t just about fraud or errors—it’s often about inadequate documentation and communication of methods. These sessions revealed that biostatisticians serve as guardians of scientific integrity, a role requiring both technical excellence and diplomatic skills.\n\n\n5. Conclusion\nEffective collaboration transcends statistical expertise—it requires educational skills, commitment to scientific integrity, and ability to navigate interpersonal dynamics. The day’s sessions integrated these elements, showing how they reinforce each other in practice.\n\n\n6. Action Plan\nI will develop a “collaboration guide” for future partners, outlining mutual expectations and communication preferences. I’ll implement reproducibility practices in current projects, including detailed documentation and code sharing. I’ll also practice explaining complex statistical concepts using analogies and visual aids.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-03.html#incorporated-sources-and-relevance",
+    "href": "reflections/week-01/day-03.html#incorporated-sources-and-relevance",
+    "title": "Week 1, Day 3",
+    "section": "Incorporated Sources and Relevance",
+    "text": "Incorporated Sources and Relevance\n\nSession 3_Some Tips for Enhancing Biostats Collaborations in Med Res.pdf — Provided practical collaboration strategies\nThe ASCCR Frame for Learning Essential Collaboration Skills.pdf — Offered theoretical framework for collaboration\nPortfolio of Evidence of Learning 2019.pdf — Guided reflection on collaboration experiences\n\n\n\n\n\n\n\n\nArtefacts and Evidence\n\n\n\n\nDraft collaboration guide for research partners\nReproducible research checklist created\nPeer feedback from open discussion sessions",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-03.html#rubric-checks",
+    "href": "reflections/week-01/day-03.html#rubric-checks",
+    "title": "Week 1, Day 3",
+    "section": "Rubric Checks",
+    "text": "Rubric Checks\nEnsure this reflection meets the assessment criteria:\n\n≥300 words\nClear link to artefact(s)\nCritical engagement with reflective cycle (not just description)\nHonest and balanced self-assessment\nConcrete action plan for improvement\n\n\n\n\n\n\n\n\nNext Reflection\n\n\n\nContinue to Day 4 to read the reflection on leadership, conflict resolution, and professional growth.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 3"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-01.html",
+    "href": "reflections/week-01/day-01.html",
+    "title": "Week 1, Day 1",
+    "section": "",
+    "text": "Session focus: Establishing foundations for professional biostatistical collaboration through career exploration, ethical frameworks, and role enhancement strategies",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-01.html#learning-objectives",
+    "href": "reflections/week-01/day-01.html#learning-objectives",
+    "title": "Week 1, Day 1",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nUnderstand biostatistical collaboration as a career pathway and its professional landscape\nComprehend and apply the biostatistician’s code of conduct in practice\nDevelop strategies for enhancing collaborative roles in multidisciplinary research\nRecognize the importance of mentorship in biostatistical career development",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-01.html#description-of-activities",
+    "href": "reflections/week-01/day-01.html#description-of-activities",
+    "title": "Week 1, Day 1",
+    "section": "Description of Activities",
+    "text": "Description of Activities\nThe day commenced with an introduction to the module and exploration of biostatistical collaboration as a career path. This was followed by an in-depth examination of the biostatistician’s code of conduct, emphasizing ethical responsibilities to patients, collaborators, the profession, and employers. The morning concluded with practical strategies for enhancing our roles in collaborations. After lunch, we attended a public presentation on stopping clinical trials early for benefit, which highlighted real-world applications of biostatistical decision-making. The day ended with a session on mentorship in biostatistics, exploring its impact on career development, job satisfaction, and academic productivity.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-01.html#reflection-gibbs-reflective-cycle",
+    "href": "reflections/week-01/day-01.html#reflection-gibbs-reflective-cycle",
+    "title": "Week 1, Day 1",
+    "section": "Reflection (Gibbs Reflective Cycle)",
+    "text": "Reflection (Gibbs Reflective Cycle)\n\n1. Description\nThe opening session provided a comprehensive overview of biostatistical collaboration as more than just technical support—it’s a career requiring unique skills beyond traditional statistics education. The code of conduct session presented ethical frameworks, while the mentorship discussion revealed how structured guidance influences career trajectories and research productivity.\n\n\n2. Feelings\nI felt energized by the career possibilities presented but also somewhat overwhelmed by the breadth of responsibilities biostatisticians carry. The ethical dimensions particularly resonated with me, as I hadn’t fully considered the weight of our accountability in research that directly impacts patient care. The mentorship discussion evoked both excitement about finding mentors and anxiety about navigating these professional relationships.\n\n\n3. Evaluation\nThe integration of ethical considerations with practical career guidance worked exceptionally well, providing both philosophical grounding and actionable strategies. The public presentation effectively demonstrated how biostatistical decisions have real-world consequences. However, the rapid transition between topics left limited time for deep reflection on each component.\n\n\n4. Analysis\nThe emphasis on collaboration as a distinct professional skill set, rather than merely applying statistical knowledge, represents a paradigm shift from traditional statistics education. The code of conduct discussion revealed that biostatisticians must balance multiple, sometimes competing responsibilities—ensuring scientific rigor while respecting collaborator relationships and timeline constraints. The mentorship component underscored that career development in biostatistics is rarely solitary; it requires deliberate cultivation of professional relationships.\n\n\n5. Conclusion\nThis foundational day established that successful biostatistical collaboration requires integrating technical expertise with ethical awareness, communication skills, and professional relationship management. The session challenged my perception of biostatistics as purely technical work, revealing it as deeply interpersonal and ethically complex.\n\n\n6. Action Plan\nI will develop a personal code of conduct framework, identifying potential ethical dilemmas I might face and strategies for addressing them. I’ll also identify potential mentors within my institution and prepare thoughtful approaches for initiating these relationships. Additionally, I’ll begin documenting collaboration experiences to track my professional growth.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-01.html#incorporated-sources-and-relevance",
+    "href": "reflections/week-01/day-01.html#incorporated-sources-and-relevance",
+    "title": "Week 1, Day 1",
+    "section": "Incorporated Sources and Relevance",
+    "text": "Incorporated Sources and Relevance\n\nModule Outline Biostatistical Consulting - 2025.pdf — Provided context for module objectives and assessment structure\nStatistics in Medicine 2022 LeBlanc.pdf — Offered evidence-based perspectives on mentorship importance and collaboration ethics\nMy journey as a biostatistician_final.pdf — Illustrated practical mentorship benefits through real experiences\n\n\n\n\n\n\n\n\nArtefacts and Evidence\n\n\n\n\nSession handouts on biostatistical code of conduct\nNotes from public presentation on trial stopping rules\nPersonal reflection journal entries on ethical considerations",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 1"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-01.html#rubric-checks",
+    "href": "reflections/week-01/day-01.html#rubric-checks",
+    "title": "Week 1, Day 1",
+    "section": "Rubric Checks",
+    "text": "Rubric Checks\nEnsure this reflection meets the assessment criteria:\n\n≥300 words\nClear link to artefact(s)\nCritical engagement with reflective cycle (not just description)\nHonest and balanced self-assessment\nConcrete action plan for improvement\n\n\n\n\n\n\n\n\nNext Reflection\n\n\n\nContinue to Day 2 to read the reflection on strategic communication and professional development.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 1"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html",
+    "href": "internship/work-outputs.html",
+    "title": "Work Outputs",
+    "section": "",
+    "text": "During my internship at Scigenix, I contributed to a diverse range of projects spanning statistical consultation, clinical trial support, and software development. This section provides detailed descriptions of each project, highlighting my specific contributions and the skills I developed.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html#overview",
+    "href": "internship/work-outputs.html#overview",
+    "title": "Work Outputs",
+    "section": "",
+    "text": "During my internship at Scigenix, I contributed to a diverse range of projects spanning statistical consultation, clinical trial support, and software development. This section provides detailed descriptions of each project, highlighting my specific contributions and the skills I developed.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html#job-satisfaction-survey-analysis",
+    "href": "internship/work-outputs.html#job-satisfaction-survey-analysis",
+    "title": "Work Outputs",
+    "section": "1. Job Satisfaction Survey Analysis",
+    "text": "1. Job Satisfaction Survey Analysis\n\nProject Overview\nOne of the main statistical consulting projects I worked on during my internship involved analysing a job satisfaction survey among anaesthesia consultants and registrars in South Africa. The purpose of the study was to assess key domains of job satisfaction using the Minnesota Satisfaction Questionnaire (MSQ). We also wanted to explore how satisfaction, demographic variables, and respondents’ intention to leave their current post were associated.\n\n\nMy Responsibilities\nMy responsibilities covered the full spectrum of statistical support:\n\nData Management: Imported raw Excel data into R, cleaned and recoded over sixty variables, with particular attention to managing Likert-scale responses, multi-select questions, and missing values\nPsychometric Assessment: Implemented scoring framework for MSQ capturing intrinsic, extrinsic, and general satisfaction domains; assessed internal consistency using Cronbach’s alpha; conducted exploratory factor analysis to examine dimensional structure\nStatistical Analysis: Used both parametric and non-parametric methods to compare satisfaction scores between consultants and registrars; employed ordinal logistic regression to model intention to leave as a function of demographic predictors\nReporting: Produced comprehensive demographic tables, publication-quality summary tables, and clear visualizations (histograms, boxplots, and Likert plots)\n\n\n\nKey Challenges and Learning\nA key outcome of the study was to determine whether factors like age and gender were associated with anaesthesiologists’ intention to leave. I used ordinal logistic regression for this. While the computational aspects in R were familiar, interpreting the results in understandable language proved challenging, particularly since this method was new to me. My supervisor encouraged me to make the findings understandable to clinicians. After several attempts, I learned a valuable lesson: “the job is not complete until you can make it understandable.”\n\n\nConsultation Meeting Experience\nThis project involved a meeting with the researcher, their two supervisors, and my internship supervisor. Having completed a mock consultation for my degree’s Biostatistical Consulting module, I felt prepared, but the reality was different. I spent the day expecting questions about the regression or ANOVA results. However, much of the 80-minute meeting focused on stylistic aspects of the report, such as adjusting axis font sizes on graphs or selecting density plots instead of histograms.\nThis experience exposed me to the realities of working within a multidisciplinary team. I realised that much of my time would be spent refining report details to ensure clarity and acceptability for journal submission, rather than focusing solely on statistical analysis. While this initially felt frustrating, I grew to appreciate the collaborative process of generating new knowledge.\n\n\nSkills Developed\n\nProject management (weekly goal-setting for data cleaning and analysis)\nIndependent research on best practices for interpreting ordinal logistic regression\nPersonal quality control and document tracking\nRegular communication with team members to keep project on track",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html#can-anaesthesiology-trainees-distinguish-between-different-heart-murmurs",
+    "href": "internship/work-outputs.html#can-anaesthesiology-trainees-distinguish-between-different-heart-murmurs",
+    "title": "Work Outputs",
+    "section": "2. Can Anaesthesiology Trainees Distinguish Between Different Heart Murmurs?",
+    "text": "2. Can Anaesthesiology Trainees Distinguish Between Different Heart Murmurs?\n\nProject Overview\nThis cross-sectional study investigated whether anaesthesiology trainees could distinguish between benign and pathologic paediatric heart murmurs using pre-recorded audio clips. The project addressed the ability of anaesthetists to identify pathologic murmurs during pre-operative assessments, which directly affects patient safety and theatre efficiency. Participants completed a 20-question online test (MurmurQuiz) and provided background information relating to their clinical experience.\n\n\nMy Responsibilities\n\nData Management: Developed a modular, reproducible codebase in R that processed raw quiz results and survey data, performed data cleaning, derived performance classifications, and merged relevant covariates\nDescriptive Analysis: Produced visual summaries (boxplots) and descriptive tables to explore patterns in test accuracy across experience-related factors\nRegression Modeling: Conducted both univariate and multivariable logistic regression analyses to assess associations between clinical experience and murmur recognition performance\nReporting: Summarized models in well-formatted tables using the gtsummary package, enabling easy interpretation by non-statistical stakeholders\n\n\n\nPersonal Significance\nI found this project particularly rewarding since it had undertones of educational research—the overarching theme was to determine how capable trainees are at doing routine yet incredibly important tasks. Beyond this, the fact that the work was focused on paediatric patients specifically gave me a sense of personal satisfaction knowing that the work I was doing could have real-world impact on quality of care provided to some of our most vulnerable patients.\n\n\nSkills Developed\n\nDevelopment of modular, reproducible analytical code\nIntegration of data from multiple sources (quiz performance and demographic surveys)\nApplication of logistic regression for educational research questions\nCreation of stakeholder-friendly reports using modern R packages",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html#analysis-of-fresh-gas-flow-rates",
+    "href": "internship/work-outputs.html#analysis-of-fresh-gas-flow-rates",
+    "title": "Work Outputs",
+    "section": "3. Analysis of Fresh Gas Flow Rates",
+    "text": "3. Analysis of Fresh Gas Flow Rates\n\nProject Overview\nThe “Analysis of Fresh Gas Flow Rates and its Effect on Consumption and Cost of Inhalational Anaesthetic Agents in a Tertiary Academic Hospital in Pretoria” was both one of the most challenging and impactful projects of my internship. Motivated by the growing recognition of climate change and healthcare’s responsibility to address its environmental footprint, this study aimed to examine current anaesthetic practices—specifically, the use of volatile inhalational agents and nitrous oxide, both notable greenhouse gases.\n\n\nData Structure Challenges\nInitial data cleaning was challenging due to the large volume of data that needed analysis. The raw dataset had information at various levels: one set at the case level and another at the hour level. To streamline the workflow and align with the study’s objectives, I created two separate datasets—one representing each level—before “mapping” variables between them.\nA particular obstacle related to how clinicians were represented in the original files. Instead of having each clinician in a separate column, the data stored all names for a given case in a single cell, separated by commas. To address this, I wrote a script in R that parsed the clinician column, split the names by commas, and assigned each name to a new column.\n\n\nStatistical Approach\nAfter cleaning and restructuring the data, I matched variables across the two datasets to facilitate analysis—a process familiar from the statistical programming workflows used in clinical trials. The analysis included:\n\nCalculating summary statistics\nGenerating visualizations\nApplying a generalized linear model to account for clinicians who worked on multiple cases\n\n\n\nImpact and Insights\nThis project highlighted the importance of meticulous data cleaning and documentation, as well as the value of robust, reproducible code for complex analyses. Importantly, by identifying patterns in anaesthetic agent usage and their associated costs, the findings offer actionable insights that could help reduce the hospital’s carbon footprint and promote environmentally responsible healthcare practices.\n\n\nSkills Developed\n\nAdvanced data restructuring and manipulation in R\nString parsing and data extraction from complex formats\nGeneralized linear modeling for clustered data\nEnvironmental impact assessment in healthcare settings",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html#randomisation",
+    "href": "internship/work-outputs.html#randomisation",
+    "title": "Work Outputs",
+    "section": "4. Randomisation",
+    "text": "4. Randomisation\n\nOverview\nAs the name suggests, randomisation is a principal component of any Randomised Controlled Trial (RCT). Randomly assigning treatment ensures that a participant’s potential health outcomes do not influence the allocation process. This approach makes the treatment groups comparable on average, even with respect to unmeasured confounders. Consequently, comparing outcomes by assigned group yields an unbiased estimate of the treatment’s causal effect.\n\n\nMy Contribution\nBeing asked to prepare a randomisation schedule was an exciting opportunity, particularly as the topic had not been covered in depth during my MSc. Completing this task gave me a keen sense of accomplishment, as it marked my first concrete contribution to a clinical trial.\n\n\nTechnical Implementation\nAn especially interesting aspect was the division of the process into two stages:\n\nMock Randomisation: Employed a fixed random seed to ensure reproducibility for validation purposes\nFinal Randomisation: Used a randomly selected seed between 1 and 2 million (excluding the mock seed) to generate the actual allocation sequence\n\nWhile these were mathematically and programmatically identical, this two-stage process ensured both reproducibility (for quality control) and true randomness (for the actual trial).\n\n\nSkills Developed\n\nUnderstanding of different randomisation methods (simple, blocked, stratified)\nProgramming techniques in R to ensure true randomness\nRegulatory procedures for generating and documenting randomisation sequences\nAppreciation for the rigour needed in clinical trials",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html#data-safety-committee",
+    "href": "internship/work-outputs.html#data-safety-committee",
+    "title": "Work Outputs",
+    "section": "5. Data Safety Committee",
+    "text": "5. Data Safety Committee\n\nBackground and Motivation\nI am particularly interested in the crucial role that ethics plays in clinical research. Since beginning my journey in public health, I have come to regard ethical research practices as a fundamental part upon which the entire research process is built. I dedicated many hours to understanding the Declaration of Helsinki, the lasting infamy of the Tuskegee Syphilis Study, and the role of safety review committees in clinical trials.\n\n\nScigenix’s Commitment to Ethics\nThis emphasis on ethics became especially clear during my internship at Scigenix. From the start, Scigenix demonstrated a deep commitment to patient wellbeing. I was encouraged to approach the clinical research process holistically, always remembering that our goal is to improve people’s lives. In biostatistics, our work is often far removed from patients—both physically and metaphorically—which can make it easy to forget the individuals behind the numbers and graphs. To address this, the company enrolled all staff in an intensive Good Clinical Practice (GCP) training course.\n\n\nData Safety Committee Meeting\nOne of my goals going into this internship was to attend a Data Safety Review Committee meeting. These committees are tasked with scrutinising clinical trial conduct, evaluating results, and safeguarding patient safety. Although they play an integral role in research, many young biostatisticians perceive them as mysterious, since participating requires substantial clinical trial experience.\nWhile the meeting itself was strictly confidential, I was able to see firsthand that there was zero tolerance for anything that might put study participants at risk. Notably, I found it interesting that decisions on whether to continue a study were made formally through voting.\n\n\nLearning Outcomes\n\nUnderstanding of the role and function of Data Safety Monitoring Boards\nAppreciation for the ethical responsibilities of biostatisticians\nInsight into formal decision-making processes in clinical trials\nReinforcement of patient-centered approach to research",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html#quality-control",
+    "href": "internship/work-outputs.html#quality-control",
+    "title": "Work Outputs",
+    "section": "6. Quality Control",
+    "text": "6. Quality Control\n\nThe Standard of Excellence\nIn clinical research, the expectation is that all work produced, whether statistical outputs, tables, figures, or reports, is of the highest standard and as close to flawless as possible. This standard is not simply aspirational but essential, given the regulatory and ethical stakes involved in trial reporting.\n\n\nQC Process Implementation\nTo achieve this level of rigour, we employed a structured quality control process grounded in peer review and accountability. Specifically, we used a comprehensive checklist system developed in Excel, where team members took responsibility for reviewing a colleague’s work line by line.\nEach item on the checklist targeted a specific aspect of quality:\n\nCorrect application of statistical methods\nAlignment between R outputs and their presentation in Word\nCompliance with pre-specified templates and reporting conventions\n\nNo detail was considered too minor to call for attention. Stylistic consistency such as the use of decimal points, abbreviations, and font sizing was meticulously checked. Figures were assessed for readability, clarity, and adherence to visual standards. Even elements like axis labels, colour schemes, and legend placement were scrutinised to ensure they communicated information effectively and professionally.\n\n\nInsights Gained\nThis process highlighted the importance of collaborative vigilance and instilled in me a deep respect for the behind-the-scenes discipline that underpins transparent and reproducible research. It also reinforced the notion that producing statistically valid results is only one part of the job—communicating them clearly and accurately is equally critical.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html#annotated-case-report-forms",
+    "href": "internship/work-outputs.html#annotated-case-report-forms",
+    "title": "Work Outputs",
+    "section": "7. Annotated Case Report Forms",
+    "text": "7. Annotated Case Report Forms\n\nIntroduction to CDISC Standards\nOne of the most eye-opening tasks during my internship was working on annotated Case Report Forms (CRFs). Before starting this work, I had only a theoretical understanding of how clinical trial data gets organized and standardized. What I discovered was a world of detail that makes my earlier coursework seem refreshingly straightforward by comparison.\n\n\nThe Task\nThe basic premise seemed simple enough: take the forms used to collect patient data during clinical trials and figure out where each piece of information should go according to CDISC SDTM (Study Data Tabulation Model) standards. In practice, this meant looking at everything from basic demographic questions to complex adverse event reporting and deciding which standardized “domain” each variable belonged to.\n\n\nThe Complexity\nWorking through these domain mappings quickly taught me that what appears obvious often is not. A simple question about a patient’s medical history might seem like it clearly belongs in the Medical History (MH) domain, but depending on when it was collected and how it relates to the study, it could potentially fit elsewhere. I found myself constantly referring to CDISC implementation guides, trying to decode the logic behind these classification systems.\n\n\nBroader Impact\nWhat struck me most about this experience was how it illuminated the incredible infrastructure supporting modern clinical research. Before this internship, I understood clinical trials primarily through the lens of statistical analysis. Working on CRF annotations revealed the enormous effort required just to ensure that data can be collected, organized, and submitted in ways that regulatory agencies can review and approve.\nThis work also gave me a new appreciation for the tedious regulatory requirements that govern clinical research. What initially appeared to be bureaucratic complications revealed themselves as essential safeguards ensuring that clinical trial data can be trusted, compared across studies, and used to make important decisions about drug safety and efficacy.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html#manual-edit-checks",
+    "href": "internship/work-outputs.html#manual-edit-checks",
+    "title": "Work Outputs",
+    "section": "8. Manual Edit Checks",
+    "text": "8. Manual Edit Checks\n\nOverview\nOne of the most involved experiences during my internship involved working on the Manual Edit Check (MEC) process for a clinical trial. What initially appeared to be a straightforward data validation exercise quickly revealed itself as a sophisticated quality assurance framework that underpins the integrity of clinical research.\n\n\nScope of the MEC Process\nThe MEC process for the study encompassed 134 unique validation rules spanning the entire clinical data lifecycle. These checks were systematically categorized into:\n\nClinical (CLIN) checks: Focused on clinical logic and medical plausibility\nListing (LIS) checks: Focused on data completeness and consistency\n\nThe checks covered fifty-seven different Case Report Forms across thirty-four visit contexts from initial screening through study completion. The sheer scope of this validation framework was initially overwhelming, particularly given that my earlier exposure to data quality control had been limited to basic data cleaning exercises in coursework.\n\n\nTechnical Implementation\nMy primary responsibility involved implementing and refining the R-based validation framework that executed these checks automatically. Each validation rule required translation into a dedicated R function that would examine specific data elements and return standardized results:\n\nPASS: Data meeting all criteria\nFAIL: Definitive errors requiring correction\nREVIEW: Cases demanding manual evaluation and clinical judgment\n\n\n\nComplex Validation Logic\nThe most intellectually stimulating aspect was working with the Inclusion/Exclusion criteria checks, which included thirty of the total validation rules. These checks required sophisticated logic to manage scenarios such as specific medical events during the study period—cases where participants initially meeting eligibility criteria might experience status changes that affected their continued participation.\nThe cross-form validation components proved particularly challenging, as they demanded integration of data from multiple CRF domains to ensure consistency. For instance, confirming that adverse event onset dates aligned with visit dates required matching temporal data across different forms while accounting for potential data entry variations and protocol-defined visit windows.\n\n\nImpact on Understanding\nWorking on this project fundamentally changed my appreciation for the infrastructure supporting clinical research. Before this experience, I understood clinical trials primarily through the lens of statistical analysis and study design. The MEC process revealed the enormous effort needed to ensure that data can be trusted for regulatory submissions—an aspect of biostatistical work that receives little attention in academic coursework but proves essential in practice.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/work-outputs.html#shiny-app-development",
+    "href": "internship/work-outputs.html#shiny-app-development",
+    "title": "Work Outputs",
+    "section": "9. Shiny App Development",
+    "text": "9. Shiny App Development\n\nProject Overview\nDuring the latter phase of my internship, I undertook what would become one of the most technically challenging and professionally rewarding projects: developing a production-grade Shiny application for comparing clinical trial datasets and validating medical coding compliance.\n\n\nBusiness Need\nThis project emerged from a dual need within Scigenix’s quality assurance workflow:\n\nData Validation: The ability to efficiently validate data consistency across various stages of clinical trial data processing, particularly during database lock procedures that precede regulatory submissions\nCoding Compliance: Ensuring accurate medical coding using current MedDRA (Medical Dictionary for Regulatory Activities) and WHO Drug Dictionary terms\n\n\n\nTechnical Architecture\nThe application’s core functionality centred on two complementary validation processes:\n\nDataset Comparison Module\n\nImplemented using the Arsenal package’s comparedf() function in R\nDesigned to identify discrepancies that could affect trial integrity\nCapable of handling large clinical datasets with multiple data domains\n\n\n\nCoding Checks Module\n\nValidates medical terminology across three critical domains:\n\nAdverse Events (AE)\nMedical History (MH)\nConcomitant Medications (CM)\n\nEnsures all medical terms coded using current dictionary versions\nValidates LLT_CURRENCY (Lowest Level Term Currency) to guarantee regulatory compliance with MedDRA standards\n\n\n\n\nDevelopment Approach\nMy approach to development followed the {golem} framework, an R package that simplifies the creation and deployment of production-ready Shiny apps. I came to appreciate this framework for its emphasis on:\n\nProduction readiness\nSoftware development best practices\nModular architecture\n\nI structured the full application using smaller Shiny “modules”—one for data comparison and another for coding checks—a process akin to “eating an elephant bit-by-bit.” The coding module required particular attention to dictionary management, as it needed to interface with multiple MedDRA versions and WHO Drug dictionaries stored on the company’s SharePoint system.\n\n\nLessons Learned\nReflecting on this experience, I realize how it synthesized everything I had learned during my MSc while simultaneously exposing me to entirely new domains of knowledge. The project required not just statistical and programming expertise, but also an understanding of:\n\nClinical research processes\nMedical coding standards\nRegulatory requirements\nEnterprise software development practices\n\nThe gap between academic programming and production-grade software became starkly apparent. Where my coursework emphasized getting the right answer, this project demanded getting the right answer reliably, reproducibly, and verifiably, with comprehensive documentation of every decision.\n\n\nImpact\nThe most valuable lesson from this project was understanding how biostatisticians can contribute beyond traditional analysis roles. By developing tools that enhance both data quality and coding compliance while streamlining validation processes, we can multiply our impact across entire research programs. This application will save Scigenix several hours per study in data validation and coding verification time while reducing error rates—a tangible contribution to improving clinical research efficiency and regulatory compliance.\n\n\n\n\n\n\n\nNext Section\n\n\n\nProceed to Reflection to read my overall reflections on the internship experience and what I learned about being a biostatistician.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Work Outputs"
+    ]
+  },
+  {
+    "objectID": "internship/reflection.html",
+    "href": "internship/reflection.html",
+    "title": "Reflection",
+    "section": "",
+    "text": "Looking back on my three-month internship at Scigenix, I can see how transformative this experience has been for my professional development as a biostatistician. This reflection addresses what I learned, why this learning was significant, what I would have done differently, and the challenges I encountered along the way.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Reflection"
+    ]
+  },
+  {
+    "objectID": "internship/reflection.html#introduction",
+    "href": "internship/reflection.html#introduction",
+    "title": "Reflection",
+    "section": "",
+    "text": "Looking back on my three-month internship at Scigenix, I can see how transformative this experience has been for my professional development as a biostatistician. This reflection addresses what I learned, why this learning was significant, what I would have done differently, and the challenges I encountered along the way.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Reflection"
+    ]
+  },
+  {
+    "objectID": "internship/reflection.html#what-did-i-learn",
+    "href": "internship/reflection.html#what-did-i-learn",
+    "title": "Reflection",
+    "section": "What Did I Learn?",
+    "text": "What Did I Learn?\n\nTechnical Skills\nThe internship solidified and extended my technical statistical knowledge in several ways:\nAdvanced Data Management My coursework prepared me for analyzing clean datasets, but the internship taught me that data cleaning is often 50-70% of the work. I learned to handle complex data structures (hour-level vs. case-level data), parse messy text fields, and create reproducible data processing pipelines. The fresh gas flow project, in particular, taught me the value of thinking carefully about data structure before diving into analysis.\nProduction-Grade Programming While I was comfortable with R programming from my coursework, the internship introduced me to software engineering principles for biostatistics. The {golem} framework for Shiny app development, the R package structure for analyses, and the rigorous version control practices at Scigenix showed me what it means to write code that others can trust and maintain years later.\nRegulatory Standards Perhaps the most unexpected learning area was the regulatory framework governing clinical research. CDISC standards, MedDRA coding, ICH guidelines—these were barely mentioned in my coursework but proved essential for clinical trial work. Annotating CRFs and developing the coding compliance module gave me practical insight into why these standards exist and how they protect patient safety.\n\n\nSoft Skills\nIf I’m honest, the soft skills I developed may prove more valuable than the technical ones:\nCommunication I learned that explaining statistical concepts clearly is just as important as choosing the right analysis method. The job satisfaction project taught me that “the job is not complete until you can make it understandable.” I practiced translating p-values and confidence intervals into language that clinicians could use to make decisions.\nProject Management Managing multiple projects simultaneously, setting weekly goals, tracking deliverables, and coordinating with diverse stakeholders taught me organizational skills that no coursework could provide. I learned to balance perfectionism with pragmatism—knowing when to refine an analysis further and when the current version is good enough to share.\nCollaboration The multidisciplinary nature of clinical research means constant collaboration with clinicians, data managers, medical writers, and regulatory specialists. I learned to listen more than I speak, to ask clarifying questions before assuming I understand the problem, and to appreciate that my statistical expertise is just one piece of the puzzle.\nResilience Not every analysis goes smoothly. Data doesn’t always behave as expected. Collaborators sometimes request changes that feel unnecessary. I learned to view setbacks as learning opportunities rather than failures, and to maintain professional composure even when frustrated.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Reflection"
+    ]
+  },
+  {
+    "objectID": "internship/reflection.html#why-was-this-learning-significant",
+    "href": "internship/reflection.html#why-was-this-learning-significant",
+    "title": "Reflection",
+    "section": "Why Was This Learning Significant?",
+    "text": "Why Was This Learning Significant?\n\nBridging the Theory-Practice Gap\nMy MSc coursework provided an excellent theoretical foundation, but the internship showed me how to apply that knowledge in messy, real-world situations. Understanding the difference between statistical significance and clinical relevance, between a perfect analysis and a timely one, between what the textbook says and what actually works—these insights are what transform a student into a practitioner.\n\n\nUnderstanding the Bigger Picture\nBefore the internship, I thought about statistics in isolation—choose a test, run it, interpret the results. Now I understand that statistical analysis sits within a complex ecosystem: research ethics, regulatory requirements, patient safety, budget constraints, timeline pressures, and organizational politics. Seeing this broader context has made me a more thoughtful and effective biostatistician.\n\n\nCareer Direction\nThe internship confirmed that I want to pursue a career in clinical research biostatistics. Seeing the tangible impact of statistical work on patient care—whether through the heart murmur study potentially improving pre-operative assessments or the fresh gas flow analysis contributing to environmental responsibility—gave me a sense of purpose that theoretical coursework couldn’t provide.\n\n\nProfessional Identity\nI entered the internship as a student learning biostatistics. I’m leaving as a biostatistician who happens to still be completing formal studies. This shift in identity—from student to professional—may sound subtle, but it has profoundly affected how I approach problems, communicate with colleagues, and think about my career.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Reflection"
+    ]
+  },
+  {
+    "objectID": "internship/reflection.html#what-would-i-have-done-differently",
+    "href": "internship/reflection.html#what-would-i-have-done-differently",
+    "title": "Reflection",
+    "section": "What Would I Have Done Differently?",
+    "text": "What Would I Have Done Differently?\n\nEarlier Engagement with Medical Terminology\nLooking back, I wish I had spent time before the internship familiarizing myself with basic medical terminology and clinical concepts. While I picked up necessary terms quickly during projects, having this foundation from the start would have made initial discussions more efficient and reduced the cognitive load when learning new statistical methods simultaneously.\n\n\nMore Proactive Questions\nIn the early weeks, I sometimes hesitated to ask questions for fear of appearing incompetent. I now realize that asking clarifying questions early saves time later and demonstrates professional maturity rather than weakness. If I could do it again, I would be more proactive in seeking clarification when project requirements were ambiguous.\n\n\nSystematic Documentation from Day One\nWhile I maintained good documentation throughout the internship, I wish I had been even more systematic from the beginning. Keeping a daily log of what I learned, challenges I faced, and solutions I discovered would have made this reflection easier to write and would provide valuable reference material for future projects.\n\n\nTime Management for Reflective Practice\nThe intensity of project work sometimes meant that reflection happened only when required (like for this portfolio). Building in regular time for reflection—perhaps 30 minutes every Friday afternoon—would have deepened my learning in real-time rather than retrospectively.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Reflection"
+    ]
+  },
+  {
+    "objectID": "internship/reflection.html#challenges-encountered-and-how-i-handled-them",
+    "href": "internship/reflection.html#challenges-encountered-and-how-i-handled-them",
+    "title": "Reflection",
+    "section": "Challenges Encountered and How I Handled Them",
+    "text": "Challenges Encountered and How I Handled Them\n\nChallenge 1: Imposter Syndrome\nThe Challenge: Especially in the first month, I felt overwhelmed by how much I didn’t know. Experienced colleagues seemed to navigate complex regulatory requirements and statistical challenges effortlessly, while I struggled with basic concepts like CDISC domains.\nHow I Handled It: I reminded myself that comparing my beginning to their middle wasn’t fair. I focused on daily progress rather than absolute expertise. I also found that being honest about what I didn’t know—rather than pretending—actually built trust with colleagues who appreciated my willingness to learn.\nWhat I Learned: Everyone was once a beginner. Expertise comes from experience, not from innate talent. Being comfortable with not knowing everything is actually a sign of professional maturity.\n\n\nChallenge 2: Balancing Multiple Projects\nThe Challenge: At one point, I was simultaneously working on the job satisfaction analysis, developing the Shiny app, and learning about manual edit checks. The context-switching was exhausting and I worried about doing justice to any single project.\nHow I Handled It: I implemented time-blocking—dedicating specific days or half-days to specific projects rather than trying to make progress on everything simultaneously. I also communicated more proactively with my supervisor about realistic timelines.\nWhat I Learned: Saying no (or “not yet”) is sometimes the most professional response. Clear communication about capacity prevents over-commitment and under-delivery.\n\n\nChallenge 3: Technical Obstacles with Real Consequences\nThe Challenge: When working on the manual edit checks, I encountered validation rules that seemed to produce false positives. Unlike coursework where errors are academic, these errors could delay a clinical trial or, worse, allow invalid data to proceed.\nHow I Handled It: Rather than assuming my code was correct, I systematically tested edge cases, consulted documentation, and when still uncertain, brought specific examples to senior colleagues for review. I learned to value thoroughness over speed.\nWhat I Learned: In clinical research, being approximately right is not good enough. The stakes—patient safety, regulatory compliance, company reputation—demand precision. This isn’t perfectionism; it’s professionalism.\n\n\nChallenge 4: Navigating Stakeholder Disagreements\nThe Challenge: During the job satisfaction project meeting, the researcher and their supervisors had different views on how results should be presented. As the statistician, I was caught in the middle of competing preferences.\nHow I Handled It: I focused on statistical principles and evidence-based practice rather than personal preferences. I provided options when multiple approaches were defensible, clearly explaining the trade-offs. I remained neutral and professional, positioning myself as an expert advisor rather than an advocate for any particular stakeholder.\nWhat I Learned: The statistician’s role is often to facilitate evidence-based decision-making, not to make decisions unilaterally. Understanding group dynamics and maintaining professional neutrality are important skills.\n\n\nChallenge 5: The Pace of Industry vs. Academia\nThe Challenge: I was accustomed to academic timelines where thorough exploration of methods is valued. At Scigenix, project timelines were often tight, and “good enough” sometimes had to suffice when “perfect” wasn’t feasible.\nHow I Handled It: I learned to prioritize—which aspects of an analysis were critical to get exactly right (e.g., primary outcomes, regulatory requirements) vs. which were less critical (e.g., exploratory subgroup analyses). I also got better at scoping projects realistically upfront.\nWhat I Learned: Perfect is the enemy of good. In industry, delivering a solid analysis on time is more valuable than delivering a perfect analysis too late. This doesn’t mean compromising on quality for core analyses, but it does mean being strategic about where to invest effort.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Reflection"
+    ]
+  },
+  {
+    "objectID": "internship/reflection.html#overall-reflections",
+    "href": "internship/reflection.html#overall-reflections",
+    "title": "Reflection",
+    "section": "Overall Reflections",
+    "text": "Overall Reflections\n\nThe Most Important Lesson\nIf I had to distill the internship into one lesson, it would be this: Biostatistics is fundamentally a people discipline, not just a technical discipline. The statistical methods matter, of course, but success depends on understanding what collaborators need, communicating clearly, managing expectations, and building trust. The best analysis in the world is worthless if you can’t explain it in a way that enables decision-making.\n\n\nGratitude\nI am deeply grateful to Scigenix for taking a chance on a student with limited practical experience. The supportive culture, excellent mentorship from Dr. Swart and other colleagues, and the diversity of projects I was exposed to exceeded my expectations. The company’s commitment to scientific excellence while maintaining a genuinely enjoyable work environment set a standard I will carry forward in my career.\n\n\nLooking Forward\nAs I complete my MSc and look toward my career, the internship has given me clarity about what I want from professional life:\n\nWork that has tangible impact on patient care and public health\nCollaborative environments where statistical expertise is valued and integrated into decision-making\nOpportunities for continuous learning and technical growth\nOrganizations that balance scientific rigor with supportive culture\n\nI’m excited to take the skills, knowledge, and professional identity I’ve developed at Scigenix into the next chapter of my career.\n\n\n\n\n\n\n\nFinal Thought\n\n\n\nThis internship has fundamentally shaped how I understand the role of a biostatistician in modern clinical research. It has prepared me not just with technical skills, but with the professional maturity, collaborative mindset, and practical wisdom needed to contribute meaningfully to improving human health through rigorous, ethical, and innovative research.\n\n\n\n\n\n\n\n\n\n\nComplete Internship Report\n\n\n\nYou have now read the complete internship report. To explore my daily reflections on the module lectures, visit the Module Reflections section.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Reflection"
+    ]
+  },
+  {
+    "objectID": "internship/index.html",
+    "href": "internship/index.html",
+    "title": "Internship Report",
+    "section": "",
+    "text": "This report documents my three-month internship at Scigenix Pty (Ltd), a clinical research organization based in Pretoria, South Africa. The internship ran from 23 June 2025 to 30 September 2025 and provided invaluable practical experience in biostatistical consulting and collaboration.\n\n\nThis internship report follows the structure outlined in the Portfolio of Evidence of Learning guidelines:\n\n\n\nGeneral overview of Scigenix Pty (Ltd)\nMy role and responsibilities\nFocus on collaboration and consultation activities\n\n\n\n\n\nMatrix of learning outcomes and tasks\nDescription of how each learning outcome was met\nConnection to module objectives\n\n\n\n\n\nHow consulting work related to specific MSc Biostatistics modules\nPractical applications of theoretical knowledge\nIntegration of statistical concepts across disciplines\n\n\n\n\n\nConsultation Projects: Job Satisfaction Survey Analysis, Heart Murmur Recognition Study, Fresh Gas Flow Analysis\nClinical Research Activities: Randomisation, Data Safety Committee, Quality Control, Annotated Case Report Forms, Manual Edit Checks, Shiny App Development\nCase reports of interesting consultations\n\n\n\n\n\nWhat I learned and why it was significant\nWhat I would have done differently\nChallenges encountered and how I handled them\nProfessional growth and development",
+    "crumbs": [
+      "Home",
+      "Internship Report"
+    ]
+  },
+  {
+    "objectID": "internship/index.html#overview",
+    "href": "internship/index.html#overview",
+    "title": "Internship Report",
+    "section": "",
+    "text": "This report documents my three-month internship at Scigenix Pty (Ltd), a clinical research organization based in Pretoria, South Africa. The internship ran from 23 June 2025 to 30 September 2025 and provided invaluable practical experience in biostatistical consulting and collaboration.\n\n\nThis internship report follows the structure outlined in the Portfolio of Evidence of Learning guidelines:\n\n\n\nGeneral overview of Scigenix Pty (Ltd)\nMy role and responsibilities\nFocus on collaboration and consultation activities\n\n\n\n\n\nMatrix of learning outcomes and tasks\nDescription of how each learning outcome was met\nConnection to module objectives\n\n\n\n\n\nHow consulting work related to specific MSc Biostatistics modules\nPractical applications of theoretical knowledge\nIntegration of statistical concepts across disciplines\n\n\n\n\n\nConsultation Projects: Job Satisfaction Survey Analysis, Heart Murmur Recognition Study, Fresh Gas Flow Analysis\nClinical Research Activities: Randomisation, Data Safety Committee, Quality Control, Annotated Case Report Forms, Manual Edit Checks, Shiny App Development\nCase reports of interesting consultations\n\n\n\n\n\nWhat I learned and why it was significant\nWhat I would have done differently\nChallenges encountered and how I handled them\nProfessional growth and development",
+    "crumbs": [
+      "Home",
+      "Internship Report"
+    ]
+  },
+  {
+    "objectID": "internship/index.html#key-takeaways",
+    "href": "internship/index.html#key-takeaways",
+    "title": "Internship Report",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nThrough this internship, I gained hands-on experience in:\n\nStatistical consulting with multidisciplinary research teams\nClinical trial design and implementation\nData management and quality control processes\nRegulatory compliance in clinical research\nSoftware development for clinical data analysis\nEffective communication of statistical concepts to non-statistical audiences\n\nThis experience has profoundly shaped my understanding of the role of a biostatistician in modern clinical research and has prepared me for a successful career in this field.\n\n\n\n\n\n\n\nNavigation\n\n\n\nUse the sidebar to navigate through the different sections of this internship report, or use the links above to jump directly to a specific section.",
+    "crumbs": [
+      "Home",
+      "Internship Report"
+    ]
+  },
+  {
+    "objectID": "artefacts/index.html",
+    "href": "artefacts/index.html",
+    "title": "Artefacts",
+    "section": "",
+    "text": "This section serves as a repository for artefacts that provide evidence of my learning and professional development throughout the Biostatistical Consulting & Collaboration module and internship.\nArtefacts include presentations, assignments, code samples, reports, and other materials that demonstrate my achievement of module learning outcomes."
+  },
+  {
+    "objectID": "artefacts/index.html#overview",
+    "href": "artefacts/index.html#overview",
+    "title": "Artefacts",
+    "section": "",
+    "text": "This section serves as a repository for artefacts that provide evidence of my learning and professional development throughout the Biostatistical Consulting & Collaboration module and internship.\nArtefacts include presentations, assignments, code samples, reports, and other materials that demonstrate my achievement of module learning outcomes."
+  },
+  {
+    "objectID": "artefacts/index.html#module-artefacts",
+    "href": "artefacts/index.html#module-artefacts",
+    "title": "Artefacts",
+    "section": "Module Artefacts",
+    "text": "Module Artefacts\n\nBlock 1 Sessions (May 2025)\n\nSession Materials: - TODO: ASCCR Framework slides - TODO: LISA Collaborative Attitude readings - TODO: POWER Structure materials - TODO: Practice consultation videos/recordings\nAssignments: - TODO: Assignment 1 (description and link) - TODO: Assignment 2 (description and link) - TODO: Mock consultation materials\n\n\n\nBlock 2 Sessions (April 2025)\n\nSession Materials: - TODO: Code of Conduct for Biostatisticians - TODO: Grant writing strategies slides - TODO: Scientific writing materials - TODO: Ethics and integrity readings\nAssignments: - TODO: Assignment 3 (description and link) - TODO: Other assignments\nPresentations: - TODO: Seminar presentation (slides/video)"
+  },
+  {
+    "objectID": "artefacts/index.html#internship-artefacts",
+    "href": "artefacts/index.html#internship-artefacts",
+    "title": "Artefacts",
+    "section": "Internship Artefacts",
+    "text": "Internship Artefacts\n\nConsultation Project Reports\n\nJob Satisfaction Survey Analysis: - TODO: Analysis report - TODO: Code repository - TODO: Presentation slides\nHeart Murmur Recognition Study: - TODO: Analysis report - TODO: Code repository - TODO: Statistical tables\nFresh Gas Flow Analysis: - TODO: Analysis report - TODO: Data management code - TODO: Visualizations\n\n\n\nClinical Trial Documentation\n\nRandomisation: - TODO: Randomisation plan (anonymized) - TODO: R code for randomisation\nQuality Control: - TODO: QC checklist example - TODO: Documentation of QC process\nData Management: - TODO: Code examples (anonymized) - TODO: Data cleaning workflows\n\n\n\nSoftware Development\nShiny Application: - TODO: Link to application (if publicly accessible) - TODO: Screenshots of interface - TODO: Code repository (if allowed) - TODO: User documentation\nR Packages: - TODO: Package documentation - TODO: Code samples - TODO: Vignettes or examples"
+  },
+  {
+    "objectID": "artefacts/index.html#code-repository",
+    "href": "artefacts/index.html#code-repository",
+    "title": "Artefacts",
+    "section": "Code Repository",
+    "text": "Code Repository\n\nGitHub/GitLab Links\n\n\nTODO: Portfolio code repository\nTODO: Practice project repositories\nTODO: Coursework repositories"
+  },
+  {
+    "objectID": "artefacts/index.html#publications-and-presentations",
+    "href": "artefacts/index.html#publications-and-presentations",
+    "title": "Artefacts",
+    "section": "Publications and Presentations",
+    "text": "Publications and Presentations\n\nPublications: - TODO: Author list, title, journal (if published or submitted)\nConference Presentations: - TODO: Title, conference, date - TODO: Slides or poster\nDepartmental Presentations: - TODO: Title, audience, date - TODO: Materials"
+  },
+  {
+    "objectID": "artefacts/index.html#certificates-and-training",
+    "href": "artefacts/index.html#certificates-and-training",
+    "title": "Artefacts",
+    "section": "Certificates and Training",
+    "text": "Certificates and Training\n\nGood Clinical Practice (GCP) Training: - TODO: Certificate - TODO: Date completed - TODO: Issuing organization\nOther Training: - TODO: Course name and certificate - TODO: Date completed"
+  },
+  {
+    "objectID": "artefacts/index.html#additional-evidence",
+    "href": "artefacts/index.html#additional-evidence",
+    "title": "Artefacts",
+    "section": "Additional Evidence",
+    "text": "Additional Evidence\n\nLetters of Recommendation: - TODO: From internship supervisor - TODO: From module coordinators\nPerformance Evaluations: - TODO: Internship evaluation\nOther: - TODO: Any other relevant materials"
+  },
+  {
+    "objectID": "artefacts/index.html#artefact-index-by-learning-outcome",
+    "href": "artefacts/index.html#artefact-index-by-learning-outcome",
+    "title": "Artefacts",
+    "section": "Artefact Index by Learning Outcome",
+    "text": "Artefact Index by Learning Outcome\nThis table provides a quick reference to which artefacts provide evidence for each module learning outcome:\n\n\n\n\n\n\n\nLearning Outcome\nArtefacts\n\n\n\n\nCommunicate effectively\nTODO: List relevant artefacts\n\n\nContribute to study design\nTODO: List relevant artefacts\n\n\nDevelop analysis plans\nTODO: List relevant artefacts\n\n\nDevelop verbal/written skills\nTODO: List relevant artefacts\n\n\nApproach methodological challenges\nTODO: List relevant artefacts\n\n\nIntegrate statistical knowledge\nTODO: List relevant artefacts\n\n\nConnect questions to methods\nTODO: List relevant artefacts"
+  },
+  {
+    "objectID": "artefacts/index.html#confidentiality-note",
+    "href": "artefacts/index.html#confidentiality-note",
+    "title": "Artefacts",
+    "section": "Confidentiality Note",
+    "text": "Confidentiality Note\n\n\n\n\n\n\nConfidentiality and Data Protection\n\n\n\nAll artefacts included in this portfolio comply with confidentiality agreements and data protection requirements. Sensitive information has been anonymized or excluded where necessary.\n\nClient data is protected\nProprietary methods and code are excluded\nPersonal identifying information is removed\nAll materials are used with appropriate permissions"
+  },
+  {
+    "objectID": "artefacts/index.html#how-to-access-artefacts",
+    "href": "artefacts/index.html#how-to-access-artefacts",
+    "title": "Artefacts",
+    "section": "How to Access Artefacts",
+    "text": "How to Access Artefacts\n\nArtefacts are organized in the following locations:\n\nWithin this portfolio: Some artefacts are directly embedded in relevant sections\nExternal repositories: GitHub/GitLab links provided above\nUpon request: Some materials are available upon request due to size or confidentiality\nAppendix: Physical/digital appendix to portfolio submission\n\n\n\n\n\n\n\n\nRelated Sections\n\n\n\n\nSee Module Reflections for daily reflections that reference specific artefacts\nSee Internship Report: Work Outputs for detailed descriptions of project artefacts"
+  },
+  {
+    "objectID": "internship/learning-objectives.html",
+    "href": "internship/learning-objectives.html",
+    "title": "Learning Objectives",
+    "section": "",
+    "text": "This section demonstrates how I achieved the learning outcomes of the Biostatistical Consulting & Collaboration module through specific internship activities and tasks at Scigenix.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Learning Objectives"
+    ]
+  },
+  {
+    "objectID": "internship/learning-objectives.html#overview",
+    "href": "internship/learning-objectives.html#overview",
+    "title": "Learning Objectives",
+    "section": "",
+    "text": "This section demonstrates how I achieved the learning outcomes of the Biostatistical Consulting & Collaboration module through specific internship activities and tasks at Scigenix.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Learning Objectives"
+    ]
+  },
+  {
+    "objectID": "internship/learning-objectives.html#matrix-of-learning-outcomes-and-tasks",
+    "href": "internship/learning-objectives.html#matrix-of-learning-outcomes-and-tasks",
+    "title": "Learning Objectives",
+    "section": "Matrix of Learning Outcomes and Tasks",
+    "text": "Matrix of Learning Outcomes and Tasks\nThe table below maps specific learning outcomes to the various projects and activities I undertook during my internship. Each checkmark (✓) indicates that a particular learning outcome was addressed through that activity.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Outcomes\nJob Satisfaction Survey\nHeart Murmurs Study\nFresh Gas Flow Analysis\nRandomisation\nData Safety Committee\nQuality Control\nAnnotated CRFs\nShiny App\n\n\n\n\nSample size determinationd,g\n\n\n\n✓\n\n\n\n\n\n\nStatistical Analysis Plana,b,c,g\n✓\n✓\n✓\n✓\n\n✓\n\n\n\n\nFormulating Research Questionsb,d,g\n✓\n✓\n✓\n\n\n\n\n\n\n\nQuestionnaire designa,b,d\n✓\n✓\n\n\n\n\n\n\n\n\nFormulating Study designsa,b,g\n\n\n\n✓\n✓\n\n\n\n\n\nCommunication – oral and writtend\n✓\n✓\n✓\n\n✓\n✓\n\n✓\n\n\nResearch Ethicsb\n\n\n\n✓\n✓\n\n\n\n\n\nData managemente\n✓\n✓\n✓\n✓\n\n✓\n✓\n✓\n\n\nQuality controle\n✓\n✓\n✓\n✓\n\n✓\n✓\n✓\n\n\nAdvanced statistical programminge,f\n✓\n✓\n✓\n✓\n\n\n\n✓\n\n\nCollaborationa,b,c\n✓\n✓\n✓\n✓\n✓\n✓\n✓\n✓\n\n\nConsulting Skillsa,b,c,d\n✓\n✓\n✓\n\n\n\n\n\n\n\nLeadership skillsb,c\n✓\n\n\n\n\n\n\n\n\n\nStatistical analysisd,e\n✓\n✓\n✓\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLearning Outcome Categories\n\n\n\na Communicate effectively about both statistical and medical/biological concepts b Contribute to the design of research studies c Develop data analysis plans d Develop verbal and written skills e Approach methodological challenges in special types of study designs f Integrate statistical knowledge gained in other modules g Connect research question and statistical methods",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Learning Objectives"
+    ]
+  },
+  {
+    "objectID": "internship/learning-objectives.html#how-i-met-each-learning-outcome",
+    "href": "internship/learning-objectives.html#how-i-met-each-learning-outcome",
+    "title": "Learning Objectives",
+    "section": "How I Met Each Learning Outcome",
+    "text": "How I Met Each Learning Outcome\n\nSample Size Determination\nThrough my work on randomisation for clinical trials, I applied mock power calculations and sample size determination for RCTs. This helped me understand Type I and Type II errors and their practical implications in trial design. I learned to balance statistical power with practical constraints such as budget, timeline, and recruitment feasibility.\n\n\nStatistical Analysis Plan Development\nI developed comprehensive analysis plans for multiple consultation projects, specifying primary and secondary outcomes, statistical methods, and approaches for handling missing data. This skill was particularly important for ensuring reproducibility and transparency in research findings.\n\n\nFormulating Research Questions\nI worked closely with clinical researchers to translate their clinical problems into testable statistical hypotheses. This required ensuring that research questions were specific, measurable, and aligned with available data. The job satisfaction survey and heart murmur studies provided excellent opportunities to practice this skill.\n\n\nQuestionnaire Design\nI gained experience working with validated instruments like the Minnesota Satisfaction Questionnaire (MSQ) and contributed to the design of the MurmurQuiz. This taught me about Likert scales, response bias, and validation measures—critical considerations for reliable data collection.\n\n\nFormulating Study Designs\nMy contributions to RCT design through randomisation schedules helped me understand the importance of proper study design. I also gained insight into cross-sectional and observational study limitations through the consultation projects.\n\n\nCommunication – Oral and Written\nThroughout my internship, I regularly presented findings to multidisciplinary teams and wrote analysis reports that translated complex statistics for clinical audiences. This was perhaps the most frequently exercised skill, as every project required clear communication with non-statistical stakeholders.\n\n\nResearch Ethics\nMy participation in the Data Safety Committee and completion of Good Clinical Practice (GCP) training deepened my understanding of the Declaration of Helsinki principles in practice. I learned that ethical research practices form the foundation upon which all clinical research must be built.\n\n\nData Management\nI performed extensive data cleaning in R and managed complex datasets with both hour-level and case-level data structures. Creating reproducible workflows was essential for maintaining data integrity and enabling quality control.\n\n\nQuality Control\nI implemented peer review processes using Excel checklists for QC and ensured regulatory compliance in all outputs. This taught me that producing statistically valid results is only part of the job—communicating them clearly and accurately is equally critical.\n\n\nAdvanced Statistical Programming\nI developed R packages for analyses, created automated reporting systems, and implemented complex data transformations and modeling. The Shiny app development project, in particular, challenged me to integrate multiple programming skills to create a production-ready tool.\n\n\nCollaboration\nWorking effectively within multidisciplinary teams including clinicians, data managers, and regulatory specialists was a daily requirement. I learned the importance of listening, asking clarifying questions, and finding common ground when technical and clinical perspectives diverged.\n\n\nConsulting Skills\nI led consultation meetings, translated clinical questions into statistical problems, and provided actionable recommendations. The mock consultation from the BC module prepared me well, but real-world consultations taught me that flexibility and patience are just as important as technical expertise.\n\n\nLeadership Skills\nOn the job satisfaction survey project, I took ownership of the analysis, managed project timelines, and coordinated with multiple stakeholders. This experience showed me that leadership in biostatistics often means guiding the analytical process while empowering collaborators to make informed decisions.\n\n\nStatistical Analysis\nI applied a wide range of statistical methods including ordinal logistic regression, generalized linear models (GLMs) for the fresh gas flow analysis, and factor analysis. Managing Likert scale data taught me the importance of choosing appropriate methods for the data structure and research question.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Learning Objectives"
+    ]
+  },
+  {
+    "objectID": "internship/learning-objectives.html#reflection-on-learning-integration",
+    "href": "internship/learning-objectives.html#reflection-on-learning-integration",
+    "title": "Learning Objectives",
+    "section": "Reflection on Learning Integration",
+    "text": "Reflection on Learning Integration\nThe internship demonstrated how interconnected these learning outcomes are in practice. A single project often required simultaneously applying multiple skills—from study design and data management to analysis, communication, and collaboration.\nThe most important lesson I learned is that technical statistical expertise must be paired with strong soft skills. The ability to communicate clearly, collaborate effectively, and manage projects efficiently is what transforms a statistician into an effective biostatistical consultant.\n\n\n\n\n\n\n\n\nNext Section\n\n\n\nProceed to Relation to Coursework to see how these internship activities connected to my MSc Biostatistics modules.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Learning Objectives"
+    ]
+  },
+  {
+    "objectID": "internship/relation-to-coursework.html",
+    "href": "internship/relation-to-coursework.html",
+    "title": "Relation to Coursework",
+    "section": "",
+    "text": "This section demonstrates how my consulting and clinical research work at Scigenix related to specific courses in the MSc Biostatistics programme. The table below maps each internship task to the most relevant modules, with brief explanations of how theoretical knowledge was applied in practice.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Relation to Coursework"
+    ]
+  },
+  {
+    "objectID": "internship/relation-to-coursework.html#overview",
+    "href": "internship/relation-to-coursework.html#overview",
+    "title": "Relation to Coursework",
+    "section": "",
+    "text": "This section demonstrates how my consulting and clinical research work at Scigenix related to specific courses in the MSc Biostatistics programme. The table below maps each internship task to the most relevant modules, with brief explanations of how theoretical knowledge was applied in practice.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Relation to Coursework"
+    ]
+  },
+  {
+    "objectID": "internship/relation-to-coursework.html#matrix-of-tasks-and-related-modules",
+    "href": "internship/relation-to-coursework.html#matrix-of-tasks-and-related-modules",
+    "title": "Relation to Coursework",
+    "section": "Matrix of Tasks and Related Modules",
+    "text": "Matrix of Tasks and Related Modules\n\n\n\n\n\n\n\n\nTask in Cases\nRelevant Modules\nRelevance\n\n\n\n\nSample size determination\n• Principles of Statistical Inference• Design and Analysis of Clinical Trials\nApplied mock power calculations and sample size determination for RCT randomisation, understanding Type I/II errors and their practical implications\n\n\nStatistical Analysis Plan\n• Biostatistical Consulting• Design and Analysis of Clinical Trials\nDeveloped comprehensive analysis plans specifying primary/secondary outcomes, statistical methods, and handling of missing data for consultation projects\n\n\nFormulating Research Questions\n• Fundamentals of Epidemiology• Biostatistical Consulting\nTranslated clinical problems into testable hypotheses, ensuring questions were specific, measurable, and aligned with available data\n\n\nQuestionnaire design\n• Fundamentals of Epidemiology• Data Management & Statistical Computing\nWorked with MSQ satisfaction scales and MurmurQuiz design, understanding Likert scales, response bias, and validation measures\n\n\nFormulating Study designs\n• Fundamentals of Epidemiology• Design and Analysis of Clinical Trials\nContributed to RCT design through randomisation schedules, understood cross-sectional and observational study limitations\n\n\nCommunication – oral and written\n• Biostatistical Consulting\nPresented findings to multidisciplinary teams, wrote analysis reports translating complex statistics for clinical audiences\n\n\nResearch Ethics\n• Fundamentals of Epidemiology• Design and Analysis of Clinical Trials\nParticipated in Data Safety Committee, completed GCP training, understood Declaration of Helsinki principles in practice\n\n\nData management\n• Data Management & Statistical Computing\nExtensive data cleaning in R, managed complex datasets with hour-level and case-level data, created reproducible workflows\n\n\nQuality control\n• Data Management & Statistical Computing• Biostatistical Consulting\nImplemented peer review processes, used Excel checklists for QC, ensured regulatory compliance in all outputs\n\n\nAdvanced statistical programming\n• Data Management & Statistical Computing• Linear Models• Categorical Data Analysis & GLMs\nDeveloped R packages for analyses, created automated reporting systems, implemented complex data transformations and modelling\n\n\nCollaboration\n• Biostatistical Consulting\nWorked effectively within multidisciplinary teams including clinicians, data managers, and regulatory specialists\n\n\nConsulting Skills\n• Biostatistical Consulting\nLed consultation meetings, translated clinical questions to statistical problems, provided actionable recommendations\n\n\nLeadership skills\n• Biostatistical Consulting\nTook ownership of analyses, managed project timelines, coordinated with multiple stakeholders\n\n\nMentorship Skills\n• Biostatistical Consulting\nConstant mentoring received from other employees and internship supervisor. Shared my own knowledge with team members during collaborative work\n\n\nComplex Statistical analysis\n• Linear Models• Categorical Data Analysis & GLMs• Longitudinal Data Analysis• Analysis of Survival Data\nApplied ordinal logistic regression, GLMs for fresh gas flow analysis, managed Likert scale data, performed factor analysis",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Relation to Coursework"
+    ]
+  },
+  {
+    "objectID": "internship/relation-to-coursework.html#detailed-module-connections",
+    "href": "internship/relation-to-coursework.html#detailed-module-connections",
+    "title": "Relation to Coursework",
+    "section": "Detailed Module Connections",
+    "text": "Detailed Module Connections\n\nPrinciples of Statistical Inference\nThe foundational concepts of hypothesis testing, Type I and Type II errors, and statistical power learned in this module were directly applied when determining sample sizes for clinical trials. Understanding the balance between statistical rigor and practical constraints was crucial for making sound recommendations to study sponsors.\n\n\nDesign and Analysis of Clinical Trials\nThis module provided the theoretical framework for understanding randomized controlled trials, blinding, allocation concealment, and intention-to-treat analysis. My work on randomisation schedules and participation in Data Safety Committee meetings brought these concepts to life, showing me the real-world complexities of implementing theoretically sound trial designs.\n\n\nBiostatistical Consulting\nThe most directly relevant module to my internship. The ASCCR framework (Ask, Structure, Communicate, Clarify, Report), LISA Collaborative Attitude, and POWER structure for collaboration meetings were tools I used regularly. The mock consultations we conducted during the module prepared me well for real client interactions, though I quickly learned that actual consultations require even more flexibility and patience than practice sessions suggested.\n\n\nFundamentals of Epidemiology\nUnderstanding study designs, bias, confounding, and effect modification from this module was essential for evaluating the research questions posed by collaborators. The cross-sectional studies I worked on (job satisfaction survey, heart murmur recognition) required careful consideration of the limitations inherent in these designs.\n\n\nData Management & Statistical Computing\nThis module’s emphasis on reproducible research, version control, and good programming practices directly influenced how I structured my analytical work at Scigenix. Every project was developed as a self-contained R package, ensuring transparency and reproducibility—principles heavily emphasized in this module.\n\n\nLinear Models\nThe regression techniques learned in this module were foundational for the analyses I conducted. Understanding how to interpret regression coefficients, assess model assumptions, and communicate results in plain language was essential for effective consulting.\n\n\nCategorical Data Analysis & GLMs\nThis module was particularly relevant for the job satisfaction survey (ordinal logistic regression for intention to leave) and the fresh gas flow analysis (GLMs accounting for repeated measures). Understanding when and how to apply these methods was crucial for producing valid results.\n\n\nLongitudinal Data Analysis\nWhile I didn’t conduct formal longitudinal analyses during my internship, understanding the concepts of within-subject correlation and appropriate modeling approaches helped me appreciate the complexity of the repeated measures data I encountered in clinical trials.\n\n\nAnalysis of Survival Data",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Relation to Coursework"
+    ]
+  },
+  {
+    "objectID": "internship/relation-to-coursework.html#from-theory-to-practice-key-insights",
+    "href": "internship/relation-to-coursework.html#from-theory-to-practice-key-insights",
+    "title": "Relation to Coursework",
+    "section": "From Theory to Practice: Key Insights",
+    "text": "From Theory to Practice: Key Insights\n\nThe Gap Between Clean Textbook Data and Real-World Messiness\nMy coursework typically provided clean, well-structured datasets designed to teach specific statistical concepts. The internship exposed me to the reality of incomplete data, inconsistent coding, and variables that don’t behave as expected. Data cleaning often took 50-70% of project time—a reality not always emphasized in coursework.\n\n\nStatistical Significance vs. Clinical Relevance\nTheoretical modules teach us to focus on p-values and confidence intervals. Clinical collaborations taught me that statistical significance means little if the effect size isn’t clinically meaningful. Learning to have these conversations with clinicians was one of the most valuable skills I developed.\n\n\nThe Importance of Communication\nTechnical skills from my modules were necessary but not sufficient. The ability to explain complex statistical concepts in plain language, to listen carefully to collaborators’ concerns, and to ask clarifying questions proved just as important as knowing which test to run.\n\n\nReproducibility in Practice\nWhile coursework emphasized reproducibility in principle, the internship showed me what it means in practice: version-controlled code, comprehensive documentation, validation scripts, and standardized workflows. The R package structure used at Scigenix ensured that analyses could be reproduced months or years later—a critical requirement for regulatory submissions.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Relation to Coursework"
+    ]
+  },
+  {
+    "objectID": "internship/relation-to-coursework.html#gaps-and-areas-for-further-development",
+    "href": "internship/relation-to-coursework.html#gaps-and-areas-for-further-development",
+    "title": "Relation to Coursework",
+    "section": "Gaps and Areas for Further Development",
+    "text": "Gaps and Areas for Further Development\n\nRegulatory Knowledge\nWhile my statistical training was solid, I realized that understanding regulatory requirements (ICH guidelines, FDA regulations, CDISC standards) is essential for clinical trial work. This is an area where additional formal training would be valuable.\n\n\nSoftware Engineering Practices\nThe Shiny app development project exposed gaps in my knowledge of software engineering principles like unit testing, continuous integration, and deployment. These skills are increasingly important for biostatisticians developing analytical tools.\n\n\nMedical Terminology\nBetter familiarity with medical terminology and clinical concepts would have made initial project discussions more efficient. While I picked up relevant terms quickly, a more systematic foundation would have been helpful.\n\n\n\n\n\n\n\nKey Takeaway\n\n\n\nThe internship demonstrated that the MSc Biostatistics curriculum provides an excellent theoretical foundation, but real-world consulting requires integrating knowledge across modules while developing soft skills like communication, project management, and collaboration. The greatest value came from applying multiple modules’ concepts simultaneously to solve complex, messy real-world problems.\n\n\n\n\n\n\n\n\n\nNext Section\n\n\n\nProceed to Work Outputs to read detailed descriptions of the consultation projects and clinical research activities I completed.",
+    "crumbs": [
+      "Home",
+      "Report Sections",
+      "Relation to Coursework"
+    ]
+  },
+  {
+    "objectID": "reflections/index.html",
+    "href": "reflections/index.html",
+    "title": "Module Reflections",
+    "section": "",
+    "text": "This section contains my daily reflections on the Biostatistical Consulting & Collaboration module, which was delivered over two intensive weeks. Each reflection follows the Gibbs Reflective Cycle, a structured framework that promotes deep, critical reflection on learning experiences.",
+    "crumbs": [
+      "Home",
+      "Module Reflections"
+    ]
+  },
+  {
+    "objectID": "reflections/index.html#overview",
+    "href": "reflections/index.html#overview",
+    "title": "Module Reflections",
+    "section": "",
+    "text": "This section contains my daily reflections on the Biostatistical Consulting & Collaboration module, which was delivered over two intensive weeks. Each reflection follows the Gibbs Reflective Cycle, a structured framework that promotes deep, critical reflection on learning experiences.",
+    "crumbs": [
+      "Home",
+      "Module Reflections"
+    ]
+  },
+  {
+    "objectID": "reflections/index.html#the-gibbs-reflective-cycle",
+    "href": "reflections/index.html#the-gibbs-reflective-cycle",
+    "title": "Module Reflections",
+    "section": "The Gibbs Reflective Cycle",
+    "text": "The Gibbs Reflective Cycle\nAll reflections in this section are structured according to Graham Gibbs’ (1988) six-stage reflective cycle:\n\nDescription: What happened during the session(s)?\nFeelings: What was I thinking and feeling?\nEvaluation: What was good and bad about the experience?\nAnalysis: What sense can I make of the situation?\nConclusion: What did I learn from this experience?\nAction Plan: What will I do differently next time?\n\nThis framework ensures that my reflections move beyond simple description to critical analysis and actionable insights for professional development.",
+    "crumbs": [
+      "Home",
+      "Module Reflections"
+    ]
+  },
+  {
+    "objectID": "reflections/index.html#module-structure",
+    "href": "reflections/index.html#module-structure",
+    "title": "Module Reflections",
+    "section": "Module Structure",
+    "text": "Module Structure\nThe Biostatistical Consulting & Collaboration module was delivered in two blocks:\n\nBlock 2 (April 2025)\nDelivered over 4 days (14-17 April 2025), covering:\n\nProfessional roles and conduct in biostatistics\nStrategies for successful grant and manuscript writing\nFraming researchable questions\nStatistical reporting standards\nEthics and scientific integrity in research\n\nWeek 1 reflections draw primarily from Block 2 sessions.\n\n\nBlock 1 (May 2025)\nDelivered over 3 days (19-21 May 2025), covering:\n\nASCCR Framework for biostatistical consulting\nLISA Collaborative Attitude\nPOWER Structure for collaboration meetings\nBest practices for opening, working, and ending advising sessions\nPractice consultations and role-playing\n\nWeek 2 reflections draw primarily from Block 1 sessions.",
+    "crumbs": [
+      "Home",
+      "Module Reflections"
+    ]
+  },
+  {
+    "objectID": "reflections/index.html#reflection-guidelines",
+    "href": "reflections/index.html#reflection-guidelines",
+    "title": "Module Reflections",
+    "section": "Reflection Guidelines",
+    "text": "Reflection Guidelines\nEach daily reflection:\n\nIs at least 300 words to ensure depth of analysis\nLinks to specific artefacts (slides, readings, assignments) where relevant\nDemonstrates critical engagement with the reflective cycle, not just description\nProvides honest and balanced self-assessment of my learning\nIncludes a concrete action plan for applying learning to future practice",
+    "crumbs": [
+      "Home",
+      "Module Reflections"
+    ]
+  },
+  {
+    "objectID": "reflections/index.html#daily-reflections",
+    "href": "reflections/index.html#daily-reflections",
+    "title": "Module Reflections",
+    "section": "Daily Reflections",
+    "text": "Daily Reflections\n\nWeek 1\n\n\nBlock 2 Sessions April 14-17, 2025\n\nDay 1 - Introduction to Biostatistical Collaboration and Professional Conduct\nDay 2 - Strategic Communication and Professional Development\nDay 3 - Effective Collaboration and Research Integrity\nDay 4 - Leadership, Conflict Resolution, and Professional Growth\n\n\n\nWeek 2\n\n\nBlock 1 Sessions May 19-21, 2025\n\nDay 1 - ASCCR Framework and Collaboration Foundations\nDay 2 - Advanced Communication and Relationship Building\nDay 3 - Practice Integration and Professional Context",
+    "crumbs": [
+      "Home",
+      "Module Reflections"
+    ]
+  },
+  {
+    "objectID": "reflections/index.html#purpose-of-reflective-practice",
+    "href": "reflections/index.html#purpose-of-reflective-practice",
+    "title": "Module Reflections",
+    "section": "Purpose of Reflective Practice",
+    "text": "Purpose of Reflective Practice\nAs emphasized in the module materials, reflection is essential for professional development:\n\n“Reflection is what allows us to learn from our experiences: it is a self-assessment of where we have been and where we want to go next.”\n\nThrough these reflections, I aim to:\n\nDevelop deeper understanding of biostatistical consulting principles\nConnect theoretical concepts to practical application\nIdentify areas for continued growth and development\nBuild self-awareness about my professional values and assumptions\nCreate an action plan for future consulting scenarios\n\n\n\n\n\n\n\n\nNavigation\n\n\n\nUse the sidebar to navigate to specific daily reflections, or click the links above to jump directly to a particular day.\n\n\n\n\n\n\n\n\n\nAssessment Note\n\n\n\nThese reflections form part of the Portfolio of Evidence of Learning for the Biostatistical Consulting & Collaboration module. They demonstrate my engagement with module content and my development as a reflective practitioner.",
+    "crumbs": [
+      "Home",
+      "Module Reflections"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-02.html",
+    "href": "reflections/week-01/day-02.html",
+    "title": "Week 1, Day 2",
+    "section": "",
+    "text": "Session focus: Mastering the art of scientific writing and learning from experienced biostatisticians’ career journeys",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-02.html#learning-objectives",
+    "href": "reflections/week-01/day-02.html#learning-objectives",
+    "title": "Week 1, Day 2",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nDevelop effective strategies for writing proposals, manuscripts, and grant applications\nLearn from senior biostatisticians’ career experiences and success factors\nUnderstand the role of biostatisticians in addressing missing data challenges in clinical trials\nIdentify key ingredients for building a successful biostatistical career",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-02.html#description-of-activities",
+    "href": "reflections/week-01/day-02.html#description-of-activities",
+    "title": "Week 1, Day 2",
+    "section": "Description of Activities",
+    "text": "Description of Activities\nThe morning began with a comprehensive session on strategies for successful scientific writing, covering proposals, manuscripts, and grant applications. This was followed by an inspiring presentation on a senior biostatistician’s career journey, highlighting critical success factors and lessons learned. The afternoon featured a public presentation at the MRC on handling missing data in clinical trials, demonstrating advanced methodological applications in real research contexts.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-02.html#reflection-gibbs-reflective-cycle",
+    "href": "reflections/week-01/day-02.html#reflection-gibbs-reflective-cycle",
+    "title": "Week 1, Day 2",
+    "section": "Reflection (Gibbs Reflective Cycle)",
+    "text": "Reflection (Gibbs Reflective Cycle)\n\n1. Description\nThe writing strategies session provided structured approaches to different types of scientific documents, emphasizing clarity, precision, and audience awareness. The career journey presentation offered candid insights into navigating academic biostatistics, including challenges faced and overcome. The missing data presentation showcased sophisticated statistical methods applied to critical clinical research questions.\n\n\n2. Feelings\nThe writing session initially felt daunting—the gap between my current writing abilities and publication-ready manuscripts seemed vast. However, the structured approach provided reassurance that good scientific writing is learnable. The career journey talk was both inspiring and sobering, revealing the persistence required for success. The technical presentation on missing data reminded me why I chose biostatistics—the intellectual challenge combined with meaningful impact.\n\n\n3. Evaluation\nThe combination of practical skills (writing) with inspirational content (career journey) and technical depth (missing data methods) created a well-balanced learning experience. The writing strategies were immediately applicable, though practicing them will require sustained effort. The career insights were valuable but somewhat specific to academic paths, leaving questions about industry trajectories.\n\n\n4. Analysis\nEffective scientific writing emerges as a critical competency that can limit or enable a biostatistician’s impact, regardless of technical expertise. The career journey highlighted that success rarely follows a linear path—adaptability and resilience are as important as technical skills. The missing data presentation demonstrated that biostatisticians must continually update their methodological knowledge to address evolving research challenges.\n\n\n5. Conclusion\nThis day reinforced that biostatistical excellence requires a portfolio of skills: technical proficiency, clear communication, career strategic thinking, and continuous learning. Success depends not just on statistical knowledge but on effectively translating that knowledge into accessible formats for diverse audiences.\n\n\n6. Action Plan\nI will establish a regular writing practice, drafting sections of potential manuscripts even before having complete analyses. I’ll create a career development plan incorporating lessons from the senior biostatistician’s journey. For technical development, I’ll review recent literature on missing data methods and identify opportunities to apply these in current projects.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-02.html#incorporated-sources-and-relevance",
+    "href": "reflections/week-01/day-02.html#incorporated-sources-and-relevance",
+    "title": "Week 1, Day 2",
+    "section": "Incorporated Sources and Relevance",
+    "text": "Incorporated Sources and Relevance\n\nStrategies for writing proposals successfully_FINAL.pdf — Provided structured frameworks for different document types\nStatistics in Medicine 2022 LeBlanc.pdf — Contextualized writing within broader professional development\nModule Outline Biostatistical Consulting - 2025.pdf — Connected writing skills to module assessments\n\n\n\n\n\n\n\n\nArtefacts and Evidence\n\n\n\n\nTemplate documents for proposals and manuscripts\nNotes on career development strategies\nLiterature review on missing data methods initiated",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-02.html#rubric-checks",
+    "href": "reflections/week-01/day-02.html#rubric-checks",
+    "title": "Week 1, Day 2",
+    "section": "Rubric Checks",
+    "text": "Rubric Checks\nEnsure this reflection meets the assessment criteria:\n\n≥300 words\nClear link to artefact(s)\nCritical engagement with reflective cycle (not just description)\nHonest and balanced self-assessment\nConcrete action plan for improvement\n\n\n\n\n\n\n\n\nNext Reflection\n\n\n\nContinue to Day 3 to read the reflection on effective collaboration and research integrity.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-04.html",
+    "href": "reflections/week-01/day-04.html",
+    "title": "Week 1, Day 4",
+    "section": "",
+    "text": "Session focus: Engaging with senior leadership on career development, addressing conflicts in collaborative settings",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 4"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-04.html#learning-objectives",
+    "href": "reflections/week-01/day-04.html#learning-objectives",
+    "title": "Week 1, Day 4",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nGain insights from senior leadership on career development, mentorship, and global health equity\nDevelop strategies for managing conflicts and difficult situations in collaborations\nUnderstand leadership principles applicable to biostatistical practice\nSynthesize learning through open discussion and peer exchange",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 4"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-04.html#description-of-activities",
+    "href": "reflections/week-01/day-04.html#description-of-activities",
+    "title": "Week 1, Day 4",
+    "section": "Description of Activities",
+    "text": "Description of Activities\nThe day featured an extended morning session with Dr. Jimmy Volmink, covering career advice, collaboration strategies, mentorship, leadership, and equity in global health. This was followed by a focused session on dealing with conflicts and difficult situations in collaborative work. The afternoon provided additional open discussion time for integration and reflection on the week’s learning.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 4"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-04.html#reflection-gibbs-reflective-cycle",
+    "href": "reflections/week-01/day-04.html#reflection-gibbs-reflective-cycle",
+    "title": "Week 1, Day 4",
+    "section": "Reflection (Gibbs Reflective Cycle)",
+    "text": "Reflection (Gibbs Reflective Cycle)\n\n1. Description\nDr. Volmink’s session wove together personal narrative with broader principles of leadership and equity in health research. He emphasized how biostatisticians can influence not just study quality but also research priorities and health equity. The conflict resolution session provided frameworks for navigating disagreements about study design, analysis approaches, and authorship.\n\n\n2. Feelings\nThe leadership discussion was profoundly inspiring, expanding my view of what biostatisticians can achieve beyond technical contributions. However, the conflict resolution session surfaced anxiety about potential future confrontations. The gap between knowing conflict resolution strategies and implementing them under pressure feels significant.\n\n\n3. Evaluation\nThe combination of aspirational leadership content with practical conflict management created a realistic picture of senior biostatistical practice. Dr. Volmink’s emphasis on equity added an important dimension often missing from technical training. The conflict resolution strategies were comprehensive, though practicing them in safe environments before real conflicts arise would be beneficial.\n\n\n4. Analysis\nLeadership in biostatistics isn’t about formal authority but about influence through expertise, relationship-building, and commitment to scientific integrity. Conflicts often arise from misaligned expectations or communication failures rather than fundamental disagreements. The discussion on equity revealed how statistical choices—from study design to analysis methods—can either perpetuate or address health disparities.\n\n\n5. Conclusion\nThis final day synthesized technical, interpersonal, and ethical dimensions of biostatistical practice, emphasizing that senior practitioners must navigate all three simultaneously. Success requires not just managing conflicts but preventing them through clear communication and aligned expectations.\n\n\n6. Action Plan\nI will identify leadership opportunities within current projects, even without formal authority. I’ll practice conflict resolution techniques through role-play with peers before facing real situations. I’ll also critically evaluate my work through an equity lens, considering how statistical choices might impact different populations.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 4"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-04.html#incorporated-sources-and-relevance",
+    "href": "reflections/week-01/day-04.html#incorporated-sources-and-relevance",
+    "title": "Week 1, Day 4",
+    "section": "Incorporated Sources and Relevance",
+    "text": "Incorporated Sources and Relevance\n\nModule Outline Biostatistical Consulting - 2025.pdf — Contextualized leadership within module objectives\nInternship Report - AvT.pdf — Provided examples of navigating collaborative challenges\nReflection and Reflective Writing — PowerPoint Slides.pdf — Guided structured reflection on leadership experiences\n\n\n\n\n\n\n\n\nArtefacts and Evidence\n\n\n\n\nNotes from Dr. Volmink’s presentation\nPersonal conflict resolution strategy document\nReflection on equity considerations in current projects",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 4"
+    ]
+  },
+  {
+    "objectID": "reflections/week-01/day-04.html#rubric-checks",
+    "href": "reflections/week-01/day-04.html#rubric-checks",
+    "title": "Week 1, Day 4",
+    "section": "Rubric Checks",
+    "text": "Rubric Checks\nEnsure this reflection meets the assessment criteria:\n\n≥300 words\nClear link to artefact(s)\nCritical engagement with reflective cycle (not just description)\nHonest and balanced self-assessment\nConcrete action plan for improvement\n\n\n\n\n\n\n\n\nNext Reflection\n\n\n\nContinue to Week 2, Day 1 to read the reflection on the ASCCR framework and collaboration foundations.",
+    "crumbs": [
+      "Home",
+      "Week 1 (Block 2)",
+      "Week 1, Day 4"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-02.html",
+    "href": "reflections/week-02/day-02.html",
+    "title": "Week 2, Day 2",
+    "section": "",
+    "text": "Session focus: Mastering the Triangle of Statistical Communication and perfecting consultation endings",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-02.html#learning-objectives",
+    "href": "reflections/week-02/day-02.html#learning-objectives",
+    "title": "Week 2, Day 2",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nUnderstand and apply the Triangle of Statistical Communication (Listening/Paraphrasing/Summarizing, Asking Great Questions, Explaining Statistical Ideas)\nRecognize the central importance of relationship in successful collaborations\nMaster techniques for ending consultations effectively\nPractice complete consultations using the ASCCR framework",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-02.html#description-of-activities",
+    "href": "reflections/week-02/day-02.html#description-of-activities",
+    "title": "Week 2, Day 2",
+    "section": "Description of Activities",
+    "text": "Description of Activities\nThe morning explored the Triangle of Statistical Communication, emphasizing how listening, questioning, and explaining form interdependent communication skills. We examined how relationship quality underpins all successful collaborations. The extended afternoon session focused on ending consultations effectively, including summarization, action planning, and feedback solicitation. We observed recorded consultations using the ASCCR framework, analyzing strengths and areas for improvement through structured class discussions.",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-02.html#reflection-gibbs-reflective-cycle",
+    "href": "reflections/week-02/day-02.html#reflection-gibbs-reflective-cycle",
+    "title": "Week 2, Day 2",
+    "section": "Reflection (Gibbs Reflective Cycle)",
+    "text": "Reflection (Gibbs Reflective Cycle)\n\n1. Description\nThe Triangle of Statistical Communication revealed communication as multifaceted—requiring active listening and strategic questioning, not just clear explanations. The relationship discussion emphasized trust-building over time rather than single interactions. The ending practices showed how proper closure ensures mutual understanding and commitment to next steps. Observing real consultations allowed us to see the ASCCR framework applied holistically.\n\n\n2. Feelings\nThe communication triangle validated my suspicion that I’d been over-emphasizing explanation at the expense of listening and questioning. The relationship focus felt both obvious and revolutionary—obvious because all human interactions depend on relationships, revolutionary because statistical training rarely addresses this. Watching recorded consultations was simultaneously encouraging (seeing experienced statisticians also struggle) and intimidating (realizing the skill level required).\n\n\n3. Evaluation\nThe triangle model effectively balanced different communication modes, preventing over-reliance on any single approach. The relationship emphasis correctly identified it as foundational rather than supplementary. The ending techniques addressed a common weakness—consultations that drift off rather than concluding decisively. Video observation provided insights impossible to gain from description alone.\n\n\n4. Analysis\nEffective statistical communication requires code-switching between technical and lay vocabularies while maintaining precision. Relationship-building in professional contexts differs from social relationships—it requires demonstrating competence, reliability, and genuine interest in collaborators’ success. Proper endings prevent the common problem of misaligned expectations that surface weeks later. The video observations revealed that even experienced practitioners must consciously apply these principles—they don’t become automatic.\n\n\n5. Conclusion\nThis day demonstrated that communication and relationship skills are not “soft” additions to technical expertise but fundamental competencies that enable statistical knowledge to create impact. Without these skills, even brilliant statistical insights may fail to influence research or practice.\n\n\n6. Action Plan\nI will practice the “listening-first” approach in my next consultation, consciously waiting before offering solutions. I’ll develop a repertoire of relationship-building practices appropriate for different collaboration contexts. I’ll create an “ending checklist” to ensure consistent consultation closure. I’ll also begin recording my consultations (with permission) for self-review.",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-02.html#incorporated-sources-and-relevance",
+    "href": "reflections/week-02/day-02.html#incorporated-sources-and-relevance",
+    "title": "Week 2, Day 2",
+    "section": "Incorporated Sources and Relevance",
+    "text": "Incorporated Sources and Relevance\n\n1.The ASCCR framework Biostats consulting lectures.pdf — Triangle of Communication framework\nEffective.Collaboration.CSP.Handout_20150217.pdf — Ten tips for effective communication\nModule Outline Biostatistical Consulting - 2025.pdf — Connected communication skills to learning objectives\n\n\n\n\n\n\n\n\nArtefacts and Evidence\n\n\n\n\nTriangle of Statistical Communication practice exercises\nRelationship mapping for current collaborations\nConsultation ending scripts developed\nObservation notes from video review sessions",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 2"
+    ]
+  },
+  {
+    "objectID": "reflections/week-02/day-02.html#rubric-checks",
+    "href": "reflections/week-02/day-02.html#rubric-checks",
+    "title": "Week 2, Day 2",
+    "section": "Rubric Checks",
+    "text": "Rubric Checks\nEnsure this reflection meets the assessment criteria:\n\n≥300 words\nClear link to artefact(s)\nCritical engagement with reflective cycle (not just description)\nHonest and balanced self-assessment\nConcrete action plan for improvement\n\n\n\n\n\n\n\n\nNext Reflection\n\n\n\nContinue to Day 3 to read the reflection on practice integration and professional context.",
+    "crumbs": [
+      "Home",
+      "Week 2 (Block 1)",
+      "Week 2, Day 2"
+    ]
+  },
+  {
+    "objectID": "coursework/index.html",
+    "href": "coursework/index.html",
+    "title": "Coursework",
+    "section": "",
+    "text": "This section provides an overview of the MSc Biostatistics programme structure and explains how the Biostatistical Consulting & Collaboration module integrates with and builds upon other modules in the curriculum."
+  },
+  {
+    "objectID": "coursework/index.html#overview",
+    "href": "coursework/index.html#overview",
+    "title": "Coursework",
+    "section": "",
+    "text": "This section provides an overview of the MSc Biostatistics programme structure and explains how the Biostatistical Consulting & Collaboration module integrates with and builds upon other modules in the curriculum."
+  },
+  {
+    "objectID": "coursework/index.html#msc-biostatistics-programme-structure",
+    "href": "coursework/index.html#msc-biostatistics-programme-structure",
+    "title": "Coursework",
+    "section": "MSc Biostatistics Programme Structure",
+    "text": "MSc Biostatistics Programme Structure\nThe MSc Biostatistics programme at Stellenbosch University is designed to provide both theoretical foundations and practical skills for a career in biostatistics.\n\nYear 1: Foundational and Advanced Coursework\n\nFirst Semester: - TODO: Module name and brief description - TODO: Module name and brief description - TODO: Module name and brief description\nSecond Semester: - TODO: Module name and brief description - TODO: Module name and brief description - TODO: Module name and brief description\n\n\nYear 2: Specialization and Applied Work\nModules: - Biostatistical Consulting & Collaboration - TODO: Other Year 2 modules - Thesis/Research Project"
+  },
+  {
+    "objectID": "coursework/index.html#key-modules-and-their-relevance-to-consulting",
+    "href": "coursework/index.html#key-modules-and-their-relevance-to-consulting",
+    "title": "Coursework",
+    "section": "Key Modules and Their Relevance to Consulting",
+    "text": "Key Modules and Their Relevance to Consulting\n\nPrinciples of Statistical Inference\n\nKey concepts: - TODO: List key concepts learned - TODO: Hypothesis testing, Type I/II errors, power\nApplication in consulting: - TODO: How these concepts were applied in internship - TODO: Examples from consultation projects\n\n\n\nDesign and Analysis of Clinical Trials\n\nKey concepts: - TODO: RCT design, blinding, randomisation - TODO: Intention-to-treat analysis - TODO: etc.\nApplication in consulting: - TODO: Examples from internship (randomisation, DSMC)\n\n\n\nFundamentals of Epidemiology\n\nKey concepts: - TODO: Study designs, bias, confounding - TODO: Effect modification - TODO: etc.\nApplication in consulting: - TODO: Examples from consultation projects\n\n\n\nData Management & Statistical Computing\n\nKey concepts: - TODO: Reproducible research - TODO: Version control, R programming - TODO: etc.\nApplication in consulting: - TODO: Examples of reproducible workflows at Scigenix\n\n\n\nLinear Models\n\nKey concepts: - TODO: Regression, ANOVA - TODO: Model assumptions, diagnostics - TODO: etc.\nApplication in consulting: - TODO: Examples from consultation projects\n\n\n\nCategorical Data Analysis & GLMs\n\nKey concepts: - TODO: Logistic regression, ordinal regression - TODO: Poisson regression, GLMs - TODO: etc.\nApplication in consulting: - TODO: Examples (job satisfaction survey, etc.)\n\n\n\nLongitudinal Data Analysis\n\nKey concepts: - TODO: Repeated measures - TODO: Mixed models - TODO: etc.\nApplication in consulting: - TODO: Examples from internship or future applications\n\n\n\nAnalysis of Survival Data\n\nKey concepts: - TODO: Kaplan-Meier curves - TODO: Cox regression - TODO: etc.\nApplication in consulting: - TODO: Examples or potential applications"
+  },
+  {
+    "objectID": "coursework/index.html#integration-theory-meets-practice",
+    "href": "coursework/index.html#integration-theory-meets-practice",
+    "title": "Coursework",
+    "section": "Integration: Theory Meets Practice",
+    "text": "Integration: Theory Meets Practice\n\nTODO: Discuss:\n\nHow the BC module required simultaneous application of knowledge from multiple modules\nExamples of integrating theoretical knowledge (e.g., regression from Linear Models) with practical skills (e.g., communication from BC module)\nHow the internship experience showed the importance of broad statistical knowledge\nThe gap between textbook examples and real-world applications"
+  },
+  {
+    "objectID": "coursework/index.html#coursework-portfolio",
+    "href": "coursework/index.html#coursework-portfolio",
+    "title": "Coursework",
+    "section": "Coursework Portfolio",
+    "text": "Coursework Portfolio\n\nMajor Projects:\n\nTODO: Title of project (Module name)\n\nBrief description\nSkills developed\nRelevance to consulting\n\nTODO: Title of project (Module name)\n\nBrief description\nSkills developed\nRelevance to consulting\n\nTODO: Title of project (Module name)\n\nBrief description\nSkills developed\nRelevance to consulting\n\n\n\n\n\n\n\n\n\nContinuous Learning\n\n\n\nThe MSc Biostatistics programme provided an excellent foundation, but professional development is ongoing. The internship and BC module highlighted areas for continued learning, including:\n\nTODO: Regulatory knowledge (ICH guidelines, CDISC standards)\nTODO: Advanced software engineering for biostatistics\nTODO: Deeper medical/clinical knowledge\nTODO: Other areas identified\n\n\n\n\n\n\n\n\n\n\nRelated Sections\n\n\n\n\nSee Relation to Coursework in the Internship Report for detailed mapping of internship tasks to modules"
+  }
+]
