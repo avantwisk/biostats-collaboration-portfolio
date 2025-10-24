@@ -12,6 +12,9 @@ After completing the foundational coursework in my first year, I progressed to m
 
 Following the completion of this module, I began my internship at Scigenix Pty (Ltd) on 23 June 2025, which concluded on 30 September 2025. This three-month placement offered me the opportunity to apply not only the skills fostered in the BC module but also those learned throughout my MSc. Through this internship, I honed my ability to communicate complex statistical concepts to non-specialist audiences, which is a skill I now regard as essential for successful collaboration in clinical research.
 
+![Listening intently at the SACRA Conference](index_files/conference_3.png){fig-alt="Presenter speaking at an industry conference" width=420 style="display:block;margin:1.5rem auto;"}
+
+
 ## Background of Organisation
 
 Scigenix is a dynamic clinical research organisation that specializes in data-driven solutions for the pharmaceutical and healthcare sectors, with a particular focus on clinical trials. With a global team of experts, the company brings together a wide range of skills, including data science, biostatistics, data management, and medical writing. Its strength lies in leveraging open-source technologies, like programming in R as opossed to SAS, to deliver cost-effective, precise, and scalable solutions across the full spectrum of clinical research. Be it from the initial study design to the final steps of regulatory submission, which is the formal process of submitting research findings to health authorities for review and approval.
@@ -33,6 +36,8 @@ Workdays at Scigenix officially begin at 7am; however, employees are allowed to 
 Office culture is highly valued at the company, and we often enjoyed social gatherings at the office, particularly on Fridays, when we would have a braai or order takeaway lunches. Practical jokes are also a common occurrence. While this might seem unorthodox in some companies, in my experience, it helped tremendously during afternoons that stretched longer than what a student might otherwise be used to.
 
 The leadership at the company played an integral role in helping me feel welcome from my first day. Shortly after starting my internship and having just moved to Pretoria from Cape Town, I admitted to feeling overwhelmed. I was assured that I should not feel any pressure or experience any stress during my internship and that they were committed to ensuring I had a valuable experience. Small actions such as these are invaluable in helping anyone, and certainly myself, feel welcome at a new organisation. Beyond this, I felt an added level of motivation to do my best, as the support I received inspired me to reciprocate their efforts.
+
+![Team braai at Scigenix](index_files/company_braai.JPG){fig-alt="Interns and staff at a Scigenix company braai" width=420 style="display:block;margin:1.5rem auto;"}
 
 ## My Role and Responsibilities
 

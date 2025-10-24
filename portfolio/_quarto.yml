@@ -1,6 +1,13 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - index.qmd
+    - artefacts/index.qmd
+    - internship/**/*.qmd
+    - reflections/**/*.qmd
+    - coursework/index.qmd
+    - learning-outcomes/index.qmd
 
 website:
   title: "Biostatistical Collaboration Portfolio"

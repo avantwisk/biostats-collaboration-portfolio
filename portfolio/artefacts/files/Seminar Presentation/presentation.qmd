@@ -8,6 +8,7 @@ institute: "MSc Biostatistics • Stellenbosch University"
 date: today
 format:
   revealjs:
+    self-contained: true
     theme: default
     css: custom.css
     slide-number: false

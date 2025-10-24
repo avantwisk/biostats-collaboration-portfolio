@@ -8,6 +8,8 @@ sidebar: internship
 
 Looking back on my three-month internship at Scigenix, I can see how transformative this experience has been for my professional development as a biostatistician. This reflection addresses what I learned, why this learning was significant, what I would have done differently, and the challenges I encountered along the way.
 
+![My colleagues and I at the SACRA Conference](index_files/conference_1.png){fig-alt="Delivering a talk at a clinical research conference" width=420 style="display:block;margin:1.5rem auto;"}
+
 ## What Did I Learn?
 
 ### Technical Skills

@@ -8,6 +8,8 @@ sidebar: internship
 
 This report documents my three-month internship at Scigenix Pty (Ltd), a clinical research organization based in Pretoria, South Africa. The internship ran from **23 June 2025 to 30 September 2025** and provided invaluable practical experience in biostatistical consulting and collaboration.
 
+![Scigenix Pty (Ltd) logo](index_files/compnay_logo.png){fig-alt="Scigenix Pty (Ltd) logo" width=220 style="display:block;margin:1.5rem auto;"}
+
 ### Report Structure
 
 This internship report follows the structure outlined in the Portfolio of Evidence of Learning guidelines:
