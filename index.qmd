@@ -23,8 +23,6 @@ The purpose of this module, and the degree as a whole, is to build theoretical f
 - **Duration**: 23 June 2025 - 30 September 2025 (3 months)
 - **Supervisor**: Dr Xan Swart
 
----
-
 ## Module Purpose
 
 The Biostatistical Consulting module is designed to merge theoretical concepts with practical implementation, placing particular importance on developing collaborative abilities through interactive lectures with world renowned guest speakers,and experiential learning opportunities either through roll playing or a 3-month internship period. Unlike conventional lecture-based modules, the BC module emphasizes:
@@ -35,8 +33,6 @@ The Biostatistical Consulting module is designed to merge theoretical concepts w
 - **Real-world application** of statistical methods in clinical research
 
 This portfolio serves as evidence of my learning, growth, and professional development throughout the module and internship experience.
-
----
 
 ## Portfolio At a Glance
 
