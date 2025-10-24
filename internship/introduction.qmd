@@ -52,4 +52,4 @@ My role encompassed:
 - **Software Development**: Creating tools to streamline data validation and analysis workflows
 - **Communication**: Translating complex statistical concepts for non-statistical stakeholders
 
-The internship provided a holistic view of the biostatistician's role in clinical research, from initial study design through to final reporting and regulatory submission. This experience has been instrumental in shaping my understanding of collaborative biostatistical practice and has prepared me for a successful career in this field.
+The internship provided a holistic view of the biostatistician's role in clinical research, from initial study design through to final reporting and regulatory submission.
