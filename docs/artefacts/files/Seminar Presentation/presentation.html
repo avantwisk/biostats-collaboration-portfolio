@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alexander van Twisk">
+<meta name="dcterms.date" content="2025-10-24">
+
+<title>Design and report simulation studies the smart way with ADEMP – Biostatistical Collaboration Portfolio</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-d8ae34ab22187d2c3ad2b3baac417e37.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="../../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../../../site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="../../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../../../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../../../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="../../../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles/custom.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Biostatistical Collaboration Portfolio</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-internship-report" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Internship Report</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-internship-report">    
+        <li>
+    <a class="dropdown-item" href="../../../internship/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../internship/introduction.html">
+ <span class="dropdown-text">Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../internship/learning-objectives.html">
+ <span class="dropdown-text">Learning Objectives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../internship/relation-to-coursework.html">
+ <span class="dropdown-text">Relation to Coursework</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../internship/work-outputs.html">
+ <span class="dropdown-text">Work Outputs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../internship/reflection.html">
+ <span class="dropdown-text">Reflection</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-module-reflections" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Module Reflections</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-module-reflections">    
+        <li>
+    <a class="dropdown-item" href="../../../reflections/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Week 1 (Block 2)</li>
+        <li>
+    <a class="dropdown-item" href="../../../reflections/week-01/day-01.html">
+ <span class="dropdown-text">Day 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../reflections/week-01/day-02.html">
+ <span class="dropdown-text">Day 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../reflections/week-01/day-03.html">
+ <span class="dropdown-text">Day 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../reflections/week-01/day-04.html">
+ <span class="dropdown-text">Day 4</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Week 2 (Block 1)</li>
+        <li>
+    <a class="dropdown-item" href="../../../reflections/week-02/day-01.html">
+ <span class="dropdown-text">Day 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../reflections/week-02/day-02.html">
+ <span class="dropdown-text">Day 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../reflections/week-02/day-03.html">
+ <span class="dropdown-text">Day 3</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../../artefacts/index.html"> 
+<span class="menu-text">Artefacts</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aim-objectives-title" id="toc-aim-objectives-title" class="nav-link active" data-scroll-target="#aim-objectives-title">Aim &amp; Objectives</a>
+  <ul class="collapse">
+  <li><a href="#aim-objectives" id="toc-aim-objectives" class="nav-link" data-scroll-target="#aim-objectives">Aim &amp; Objectives</a></li>
+  </ul></li>
+  <li><a href="#what-is-sim-title" id="toc-what-is-sim-title" class="nav-link" data-scroll-target="#what-is-sim-title">But what <em>is</em> a simulation study?</a>
+  <ul class="collapse">
+  <li><a href="#what-is-sim" id="toc-what-is-sim" class="nav-link" data-scroll-target="#what-is-sim">Simulation study = a <strong>virtual experiment on data</strong></a></li>
+  </ul></li>
+  <li><a href="#why-sim-title" id="toc-why-sim-title" class="nav-link" data-scroll-target="#why-sim-title">Why simulate?</a>
+  <ul class="collapse">
+  <li><a href="#why-sim" id="toc-why-sim" class="nav-link" data-scroll-target="#why-sim">Why simulate?</a></li>
+  </ul></li>
+  <li><a href="#ademp-title" id="toc-ademp-title" class="nav-link" data-scroll-target="#ademp-title">Enter ADEMP!</a>
+  <ul class="collapse">
+  <li><a href="#ademp-overview" id="toc-ademp-overview" class="nav-link" data-scroll-target="#ademp-overview">ADEMP Overview</a></li>
+  </ul></li>
+  <li><a href="#aims-title" id="toc-aims-title" class="nav-link" data-scroll-target="#aims-title">Aims</a>
+  <ul class="collapse">
+  <li><a href="#aims" id="toc-aims" class="nav-link" data-scroll-target="#aims"><strong>A</strong> : Aims</a></li>
+  <li><a href="#aims-example" id="toc-aims-example" class="nav-link" data-scroll-target="#aims-example"><strong>A</strong> : Aims</a></li>
+  </ul></li>
+  <li><a href="#dgm-title" id="toc-dgm-title" class="nav-link" data-scroll-target="#dgm-title">Data-generating Mechanisms</a>
+  <ul class="collapse">
+  <li><a href="#data-mechanisms" id="toc-data-mechanisms" class="nav-link" data-scroll-target="#data-mechanisms"><strong>D</strong> : Data-generating Mechanisms</a></li>
+  </ul></li>
+  <li><a href="#estimands-title" id="toc-estimands-title" class="nav-link" data-scroll-target="#estimands-title">Estimands</a>
+  <ul class="collapse">
+  <li><a href="#estimands" id="toc-estimands" class="nav-link" data-scroll-target="#estimands"><strong>E</strong>: Estimands</a></li>
+  </ul></li>
+  <li><a href="#methods-title" id="toc-methods-title" class="nav-link" data-scroll-target="#methods-title">Methods</a>
+  <ul class="collapse">
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">M : Methods</a></li>
+  <li><a href="#methods-fairness" id="toc-methods-fairness" class="nav-link" data-scroll-target="#methods-fairness">M : Methods - Fair Comparison</a></li>
+  </ul></li>
+  <li><a href="#performance-title" id="toc-performance-title" class="nav-link" data-scroll-target="#performance-title">Performance</a>
+  <ul class="collapse">
+  <li><a href="#performance" id="toc-performance" class="nav-link" data-scroll-target="#performance"><strong>P</strong>: Performance</a></li>
+  <li><a href="#perf-bias" id="toc-perf-bias" class="nav-link" data-scroll-target="#perf-bias"><strong>P</strong>: Performance</a></li>
+  <li><a href="#perf-mse" id="toc-perf-mse" class="nav-link" data-scroll-target="#perf-mse"><strong>P</strong>: Performance</a></li>
+  <li><a href="#perf-coverage" id="toc-perf-coverage" class="nav-link" data-scroll-target="#perf-coverage"><strong>P</strong>: Performance</a></li>
+  <li><a href="#perf-mcse" id="toc-perf-mcse" class="nav-link" data-scroll-target="#perf-mcse"><strong>P</strong>: Performance — Monte Carlo SE</a></li>
+  <li><a href="#sample-size-setup" id="toc-sample-size-setup" class="nav-link" data-scroll-target="#sample-size-setup">Worked example: sample size by simulation</a></li>
+  <li><a href="#formula-method" id="toc-formula-method" class="nav-link" data-scroll-target="#formula-method">Formula method</a></li>
+  <li><a href="#ademp-plan" id="toc-ademp-plan" class="nav-link" data-scroll-target="#ademp-plan">ADEMP plan (what we simulate)</a></li>
+  </ul></li>
+  <li><a href="#lets-code" id="toc-lets-code" class="nav-link" data-scroll-target="#lets-code">Let’s Code!</a>
+  <ul class="collapse">
+  <li><a href="#simulation-function" id="toc-simulation-function" class="nav-link" data-scroll-target="#simulation-function">Simulation function</a></li>
+  <li><a href="#sample-size-figures" id="toc-sample-size-figures" class="nav-link" data-scroll-target="#sample-size-figures">What the code does</a></li>
+  <li><a href="#wide-search" id="toc-wide-search" class="nav-link" data-scroll-target="#wide-search">Search for the smallest enrolled <span class="math inline">\(n\)</span> hitting ≥80% power</a>
+  <ul class="collapse">
+  <li><a href="#exploration" id="toc-exploration" class="nav-link" data-scroll-target="#exploration">Exploration</a></li>
+  </ul></li>
+  <li><a href="#narrow-search" id="toc-narrow-search" class="nav-link" data-scroll-target="#narrow-search">Search for the smallest enrolled <span class="math inline">\(n\)</span> hitting ≥80% power</a>
+  <ul class="collapse">
+  <li><a href="#narrowed-down" id="toc-narrowed-down" class="nav-link" data-scroll-target="#narrowed-down">Narrowed Down</a></li>
+  </ul></li>
+  <li><a href="#power-curve-comparison" id="toc-power-curve-comparison" class="nav-link" data-scroll-target="#power-curve-comparison">Power curve (simulation vs formula)</a></li>
+  <li><a href="#ci-coverage-one-slide" id="toc-ci-coverage-one-slide" class="nav-link" data-scroll-target="#ci-coverage-one-slide">CI coverage: Wald vs Wilson (one proportion)</a></li>
+  <li><a href="#pitfalls" id="toc-pitfalls" class="nav-link" data-scroll-target="#pitfalls">Pitfalls to Avoid</a></li>
+  <li><a href="#pitfalls-2" id="toc-pitfalls-2" class="nav-link" data-scroll-target="#pitfalls-2">Pitfalls to Avoid</a></li>
+  <li><a href="#takeaways" id="toc-takeaways" class="nav-link" data-scroll-target="#takeaways">Takeaways</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="presentation.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Design and report simulation studies the smart way with ADEMP</h1>
+</div>
+
+
+<div class="quarto-title-meta-author column-page-left">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Alexander van Twisk </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            MSc Biostatistics • Stellenbosch University
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-page-left">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 24, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="aim-objectives-title" class="level1" data-auto-animate="false">
+<h1 data-auto-animate="false">Aim &amp; Objectives</h1>
+<section id="aim-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="aim-objectives">Aim &amp; Objectives</h2>
+<p><strong>Aim</strong></p>
+<p>Equip you to design, run, and report transparent simulation studies using ADEMP</p>
+<p><br></p>
+<p><strong>By the end, you will:</strong></p>
+<ol type="1">
+<li><strong>Explain</strong> each ADEMP component</li>
+<li><strong>Specify</strong> realistic data mechanisms</li>
+<li><strong>Build</strong> power simulations in R</li>
+<li><strong>Report</strong> with Monte Carlo SEs</li>
+<li><strong>Avoid</strong> common pitfalls</li>
+</ol>
+<div class="notes">
+<p>This seminar takes a hands-on approach to simulation studies in biostatistics. By the end, you won’t just understand the theory—you’ll have the practical skills to design and implement your own simulations. The ADEMP framework gives us a structured workflow that prevents common mistakes and ensures our simulations actually answer the questions we care about.</p>
+</div>
+</section>
+</section>
+<section id="what-is-sim-title" class="level1">
+<h1>But what <em>is</em> a simulation study?</h1>
+<section id="what-is-sim" class="level2" data-incremental="true">
+<h2 data-incremental="true" class="anchored" data-anchor-id="what-is-sim">Simulation study = a <strong>virtual experiment on data</strong></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/what-is-sim.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<div class="notes">
+<p>A simulation study is essentially a controlled experiment where we know the truth from the start. Think of it as three key steps:</p>
+<ol type="1">
+<li>We create data where we control the parameters—we set the true effect size, sample size, variability, etc.</li>
+<li>We apply methods to that data—the same statistical methods we’d use in practice (regression, tests, estimation techniques).</li>
+<li>We evaluate performance** by comparing results against the known truth—measuring bias, coverage, power, and other metrics.</li>
+</ol>
+<p>This gives us complete transparency: we can see exactly when methods work well, when they start to break down, and under what conditions they fail entirely.</p>
+</div>
+</section>
+</section>
+<section id="why-sim-title" class="level1">
+<h1>Why simulate?</h1>
+<section id="why-sim" class="level2" data-incremental="true">
+<h2 data-incremental="true" class="anchored" data-anchor-id="why-sim">Why simulate?</h2>
+<div class="columns">
+<div class="column fragment" style="width:55%;">
+<ul>
+<li>When <strong>formulas fail</strong>, simulate</li>
+<li>Real data are <strong>messy</strong> (missingness, nonlinearity, clustering)</li>
+<li><strong>Assumptions break</strong> in practice</li>
+<li>We need to test “<strong>what if</strong>” scenarios safely</li>
+<li>Simulations reveal if methods are <strong>robust</strong>, <strong>unbiased</strong>, and <strong>reliable</strong></li>
+</ul>
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/dig-through.png" class="fragment img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="notes">
+<p>We simulate to “rehearse” real-world messiness. It’s a safe sandbox to see if a method holds up with missing data, small samples, or nonlinearity—before we bet a study’s conclusions on it.</p>
+</div>
+</section>
+</section>
+<section id="ademp-title" class="level1">
+<h1>Enter ADEMP!</h1>
+<section id="ademp-overview" class="level2">
+<h2 class="anchored" data-anchor-id="ademp-overview">ADEMP Overview</h2>
+<div class="r-stack">
+<div class="fragment fade-in-then-out" data-fragment-index="1">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ademp-wheel.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="2">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ademp-flow.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li>Start with <strong>Aims</strong>;</li>
+<li>Design the <strong>Data-generating mechanisms</strong>;</li>
+<li><strong>Estimands</strong> are determined by the DGM.</li>
+<li>Select <strong>Methods</strong> to estimate those Estimands;</li>
+<li>Evaluate with <strong>Performance</strong> measures chosen to serve the Aims.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="notes">
+<p>ADEMP is a simple order of operations. Each step builds on the previous. Aims drive everything - they determine what data to generate and what to estimate. Methods must actually answer your estimand, and performance measures must align with your aims.</p>
+</div>
+</section>
+</section>
+<section id="aims-title" class="level1">
+<h1>Aims</h1>
+<section id="aims" class="level2">
+<h2 class="anchored" data-anchor-id="aims"><strong>A</strong> : Aims</h2>
+<p>The aims define <strong>what the simulation study seeks to learn</strong> about a method’s statistical properties.</p>
+<p>. . .</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/aims-ex.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<div class="notes">
+<p>The Aim sets the compass. Are we stress-testing methods under realistic conditions, or just showing proof of concept? Clear aims avoid a common mistake: running simulations first and deciding later what they were for.</p>
+</div>
+</section>
+<section id="aims-example" class="level2">
+<h2 class="anchored" data-anchor-id="aims-example"><strong>A</strong> : Aims</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/aims-ex2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<div class="notes">
+<p>Notice how the aims on the right are specific and testable. They ask focused statements about method performance under defined conditions. Good aims aren’t just “compare Method A and B”; they specify what aspect matters (bias? power? coverage?) and under what realistic scenarios. This specificity guides every downstream decision in the ADEMP workflow.</p>
+</div>
+</section>
+</section>
+<section id="dgm-title" class="level1">
+<h1>Data-generating Mechanisms</h1>
+<section id="data-mechanisms" class="level2">
+<h2 class="anchored" data-anchor-id="data-mechanisms"><strong>D</strong> : Data-generating Mechanisms</h2>
+<div class="notes">
+<p>The DGM is your virtual factory. It takes in certain parameters of interest as components and builds them into the outcome you wish to simulate</p>
+<p>It’s where you decide what world your methods will live in — how realistic, how messy, how extreme they are. The more thoughtful your DGM, the more meaningful your conclusions.</p>
+<p>If I want to test survival models, my DGM might simulate event times from a log-logistic distribution with right-censoring. I can vary the sample size or censoring rate to see how the method performs across contexts.</p>
+<p>Parametric DGMs give you control and flexibility—you can systematically vary sample sizes, effect sizes, and distributions to stress-test methods across many scenarios. Resampling from real data keeps you grounded in reality but limits generalizability to that one observed dataset. In practice, many simulation studies use parametric DGMs informed by pilot data or literature estimates to balance realism and breadth.</p>
+</div>
+<p>. . .</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/dgm.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p>. . .</p>
+<ul>
+<li><strong>Choose realism</strong> over simplicity</li>
+<li><strong>Parametric</strong> (known model) or <strong>resampling</strong> (real data)</li>
+<li><strong>Vary key factors</strong> (sample size, effect size, noise level)</li>
+</ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In planning a simulation study, <strong>it is usual to spend more time deciding on data-generating mechanisms than any other element</strong> of ADEMP.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="estimands-title" class="level1">
+<h1>Estimands</h1>
+<section id="estimands" class="level2">
+<h2 class="anchored" data-anchor-id="estimands"><strong>E</strong>: Estimands</h2>
+<div class="notes">
+<p>The estimand is the target—the true parameter you care about. The estimator is the tool you use to hit that target. This distinction matters enormously in simulations because we know the true estimand by design, so we can directly measure how well each estimator performs. Confusing these leads to unfair comparisons, like testing whether a regression coefficient and an odds ratio are “the same”—they’re answering different questions.</p>
+</div>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div style="position: relative; height: 400px;">
+<p><img src="images/est-1.png" class="fragment fade-in-then-out img-fluid" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 75%;" data-fragment-index="1"></p>
+<p><img src="images/est-2.png" class="fragment fade-in-then-out img-fluid" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 75%;" data-fragment-index="2"></p>
+<p><img src="images/est-3.png" class="fragment fade-in img-fluid" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 75%;" data-fragment-index="3"></p>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="fragment fade-in-then-semi-out" data-fragment-index="1">
+<p>The majority of simulations compare on specific quantities like means, <span class="math inline">\(\beta\)</span> coefficients, odds ratios. Occasionally some other quantities are compared such as covariate adjusted vs unadjusted effects.</p>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="2">
+<p>The goal is often to get estimates as close to the true value as possible (low bias).</p>
+<p><span class="math display">\[\begin{equation*}
+\text{Bias} = \mathbb{E}\left(\hat{\theta}\right) - \theta
+\end{equation*}\]</span></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3">
+<p>Sometimes the estimand is actually more of a <em>target</em> like measures of predictive accuracy, sample size</p>
+</div>
+</div>
+</div>
+<p>. . .</p>
+<div class="fragment callout callout-style-default callout-warning callout-titled" data-fragment-index="4" style="font-size: 0.8em; margin-top: 1em;">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Remember
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Estimand ≠ Estimator</strong></p>
+<p>The <em>estimand</em> is <strong>what</strong> you want to estimate (<span class="math inline">\(\theta\)</span>); the <em>estimator</em> is <strong>how</strong> you estimate it (<span class="math inline">\(\hat{\theta}\)</span>).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="methods-title" class="level1">
+<h1>Methods</h1>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">M : Methods</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/methods-box.png" class="quarto-figure quarto-figure-center figure-img" style="width:15cm;height:6.7cm"></p>
+</figure>
+</div>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li>Define and justify each method</li>
+<li>Ensure comparability (same estimand)</li>
+<li>Report convergence issues, assumptions</li>
+</ol>
+</div>
+<div class="notes">
+<p>The Methods are your competitors in a boxing ring. Just as in boxing where opponents are matched by weight and skill, methods ensure everyone estimates the same target.</p>
+<p>If your methods are designed for different estimands, the comparison is unfair — like judging a fish and a bird on who climbs a tree faster.</p>
+</div>
+<hr>
+</section>
+<section id="methods-fairness" class="level2">
+<h2 class="anchored" data-anchor-id="methods-fairness">M : Methods - Fair Comparison</h2>
+<div class="fragment">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Criteria</th>
+<th style="text-align: center;">Method A</th>
+<th style="text-align: center;">Method B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Same estimand</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="even">
+<td>Same data generation</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="odd">
+<td>Optimal tuning parameters</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="even">
+<td>Same sample sizes</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="odd">
+<td>Same evaluation metrics</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- ::: fragment
+::::: columns
+:::: column
+**Implementation parity**
+
+-   Same tuning budget
+-   Same preprocessing steps
+-   Same numerical precision
+::::
+
+:::: column
+**Failure handling**
+
+-   One retry on non-convergence
+-   Record as failure after timeout
+-   Report failure rates
+::::
+:::::
+::: -->
+<div class="notes">
+<p>Neutral comparisons require symmetry. Common pitfalls are comparing two seemingly related estimands like marginal vs conditional effects when these are actually two different estimands.</p>
+</div>
+</section>
+</section>
+<section id="performance-title" class="level1">
+<h1>Performance</h1>
+<section id="performance" class="level2">
+<h2 class="anchored" data-anchor-id="performance"><strong>P</strong>: Performance</h2>
+<p><strong>What we report</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Measure</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Bias</strong></td>
+<td>Accuracy (closeness to truth)</td>
+</tr>
+<tr class="even">
+<td><strong>SE / MSE</strong></td>
+<td>Precision / total deviation</td>
+</tr>
+<tr class="odd">
+<td><strong>Coverage</strong></td>
+<td>Interval reliability</td>
+</tr>
+<tr class="even">
+<td><strong>Type I / Power</strong></td>
+<td>Test validity</td>
+</tr>
+<tr class="odd">
+<td><strong>MCSE</strong></td>
+<td>Simulation uncertainty</td>
+</tr>
+</tbody>
+</table>
+<p>. . .</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Remember!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Even simulations have <strong>uncertainty</strong> — that’s what <strong>MCSE</strong> quantifies.</p>
+</div>
+</div>
+<div class="notes">
+<p>These five performance measures are some of the key tools for evaluating methods.</p>
+<p>Bias tells us about systematic error, MSE combines bias and variance into overall accuracy, coverage checks if confidence intervals are honest, power and Type I error assess testing procedures, and MCSE reminds us that even our simulation results have sampling variability. Always report MCSE alongside your estimates—it’s the measure of how much your simulation results would change if you re-ran it with a different random seed.</p>
+</div>
+<hr>
+</section>
+<section id="perf-bias" class="level2">
+<h2 class="anchored" data-anchor-id="perf-bias"><strong>P</strong>: Performance</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation_files/figure-revealjs/bias-indicator-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bias measures <strong>systematic error</strong>: the average difference between your estimator and the true value (<span class="math inline">\(\theta\)</span>). Small absolute bias is better.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="perf-mse" class="level2">
+<h2 class="anchored" data-anchor-id="perf-mse"><strong>P</strong>: Performance</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation_files/figure-revealjs/mse-indicator-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Mean Squared Error (MSE)</strong> combines <strong>variance and bias</strong>: <span class="math inline">\(\mathrm{MSE}(\hat{\theta}) = \mathrm{Var}(\hat{\theta}) + \mathrm{Bias}(\hat{\theta})^2\)</span>. Lower MSE means estimates concentrate near truth.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="perf-coverage" class="level2">
+<h2 class="anchored" data-anchor-id="perf-coverage"><strong>P</strong>: Performance</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation_files/figure-revealjs/coverage-indicator-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Coverage</strong> checks if <span class="math inline">\(100(1-\alpha)\%\)</span> confidence intervals contain the true value <strong>at the advertised rate</strong>. If coverage is low, intervals are too narrow or biased.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="perf-mcse" class="level2">
+<h2 class="anchored" data-anchor-id="perf-mcse"><strong>P</strong>: Performance — Monte Carlo SE</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation_files/figure-revealjs/mcse-visual-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Monte Carlo Standard Error (MCSE)</strong> quantifies <strong>simulation uncertainty</strong>.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="sample-size-setup" class="level2">
+<h2 class="anchored" data-anchor-id="sample-size-setup">Worked example: sample size by simulation</h2>
+<div class="notes">
+<p>This worked example demonstrates how to apply ADEMP to a practical question that biostatisticians face regularly: determining sample size for a clinical trial. We’ll compare the traditional formula-based approach with simulation-based power analysis, showing how simulation can capture complexities like dropout and analysis choices that formulas often handle crudely or ignore entirely.</p>
+</div>
+<p>. . .</p>
+<p><strong>Question:</strong> <br> How many participants <strong>per arm</strong> do we need to detect an absolute improvement from 30% to 45% with <strong>80% power</strong>, <strong>two-sided α = 0.05</strong>, allowing for <strong>10% dropout</strong>?</p>
+<p>. . .</p>
+<p><strong>Design choices:</strong></p>
+<div class="incremental">
+<ul class="incremental">
+<li>Control proportion <span class="math inline">\(p_0 = 0.30\)</span>, Treatment proportion <span class="math inline">\(p_1 = 0.45\)</span> (risk difference = 0.15)</li>
+<li>Equal allocation, independent Bernoulli outcomes</li>
+<li>Dropout 10% (MCAR), analysed as complete cases</li>
+</ul>
+</div>
+<div class="notes">
+<p>This worked example demonstrates how to apply ADEMP to a practical question that biostatisticians face regularly: determining sample size for a clinical trial. We’ll compare the traditional formula-based approach with simulation-based power analysis, showing how simulation can capture complexities like dropout and analysis choices that formulas often handle crudely or ignore entirely.</p>
+</div>
+<hr>
+</section>
+<section id="formula-method" class="level2">
+<h2 class="anchored" data-anchor-id="formula-method">Formula method</h2>
+<div class="notes">
+<p>Formula-based sample size calculations are fast and convenient, but they rest on large-sample approximations that can break down exactly when we need them most—in small samples or at extreme proportions. The dropout adjustment here is just a crude inflation factor; it doesn’t model dropout as an actual stochastic process. Most importantly, the formula assumes a particular test statistic and doesn’t let us explore alternatives like exact tests or different handling of missing data. Simulation removes these limitations.</p>
+</div>
+<p>. . .</p>
+<p>Closed-form (normal approximation) per arm: <span class="math display">\[
+n = \frac{\big[z_{1-\alpha/2}\sqrt{2\bar p(1-\bar p)} + z_{1-\beta}\sqrt{p_0(1-p_0)+p_1(1-p_1)}\big]^2}{(p_1-p_0)^2},\quad \bar p = (p_0+p_1)/2.
+\]</span></p>
+<p>. . .</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Calculate n per arm</th>
+<th style="text-align: center;">Required n before dropout</th>
+<th style="text-align: center;">Final n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">162.3344</td>
+<td style="text-align: center;">163</td>
+<td style="text-align: center;">180</td>
+</tr>
+</tbody>
+</table>
+<p>. . .</p>
+<p><strong>Drawbacks:</strong></p>
+<div class="incremental">
+<ul class="incremental">
+<li>Large-sample approximation; can misbehave for small <span class="math inline">\(n\)</span> or extreme proportions.</li>
+<li>Dropout handled crudely by inflation, not as a data-generating process.</li>
+<li>Ignores analysis choices (Wald vs score vs exact; missingness handling).</li>
+<li>Produces one number <strong>without</strong> quantifying uncertainty in assumptions.</li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="ademp-plan" class="level2">
+<h2 class="anchored" data-anchor-id="ademp-plan">ADEMP plan (what we simulate)</h2>
+<p>. . .</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Plan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>A — Aims</strong></td>
+<td>Find the <strong>smallest enrolled</strong> <span class="math inline">\(n\)</span> per arm achieving <span class="math inline">\(\geq 80\%\)</span> power (two-sided <span class="math inline">\(\alpha=0.05\)</span>). Check that Type I error ≈5%.</td>
+</tr>
+<tr class="even">
+<td><strong>D — DGM</strong></td>
+<td>Two-arm trial, equal allocation. Outcomes <span class="math inline">\(Y\sim\mathrm{Bernoulli}(p_a)\)</span> with <span class="math inline">\(p_0=0.30\)</span>, <span class="math inline">\(p_1=0.45\)</span>. <strong>Dropout 10%</strong> MCAR: each subject observed with prob. 0.90.</td>
+</tr>
+<tr class="odd">
+<td><strong>E — Estimand</strong></td>
+<td>Risk difference <span class="math inline">\(p_1 - p_0\)</span>. Hypothesis test <span class="math inline">\(H_0: p_1=p_0\)</span>.</td>
+</tr>
+<tr class="even">
+<td><strong>M — Methods</strong></td>
+<td>Primary analysis: <code>prop.test</code> (score test, with continuity correction). Missing outcomes: <strong>complete cases</strong>.</td>
+</tr>
+<tr class="odd">
+<td><strong>P — Performance</strong></td>
+<td><strong>Power</strong> under <span class="math inline">\((p_0,p_1)=(0.30,0.45)\)</span>, <strong>MCSE</strong> for power <span class="math inline">\(\sqrt{\hat{p} \left(1- \hat{p} \right)/n_{sim}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="notes">
+<p>This table shows ADEMP in action. Notice how each element connects: the Aim defines what we’re looking for (minimum sample size for 80% power), the DGM specifies realistic data generation including dropout as a binomial process, the Estimand and Methods are aligned (both target the risk difference using prop.test), and Performance measures directly address the Aim. This upfront planning prevents scope creep and ensures every simulation run serves a clear purpose.</p>
+</div>
+</section>
+</section>
+<section id="lets-code" class="level1">
+<h1>Let’s Code!</h1>
+<p>. . .</p>
+<section id="simulation-function" class="level2" data-auto-animate="true">
+<h2 data-auto-animate="true" class="anchored" data-anchor-id="simulation-function">Simulation function</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Parameters</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>n_enrolled <span class="ot">&lt;-</span> <span class="dv">60</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>p0 <span class="ot">&lt;-</span> <span class="fl">0.30</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fl">0.45</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>dropout <span class="ot">&lt;-</span> <span class="fl">0.1</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>alpha <span class="ot">&lt;-</span> <span class="fl">0.05</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>simulate_one_trial <span class="ot">&lt;-</span> <span class="cf">function</span>(n_enrolled, p0, p1, dropout, alpha) {</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Apply dropout to get observed sample sizes</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  n0_obs <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="dv">1</span>, n_enrolled, <span class="dv">1</span> <span class="sc">-</span> dropout)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  n1_obs <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="dv">1</span>, n_enrolled, <span class="dv">1</span> <span class="sc">-</span> dropout)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Skip if either group is empty</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n0_obs <span class="sc">==</span> <span class="dv">0</span> <span class="sc">||</span> n1_obs <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="cn">NA</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Generate outcomes</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  y0 <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="dv">1</span>, n0_obs, p0)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  y1 <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="dv">1</span>, n1_obs, p1)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Test for difference in proportions</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  test <span class="ot">&lt;-</span> <span class="fu">prop.test</span>(<span class="at">x =</span> <span class="fu">c</span>(y1, y0), <span class="at">n =</span> <span class="fu">c</span>(n1_obs, n0_obs))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Return TRUE if we reject H0</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  test<span class="sc">$</span>p.value <span class="sc">&lt;</span> alpha</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Run simulation for a given sample size</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>simulate_power <span class="ot">&lt;-</span> <span class="cf">function</span>(n_enrolled, p0, p1, dropout,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>                          <span class="at">nsim =</span> <span class="dv">2000</span>, alpha) {</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Simulate nsim trials</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  results <span class="ot">&lt;-</span> <span class="fu">map_lgl</span>(<span class="dv">1</span><span class="sc">:</span>nsim, <span class="sc">~</span> <span class="fu">simulate_one_trial</span>(n_enrolled, p0, p1, dropout, alpha))</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate power and MCSE</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  power_hat <span class="ot">&lt;-</span> <span class="fu">mean</span>(results, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  mcse <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(power_hat <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> power_hat) <span class="sc">/</span> <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(results)))</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">power =</span> power_hat, <span class="at">mcse =</span> mcse)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+</section>
+<section id="sample-size-figures" class="level2">
+<h2 class="anchored" data-anchor-id="sample-size-figures">What the code does</h2>
+<div class="r-stack">
+<div class="fragment fade-in-then-out" data-fragment-index="1">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/sample-size-s.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:55.0%"></p>
+</figure>
+</div>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/sample-size-m.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/sample-size-l.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="wide-search" class="level2">
+<h2 class="anchored" data-anchor-id="wide-search">Search for the smallest enrolled <span class="math inline">\(n\)</span> hitting ≥80% power</h2>
+<section id="exploration" class="level3">
+<h3 class="anchored" data-anchor-id="exploration">Exploration</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-52937728059e701808b4" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-52937728059e701808b4">{"x":{"filter":"none","vertical":false,"data":[[50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,310,320,330,340,350],[0.2395,0.2925,0.3395,0.404,0.4275,0.508,0.5255,0.5795,0.625,0.646,0.6715,0.6945,0.753,0.7715,0.789,0.804,0.83,0.8505,0.869,0.868,0.898,0.9,0.9175,0.924,0.929,0.9405,0.9475,0.9505,0.959,0.9645,0.973],[0.00954305375652888,0.01017211261243209,0.01058866729102393,0.01097232883211217,0.01106218219882497,0.01117890871239228,0.01116579038850363,0.01103811011903759,0.01082531754730548,0.01069308187568018,0.01050208907789303,0.01029975121058756,0.009643417444039223,0.00938849695105665,0.009123568380847484,0.00887648579112252,0.008399404740813483,0.007973385416496557,0.00754450130890041,0.007568883669339885,0.006767421961131136,0.006708203932499368,0.006151981388138297,0.005925537950262405,0.005742778073371805,0.005289600646551685,0.004987171041783106,0.004850244839180801,0.00443390347211123,0.004137617067830225,0.003624293034510318]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Sample Size per Arm<\/th>\n      <th>Estimated Power<\/th>\n      <th>Monte Carlo SE<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":100,"scrollY":"45vh","scrollCollapse":false,"dom":"t","columnDefs":[{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 4, 3, \",\", \".\", null);\n  }"},{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 2, 3, \",\", \".\", null);\n  }"},{"className":"dt-center","targets":"_all"},{"name":"Sample Size per Arm","targets":0},{"name":"Estimated Power","targets":1},{"name":"Monte Carlo SE","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render"],"jsHooks":[]}</script>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="narrow-search" class="level2">
+<h2 class="anchored" data-anchor-id="narrow-search">Search for the smallest enrolled <span class="math inline">\(n\)</span> hitting ≥80% power</h2>
+<section id="narrowed-down" class="level3">
+<h3 class="anchored" data-anchor-id="narrowed-down">Narrowed Down</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-382c803a0aa7b9403724" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-382c803a0aa7b9403724">{"x":{"filter":"none","vertical":false,"data":[[180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220],[0.766,0.765,0.7724,0.7698,0.7816,0.7696,0.7752,0.7814,0.7894,0.7912,0.7897999999999999,0.7932,0.7916,0.802,0.8034,0.798,0.7962,0.8026,0.8048,0.8216,0.8042,0.8162,0.8122,0.8102,0.8204,0.822,0.825,0.8224,0.823,0.832,0.84,0.8308,0.8404,0.8436,0.8336,0.8348,0.8386,0.8434,0.8454,0.8434,0.8546],[0.005987386742143854,0.005996248827392005,0.005929557150411826,0.005953284135668311,0.005842969108253098,0.005955095968999996,0.005903642265584865,0.005844895892999293,0.005766240369599589,0.005748087682003468,0.005762221099541392,0.005727717870146888,0.0057440306405868,0.005635530143651083,0.005620470442943367,0.005677957379198966,0.005696763291554248,0.005629089446793327,0.00560530034877704,0.005414304018061786,0.005611815392544555,0.005477546165939635,0.005523244698544506,0.005545736380319569,0.005428514345564539,0.005409547115979304,0.00537354631505117,0.005404780106535324,0.005397610582470729,0.005287267725394658,0.005184592558726288,0.005302289316889451,0.005179340498557707,0.005136906462064498,0.005267087240591331,0.005251837011941631,0.005202884584535774,0.005139580527630635,0.005112706523946,0.005139580527630635,0.004985154761890548]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Sample Size per Arm<\/th>\n      <th>Estimated Power<\/th>\n      <th>Monte Carlo SE<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":100,"scrollY":"45vh","scrollCollapse":false,"dom":"t","columnDefs":[{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 4, 3, \",\", \".\", null);\n  }"},{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 2, 3, \",\", \".\", null);\n  }"},{"className":"dt-center","targets":"_all"},{"name":"Sample Size per Arm","targets":0},{"name":"Estimated Power","targets":1},{"name":"Monte Carlo SE","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render"],"jsHooks":[]}</script>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="power-curve-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="power-curve-comparison">Power curve (simulation vs formula)</h2>
+<div class="r-stack">
+<div class="fragment fade-in-then-out" data-fragment-index="1">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation_files/figure-revealjs/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation_files/figure-revealjs/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation_files/figure-revealjs/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="4">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation_files/figure-revealjs/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>. . .</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Formula would have resulted in <strong>13 fewer participants per arm</strong> (180 vs 193) than the simulation-based approach, <strong>potentially underpowering the study</strong>.</p>
+</div>
+</div>
+<div class="notes">
+<p>This divergence between formula and simulation isn’t trivial—14 fewer participants per arm translates to 28 fewer across both arms, a substantial difference in study cost and logistics. The formula underestimates because it handles dropout crudely and relies on large-sample approximations. The simulation explicitly models dropout as a binomial process and uses the actual test statistic we’ll apply. The small MCSE of 0.0056 tells us our simulation-based answer is stable and trustworthy.</p>
+</div>
+<hr>
+</section>
+<section id="ci-coverage-one-slide" class="level2">
+<h2 class="anchored" data-anchor-id="ci-coverage-one-slide">CI coverage: Wald vs Wilson (one proportion)</h2>
+<div class="columns">
+<div class="column fragment" data-fragment-index="1" style="width:52%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">20251017</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>nsim  <span class="ot">&lt;-</span> <span class="dv">2000</span>   <span class="co"># number of repetitions</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>n     <span class="ot">&lt;-</span> <span class="dv">25</span>     <span class="co"># sample size</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>p     <span class="ot">&lt;-</span> <span class="fl">0.05</span>   <span class="co"># true proportion</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>alpha <span class="ot">&lt;-</span> <span class="fl">0.05</span>   <span class="co"># nominal level</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>wald_cover   <span class="ot">&lt;-</span> <span class="fu">logical</span>(nsim)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>wilson_cover <span class="ot">&lt;-</span> <span class="fu">logical</span>(nsim)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(nsim)) {</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="dv">1</span>, n, p)      <span class="co"># data</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  phat <span class="ot">&lt;-</span> x <span class="sc">/</span> n</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Wald (normal approx) CI</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  z  <span class="ot">&lt;-</span> <span class="fu">qnorm</span>(<span class="dv">1</span> <span class="sc">-</span> alpha<span class="sc">/</span><span class="dv">2</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  se <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(phat <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> phat) <span class="sc">/</span> n)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  wald <span class="ot">&lt;-</span> <span class="fu">c</span>(phat <span class="sc">-</span> z <span class="sc">*</span> se, phat <span class="sc">+</span> z <span class="sc">*</span> se)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Wilson (score) CI (no continuity correction)</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  pr <span class="ot">&lt;-</span> <span class="fu">prop.test</span>(x, n, <span class="at">correct =</span> <span class="cn">FALSE</span>, <span class="at">conf.level =</span> <span class="dv">1</span> <span class="sc">-</span> alpha)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  wilson <span class="ot">&lt;-</span> pr<span class="sc">$</span>conf.int</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Does each CI contain the truth?</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  wald_cover[i]   <span class="ot">&lt;-</span> (wald[<span class="dv">1</span>]   <span class="sc">&lt;=</span> p <span class="sc">&amp;&amp;</span> p <span class="sc">&lt;=</span> wald[<span class="dv">2</span>])</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  wilson_cover[i] <span class="ot">&lt;-</span> (wilson[<span class="dv">1</span>] <span class="sc">&lt;=</span> p <span class="sc">&amp;&amp;</span> p <span class="sc">&lt;=</span> wilson[<span class="dv">2</span>])</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Empirical coverage by method</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>coverage <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="fu">c</span>(<span class="st">"Wald"</span>, <span class="st">"Wilson (score)"</span>),</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">cover  =</span> <span class="fu">c</span>(<span class="fu">mean</span>(wald_cover), <span class="fu">mean</span>(wilson_cover))</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:48%;">
+<div class="fragment" data-fragment-index="2">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="presentation_files/figure-revealjs/ci-coverage-plot-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment callout callout-style-default callout-tip callout-titled" data-fragment-index="3">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Conclusion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In small samples with low prevalence of the outcome, the Wald CI can <strong>undercover</strong> (&lt;95%), while the Wilson (score) CI is typically much closer to nominal.</p>
+</div>
+</div>
+<div class="notes">
+<p>This example illustrates a classic problem with normal approximation methods: they fail when sample sizes are small or proportions are extreme. The Wald interval severely undercovers because its variance estimate becomes unstable with low event counts. The Wilson (score) interval inverts the test statistic and performs much better. Simulations like this reveal when textbook methods break down and guide us toward more robust alternatives for real applications.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="pitfalls" class="level2">
+<h2 class="anchored" data-anchor-id="pitfalls">Pitfalls to Avoid</h2>
+<div class="notes">
+<p>These pitfalls are unfortunately common in the published literature. Selective scenario reporting makes methods look better than they are. Seed shopping is a form of p-hacking for simulations—running multiple seeds and reporting the best one. Unfair tuning means extensively optimizing your new method while leaving competitors at default settings. Hidden failures occur when non-converged or errored runs are silently dropped rather than reported. And skipping MCSEs leaves readers unable to judge whether differences between methods are real or just simulation noise.</p>
+</div>
+<p>. . .</p>
+<p><strong>Don’t Do This</strong></p>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Selective scenarios</strong>: Cherry-pick favorable cases</li>
+<li><strong>Seed shopping</strong>: Try seeds until results look good</li>
+<li><strong>Unfair tuning</strong>: Optimize one method only</li>
+<li><strong>Hidden failures</strong>: Ignore non-convergence</li>
+<li><strong>No MCSEs</strong>: Report point estimates only</li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="pitfalls-2" class="level2">
+<h2 class="anchored" data-anchor-id="pitfalls-2">Pitfalls to Avoid</h2>
+<div class="notes">
+<p>The antidotes to these pitfalls are straightforward: transparency and fairness. Pre-specify your scenarios before running simulations—treat it like a study protocol. Fix your random seeds and document them so others can reproduce your exact results. Give all methods equal tuning effort. Report convergence failures and sensitivity to them. And always include Monte Carlo standard errors so readers can distinguish signal from noise. Following these practices makes your simulation study credible and reproducible.</p>
+</div>
+<div class="columns">
+<div class="column">
+<p><strong>Don’t Do This</strong></p>
+<ul>
+<li><strong>Selective scenarios</strong>: Cherry-pick favorable cases</li>
+<li><strong>Seed shopping</strong>: Try seeds until results look good</li>
+<li><strong>Unfair tuning</strong>: Optimize one method only</li>
+<li><strong>Hidden failures</strong>: Ignore non-convergence</li>
+<li><strong>No MCSEs</strong>: Report point estimates only</li>
+</ul>
+</div><div class="column">
+<p><strong>Do This Instead</strong></p>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Pre-specify</strong>: Register scenarios upfront</li>
+<li><strong>Fix seeds</strong>: Document and share all seeds</li>
+<li><strong>Equal treatment</strong>: Same tuning for all</li>
+<li><strong>Report everything</strong>: Include failure rates</li>
+<li><strong>Always MCSEs</strong>: Quantify simulation uncertainty</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
+<div class="notes">
+<p>Let me leave you with this: ADEMP isn’t just an acronym—it’s a philosophy for rigorous simulation research. Each element plays a distinct role, and they must work together. Start with clear aims, design data generation that reflects reality, specify your target estimand explicitly, choose methods that actually estimate that target, and measure performance in ways that answer your aims. If you follow this structure and avoid the common pitfalls, your simulation studies will be transparent, reproducible, and genuinely informative for biostatistical practice.</p>
+</div>
+<div style="font-size: 1.3em;">
+<div class="incremental">
+<ul class="incremental">
+<li>Aims define purpose — keep them focused.</li>
+<li>Data mechanisms define realism — make them plausible.</li>
+<li>Estimands define truth — make them explicit.</li>
+<li>Methods define action — justify every choice.</li>
+<li>Performance defines evidence — quantify uncertainty.</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="references" class="level2 smaller align-center">
+<h2 class="smaller align-center anchored" data-anchor-id="references">References</h2>
+<ul>
+<li><p><strong>Morris, T. P., White, I. R., &amp; Crowther, M. J.</strong> (2019). Using simulation studies to evaluate statistical methods. <em>Statistics in Medicine</em>, 38(11), 2074-2102. doi: 10.1002/sim.8086</p></li>
+<li><p><strong>Burton, A., Altman, D. G., Royston, P., &amp; Holder, R. L.</strong> (2006). The design of simulation studies in medical statistics. <em>Statistics in Medicine</em>, 25(24), 4279-4292. doi: 10.1002/sim.2673</p></li>
+<li><p><strong>Pawel, S., Kook, L., &amp; Reeve, K.</strong> (2024). Pitfalls and potentials in simulation studies: Questionable research practices in comparative simulation. <em>Biometrical Journal</em>, 66(1), e2200091. doi: 10.1002/bimj.202200091</p></li>
+<li><p><strong>Boulesteix, A. L., Groenwold, R. H., Abrahamowicz, M., et al.</strong> (2020). Introduction to simulation studies in health research. <em>BMJ Open</em>, 10(12), e039921. doi: 10.1136/bmjopen-2020-039921</p></li>
+<li><p><strong>Heinze, G., Boulesteix, A. L., Kammer, M., Morris, T. P., &amp; White, I. R.</strong> (2024). Phases of methodological research in biostatistics—building the evidence base for new methods. <em>Biometrical Journal</em>, 66(1), e2200222. doi: 10.1002/bimj.202200222</p></li>
+</ul>
+</section>
+</section>
+<section id="thank-you" class="level1">
+<h1>Thank you!</h1>
+
+
+</section>
+
+</main> <!-- /main -->
+
+<script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/example\.com");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>MSc Biostatistics - Biostatistical Consulting &amp; Collaboration<br> Alexander van Twisk, Stellenbosch University</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
