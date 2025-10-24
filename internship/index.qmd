@@ -12,8 +12,6 @@ This report documents my three-month internship at Scigenix Pty (Ltd), a clinica
 
 ### Report Structure
 
-This internship report follows the structure outlined in the Portfolio of Evidence of Learning guidelines:
-
 #### [1. Introduction & Background](introduction.qmd)
 
 - General overview of Scigenix Pty (Ltd)
