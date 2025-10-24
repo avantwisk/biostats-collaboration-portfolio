@@ -45,11 +45,6 @@ Relationship-first doesn’t mean method-second; it means method-with-purpose. C
 
 I will implement a standard opening (greeting, purpose, agenda, time), use a brief authorship/roles memo for new projects, and maintain an analogies bank for recurring explanations. I’ll request explicit feedback on how my behaviors support a collaborative atmosphere.
 
-## Incorporated Sources and Relevance
-
-* Block 1/Day 2: 2. LISA Collaborative Attitude.pdf; 4. POWER_Structure_for_LISA_Statistical_Collaboration_Meetings.pdf
-* Block 1/Day 2: LISA Co-Authorship Handout.pdf; twenty five analogies.pdf; 3.Smith Vance Course Handout.pdf
-
 ::: {.callout-tip}
 ## Next Reflection
 

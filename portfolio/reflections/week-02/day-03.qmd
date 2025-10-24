@@ -45,11 +45,6 @@ Great consulting is great questioning tied to disciplined follow-through. When q
 
 I will maintain a questioning script (objectives, estimand, outcomes, design, constraints), an action-item template with owners/dates, and a one-page consultation summary format. I’ll schedule a monthly peer review of my consultation notes for calibration.
 
-## Incorporated Sources and Relevance
-
-* Block 1/Day 3: Asking.Great.Questions.CASWebinar.Vance.Smith.pdf
-* Block 1/Day 3: Effective.Collaboration.CSP.Handout_2015-02-17.pdf
-
 ::: {.callout-tip}
 ## Module Complete
 

@@ -27,7 +27,7 @@ Today established my professional identity beyond “data analyst”: collaborat
 
 ### 2. Feelings
 
-I felt energized by the expanded view of my role, yet humbled by the ethical weight of biostatistical advice. The communication sessions were reassuring—clarity is a skill I can deliberately practice. Mentorship sparked motivation, with a trace of anxiety about initiating relationships respectfully and productively.
+I felt energized by the expanded view of my role, yet humbled by the ethical weight of biostatistical advice. The communication sessions were reassuring, and they highlighted that clarity is a skill I can deliberately practice. Mentorship sparked motivation, with a trace of anxiety about initiating relationships respectfully and productively.
 
 ### 3. Evaluation
 
@@ -44,13 +44,6 @@ I learned that effective collaboration integrates ethical judgment, relational c
 ### 6. Action Plan
 
 I will create a personal conduct checklist (conflicts, authorship, reproducibility), adopt POWER-style openings for meetings, and maintain a terminology watchlist to avoid common misuse. I’ll identify two mentors and prepare specific, value-respecting questions. I’ll schedule monthly double-loop reflections to examine assumptions about my role and the clinical relevance of my recommendations.
-
-## Incorporated Sources and Relevance
-
-* Block 2/Day 1: Session 1_Your role in collaborations.pdf; Session 2_Code of Conduct for Biostatisticians.pdf; Session 3_Some Tips for Enhancing Biostats Collaborations in Med Res.pdf
-* Block 2/Day 1: Session 9A_Communicating Stats Concepts to Clinicians.pdf; Session 9C_Common misuse and abuse of statistical language and methods.pdf; Stats Significance vs Clinical Relevance in Interventional Research_UPDATED.pdf
-
- 
 
 ::: {.callout-tip}
 ## Next Reflection

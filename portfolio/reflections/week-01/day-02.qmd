@@ -45,11 +45,6 @@ Strong writing is a force multiplier for biostatistical impact; it carries metho
 
 I will implement weekly writing sprints, adopt a lab style guide, and maintain proposal/manuscript templates. I’ll pilot a pre-submission checklist covering design clarity, estimand alignment, and reporting standards. I’ll schedule quarterly career reflections and seek targeted mentorship on grant strategy.
 
-## Incorporated Sources and Relevance
-
-* Block 2/Day 2: Strategies for writing proposals successfully_FINAL.pdf; My journey as a biostatistician_final.pdf
-* Block 2/Day 2: Session 9B_Common Errors with CIHR RCT_FINAL.pdf
-
 ::: {.callout-tip}
 ## Next Reflection
 

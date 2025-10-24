@@ -27,6 +27,10 @@ sidebar: artefacts
   .artefact-frame--compact {
     height: 440px;
   }
+  .artefact-frame--large {
+    width: min(100%, 1200px);
+    height: 720px;
+  }
   .artefact-wrapper {
     display: flex;
     flex-direction: column;
@@ -50,7 +54,7 @@ sidebar: artefacts
 
 ## Overview
 
-This collection curates the artefacts evidencing my learning, consulting practice, and communication skills during the Biostatistical Consulting & Collaboration module and internship. Every artefact is displayed inline so the portfolio can be reviewed without downloading supporting files.
+This collection curates the artefacts evidencing my learning, consulting practice, and communication skills during the Biostatistical Consulting & Collaboration module and internship.
 
 ## Module Assignments
 
@@ -739,7 +743,7 @@ gglikert(df_likert_items)
 ### Seminar Presentation
 
 <div class="artefact-block artefact-wrapper">
-  <iframe class="artefact-frame artefact-frame--medium" src="files/Seminar%20Presentation/presentation.html" title="Seminar presentation"></iframe>
+  <iframe class="artefact-frame artefact-frame--large" src="files/Seminar%20Presentation/presentation.html" title="Seminar presentation"></iframe>
   <p class="artefact-caption">Interactive HTML deck delivered to peers summarising module takeaways, consulting frameworks, and project highlights.</p>
 </div>
 
@@ -747,5 +751,5 @@ gglikert(df_likert_items)
 
 <div class="artefact-block artefact-wrapper">
   <img class="artefact-image" src="files/Shiny%20App/image.png" alt="Shiny app interface screenshot">
-  <p class="artefact-caption">Screenshot of the data exploration Shiny tool highlighting user-facing design elements and core outputs.</p>
+  <p class="artefact-caption">Screenshot of the Shiny app homepage.</p>
 </div>

@@ -45,11 +45,6 @@ Career durability rests on ethical consistency, reproducible documentation, and 
 
 I will adopt authorship/roles memos at project start, maintain SAP templates with rationale sections, and apply reporting checklists systematically. I’ll keep an “integrity log” for analytic decisions and schedule periodic assumption checks with collaborators.
 
-## Incorporated Sources and Relevance
-
-* Block 2/Day 4: Session 4_Determinants of a successful career.pdf; Session 5_Writings stats sections in protocols-papers-SAPs-book reviews.pdf
-* Block 2/Day 4: Session 6_Reporting of Studies in Health.pdf; Session 8_Ethics and Scientific Integrity--video session_REVISED.pdf
-
 ::: {.callout-tip}
 ## Next Reflection
 

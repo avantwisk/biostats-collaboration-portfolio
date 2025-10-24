@@ -45,11 +45,6 @@ Teaching, framing questions, and reporting are mutually reinforcing. They move c
 
 I will prepare analogies and visuals for common concepts, adopt a reproducibility/reporting checklist, and develop a short “question-framing” guide (purpose, estimand, outcomes, design, constraints). I’ll schedule pre-meet reads of clinical background to align language and goals.
 
-## Incorporated Sources and Relevance
-
-* Block 2/Day 3: Session 1_Teaching Collaborators how to communicate with a statistician.pdf; Session 2_Reporting of Science.pdf
-* Block 2/Day 3: Session 3_Intro to framing researchable questions.pdf; Session 7_Statistical pleasures of med collaborations.pdf
-
 ::: {.callout-tip}
 ## Next Reflection
 
